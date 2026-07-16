@@ -1,0 +1,55 @@
+{
+    "methodological": [
+        {
+            "gap": "Scalable data collection for RF fingerprinting",
+            "impact": "High",
+            "reason": "Current methods rely on limited datasets and specialized hardware, hindering real-world deployment.",
+            "papers": [
+                "Deep-Learning-Aided RF Fingerprinting for NFC Security"
+            ]
+        },
+        {
+            "gap": "Cross-receiver adaptation without source data",
+            "impact": "High",
+            "reason": "Models struggle to adapt to new receivers due to data distribution shifts and privacy constraints.",
+            "papers": [
+                "Cross-Receiver Radio Frequency Fingerprint Identification"
+            ]
+        },
+        {
+            "gap": "Robustness against spoofing in large device populations",
+            "impact": "High",
+            "reason": "Existing frameworks degrade with spoofed frequency offsets and heterogeneous device populations.",
+            "papers": [
+                "Deep Learning for RF Device Fingerprinting"
+            ]
+        },
+        {
+            "gap": "Handling limited labeled data in SEI",
+            "impact": "High",
+            "reason": "Pretraining-data and labeled-sample disparities risk overfitting in self-supervised frameworks.",
+            "papers": [
+                "A Self-Supervised Contrastive Framework for Specific Emitter Identification"
+            ]
+        },
+        {
+            "gap": "Adversarial robustness in RF fingerprinting",
+            "impact": "High",
+            "reason": "Methods lack defenses against adversarial signal manipulations in cognitive radio networks.",
+            "papers": [
+                "Deep Learning for RF Device Fingerprinting"
+            ]
+        },
+        {
+            "gap": "Generalization across varying scribble annotations",
+            "impact": "High",
+            "reason": "Sparse supervision and inconsistent scribble annotations lead to unreliable predictions.",
+            "papers": [
+                "Scribble-Supervised Semantic Segmentation"
+            ]
+        }
+    ],
+    "theoretical": [],
+    "empirical": [],
+    "application": []
+}

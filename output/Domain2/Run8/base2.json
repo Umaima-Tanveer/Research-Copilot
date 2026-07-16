@@ -1,0 +1,525 @@
+[
+    {
+        "paper_id": 1,
+        "filename": "1978942.1979046.pdf",
+        "metadata": {
+            "title": "Identifying Emotional States using Keystroke Dynamics",
+            "authors": [
+                "Clayton Epp",
+                "Michael Lippold",
+                "Regan L. Mandryk"
+            ],
+            "year": "2011",
+            "venue": "CHI 2011",
+            "doi": null,
+            "keywords": [
+                "Affective computing",
+                "keystroke dynamics",
+                "emotion sensing"
+            ]
+        },
+        "abstract": "The ability to recognize emotions is critical for building intelligent computers. Current emotion detection methods are invasive and require costly equipment. This paper proposes using keystroke dynamics to detect emotional states through typing patterns on standard keyboards. A field study collected keystroke data and self-reported emotional states, achieving 77-88% accuracy for six emotional states and 84% for anger and excitement.",
+        "research": {
+            "problem": "Current emotion detection systems are invasive and require specialized equipment.",
+            "motivation": "Emotionally-aware systems can improve user interaction and adapt to contextual emotional states.",
+            "objective": "Detect user emotional states using keystroke dynamics without intrusive hardware.",
+            "research_questions": []
+        },
+        "methodology": {
+            "summary": "Keystroke features (dwell time, flight time) were extracted from field study data using decision-tree classifiers for 15 emotional states.",
+            "algorithms": [
+                "Decision trees"
+            ],
+            "models": [
+                "Emotional state classifiers"
+            ],
+            "datasets": [
+                "Field study keystroke data with self-reported emotional states"
+            ],
+            "features": [
+                "Key duration (dwell time)",
+                "Key latency (flight time)"
+            ],
+            "preprocessing": [
+                "Feature extraction from raw keystroke data"
+            ],
+            "training_strategy": "Classifier training using derived keystroke features",
+            "evaluation_metrics": [
+                "Accuracy percentages"
+            ]
+        },
+        "experiments": {
+            "experimental_setup": "Field study with experience-sampling methodology collecting keystrokes and emotional state self-reports.",
+            "baselines": [],
+            "results": "Classifiers achieved 77.4-87.8% accuracy for confidence, hesitance, nervousness, relaxation, sadness, and tiredness; 84% for anger and excitement.",
+            "performance": {
+                "accuracy": "77.4-87.8%",
+                "precision": null,
+                "recall": null,
+                "f1": null,
+                "auc": null
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Non-intrusive emotion detection using standard keyboards"
+            ],
+            "advantages": [
+                "Leverages existing hardware",
+                "Minimal user disruption"
+            ],
+            "limitations": [
+                "Requires extensive keystroke data",
+                "Limited emotional state coverage"
+            ],
+            "future_work": [
+                "Investigate anger and excitement",
+                "Test across diverse typing abilities and keyboards"
+            ],
+            "applications": [
+                "Adaptive user interfaces",
+                "Emotion-aware systems",
+                "Computer-mediated communication"
+            ],
+            "research_gap": "Need for more studies on emotional state variability and cross-context generalization"
+        },
+        "sections": {
+            "introduction": "Discusses usability challenges in interactive applications due to lack of emotional context awareness and proposes emotion-sensing systems.",
+            "related_work": "Reviews affective computing and keystroke dynamics, highlighting limitations of physiological sensors and intrusive methods.",
+            "methodology": "Describes field study design, keystroke feature extraction, and classifier development for emotional state detection.",
+            "results": "Presents accuracy metrics for 15 emotional states using keystroke dynamics classifiers.",
+            "discussion": "Analyzes implications of non-intrusive emotion sensing for human-computer interaction and system adaptability.",
+            "conclusion": "Emphasizes potential of keystroke dynamics for improving user experience through emotionally-aware systems."
+        }
+    },
+    {
+        "paper_id": 2,
+        "filename": "ETASR_634.pdf",
+        "metadata": {
+            "title": "Behavioral Biometrics in Assisted Living: A Methodology for Emotion Recognition",
+            "authors": [
+                "Stefanos Xefteris",
+                "Nikos Doulamis",
+                "Vassiliki Andronikou",
+                "Theodora Varvarigou",
+                "George Cambourakis"
+            ],
+            "year": "2016",
+            "venue": "Engineering, Technology & Applied Science Research",
+            "doi": null,
+            "keywords": [
+                "ambient assisted living",
+                "dementia",
+                "emotion",
+                "image processing",
+                "telemedicine"
+            ]
+        },
+        "abstract": "Behavioral biometrics aim at providing algorithms for the automatic recognition of individual behavioral traits. In the field of ambient assisted living, behavioral biometrics find an important niche. The primary aim of this paper is to describe a methodology for recognizing the emotional status of a subject using facial expressions and to identify its uses for integration into a smart monitoring system for neurodegenerative diseases. Paul Ekman’s research provided the background on the universality of facial expressions as indicators of underlying emotions. The methodology makes use of computational geometry, image processing, and graph theory algorithms for region of interest detection and a neural network for final classification. Findings are coupled with previous work for risk assessment and alert generation in an ambient assisted living environment based on Service oriented architecture principles.",
+        "research": {
+            "problem": "Monitoring individuals with neurodegenerative diseases (MCI, Alzheimer’s, dementia) through unobtrusive systems to assess physical and emotional status.",
+            "motivation": "Growing elderly population in Europe requires innovative approaches to maintain independence and quality of life. Neurodegenerative diseases necessitate continuous care and early risk detection.",
+            "objective": "Develop a methodology for emotion recognition using facial expressions and integrate it into smart monitoring systems for neurodegenerative disease patients.",
+            "research_questions": [
+                "Which emotions can be expressed through facial expressions?",
+                "Can emotions be recognized accurately across cultures?",
+                "Can emotion be used as a behavioral biometric trait?"
+            ]
+        },
+        "methodology": {
+            "summary": "The methodology combines computational geometry, image processing, and graph theory for region of interest detection, followed by neural network classification. It leverages Paul Ekman’s FACS system for emotion categorization.",
+            "algorithms": [
+                "Viola-Jones face detection",
+                "Voronoi tessellation",
+                "Delaunay triangulation",
+                "Neural network"
+            ],
+            "models": [
+                "Neural network for emotion classification"
+            ],
+            "datasets": [
+                "Cohn-Kanade extended dataset"
+            ],
+            "features": [
+                "Facial expressions",
+                "Geometric shape abstraction of emotions"
+            ],
+            "preprocessing": [
+                "Face cropping",
+                "Edge detection",
+                "Region segmentation"
+            ],
+            "training_strategy": "No individual user training required; future implementations may include training for improved results.",
+            "evaluation_metrics": []
+        },
+        "experiments": {
+            "experimental_setup": "Based on Service Oriented Architecture (SoA) principles for remote monitoring and risk assessment. Integration with existing rule-based systems for alert generation.",
+            "baselines": [],
+            "results": "Accurate emotion recognition across cultures using Ekman’s six basic emotions (joy, sadness, surprise, anger, disgust, fear). Integration with risk assessment frameworks for cognitive/physical status monitoring.",
+            "performance": {
+                "accuracy": null,
+                "precision": null,
+                "recall": null,
+                "f1": null,
+                "auc": null
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Methodology for emotion recognition using facial expressions in ambient assisted living systems",
+                "Integration of biometric data with risk assessment frameworks"
+            ],
+            "advantages": [
+                "Non-invasive data collection",
+                "Universality of facial expressions across cultures"
+            ],
+            "limitations": [
+                "Dependence on specific datasets (e.g., Cohn-Kanade)",
+                "Limited real-time implementation details"
+            ],
+            "future_work": [
+                "Real-time emotion recognition systems",
+                "Expansion to diverse cultural datasets"
+            ],
+            "applications": [
+                "Smart monitoring for dementia patients",
+                "Remote cognitive/physical status assessment"
+            ],
+            "research_gap": "Need for more robust real-time systems and broader cultural validation of emotion recognition frameworks."
+        },
+        "sections": {
+            "introduction": "Discusses aging population challenges, neurodegenerative diseases, and the need for ambient assisted living systems. Highlights the role of behavioral biometrics in monitoring and care.",
+            "related_work": "References Paul Ekman’s research on facial expressions, previous work on emotion recognition, and existing risk assessment frameworks.",
+            "methodology": "Describes computational geometry, image processing, and neural network approaches for emotion recognition. Details preprocessing steps and integration with SoA principles.",
+            "results": "Demonstrates accurate emotion classification using Ekman’s six basic emotions. Shows integration with risk assessment systems for patient monitoring.",
+            "discussion": "Analyzes the universality of facial expressions, limitations of current methodologies, and potential applications in healthcare.",
+            "conclusion": "Summarizes the methodology’s contribution to ambient assisted living systems and emphasizes the need for further research in real-time and culturally diverse implementations."
+        }
+    },
+    {
+        "paper_id": 3,
+        "filename": "44155.pdf",
+        "metadata": {
+            "title": "Emotion Recognition through Keystroke Dynamics on Touchscreen Keyboards",
+            "authors": [
+                "Matthias Trojahn",
+                "Florian Arndt",
+                "Markus Weinmann",
+                "Frank Ortmeier"
+            ],
+            "year": "2013",
+            "venue": "ICEIS-2013",
+            "doi": "10.5220/0004415500310037",
+            "keywords": [
+                "Human-Computer Interaction",
+                "Emotion Recognition",
+                "Keystroke Dynamics",
+                "Touchscreen",
+                "Smartphone"
+            ]
+        },
+        "abstract": "Automatic emotion recognition through computers improves human-computer interaction by responding to user emotions like anger or frustration. This study investigates keystroke dynamics on touchscreen keyboards, leveraging pressure and size data alongside Yerkes-Dodson Law and Flow theory. A study with 152 participants confirmed hypotheses linking emotional states to typing patterns.",
+        "research": {
+            "problem": "Emotion recognition via keystroke dynamics on touchscreen keyboards lacks prior exploration compared to conventional keyboards.",
+            "motivation": "Enhance human-computer interaction by automatically responding to user emotions during tasks like webpage navigation.",
+            "objective": "Investigate keystroke dynamics on touchscreen keyboards for emotion recognition, incorporating pressure and size metrics.",
+            "research_questions": [
+                "How do time limits affect keystroke dynamics and emotional states?",
+                "What is the relationship between typing speed, error rates, and emotional valence?"
+            ]
+        },
+        "methodology": {
+            "summary": "Developed an Android app and keyboard layout to capture keystroke dynamics, using Yerkes-Dodson Law and Flow theory to formulate hypotheses. Conducted a study with 152 participants under varying time limits.",
+            "algorithms": [
+                "Linear regression analysis"
+            ],
+            "models": [
+                "Linear regression model for emotion prediction"
+            ],
+            "datasets": [
+                "Keystroke dynamics data from 152 participants"
+            ],
+            "features": [
+                "Typing speed",
+                "Error rate",
+                "Keystroke pressure",
+                "Time limits"
+            ],
+            "preprocessing": [
+                "Data export to CSV",
+                "Statistical analysis with SPSS"
+            ],
+            "training_strategy": "Not applicable (descriptive analysis)",
+            "evaluation_metrics": [
+                "ANOVA for group comparisons",
+                "Correlation analysis",
+                "Regression coefficient significance"
+            ]
+        },
+        "experiments": {
+            "experimental_setup": "Used Samsung Galaxy Nexus devices with randomized time limits (no limit, 5 minutes, 3.5 minutes). Participants typed a neutral text and completed emotion questionnaires.",
+            "baselines": [],
+            "results": "Significant differences in arousal and valence across time limits. Typing speed, error rates, and pressure correlated with emotional states.",
+            "performance": {
+                "accuracy": "Not explicitly reported",
+                "precision": "Not explicitly reported",
+                "recall": "Not explicitly reported",
+                "f1": "Not explicitly reported",
+                "auc": "Not explicitly reported"
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Validated hypotheses linking emotional states to keystroke dynamics",
+                "Demonstrated touchscreen data (pressure) enhances emotion recognition"
+            ],
+            "advantages": [
+                "Leverages touchscreen-specific metrics like pressure",
+                "Combines psychological theories with empirical analysis"
+            ],
+            "limitations": [
+                "Controlled lab environment may lack real-world variability",
+                "Limited demographic diversity in participants"
+            ],
+            "future_work": [
+                "Explore diverse emotional states and contextual factors",
+                "Integrate multimodal data (e.g., biometrics)"
+            ],
+            "applications": [
+                "Enhanced HCI systems",
+                "User experience optimization",
+                "Stress monitoring in digital tasks"
+            ],
+            "research_gap": "Limited exploration of touchscreen-specific emotion recognition compared to traditional keyboards"
+        },
+        "sections": {
+            "introduction": "Discusses the growing importance of human-computer interaction and the potential of emotion recognition to improve user experiences.",
+            "related_work": "References prior studies on mouse dynamics and keystroke analysis for emotion recognition, highlighting the gap in touchscreen research.",
+            "methodology": "Details the development of Android tools, theoretical frameworks, and experimental design for data collection.",
+            "results": "Presents statistical findings on arousal/valence differences, typing patterns, and correlations with emotional states.",
+            "discussion": "Links results to Yerkes-Dodson Law and Flow theory, emphasizing stress impacts on keystroke dynamics.",
+            "conclusion": "Summarizes validated hypotheses and implications for emotion-aware computing systems."
+        }
+    },
+    {
+        "paper_id": 4,
+        "filename": "kolakowska13.pdf",
+        "metadata": {
+            "title": "A Review of Emotion Recognition Methods Based on Keystroke Dynamics and Mouse Movements",
+            "authors": [
+                "A. Ko!akowska"
+            ],
+            "year": "2013",
+            "venue": "IEEE",
+            "doi": "978-1-4673-5637-4",
+            "keywords": [
+                "emotion recognition",
+                "keystroke dynamics",
+                "mouse movements"
+            ]
+        },
+        "abstract": "The paper reviews methods for recognizing users' emotional states using standard input devices like keyboards and mice. It covers data collection, feature extraction, classifier training, and multimodal approaches. Key topics include keystroke dynamics, mouse movement analysis, and integration with physiological data.",
+        "research": {
+            "problem": "Recognizing users' emotional states from input device data (keyboard/mouse).",
+            "motivation": "Affective computing applications in real-world domains like tutoring systems and adaptive interfaces require non-intrusive emotion detection methods.",
+            "objective": "Review and analyze emotion recognition techniques using keystroke dynamics and mouse movements.",
+            "research_questions": [
+                "How to collect and label training data?",
+                "What features can be extracted from input devices?",
+                "How to combine input device data with other emotion sources?"
+            ]
+        },
+        "methodology": {
+            "summary": "Analyzes keystroke timing/frequency and mouse movement parameters as biometric features for emotion recognition.",
+            "algorithms": [
+                "Feature extraction techniques",
+                "Classifier training methods"
+            ],
+            "models": [
+                "Machine learning classifiers"
+            ],
+            "datasets": [
+                "Online shopping tasks",
+                "Intelligent tutoring systems",
+                "Stress detection experiments"
+            ],
+            "features": [
+                "Keystroke timing (duration, inter-key intervals)",
+                "Keystroke frequency (backspace, delete usage)",
+                "Mouse speed, acceleration, direction",
+                "Textual features (word length, punctuation)"
+            ],
+            "preprocessing": [
+                "Outlier removal",
+                "Feature selection",
+                "Normalization using baseline data"
+            ],
+            "training_strategy": "Principal Component Analysis (PCA) for dimensionality reduction",
+            "evaluation_metrics": [
+                "Accuracy",
+                "Precision",
+                "Recall",
+                "F1-score",
+                "AUC"
+            ]
+        },
+        "experiments": {
+            "experimental_setup": "Studies involved participants performing tasks while their keyboard/mouse data was recorded, with emotional states labeled via questionnaires or physiological measurements.",
+            "baselines": [
+                "Physiological data integration",
+                "Multimodal approaches"
+            ],
+            "results": "Performance varied across datasets; keystroke dynamics and mouse movements showed potential for detecting emotional states like stress and boredom.",
+            "performance": {
+                "accuracy": "null",
+                "precision": "null",
+                "recall": "null",
+                "f1": "null",
+                "auc": "null"
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Systematic review of input-device-based emotion recognition",
+                "Analysis of keystroke dynamics and mouse movement features"
+            ],
+            "advantages": [
+                "Non-intrusive data collection",
+                "No special hardware required"
+            ],
+            "limitations": [
+                "Behavioral features vary with context and hardware",
+                "Limited control over emotional states in real-world scenarios"
+            ],
+            "future_work": [
+                "Multimodal fusion with physiological data",
+                "Improved contextual adaptation for different applications"
+            ],
+            "applications": [
+                "Intelligent tutoring systems",
+                "Adaptive user interfaces",
+                "Stress detection in software development"
+            ],
+            "research_gap": "Need for standardized datasets and cross-context validation of input-device-based emotion recognition methods"
+        },
+        "sections": {
+            "introduction": "Discusses the rise of affective computing and the potential of input devices for emotion recognition.",
+            "related_work": "null",
+            "methodology": "Describes biometric analysis of keystroke dynamics and mouse movements.",
+            "results": "Presents findings from various experiments on emotion detection using input devices.",
+            "discussion": "null",
+            "conclusion": "Summarizes the potential of input-device-based emotion recognition and identifies future research directions."
+        }
+    },
+    {
+        "paper_id": 5,
+        "filename": "Human_Micro-Expression_A_Novel_Social_Behavioral_Biometric_for_Person_Identification.pdf",
+        "metadata": {
+            "title": "Human Micro-Expression: A Novel Social Behavioral Biometric for Person Identification",
+            "authors": [
+                "ZAMAN WAHID",
+                "ASM HOSSAIN BARI",
+                "FAHIM ANZUM",
+                "MARINA L. GAVRILOVA"
+            ],
+            "year": "2023",
+            "venue": "IEEE Access",
+            "doi": "10.1109/ACCESS.2023.3283932",
+            "keywords": [
+                "Biometric security",
+                "emotion extraction",
+                "emotion progression signals",
+                "human micro-expression",
+                "natural language processing",
+                "person identification",
+                "social behavioral biometrics"
+            ]
+        },
+        "abstract": "The paper introduces human micro-expression as a novel social behavioral biometric (SBB) for person identification. It proposes an emotion detection model to extract emotion probability scores from Twitter samples, generates emotion-progression signals, and implements a rank-level weighted majority voting system. Validation on a proprietary dataset demonstrates its effectiveness for person identification.",
+        "research": {
+            "problem": "Traditional biometric systems face limitations in online social interactions; there is a need for novel social behavioral biometrics for person identification.",
+            "motivation": "Online social networks (OSN) have transformed communication, enabling new biometric traits from behavioral patterns. Human micro-expressions offer unique insights into emotional states for identification.",
+            "objective": "Introduce human micro-expression as a novel SBB trait, validate its effectiveness for person identification, and demonstrate superiority over existing SBB traits.",
+            "research_questions": [
+                "Does emotion progression exhibit distinctive patterns among OSN users?",
+                "Can human micro-expression serve as a social behavioral biometric for person identification?"
+            ]
+        },
+        "methodology": {
+            "summary": "The methodology involves emotion detection from text, emotion-progression signal generation, and rank-level fusion using weighted majority voting for person identification.",
+            "algorithms": [
+                "Dynamic Time Warping"
+            ],
+            "models": [
+                "XGBoost",
+                "Support Vector Machine (SVM)",
+                "Multinomial Naïve Bayes (MNB)"
+            ],
+            "datasets": [
+                "Proprietary benchmark dataset with 250 Twitter users"
+            ],
+            "features": [
+                "Emotion probability scores",
+                "Emotion-progression signals",
+                "Temporal order of tweets"
+            ],
+            "preprocessing": [
+                "Text cleaning (removing hashtags, URLs, stop-words)",
+                "Tokenization",
+                "Porter stemming",
+                "TF-IDF vectorization"
+            ],
+            "training_strategy": "Grid search cross-validation for hyperparameter tuning",
+            "evaluation_metrics": []
+        },
+        "experiments": {
+            "experimental_setup": "Validation on a proprietary Twitter dataset with 250 users, comparing human micro-expression SBB with existing SBB traits.",
+            "baselines": [
+                "Original SBB traits from [7], [9]"
+            ],
+            "results": "Human micro-expression achieved superior performance compared to existing SBB traits, demonstrating strong distinguishable ability for person identification.",
+            "performance": {
+                "accuracy": null,
+                "precision": null,
+                "recall": null,
+                "f1": null,
+                "auc": null
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Introduction of human micro-expression as a novel SBB trait",
+                "Development of emotion-progression signal generation and fusion techniques",
+                "Demonstration of superior performance over existing SBB traits"
+            ],
+            "advantages": [
+                "Leverages temporal emotion progression for unique user representation",
+                "Reduces dependency on statistical features",
+                "Offers novel insights into emotional and psychological states"
+            ],
+            "limitations": [
+                "Performance depends on sufficient user data for feature generation",
+                "Limited exploration of emotion-progression representation techniques"
+            ],
+            "future_work": [
+                "Enhancing emotion-progression representation with deeper technical breakthroughs",
+                "Expanding applications to cybersecurity and mental health analysis"
+            ],
+            "applications": [
+                "Digital banking security",
+                "Online fraud detection",
+                "Trustworthiness assessment in social media",
+                "Sexual predator detection"
+            ],
+            "research_gap": "Need for more advanced emotion-progression representation methods and broader validation across diverse social media platforms."
+        },
+        "sections": {
+            "introduction": "Introduces biometric systems, physiological vs. behavioral biometrics, and the emergence of social behavioral biometrics (SBB) in online interactions.",
+            "related_work": "Reviews existing SBB traits like reply/retweet networks, hashtag profiles, URL networks, and temporal profiles, highlighting limitations in statistical dependency.",
+            "methodology": "Details emotion detection, signal generation, and fusion techniques for creating a novel SBB system.",
+            "results": "Demonstrates human micro-expression's superior performance compared to existing SBB traits on a proprietary dataset.",
+            "discussion": "Analyzes contributions, advantages, limitations, and potential applications of the proposed SBB trait.",
+            "conclusion": "Summarizes the novelty of human micro-expression as a SBB and its potential impact on person identification and social behavior analysis."
+        }
+    }
+]

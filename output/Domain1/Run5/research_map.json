@@ -1,0 +1,172 @@
+{
+    "nodes": [
+        {
+            "id": "1",
+            "title": "Deep Learning for RF Device Fingerprinting in Cognitive Communication Networks",
+            "year": 2018,
+            "dataset": "7 commercial ZigBee Pro devices operating in the 2.4 GHz band, with random 32-byte payloads generated in MATLAB.",
+            "methodology": "A convolutional neural network (CNN) trained on time-domain complex baseband error signals to classify devices based on unique physical-layer signatures, with frequency correction applied to remove carrier offset.",
+            "task_type": "Classification",
+            "contribution": "Proposed a CNN-based framework for RF fingerprinting using time-domain error signals, enabling device identification without relying on cryptographic keys or MAC addresses."
+        },
+        {
+            "id": "2",
+            "title": "Release Note: WiFi RF Datasets for Device Fingerprinting Using Deep Learning",
+            "year": null,
+            "dataset": "1.2TB of WiFi transmissions from 50 devices over 5 days (indoor/outdoor), with 5 transmissions per device. Files stored in SigMF format with metadata including sampling rate, timestamps, and carrier frequency.",
+            "methodology": "Data collected using 50 Pycom devices and Ettus USRP B210 receivers, capturing I/Q samples at 25MS/s. GNURadio configured for signal processing and metadata storage in SigMF format.",
+            "task_type": "Device Fingerprinting",
+            "contribution": "Provides standardized WiFi datasets with SigMF metadata for research on device fingerprinting and RF signal analysis."
+        },
+        {
+            "id": "3",
+            "title": "Deep Learning Based RF Fingerprint Identification Using Differential Constellation Trace Figure",
+            "year": 2019,
+            "dataset": "54 ZigBee devices with varying SNR levels (15 dB and 30 dB) for classification.",
+            "methodology": "DCTF converts time-series signal data into 2D images representing differential relationships. A CNN is trained to classify devices based on DCTF features without prior synchronization information.",
+            "task_type": "Classification",
+            "contribution": "Proposed DCTF-CNN method with zero prior synchronization, high accuracy, and low complexity for RFF identification."
+        },
+        {
+            "id": "4",
+            "title": "Few-Shot Speciﬁc Emitter Identiﬁcation via Deep Metric Ensemble Learning",
+            "year": null,
+            "dataset": "Massive ADS-B signal samples for offline training, few-shot samples from new aircraft for online deployment.",
+            "methodology": "Proposes DMEL with feature embedding via complex-valued CVCNN and metric learning (triplet loss, center loss), combined with ensemble classifiers for improved generalization.",
+            "task_type": "Few-shot learning for emitter identification",
+            "contribution": "Introduces offline feature embedding and online classifier paradigm, metric learning for generalized features, and ensemble learning for enhanced performance."
+        },
+        {
+            "id": "5",
+            "title": "Semi-Supervised RF Fingerprinting with Consistency-Based Regularization",
+            "year": 2023,
+            "dataset": "Simulated and real-world datasets (specific names not provided)",
+            "methodology": "The paper proposes a semi-supervised learning framework combining data augmentation, consistency-based regularization, and pseudo-labeling. A composite data augmentation scheme, including stochastic permutation and signal rotation, is designed for radio signals to enhance generalization.",
+            "task_type": "Classification",
+            "contribution": "1. Comprehensive analysis of data augmentation techniques for RF fingerprinting. 2. Novel composite data augmentation scheme (stochastic permutation + signal rotation). 3. End-to-end semi-supervised framework combining consistency-based regularization and pseudo-labeling."
+        }
+    ],
+    "edges": [
+        {
+            "paper1": "1",
+            "paper2": "2",
+            "relation": "compares",
+            "similarity": 0.3,
+            "reason": "Both papers address device fingerprinting using RF signals but differ in methodology (CNN vs. SigMF metadata), datasets (ZigBee vs WiFi), and focus (framework proposal vs dataset provision).",
+            "shared_concepts": [
+                "device fingerprinting",
+                "RF signals",
+                "deep learning"
+            ]
+        },
+        {
+            "paper1": "1",
+            "paper2": "3",
+            "relation": "compares",
+            "similarity": 0.6,
+            "reason": "Both papers address RF fingerprinting using CNNs for device classification, but differ in methodology (time-domain error signals vs. DCTF-based 2D images) and synchronization requirements (frequency correction vs. zero prior synchronization).",
+            "shared_concepts": [
+                "RF fingerprinting",
+                "CNN",
+                "ZigBee devices",
+                "classification"
+            ]
+        },
+        {
+            "paper1": "1",
+            "paper2": "4",
+            "relation": "compares",
+            "similarity": 0.5,
+            "reason": "Both papers address device/emitter identification using deep learning but differ in methodology (CNN vs. DMEL with metric/ensemble learning), dataset (ZigBee Pro vs. ADS-B), and task focus (general classification vs. few-shot learning).",
+            "shared_concepts": [
+                "classification",
+                "emitter identification",
+                "deep learning",
+                "feature embedding",
+                "device fingerprinting"
+            ]
+        },
+        {
+            "paper1": "1",
+            "paper2": "5",
+            "relation": "compares",
+            "similarity": 0.5,
+            "reason": "Both papers address RF fingerprinting for device classification but employ distinct methodologies. Paper 1 focuses on supervised CNN-based time-domain signal analysis, while Paper 2 introduces semi-supervised learning with data augmentation. They share the task of classification but differ in approach and dataset usage.",
+            "shared_concepts": [
+                "RF fingerprinting",
+                "classification",
+                "signal processing"
+            ]
+        },
+        {
+            "paper1": "2",
+            "paper2": "3",
+            "relation": "compares",
+            "similarity": 0.5,
+            "reason": "Both papers address RF signal analysis for device identification but employ different methodologies (SigMF metadata vs. DCTF-CNN) and datasets (WiFi vs. ZigBee). Paper 1 focuses on standardized dataset creation, while Paper 2 proposes a novel feature extraction method for classification.",
+            "shared_concepts": [
+                "device fingerprinting",
+                "RF signal analysis",
+                "deep learning",
+                "classification"
+            ]
+        },
+        {
+            "paper1": "2",
+            "paper2": "4",
+            "relation": "unrelated",
+            "similarity": 0.3,
+            "reason": "Both papers address signal-based identification tasks but differ in methodology, dataset, and application domain. Paper 1 focuses on WiFi device fingerprinting with SigMF datasets, while Paper 2 addresses few-shot emitter identification using ADS-B signals and metric learning. No direct overlap in methods or datasets.",
+            "shared_concepts": [
+                "signal processing",
+                "device identification",
+                "deep learning",
+                "emitter identification"
+            ]
+        },
+        {
+            "paper1": "2",
+            "paper2": "5",
+            "relation": "compares",
+            "similarity": 0.5,
+            "reason": "Both papers address RF fingerprinting (task) but employ different methodologies: Paper 1 focuses on dataset creation with SigMF metadata, while Paper 2 develops a semi-supervised learning framework with data augmentation. They share the same task but differ in approach.",
+            "shared_concepts": [
+                "device fingerprinting",
+                "RF fingerprinting"
+            ]
+        },
+        {
+            "paper1": "3",
+            "paper2": "4",
+            "relation": "compares",
+            "similarity": 0.4,
+            "reason": "Both papers address emitter identification using deep learning but employ distinct methodologies (DCTF-CNN vs. DMEL with metric learning/ensemble learning) and different datasets (ZigBee vs. ADS-B).",
+            "shared_concepts": [
+                "emitter identification",
+                "deep learning methods"
+            ]
+        },
+        {
+            "paper1": "3",
+            "paper2": "5",
+            "relation": "compares",
+            "similarity": 0.3,
+            "reason": "Both papers address RF fingerprinting classification but employ distinct methodologies (DCTF-CNN vs. semi-supervised framework with data augmentation). They share the task of classification but differ in techniques and dataset characteristics.",
+            "shared_concepts": [
+                "RF fingerprinting",
+                "classification"
+            ]
+        },
+        {
+            "paper1": "4",
+            "paper2": "5",
+            "relation": "unrelated",
+            "similarity": 0.2,
+            "reason": "Paper 1 focuses on few-shot emitter identification using metric learning and ensemble methods, while Paper 2 addresses semi-supervised RF fingerprinting with data augmentation and consistency regularization. They differ in task (few-shot learning vs. general classification), methodology (metric learning/ensemble vs. data augmentation/semi-supervised), and dataset (ADS-B signals vs. simulated/real-world RF data).",
+            "shared_concepts": [
+                "signal processing",
+                "machine learning for communication signals"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,505 @@
+[
+    {
+        "paper_id": 1,
+        "filename": "s13634-023-00978-4.pdf",
+        "metadata": {
+            "title": "A novel framework for extracting moment-based fingerprint features in specific emitter identification",
+            "authors": [
+                "Yurui Zhao",
+                "Xiang Wang",
+                "Liting Sun",
+                "Zhitao Huang"
+            ],
+            "year": "2023",
+            "venue": "EURASIP Journal on Advances in Signal Processing",
+            "doi": "10.1186/s13634-023-00978-4",
+            "keywords": [
+                "Fingerprint features",
+                "Intentional modulation",
+                "Moments",
+                "Unintentional modulation",
+                "Specific emitter identification"
+            ]
+        },
+        "abstract": "Moments and their derivations are effective for specific emitter identification (SEI), but lack mechanistic explanation. The paper proposes a framework analyzing intentional and unintentional modulations' effects on moments, enhancing generalization and interpretability through signal segmentation and moment-based feature extraction.",
+        "research": {
+            "problem": "Lack of mechanistic explanation for moment-based fingerprint features in SEI.",
+            "motivation": "Enhance generalization ability and theoretical foundation of moment-based SEI methods.",
+            "objective": "Develop a framework for extracting moment-based fingerprint features with interpretable mechanisms.",
+            "research_questions": [
+                "Why can moments act as fingerprint features?",
+                "How to design fingerprint features based on signal moments?"
+            ]
+        },
+        "methodology": {
+            "summary": "Analyzes intentional modulation (IM) and unintentional modulation (UIM) effects on signal moments. Proposes a framework involving signal segmentation, moment calculation, and feature design.",
+            "algorithms": [
+                "Signal fine-segmentation",
+                "Moment calculation",
+                "Feature design"
+            ],
+            "models": [
+                "Theoretical analysis of IM/UIM effects",
+                "Proposed moment-based SEI framework"
+            ],
+            "datasets": [],
+            "features": [
+                "Mean",
+                "Variance",
+                "Skewness",
+                "Kurtosis"
+            ],
+            "preprocessing": [
+                "Fine-segmenting signals into sinewave components"
+            ],
+            "training_strategy": "",
+            "evaluation_metrics": []
+        },
+        "experiments": {
+            "experimental_setup": "Simulations and experiments to verify framework validity.",
+            "baselines": [],
+            "results": "Correctness and effectiveness of the proposed framework confirmed.",
+            "performance": {
+                "accuracy": "",
+                "precision": "",
+                "recall": "",
+                "f1": "",
+                "auc": ""
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Theoretical analysis of IM and UIM mechanisms",
+                "Framework for moment-based fingerprint extraction",
+                "Improved generalization of SEI methods"
+            ],
+            "advantages": [
+                "Enhanced interpretability",
+                "Better generalization across modulations"
+            ],
+            "limitations": [],
+            "future_work": [
+                "Exploration of additional datasets",
+                "Integration with other signal processing techniques"
+            ],
+            "applications": [
+                "Military and civil SEI applications",
+                "Wireless network security"
+            ],
+            "research_gap": "Need for theoretical foundations to replace trial-based data-driven approaches"
+        },
+        "sections": {
+            "introduction": "Discusses SEI challenges, hardware imperfections, and the role of fingerprint features in identifying emitters.",
+            "related_work": "",
+            "methodology": "Details mathematical models for IM/UIM, signal segmentation, and moment-based feature extraction.",
+            "results": "Validation of framework through simulations and experiments.",
+            "discussion": "Analyzes contributions, advantages, and theoretical implications of the proposed approach.",
+            "conclusion": "Summarizes framework's impact on SEI theory and practical applications."
+        }
+    },
+    {
+        "paper_id": 2,
+        "filename": "2301.12360v1.pdf",
+        "metadata": {
+            "title": "ADL-ID: Adversarial Disentanglement Learning for Wireless Device Fingerprinting Temporal Domain Adaptation",
+            "authors": [
+                "Abdurrahman Elmaghbub",
+                "Bechir Hamdaoui",
+                "Weng-Keen Wong"
+            ],
+            "year": "2023",
+            "venue": "arXiv",
+            "doi": "arXiv:2301.12360v1",
+            "keywords": [
+                "RF Fingerprinting",
+                "Domain Adaptation",
+                "Disentanglement Learning",
+                "WiFi Dataset",
+                "IoT Testbed"
+            ]
+        },
+        "abstract": "The paper addresses domain adaptation challenges in deep learning-based RF fingerprinting (DL-RFFP) for wireless networks. It proposes ADL-ID, an unsupervised domain adaptation framework using adversarial disentanglement to improve temporal domain adaptability. The framework achieves 24% accuracy improvement in short-term adaptation and 9% in long-term adaptation on real LoRa and WiFi datasets. A large-scale WiFi 802.11b dataset is released to support research in robust RFFP methods.",
+        "research": {
+            "problem": "DL-RFFP frameworks suffer from significant performance degradation when tested on data from different domains than training data.",
+            "motivation": "Enhance domain portability of RF fingerprinting for real-world wireless applications by addressing temporal domain shifts.",
+            "objective": "Propose ADL-ID, an adversarial disentanglement framework, to improve temporal domain adaptation in RF fingerprinting.",
+            "research_questions": [
+                "How can domain-specific artifacts be separated from device-specific RF fingerprints?"
+            ]
+        },
+        "methodology": {
+            "summary": "ADL-ID uses adversarial disentanglement to separate device-specific (RFFs) and domain-specific features. A domain discriminator and gradient reversal layer enforce domain-invariant representations.",
+            "algorithms": [
+                "Adversarial disentanglement learning",
+                "Gradient Reversal Layer (GRL)"
+            ],
+            "models": [
+                "ADL-ID framework",
+                "Baseline CNN network"
+            ],
+            "datasets": [
+                "LoRa dataset",
+                "WiFi 802.11b dataset (50 Pycom devices, 5-day, 2.1TB)"
+            ],
+            "features": [
+                "Device-specific RF fingerprints (RFFs)",
+                "Domain-specific artifacts",
+                "Temporal domain shifts"
+            ],
+            "preprocessing": [
+                "Signal acquisition with USRP B210",
+                "IQ time-domain sampling",
+                "Metadata annotation with SigMF"
+            ],
+            "training_strategy": "Minimize domain classification loss while maximizing feature separation via adversarial learning.",
+            "evaluation_metrics": [
+                "Classification accuracy",
+                "Cross-domain performance"
+            ]
+        },
+        "experiments": {
+            "experimental_setup": "Evaluated on real WiFi and LoRa datasets with 50 Pycom devices over 5 days. Compared against baseline CNN for short-term (5-minute) and long-term (multi-day) temporal adaptation.",
+            "baselines": [
+                "Baseline CNN network"
+            ],
+            "results": "ADL-ID achieves 24% accuracy improvement in short-term adaptation and 9% improvement in long-term adaptation compared to CNN. Released 5-day WiFi dataset for reproducibility.",
+            "performance": {
+                "accuracy": "24% improvement (short-term), 9% improvement (long-term)",
+                "precision": null,
+                "recall": null,
+                "f1": null,
+                "auc": null
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Proposed ADL-ID framework for temporal domain adaptation",
+                "Released first public WiFi 802.11b RFFP dataset"
+            ],
+            "advantages": [
+                "Improves cross-domain classification accuracy",
+                "Enables robust RFFP for real-world scenarios"
+            ],
+            "limitations": [
+                "Depends on controlled testbed environments",
+                "Limited to specific hardware configurations"
+            ],
+            "future_work": [
+                "Explore multi-domain adaptation",
+                "Integrate with real-time network security systems"
+            ],
+            "applications": [
+                "Network access control",
+                "Spectrum policy enforcement",
+                "IoT device authentication"
+            ],
+            "research_gap": "Need for robust RFFP methods that handle dynamic environmental and temporal variations"
+        },
+        "sections": {
+            "introduction": "Highlights security challenges in next-gen wireless networks and introduces RF fingerprinting as a physical-layer security mechanism. Identifies domain adaptation as a critical barrier for real-world deployment.",
+            "related_work": "Reviews existing domain adaptation methods (e.g., multi-discrepancy adaptation, adversarial domain adaptation) and their limitations in handling temporal shifts.",
+            "methodology": "Describes ADL-ID's adversarial disentanglement approach, including encoder architecture, domain discriminator, and reconstruction loss for feature separation.",
+            "results": "Demonstrates 24% accuracy gain in short-term adaptation and 9% in long-term adaptation. Validates framework on real-world WiFi and LoRa datasets.",
+            "discussion": "Analyzes performance degradation due to temporal shifts and explains how disentanglement improves domain invariance. Discusses dataset release as a research contribution.",
+            "conclusion": "Summarizes ADL-ID's effectiveness in temporal domain adaptation and emphasizes the importance of robust RFFP for secure wireless networks."
+        }
+    },
+    {
+        "paper_id": 3,
+        "filename": "vetecf.2008.291.pdf",
+        "metadata": {
+            "title": "Radio Transmitter Fingerprinting: A Steady State Frequency Domain Approach",
+            "authors": [
+                "Irwin O. Kennedy",
+                "Patricia Scanlon",
+                "Francis J. Mullany",
+                "Milind M. Buddhikot",
+                "Keith E. Nolan",
+                "Thomas W. Rondeau"
+            ],
+            "year": "2008",
+            "venue": "IEEE",
+            "doi": null,
+            "keywords": [
+                "RF fingerprinting",
+                "steady-state signals",
+                "frequency domain analysis",
+                "k-NN classifier"
+            ]
+        },
+        "abstract": "We present a novel technique for radio transmitter identification based on frequency domain characteristics. Our technique detects unique features in signals through transmit chains using steady-state spectral features. Laboratory experiments achieved 97% accuracy at 30dB SNR and 66% at 0dB SNR with eight identical USRP transmitters. The method uses low-cost receivers with no manual tuning.",
+        "research": {
+            "problem": "Identifying radio transmitters using RF fingerprinting with steady-state frequency domain analysis.",
+            "motivation": "Address cellular network challenges like femto base station authentication and signaling load reduction.",
+            "objective": "Propose a novel frequency domain approach for transmitter identification with high accuracy.",
+            "research_questions": []
+        },
+        "methodology": {
+            "summary": "Combines frequency domain analysis with k-NN classifiers for device identification using spectral-energy features.",
+            "algorithms": [
+                "k-Nearest Neighbour (k-NN) classifier"
+            ],
+            "models": [
+                "k-NN discriminatory classifier"
+            ],
+            "datasets": [
+                "Eight identical USRP transmitters"
+            ],
+            "features": [
+                "Log-spectral-energy features"
+            ],
+            "preprocessing": [
+                "Amplitude normalization",
+                "Frequency correction",
+                "Preamble extraction"
+            ],
+            "training_strategy": "k-NN classifier trained on spectral features from preambles.",
+            "evaluation_metrics": [
+                "Classification accuracy"
+            ]
+        },
+        "experiments": {
+            "experimental_setup": "Anritsu MG3700A signal generator, MS2781A spectrum analyzer, and eight USRP transmitters. Preambles captured at 50 MS/s decimated to 2 MS/s.",
+            "baselines": [
+                "Transient analysis techniques"
+            ],
+            "results": "Achieved 97% accuracy at 30dB SNR and 66% at 0dB SNR. Binning effects showed performance improvement with higher bins.",
+            "performance": {
+                "accuracy": "97% (30dB SNR), 66% (0dB SNR)",
+                "precision": null,
+                "recall": null,
+                "f1": null,
+                "auc": null
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "First use of steady-state frequency domain analysis for transmitter identification",
+                "Low-cost implementation without manual tuning"
+            ],
+            "advantages": [
+                "No hardware modifications required",
+                "Scalable to common receiver architectures"
+            ],
+            "limitations": [
+                "Performance degrades at low SNR",
+                "Requires sufficient spectral feature resolution"
+            ],
+            "future_work": [
+                "Investigate other transmitters and non-ideal environments"
+            ],
+            "applications": [
+                "Intrusion detection",
+                "Authentication",
+                "Forensic data collection"
+            ],
+            "research_gap": "Limited exploration of steady-state signal analysis compared to transient methods."
+        },
+        "sections": {
+            "introduction": "Describes RF fingerprinting for transmitter identification and its applications in cellular networks.",
+            "related_work": "Reviews transient analysis techniques and prior steady-state signal studies.",
+            "methodology": "Details frequency domain analysis and k-NN classifier implementation for device identification.",
+            "results": "Presents accuracy metrics across SNR levels and binning effects on classification performance.",
+            "discussion": "Analyzes trade-offs between spectral resolution, SNR, and classifier performance.",
+            "conclusion": "Summarizes the effectiveness of steady-state frequency domain fingerprinting for low-cost transmitter identification."
+        }
+    },
+    {
+        "paper_id": 4,
+        "filename": "QRS-C.2019.00076.pdf",
+        "metadata": {
+            "title": "Improving Wireless Network Security Based On Radio Fingerprinting",
+            "authors": [
+                "Yun Lin",
+                "Jie Chang"
+            ],
+            "year": "2019",
+            "venue": "2019 IEEE 19th International Conference on Software Quality, Reliability and Security Companion (QRS-C)",
+            "doi": "10.1109/QRS-C.2019.00076",
+            "keywords": [
+                "Wireless Network Security",
+                "Radio Frequency Fingerprints",
+                "Transient Signals"
+            ]
+        },
+        "abstract": "The paper proposes a radio frequency fingerprint extraction method based on fractional Fourier transform for transient signals, combined with RPCA and KNN for device identification. Results show 100% recognition rate at 20dB SNR.",
+        "research": {
+            "problem": "Increasing security threats in wireless networks due to openness, mobility, and dynamic topology.",
+            "motivation": "Traditional security mechanisms lack robustness against attacks and key compromise.",
+            "objective": "Enhance wireless network security using radio frequency fingerprints for device authentication.",
+            "research_questions": []
+        },
+        "methodology": {
+            "summary": "Fractional Fourier Transform (FrFT) for feature extraction, RPCA for dimensionality reduction, and KNN for classification.",
+            "algorithms": [
+                "Fractional Fourier Transform (FrFT)",
+                "K-Nearest Neighbor (KNN)",
+                "Robust Principal Component Analysis (RPCA)"
+            ],
+            "models": [
+                "Radio Frequency Fingerprint Identification System"
+            ],
+            "datasets": [
+                "10 Motorola walkie-talkies"
+            ],
+            "features": [
+                "Mean",
+                "Variance",
+                "Skewness",
+                "Kurtosis"
+            ],
+            "preprocessing": [
+                "Signal normalization",
+                "Power scaling",
+                "Data conditioning"
+            ],
+            "training_strategy": "K-fold cross-validation (5-fold)",
+            "evaluation_metrics": [
+                "Recognition rate"
+            ]
+        },
+        "experiments": {
+            "experimental_setup": "Signal collection using USRP2940, processing on computational platform, 0.8-order FrFT for feature extraction.",
+            "baselines": [],
+            "results": "Recognition rate reaches 100% at 20dB SNR, confusion matrices show high accuracy.",
+            "performance": {
+                "accuracy": "100%",
+                "precision": null,
+                "recall": null,
+                "f1": null,
+                "auc": null
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Proposed FrFT-based fingerprint extraction with RPCA and KNN for secure device identification"
+            ],
+            "advantages": [
+                "High security through hardware-based physical layer authentication",
+                "Near-perfect recognition at 20dB SNR"
+            ],
+            "limitations": [
+                "Dependence on hardware characteristics and SNR levels"
+            ],
+            "future_work": [
+                "Exploring other time-frequency transforms",
+                "Testing in diverse environmental conditions"
+            ],
+            "applications": [
+                "Wireless network security",
+                "Device authentication"
+            ],
+            "research_gap": "Existing methods lack robustness against key compromise and spoofing attacks"
+        },
+        "sections": {
+            "introduction": "Discusses security challenges in wireless networks due to openness, mobility, and dynamic topology.",
+            "related_work": "Covers circuit delay-based, clock offset-based, and radio fingerprinting security mechanisms.",
+            "methodology": "Details FrFT for transient signal analysis, RPCA for dimensionality reduction, and KNN classification.",
+            "results": "Demonstrates 100% recognition rate at 20dB SNR with FrFT order 0.8.",
+            "discussion": "Analyzes performance across different SNR levels and dimensionality reduction effectiveness.",
+            "conclusion": "Summarizes the effectiveness of FrFT-based fingerprinting for enhancing wireless network security."
+        }
+    },
+    {
+        "paper_id": 5,
+        "filename": "WCNC2025_RFFI_LoRa.pdf",
+        "metadata": {
+            "title": "Towards Channel-Robust Radio Frequency Fingerprint Identification Using Contrastive Learning",
+            "authors": [
+                "Jie Ma",
+                "Junqing Zhang",
+                "Guanxiong Shen",
+                "Linning Peng",
+                "Alan Marshall"
+            ],
+            "year": "2025",
+            "venue": "",
+            "doi": "",
+            "keywords": [
+                "Contrastive Learning",
+                "Radio Frequency Fingerprint Identification",
+                "Deep Learning"
+            ]
+        },
+        "abstract": "Radio frequency fingerprint identification (RFFI) is an emerging device authentication technique based on hardware impairments. The paper proposes a contrastive learning-based RFFI approach using spectrogram to achieve channel robustness, achieving 93% accuracy on static channels and 82% on dynamic channels.",
+        "research": {
+            "problem": "Traditional IoT device authentication methods face limitations in computational resources and security. RFFI requires robustness against channel variations.",
+            "motivation": "Develop a low-complexity, reliable RFFI system that maintains high classification accuracy across diverse communication scenarios.",
+            "objective": "Propose a channel-robust RFFI system using contrastive learning and spectrogram analysis.",
+            "research_questions": []
+        },
+        "methodology": {
+            "summary": "Contrastive learning with spectrogram and data augmentation is used to mitigate channel effects. Neural networks with ResNet architecture are trained using cross-entropy and contrastive loss.",
+            "algorithms": [
+                "SimCLR",
+                "InfoNCE",
+                "NT-Xent loss"
+            ],
+            "models": [
+                "ResNet-based neural network"
+            ],
+            "datasets": [
+                "Public LoRa dataset [9]",
+                "Self-collected LoRa dataset"
+            ],
+            "features": [
+                "Spectrogram",
+                "Hardware impairments (IQ imbalance, CFO, amplifier non-linearity)"
+            ],
+            "preprocessing": [
+                "Synchronization",
+                "Preamble extraction",
+                "CFO compensation",
+                "Normalization"
+            ],
+            "training_strategy": "Contrastive learning with data augmentation and NT-Xent loss",
+            "evaluation_metrics": [
+                "Classification accuracy"
+            ]
+        },
+        "experiments": {
+            "experimental_setup": "Evaluated on public and self-collected LoRa datasets with static (LOS/NLOS) and dynamic (mobile) channel scenarios.",
+            "baselines": [],
+            "results": "Achieved 93% accuracy on static channels and 82% on dynamic channels.",
+            "performance": {
+                "accuracy": "93%",
+                "precision": null,
+                "recall": null,
+                "f1": null,
+                "auc": null
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Contrastive learning-based RFFI system",
+                "10 LoRa device dataset creation",
+                "Channel-robust evaluation in static/dynamic scenarios"
+            ],
+            "advantages": [
+                "Robustness to channel variations",
+                "Effective feature extraction via spectrogram"
+            ],
+            "limitations": [
+                "Dependence on specific datasets",
+                "Limited real-world scenario coverage"
+            ],
+            "future_work": [
+                "Exploration of more complex channel environments",
+                "Integration with edge computing"
+            ],
+            "applications": [
+                "IoT device authentication",
+                "Secure communication protocols"
+            ],
+            "research_gap": "Limited studies on channel-robust RFFI systems with real-world mobility scenarios"
+        },
+        "sections": {
+            "introduction": "Discusses IoT authentication challenges and the need for channel-robust RFFI.",
+            "related_work": "References prior RFFI methods with limitations in channel adaptation.",
+            "methodology": "Details contrastive learning framework, data augmentation, and neural network architecture.",
+            "results": "Reports classification accuracy across static and dynamic channel environments.",
+            "discussion": "Analyzes channel mitigation effectiveness and system robustness.",
+            "conclusion": "Summarizes contributions and future research directions for channel-robust RFFI."
+        }
+    }
+]

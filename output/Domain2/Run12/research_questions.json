@@ -1,0 +1,143 @@
+{
+    "primary_research_questions": [
+        {
+            "id": "RQ1",
+            "question": "How can hybrid regularization frameworks improve the spectral fidelity of diffusion models in hyperspectral restoration?",
+            "derived_from_gap": "Under-regularization of intermediate generative processes in spectral restoration",
+            "derived_from_contribution": "Hybrid regularization framework for diffusion models in hyperspectral restoration",
+            "paper_titles": [
+                "Progressive Conditional Diffusion Model for Multistage Spectral Restoration of Remote Sensing Image"
+            ]
+        },
+        {
+            "id": "RQ2",
+            "question": "What are the limitations of dialog-based emotion labeling in capturing physiological correlates of emotion?",
+            "derived_from_gap": "Reliance on dialog data for emotion labeling",
+            "derived_from_contribution": "Physiological-augmented emotion labeling framework",
+            "paper_titles": [
+                "MoodSwipe: A Soft Keyboard that Suggests Messages Based on User-Specified Emotions"
+            ]
+        },
+        {
+            "id": "RQ3",
+            "question": "How can computational models validate the empirical robustness of emotion laws across diverse contexts?",
+            "derived_from_gap": "Empirical validation of emotion laws",
+            "derived_from_contribution": "Computational validation framework for emotion laws",
+            "paper_titles": [
+                "The Laws of Emotion"
+            ]
+        },
+        {
+            "id": "RQ4",
+            "question": "What mechanisms enable cross-modal alignment between neural activity and subjective emotional experiences?",
+            "derived_from_gap": "Bridging neurobiological and phenomenological levels of emotion",
+            "derived_from_contribution": "Neuro-phenomenological embedding space",
+            "paper_titles": [
+                "The Experience of Emotion"
+            ]
+        },
+        {
+            "id": "RQ5",
+            "question": "How can graph-based architectures capture complex emotional dynamics across multimodal signals?",
+            "derived_from_gap": "Limited exploration of complex ML models for emotion recognition",
+            "derived_from_contribution": "Graph-based multimodal emotion recognition architecture",
+            "paper_titles": [
+                "The Influence of Emotion on Keyboard Typing: An Experimental Study Using Auditory Stimuli"
+            ]
+        }
+    ],
+    "secondary_research_questions": [
+        {
+            "id": "RQ6",
+            "question": "What role do spectral consistency losses play in stabilizing intermediate latent spaces during hyperspectral restoration?",
+            "derived_from_gap": "Under-regularization of intermediate generative processes in spectral restoration",
+            "derived_from_contribution": "Hybrid regularization framework for diffusion models in hyperspectral restoration",
+            "paper_titles": [
+                "Progressive Conditional Diffusion Model for Multistage Spectral Restoration of Remote Sensing Image"
+            ]
+        },
+        {
+            "id": "RQ7",
+            "question": "How does self-supervised contrastive learning align physiological signals with textual emotion representations?",
+            "derived_from_gap": "Reliance on dialog data for emotion labeling",
+            "derived_from_contribution": "Physiological-augmented emotion labeling framework",
+            "paper_titles": [
+                "MoodSwipe: A Soft Keyboard that Suggests Messages Based on User-Specified Emotions"
+            ]
+        },
+        {
+            "id": "RQ8",
+            "question": "What are the predictive validity metrics for emotion laws in agent-based simulations?",
+            "derived_from_gap": "Empirical validation of emotion laws",
+            "derived_from_contribution": "Computational validation framework for emotion laws",
+            "paper_titles": [
+                "The Laws of Emotion"
+            ]
+        },
+        {
+            "id": "RQ9",
+            "question": "How can adversarial training enhance cross-modal alignment between neural and phenomenological emotion descriptions?",
+            "derived_from_gap": "Bridging neurobiological and phenomenological levels of emotion",
+            "derived_from_contribution": "Neuro-phenomenological embedding space",
+            "paper_titles": [
+                "The Experience of Emotion"
+            ]
+        },
+        {
+            "id": "RQ10",
+            "question": "What temporal dependencies are critical for graph-based modeling of multimodal emotional states?",
+            "derived_from_gap": "Limited exploration of complex ML models for emotion recognition",
+            "derived_from_contribution": "Graph-based multimodal emotion recognition architecture",
+            "paper_titles": [
+                "The Influence of Emotion on Keyboard Typing: An Experimental Study Using Auditory Stimuli"
+            ]
+        }
+    ],
+    "novel_research_questions": [
+        {
+            "id": "RQ11",
+            "question": "How can reinforcement learning simulate the causal mechanisms of emotion laws in computational models?",
+            "derived_from_gap": "Empirical validation of emotion laws",
+            "derived_from_contribution": "Computational validation framework for emotion laws",
+            "paper_titles": [
+                "The Laws of Emotion"
+            ]
+        },
+        {
+            "id": "RQ12",
+            "question": "What privacy-preserving techniques enable federated learning for multimodal emotion-aware interfaces?",
+            "derived_from_gap": "Integration of multimodal signals for emotion expression",
+            "derived_from_contribution": "Multimodal emotion-aware soft keyboard interface",
+            "paper_titles": [
+                "MoodSwipe: A Soft Keyboard that Suggests Messages Based on User-Specified Emotions"
+            ]
+        },
+        {
+            "id": "RQ13",
+            "question": "How can cross-modal attention mechanisms improve the detection of subtle emotional variations in real-time?",
+            "derived_from_gap": "Limited exploration of complex ML models for emotion recognition",
+            "derived_from_contribution": "Graph-based multimodal emotion recognition architecture",
+            "paper_titles": [
+                "The Influence of Emotion on Keyboard Typing: An Experimental Study Using Auditory Stimuli"
+            ]
+        },
+        {
+            "id": "RQ14",
+            "question": "What are the trade-offs between physiological signal integration and computational efficiency in emotion-aware interfaces?",
+            "derived_from_gap": "Integration of multimodal signals for emotion expression",
+            "derived_from_contribution": "Multimodal emotion-aware soft keyboard interface",
+            "paper_titles": [
+                "MoodSwipe: A Soft Keyboard that Suggests Messages Based on User-Specified Emotions"
+            ]
+        },
+        {
+            "id": "RQ15",
+            "question": "How can domain alignment layers enhance cross-modal consistency in hyperspectral restoration tasks?",
+            "derived_from_gap": "Under-regularization of intermediate generative processes in spectral restoration",
+            "derived_from_contribution": "Hybrid regularization framework for diffusion models in hyperspectral restoration",
+            "paper_titles": [
+                "Progressive Conditional Diffusion Model for Multistage Spectral Restoration of Remote Sensing Image"
+            ]
+        }
+    ]
+}

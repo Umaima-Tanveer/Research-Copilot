@@ -1,0 +1,171 @@
+{
+    "nodes": [
+        {
+            "id": "1",
+            "title": "Work In Progress: Towards Adaptive RF Fingerprint-based Authentication of IIoT devices",
+            "year": null,
+            "dataset": "",
+            "methodology": "Leveraging AI-driven adaptive Radio Frequency Fingerprinting (RFF) at the PHY layer, combined with Software-Defined Radio (SDR) gateways and Edge/Cloud computing to enhance feature extraction and authentication accuracy.",
+            "task_type": "Authentication",
+            "contribution": "Introduce AI techniques for self-tuning RF fingerprinting, enabling flexible and accurate IIoT authentication while addressing scalability and heterogeneity challenges."
+        },
+        {
+            "id": "2",
+            "title": "DeepCRF: Deep Learning-Enhanced CSI-Based RF Fingerprinting for Channel-Resilient WiFi Device Identification",
+            "year": "2024",
+            "dataset": "19 COTS WiFi NICs with CSI measurements across diverse channel conditions, including real-world unseen scenarios.",
+            "methodology": "DeepCRF employs a CNN with model-inspired data augmentation, supervised contrastive learning, and decision fusion to enhance generalization and noise resilience in CSI-based fingerprinting.",
+            "task_type": "Device Identification",
+            "contribution": "Introduces DeepCRF with three key contributions: micro-CSI extraction via CNN, complex-valued CSI processing, and noise-robust fusion techniques."
+        },
+        {
+            "id": "3",
+            "title": "Federated Radio Frequency Fingerprint Identification Powered by Unsupervised Contrastive Learning",
+            "year": null,
+            "dataset": "60 commercial-off-the-shelf (COTS) LoRa transmitters and 6 software-defined radio (SDR) receivers.",
+            "methodology": "Proposes a federated RFFI protocol with three stages: federated pre-training, client fine-tuning, and identification, using unsupervised contrastive learning for feature extraction.",
+            "task_type": "Device Authentication",
+            "contribution": "Introduces a federated RFFI protocol with unsupervised contrastive learning, ensuring trainability, scalability, and NN security through three-stage protocol design."
+        },
+        {
+            "id": "4",
+            "title": "RF eigenﬁngerprints, an Efﬁcient RF Fingerprinting Method in IoT Context",
+            "year": 2022,
+            "dataset": "Extended Yale Face database B for eigenfaces; novel baseband model for emitter impairments (I/Q offset, imbalance, PA nonlinearity).",
+            "methodology": "Proposes RF eigenﬁngerprints inspired by eigenfaces, using singular value decomposition (SVD) for feature learning, Ljung–Box test for selection, and statistical models for authentication. Includes simulation, real-world experiments, and FPGA implementation.",
+            "task_type": "Authentication",
+            "contribution": "Adapts eigenfaces to RF fingerprinting, introduces a novel impairment model, provides FPGA implementation, and enables feature interpretability."
+        },
+        {
+            "id": "5",
+            "title": "SMoRFFI: A Large-Scale Same-Model 2.4 GHz Wi-Fi Dataset and Reproducible Framework for RF Fingerprinting",
+            "year": null,
+            "dataset": "Two CSV datasets: (1) RFFI-IQ_only-wifi-802.11g-2.4G-123-m5stack (MAC addresses and preamble samples) and (2) RFFI-kf_feature-IQ-wifi-802.11g-2.4G-123-m5stack (multi-dimensional RF features including CFO, phase error, magnitude error, and fractal dimension).",
+            "methodology": "A large-scale dataset of 123 same-model IEEE 802.11g devices with 35.42 million raw I/Q samples and 1.85 million RF features is created. A reproducible framework with data collection, feature extraction, and benchmark evaluation modules is developed.",
+            "task_type": "Device identification via RF fingerprinting",
+            "contribution": "Introduces a large-scale, homogeneous dataset for same-model devices and an open-source framework for reproducible RF fingerprinting research."
+        }
+    ],
+    "edges": [
+        {
+            "paper1": "1",
+            "paper2": "2",
+            "relation": "compares",
+            "similarity": 0.4,
+            "reason": "Both papers focus on RF fingerprinting techniques but address different tasks (authentication vs. device identification) and employ distinct methodologies (adaptive AI-driven RFF vs. deep learning with CSI processing).",
+            "shared_concepts": [
+                "RF fingerprinting",
+                "CSI"
+            ]
+        },
+        {
+            "paper1": "1",
+            "paper2": "3",
+            "relation": "compares",
+            "similarity": 0.6,
+            "reason": "Both papers address RF fingerprinting for device authentication but employ different methodologies (adaptive AI-driven vs. federated unsupervised learning) and dataset configurations.",
+            "shared_concepts": [
+                "Radio Frequency Fingerprinting",
+                "Device Authentication",
+                "Software-Defined Radio"
+            ]
+        },
+        {
+            "paper1": "1",
+            "paper2": "4",
+            "relation": "compares",
+            "similarity": 0.65,
+            "reason": "Both papers address RF fingerprinting for authentication but employ distinct methodologies: Paper 1 focuses on AI-driven adaptive techniques with SDR/Edge/Cloud integration, while Paper 2 uses eigenfaces-inspired SVD and FPGA implementation. They share the task of authentication but differ in methodological approaches and dataset usage.",
+            "shared_concepts": [
+                "RF fingerprinting",
+                "authentication",
+                "IoT"
+            ]
+        },
+        {
+            "paper1": "1",
+            "paper2": "5",
+            "relation": "compares",
+            "similarity": 0.5,
+            "reason": "Both papers focus on RF fingerprinting but address different tasks (authentication vs. device identification) and employ distinct methodologies (AI-driven adaptive systems vs. large-scale dataset/framework).",
+            "shared_concepts": [
+                "RF fingerprinting",
+                "device identification",
+                "dataset",
+                "AI techniques"
+            ]
+        },
+        {
+            "paper1": "2",
+            "paper2": "3",
+            "relation": "unrelated",
+            "similarity": 0.3,
+            "reason": "Both papers address RF fingerprinting but differ in task (device identification vs. authentication), methodology (supervised contrastive learning vs. unsupervised federated learning), and dataset (WiFi CSI vs. LoRa/SDR).",
+            "shared_concepts": [
+                "contrastive learning",
+                "RF fingerprinting"
+            ]
+        },
+        {
+            "paper1": "2",
+            "paper2": "4",
+            "relation": "compares",
+            "similarity": 0.4,
+            "reason": "Both papers address RF fingerprinting but differ in methodology (DeepCRF uses CNN/contrastive learning vs. eigenfaces/SVD), tasks (device identification vs. authentication), and datasets. They share concepts like RF fingerprinting and statistical feature extraction but approach them differently.",
+            "shared_concepts": [
+                "RF fingerprinting",
+                "feature extraction",
+                "statistical models",
+                "IoT context"
+            ]
+        },
+        {
+            "paper1": "2",
+            "paper2": "5",
+            "relation": "compares",
+            "similarity": 0.4,
+            "reason": "Both papers address WiFi device identification via RF fingerprinting but employ distinct approaches. Paper 1 focuses on model improvements (DeepCRF) with CSI processing, while Paper 2 emphasizes dataset creation and reproducible frameworks. They share the task but differ in methodology and contributions.",
+            "shared_concepts": [
+                "device identification",
+                "RF fingerprinting",
+                "CSI",
+                "I/Q samples",
+                "features"
+            ]
+        },
+        {
+            "paper1": "3",
+            "paper2": "4",
+            "relation": "compares",
+            "similarity": 0.4,
+            "reason": "Both papers address RF fingerprinting for device authentication but employ distinct methodologies (unsupervised contrastive learning vs. eigenfaces/SVD) and datasets (LoRa/SDR vs. Yale Face database and baseband models).",
+            "shared_concepts": [
+                "Device Authentication",
+                "RF Fingerprinting"
+            ]
+        },
+        {
+            "paper1": "3",
+            "paper2": "5",
+            "relation": "compares",
+            "similarity": 0.4,
+            "reason": "Both papers address RF fingerprinting for device identification but differ in methodology (unsupervised contrastive learning vs. large-scale dataset/framework), dataset focus (LoRa vs. Wi-Fi), and contribution emphasis (federated protocol vs. reproducible framework).",
+            "shared_concepts": [
+                "Radio Frequency Fingerprinting",
+                "Device Identification",
+                "RF Features"
+            ]
+        },
+        {
+            "paper1": "4",
+            "paper2": "5",
+            "relation": "compares",
+            "similarity": 0.4,
+            "reason": "Both papers address RF fingerprinting but focus on different tasks (authentication vs. device identification) and methodologies (eigenface-inspired features vs. large-scale dataset/framework). They share concepts like RF fingerprinting and I/Q signal analysis but differ in technical approaches.",
+            "shared_concepts": [
+                "RF fingerprinting",
+                "I/Q samples"
+            ]
+        }
+    ]
+}

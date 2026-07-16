@@ -1,0 +1,47 @@
+{
+    "methodological": [
+        {
+            "gap": "Scalability in multi-device authentication environments",
+            "impact": "High",
+            "reason": "Performance degrades with large user counts and device-specific behavior",
+            "papers": [
+                "TypeNet: Deep Learning Keystroke Biometrics"
+            ]
+        },
+        {
+            "gap": "Adaptive question generation for real-time lie detection",
+            "impact": "High",
+            "reason": "Predefined questions limit real-world applicability of covert lie detection",
+            "papers": [
+                "Covert lie detection using keyboard dynamics"
+            ]
+        },
+        {
+            "gap": "Generalization to real-world emotion variability",
+            "impact": "High",
+            "reason": "Controlled environments lack real-world diversity for emotion recognition",
+            "papers": [
+                "Non-Acted Text and Keystrokes Database..."
+            ]
+        },
+        {
+            "gap": "Individual variability in keystroke dynamics",
+            "impact": "High",
+            "reason": "Emotional effects are smaller than individual differences in typing patterns",
+            "papers": [
+                "The Influence of Emotion on Keyboard Typing..."
+            ]
+        },
+        {
+            "gap": "Privacy-preserving mood detection frameworks",
+            "impact": "High",
+            "reason": "Privacy constraints limit data collection for mental health monitoring",
+            "papers": [
+                "DeepMood: Modeling Mobile Phone Typing Dynamics..."
+            ]
+        }
+    ],
+    "theoretical": [],
+    "empirical": [],
+    "application": []
+}

@@ -1,0 +1,493 @@
+[
+    {
+        "paper_id": 1,
+        "filename": "sensors-21-05963.pdf",
+        "metadata": {
+            "title": "Keystroke Dynamics Patterns While Writing Positive and Negative Opinions",
+            "authors": [
+                "Agata Kołakowska",
+                "Agnieszka Landowska"
+            ],
+            "year": "2021",
+            "venue": "Sensors",
+            "doi": "10.3390/s21175963",
+            "keywords": [
+                "opinion mining",
+                "emotion recognition",
+                "behavioural patterns",
+                "keystroke dynamics",
+                "affect analysis"
+            ]
+        },
+        "abstract": "This paper analyzes behavioral patterns in human-computer interaction (HCI) by examining keystroke dynamics while participants wrote positive and negative opinions. A semi-experiment with 50 participants revealed that keystroke patterns could differentiate opinions with accuracy above random guessing. A second approach using self-reported pleasure and arousal labels showed more accurate results, suggesting keystroke dynamics can identify sentiment but may benefit from multimodal integration.",
+        "research": {
+            "problem": "Analyzing behavioral patterns in human-computer interaction, specifically keystroke dynamics for sentiment classification.",
+            "motivation": "Behavioral biometrics and physiological data are used in security and emotion recognition, but keystroke dynamics offer non-intrusive, hardware-free insights into user states.",
+            "objective": "Differentiate positive and negative opinions using keystroke dynamics and assess the effectiveness of self-reported emotional labels.",
+            "research_questions": [
+                "Is there a difference in keystroke dynamics patterns while writing positive and negative opinions?"
+            ]
+        },
+        "methodology": {
+            "summary": "Keystroke dynamics features (digraphs, trigraphs, frequency, typing speed) were extracted from 50 participants' opinion-writing sessions using a 3s idle threshold for segmentation.",
+            "algorithms": [
+                "Decision trees for emotion recognition",
+                "Mann–Whitney test for statistical comparison"
+            ],
+            "models": [
+                "Classification with self-reported pleasure/arousal labels"
+            ],
+            "datasets": [
+                "Keystroke data from 50 participants writing about learning experiences"
+            ],
+            "features": [
+                "Dwell time",
+                "Flight time",
+                "Typing speed",
+                "Key frequency",
+                "Digraph/trigraph statistics"
+            ],
+            "preprocessing": [
+                "Segmentation based on idle thresholds",
+                "Timestamp alignment with local computer time"
+            ],
+            "training_strategy": "Classification using self-reported emotional states as labels",
+            "evaluation_metrics": [
+                "Accuracy",
+                "Precision",
+                "Recall",
+                "F1",
+                "AUC"
+            ]
+        },
+        "experiments": {
+            "experimental_setup": "Semi-experiment with 50 participants writing opinions on best/worst learning experiences, with keystroke data captured during task execution.",
+            "baselines": [
+                "Random guess classification"
+            ],
+            "results": "Classification accuracy exceeded random guessing levels; self-reported pleasure/arousal labels improved accuracy.",
+            "performance": {
+                "accuracy": "Slightly above random guess level; more accurate with self-reported labels",
+                "precision": null,
+                "recall": null,
+                "f1": null,
+                "auc": null
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Demonstrated feasibility of keystroke dynamics for sentiment classification",
+                "Highlighted value of multimodal integration for improved accuracy"
+            ],
+            "advantages": [
+                "Non-intrusive, hardware-free data collection",
+                "Natural integration into HCI workflows"
+            ],
+            "limitations": [
+                "Time-varying behavioral patterns",
+                "Limited generalizability due to homogeneous sample"
+            ],
+            "future_work": [
+                "Multimodal approaches combining keystroke dynamics with physiological data",
+                "Real-time affect analysis systems"
+            ],
+            "applications": [
+                "User authentication",
+                "Emotion recognition",
+                "Mood monitoring"
+            ],
+            "research_gap": "Linking opinion content to emotional states without explicit emotional elicitation"
+        },
+        "sections": {
+            "introduction": "Focuses on behavioral biometrics in HCI, emphasizing keystroke dynamics as a source of emotional state information.",
+            "related_work": "Reviews keystroke dynamics applications in emotion recognition, user authentication, and mood monitoring.",
+            "methodology": "Details feature extraction from keystroke data and statistical analysis of emotional state correlations.",
+            "results": "Reports classification accuracy above random guessing and differential patterns between positive/negative opinions.",
+            "discussion": "Analyzes implications for affective computing and limitations of unimodal keystroke-based approaches.",
+            "conclusion": "Summarizes the potential of keystroke dynamics for sentiment analysis and the need for multimodal integration."
+        }
+    },
+    {
+        "paper_id": 2,
+        "filename": "2556288.2557165.pdf",
+        "metadata": {
+            "title": "Under Pressure: Sensing Stress of Computer Users",
+            "authors": [
+                "Javier Hernandez",
+                "Pablo Paredes",
+                "Asta Roseway",
+                "Mary Czerwinski"
+            ],
+            "year": "2014",
+            "venue": "CHI 2014",
+            "doi": "10.1145/2556288.2557165",
+            "keywords": [
+                "Stress measurement",
+                "pressure-sensitive keyboard",
+                "capacitive mouse",
+                "Affective Computing"
+            ]
+        },
+        "abstract": "Recognizing when computer users are stressed can help reduce their frustration and prevent negative health conditions. This work explores using pressure-sensitive keyboards and capacitive mice to detect stress through behavioral changes during tasks like typing and mouse clicking.",
+        "research": {
+            "problem": "Measuring stress non-invasively and continuously in work environments remains challenging.",
+            "motivation": "To mitigate chronic stress-related health issues and improve human-computer interaction by detecting stress states.",
+            "objective": "Evaluate if pressure-sensitive keyboards and capacitive mice can distinguish between stressful and relaxed conditions.",
+            "research_questions": [
+                "Do stressed users exhibit distinct behavioral patterns with input devices?",
+                "Can device usage metrics reliably indicate stress states?"
+            ]
+        },
+        "methodology": {
+            "summary": "A within-subjects laboratory study with 24 participants performing tasks under controlled stress and relaxed conditions, measuring typing pressure and mouse contact.",
+            "algorithms": [],
+            "models": [],
+            "datasets": [
+                "Expressive writing",
+                "Text transcription",
+                "Mouse clicking tasks"
+            ],
+            "features": [
+                "Typing pressure",
+                "Mouse surface contact",
+                "Keystroke dynamics",
+                "Capacitive mouse readings"
+            ],
+            "preprocessing": [],
+            "training_strategy": "",
+            "evaluation_metrics": []
+        },
+        "experiments": {
+            "experimental_setup": "Participants completed 30-minute sessions with stress-inducing tasks (e.g., timed typing, provocative text) and relaxed tasks, using pressure-sensitive keyboards and capacitive mice.",
+            "baselines": [],
+            "results": "79% of participants showed increased typing pressure, 75% exhibited more mouse surface contact during stress conditions.",
+            "performance": {
+                "accuracy": "",
+                "precision": "",
+                "recall": "",
+                "f1": "",
+                "auc": ""
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Non-intrusive stress detection using existing input devices",
+                "Link between physiological stress and behavioral metrics"
+            ],
+            "advantages": [
+                "Leverages ubiquitous hardware",
+                "Continuous, unobtrusive monitoring"
+            ],
+            "limitations": [
+                "Limited to lab settings",
+                "Requires calibration for individual users"
+            ],
+            "future_work": [
+                "Longitudinal real-world studies",
+                "Integration with adaptive interfaces"
+            ],
+            "applications": [
+                "Stress-aware computing",
+                "Health monitoring systems"
+            ],
+            "research_gap": "Need for robust, scalable solutions for diverse work environments"
+        },
+        "sections": {
+            "introduction": "Describes stress's physiological impacts and the need for continuous, non-invasive stress detection to prevent health issues.",
+            "related_work": "Reviews stress measurement approaches, including physiological sensors, self-reports, and behavioral proxies like keyboard/mouse usage.",
+            "methodology": "Details the lab study design, input devices, tasks, and data collection procedures for stress state analysis.",
+            "results": "Presents statistical findings on typing pressure and mouse contact differences between stress and relaxed conditions.",
+            "discussion": "Analyzes implications for affective computing and limitations in real-world applicability.",
+            "conclusion": "Summarizes the potential of input device metrics for stress detection and recommendations for future research."
+        }
+    },
+    {
+        "paper_id": 3,
+        "filename": "embc.2013.6610139.pdf",
+        "metadata": {
+            "title": "The Effect of Emotion on Keystroke: An Experimental Study Using Facial Feedback Hypothesis",
+            "authors": [
+                "Wei-Hsuan Tsui",
+                "Poming Lee",
+                "Tzu-Chien Hsiao"
+            ],
+            "year": "2013",
+            "venue": "35th Annual International Conference of the IEEE EMBS",
+            "doi": null,
+            "keywords": []
+        },
+        "abstract": "The study investigates emotion recognition via keystroke dynamics using facial feedback. It validates differences in typing patterns under positive and negative emotional states through controlled experiments, supporting the development of non-intrusive emotion detection technologies.",
+        "research": {
+            "problem": "Computers lack understanding of user emotional states, leading to poor interaction experiences.",
+            "motivation": "Develop non-intrusive emotion recognition methods to improve human-computer interaction.",
+            "objective": "Validate differences in keystroke patterns between emotional states using facial feedback.",
+            "research_questions": [
+                "Does facial feedback induce measurable changes in keystroke dynamics?"
+            ]
+        },
+        "methodology": {
+            "summary": "Facial feedback was used to induce emotions, with keystroke duration and latency analyzed via t-tests.",
+            "algorithms": [],
+            "models": [],
+            "datasets": [
+                "15 university students typing '67829751' under facial feedback conditions"
+            ],
+            "features": [
+                "Keystroke duration",
+                "Keystroke latency"
+            ],
+            "preprocessing": [
+                "Error correction for typing mistakes",
+                "Sequence concatenation across experimental days"
+            ],
+            "training_strategy": "",
+            "evaluation_metrics": [
+                "Independent samples t-tests"
+            ]
+        },
+        "experiments": {
+            "experimental_setup": "Subjects typed sequences under 'teeth' (positive) and 'lip' (negative) conditions with 30-second breaks. Data collected via C# software.",
+            "baselines": [
+                "Previous studies on keystroke-based emotion recognition"
+            ],
+            "results": "Significant differences in duration and latency across emotional states (p<0.05).",
+            "performance": {
+                "accuracy": "",
+                "precision": "",
+                "recall": "",
+                "f1": "",
+                "auc": ""
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Validates emotion-keystroke dynamics correlation via controlled experiments"
+            ],
+            "advantages": [
+                "Non-intrusive, low-cost method for emotion detection"
+            ],
+            "limitations": [
+                "Individual variability may affect results"
+            ],
+            "future_work": [
+                "Expand to diverse populations and real-world applications"
+            ],
+            "applications": [
+                "Affective computing, e-learning systems"
+            ],
+            "research_gap": "Limited controlled studies on emotion-keystroke relationships"
+        },
+        "sections": {
+            "introduction": "Emotion's role in human-computer interaction and limitations of current emotion recognition technologies.",
+            "related_work": "Existing methods using facial expressions, speech, and physiological data.",
+            "methodology": "Facial feedback induction, keystroke data collection, and statistical analysis.",
+            "results": "Statistically significant differences in keystroke duration/latency between emotional states.",
+            "discussion": "Implications for non-intrusive emotion recognition and limitations of individual variability.",
+            "conclusion": ""
+        }
+    },
+    {
+        "paper_id": 4,
+        "filename": "A_Review_of_Emotion_Recognition_Methods_From_Keystroke_Mouse_and_Touchscreen_Dynamics.pdf",
+        "metadata": {
+            "title": "A Review of Emotion Recognition Methods From Keystroke, Mouse, and Touchscreen Dynamics",
+            "authors": [
+                "LIYING YANG",
+                "SHENG-FENG QIN"
+            ],
+            "year": "2021",
+            "venue": "IEEE Access",
+            "doi": "10.1109/ACCESS.2021.3132233",
+            "keywords": [
+                "Affective computing",
+                "keystroke dynamics",
+                "mouse dynamics",
+                "touchscreen dynamics",
+                "emotional signal features",
+                "emotion elicitation",
+                "emotion recognition",
+                "machine learning",
+                "applications of emotion recognition"
+            ]
+        },
+        "abstract": "This paper reviews state-of-the-art emotion recognition methods from keystroke, mouse, and touchscreen (KMT) dynamics, identifies key challenges, and outlines future research directions. It addresses six research questions regarding elicitation methods, recognizable emotions, features, classification techniques, application trends, and critical contexts.",
+        "research": {
+            "problem": "Accurately recognizing emotional states from non-intrusive KMT dynamics data.",
+            "motivation": "Emotion recognition improves work performance and mental health by enabling emotion regulation, particularly in remote collaboration scenarios.",
+            "objective": "Systematically review KMT-based emotion recognition methods, identify research gaps, and propose future directions.",
+            "research_questions": [
+                "What are common emotion elicitation methods and databases?",
+                "Which emotions can be recognized from KMT dynamics?",
+                "What features are most suitable for specific emotions?",
+                "Which classification methods are most effective?",
+                "What are application trends of KMT-based emotion recognition?",
+                "Which application contexts are most critical?"
+            ]
+        },
+        "methodology": {
+            "summary": "Systematic literature review using Web of Science and Google Scholar, filtering 142 articles to 102 relevant papers on KMT dynamics for emotion recognition.",
+            "algorithms": [
+                "Machine learning techniques for classification"
+            ],
+            "models": [
+                "Classification models for emotion recognition"
+            ],
+            "datasets": [
+                "IAPS",
+                "POFA",
+                "IADS-2",
+                "GAPED",
+                "EmoMadrid"
+            ],
+            "features": [
+                "Keystroke dynamics",
+                "Mouse movement patterns",
+                "Touchscreen interaction data"
+            ],
+            "preprocessing": [
+                "Data filtering for relevant KMT dynamics"
+            ],
+            "training_strategy": "Labeled data from elicitation experiments",
+            "evaluation_metrics": []
+        },
+        "experiments": {
+            "experimental_setup": "",
+            "baselines": [],
+            "results": "",
+            "performance": {
+                "accuracy": null,
+                "precision": null,
+                "recall": null,
+                "f1": null,
+                "auc": null
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Systematic review of 20-year KMT-based emotion recognition literature",
+                "Answers to six research questions on elicitation, features, and applications",
+                "Identification of key research gaps and future directions"
+            ],
+            "advantages": [
+                "Non-intrusive data collection from KMT dynamics"
+            ],
+            "limitations": [
+                "Lack of detailed performance metrics in reviewed studies"
+            ],
+            "future_work": [
+                "Enhanced feature extraction",
+                "Cross-modal integration",
+                "Privacy-preserving techniques"
+            ],
+            "applications": [
+                "Remote teamwork monitoring",
+                "Human-computer interaction",
+                "Mental health support"
+            ],
+            "research_gap": "Need for more detailed reviews of advanced KMT dynamics methods"
+        },
+        "sections": {
+            "introduction": "Defines emotion as a multidimensional response to stimuli, emphasizing its role in work performance and mental health. Highlights KMT dynamics as non-intrusive data sources for emotion recognition.",
+            "related_work": "Summarizes existing reviews on facial expressions, physiological signals, and voice/text analysis, noting gaps in KMT dynamics research.",
+            "methodology": "Describes systematic review process, search strategies, and article filtering criteria to identify relevant KMT-based emotion recognition studies.",
+            "results": "Analyzes 102 papers on KMT dynamics, categorizing emotion elicitation methods, features, and classification approaches.",
+            "discussion": "Evaluates strengths and limitations of KMT-based emotion recognition, emphasizing its potential in remote collaboration and mental health applications.",
+            "conclusion": "Reiterates the importance of KMT dynamics for non-intrusive emotion recognition and outlines priorities for future research."
+        }
+    },
+    {
+        "paper_id": 5,
+        "filename": "s11042-025-21043-2.pdf",
+        "metadata": {
+            "title": "Identify user features impacting keystroke, mouse and touchscreen dynamics",
+            "authors": [
+                "Liying Yang",
+                "Shengfeng Qin"
+            ],
+            "year": "2025",
+            "venue": "Multimedia Tools and Applications",
+            "doi": "10.1007/s11042-025-21043-2",
+            "keywords": [
+                "User profile",
+                "KMT dynamics features",
+                "Feature streamlining",
+                "Personalized emotion recognition framework",
+                "Qualitative analysis",
+                "Quantitative analysis"
+            ]
+        },
+        "abstract": "The paper investigates how user features influence behavioral changes in keystroke, mouse, and touchscreen (KMT) dynamics, linking these to emotional states. It proposes a framework for personalized emotion recognition by identifying key user features and KMT dynamics features through questionnaire surveys and data analysis.",
+        "research": {
+            "problem": "Understanding how user features affect emotional changes via behavioral patterns in KMT dynamics.",
+            "motivation": "Existing emotion recognition methods lack personalization due to insufficient consideration of user features.",
+            "objective": "Identify key user and KMT dynamics features for personalized emotion recognition and develop a guiding framework.",
+            "research_questions": [
+                "Which user features significantly impact KMT dynamics?",
+                "How do these features influence behavior qualitatively and quantitatively?",
+                "What framework supports personalized emotion recognition?"
+            ]
+        },
+        "methodology": {
+            "summary": "A questionnaire survey with 107 participants and data analysis to explore relationships between user features and KMT dynamics features.",
+            "algorithms": [
+                "T-tests",
+                "Hierarchical growth curve mixed-effects models"
+            ],
+            "models": [
+                "Initial personalized emotion recognition framework"
+            ],
+            "datasets": [
+                "107 participants' KMT dynamics data"
+            ],
+            "features": [
+                "Gender, KMT proficiency, language proficiency, hand habit, software proficiency, task urgency, emotion",
+                "Typing speed, typing error rate, key pressure, mouse movement speed, clicking speed, clicking strength, keystroke speed"
+            ],
+            "preprocessing": [
+                "Feature selection from literature review and survey data"
+            ],
+            "training_strategy": "",
+            "evaluation_metrics": []
+        },
+        "experiments": {
+            "experimental_setup": "Questionnaire survey with 107 participants to analyze user features' impact on KMT dynamics.",
+            "baselines": [],
+            "results": "Identified seven key user features and seven KMT dynamics features for emotion recognition.",
+            "performance": {
+                "accuracy": "",
+                "precision": "",
+                "recall": "",
+                "f1": "",
+                "auc": ""
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Identification of key user features influencing KMT dynamics",
+                "Key KMT dynamics features for emotion recognition",
+                "New personalized emotion recognition framework"
+            ],
+            "advantages": [
+                "Non-intrusive KMT dynamics for emotion prediction"
+            ],
+            "limitations": [
+                "Emotion as a user feature remains unexplored"
+            ],
+            "future_work": [
+                "Deeper exploration of KMT dynamics-user feature relationships"
+            ],
+            "applications": [
+                "Personalized emotion recognition systems"
+            ],
+            "research_gap": "Lack of integration between emotion and user features in existing studies"
+        },
+        "sections": {
+            "introduction": "Discusses behavior-emotion distinction and the role of KMT dynamics in affective computing.",
+            "related_work": "Reviews studies on gender, age, handedness, and education level correlations with KMT dynamics.",
+            "methodology": "Describes survey-based data collection and analysis to identify feature relationships.",
+            "results": "Presents identified key user and KMT dynamics features for emotion recognition.",
+            "discussion": "Analyzes implications of findings for personalized emotion recognition frameworks.",
+            "conclusion": "Summarizes contributions and highlights research gaps in user feature integration."
+        }
+    }
+]

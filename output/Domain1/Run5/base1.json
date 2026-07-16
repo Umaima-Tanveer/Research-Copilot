@@ -1,0 +1,186 @@
+[
+    {
+        "paper_id": "1",
+        "filename": "JSTSP.2018.2796446.pdf",
+        "title": "Deep Learning for RF Device Fingerprinting in Cognitive Communication Networks",
+        "authors": [
+            "Kevin Merchant",
+            "Shauna Revay",
+            "George Stantchev",
+            "Bryan Nousain"
+        ],
+        "year": 2018,
+        "abstract": "The paper proposes using deep learning to detect physical-layer attributes for identifying cognitive radio devices, demonstrating 92.29% accuracy on IEEE 802.15.4 ZigBee devices. It leverages manufacturing variability in transmitters to create unique signatures for device fingerprinting.",
+        "keywords": [
+            "Communication system security",
+            "neural networks",
+            "ZigBee",
+            "cognitive radio",
+            "personal area networks",
+            "radio communication",
+            "pattern recognition",
+            "classification algorithms"
+        ],
+        "domain": "Wireless communication security",
+        "research_area": "Cognitive radio networks, RF fingerprinting, deep learning",
+        "problem_statement": "Authentication of radio devices to prevent impersonation of licensed users in cognitive radio networks, particularly against Primary User Emulation (PUE) attacks.",
+        "methodology": "A convolutional neural network (CNN) trained on time-domain complex baseband error signals to classify devices based on unique physical-layer signatures, with frequency correction applied to remove carrier offset.",
+        "dataset": "7 commercial ZigBee Pro devices operating in the 2.4 GHz band, with random 32-byte payloads generated in MATLAB.",
+        "evaluation_metrics": [
+            "Accuracy (92.29%)",
+            "Robustness across signal-to-noise ratios (SNR)"
+        ],
+        "performance": "Achieved 92.29% identification accuracy on 7 ZigBee devices, demonstrating robustness over a wide SNR range.",
+        "contribution": "Proposed a CNN-based framework for RF fingerprinting using time-domain error signals, enabling device identification without relying on cryptographic keys or MAC addresses.",
+        "limitations": "Limited to ZigBee devices; frequency correction may not address all spoofing vectors in diverse environments.",
+        "future_work": "Expanding to other wireless standards, improving robustness against adversarial attacks, and integrating with existing security protocols.",
+        "task_type": "Classification",
+        "model_type": "Convolutional Neural Network (CNN)"
+    },
+    {
+        "paper_id": "2",
+        "filename": "release_note_datasets_wifi_oct2023_v2_0.pdf",
+        "title": "Release Note: WiFi RF Datasets for Device Fingerprinting Using Deep Learning",
+        "authors": [
+            "Jackson Wright",
+            "Abdurrahman Elmaghbub",
+            "Bechir Hamdaoui"
+        ],
+        "year": null,
+        "abstract": "WiFi datasets are described and used in the paper ADL-ID for adversarial disentanglement learning in wireless device fingerprinting. The datasets are provided for research use with citation requirements.",
+        "keywords": [
+            "WiFi datasets",
+            "device fingerprinting",
+            "deep learning",
+            "RF fingerprinting",
+            "temporal domain adaptation",
+            "SigMF metadata"
+        ],
+        "domain": "Wireless Communications",
+        "research_area": "Device Fingerprinting and Deep Learning Applications",
+        "problem_statement": "Solving the RFFP (Radio Frequency Fingerprinting) problem through deep learning-based RF fingerprinting algorithms, requiring robust datasets for evaluation.",
+        "methodology": "Data collected using 50 Pycom devices and Ettus USRP B210 receivers, capturing I/Q samples at 25MS/s. GNURadio configured for signal processing and metadata storage in SigMF format.",
+        "dataset": "1.2TB of WiFi transmissions from 50 devices over 5 days (indoor/outdoor), with 5 transmissions per device. Files stored in SigMF format with metadata including sampling rate, timestamps, and carrier frequency.",
+        "evaluation_metrics": [
+            "Dataset size (1.2TB)",
+            "Scenario diversity (indoor/outdoor)",
+            "Signal quality (20MHz bandwidth, 25MS/s sampling)"
+        ],
+        "performance": "Datasets enable evaluation of deep learning models for RF fingerprinting across temporal domain adaptation scenarios.",
+        "contribution": "Provides standardized WiFi datasets with SigMF metadata for research on device fingerprinting and RF signal analysis.",
+        "limitations": "Datasets limited to specific hardware setups and scenarios; requires citation for use in publications.",
+        "future_work": "Expanding dataset diversity, applying to other wireless protocols, or integrating with real-time signal processing systems.",
+        "task_type": "Device Fingerprinting",
+        "model_type": "Deep Learning"
+    },
+    {
+        "paper_id": "3",
+        "filename": "TVT.2019.2950670.pdf",
+        "title": "Deep Learning Based RF Fingerprint Identification Using Differential Constellation Trace Figure",
+        "authors": [
+            "Linning Peng",
+            "Junqing Zhang",
+            "Ming Liu",
+            "Aiqun Hu"
+        ],
+        "year": 2019,
+        "abstract": "This paper proposes a novel deep learning-based radio frequency fingerprint (RFF) identification method for IoT terminal authentications. Differential constellation trace figure (DCTF) is utilized to extract RFF features without synchronization. A CNN is designed to identify devices using DCTF features, achieving 99.1% and 93.8% accuracy at 30 dB and 15 dB SNR levels for 54 ZigBee devices.",
+        "keywords": [
+            "Physical layer security",
+            "radio frequency fingerprint",
+            "differential constellation trace figure",
+            "convolutional neural network"
+        ],
+        "domain": "Wireless Communications",
+        "research_area": "Physical Layer Security",
+        "problem_statement": "Accurate IoT device authentication requires RFF identification without synchronization, which existing methods struggle with due to limited accuracy and complexity.",
+        "methodology": "DCTF converts time-series signal data into 2D images representing differential relationships. A CNN is trained to classify devices based on DCTF features without prior synchronization information.",
+        "dataset": "54 ZigBee devices with varying SNR levels (15 dB and 30 dB) for classification.",
+        "evaluation_metrics": [
+            "Accuracy at 30 dB SNR",
+            "Accuracy at 15 dB SNR"
+        ],
+        "performance": "Achieved 99.1% accuracy at 30 dB SNR and 93.8% at 15 dB SNR, outperforming existing RFF identification methods.",
+        "contribution": "Proposed DCTF-CNN method with zero prior synchronization, high accuracy, and low complexity for RFF identification.",
+        "limitations": "Depends on specific hardware (ZigBee modules) and may require adjustments for varying SNR environments.",
+        "future_work": "Expand to more device types, improve robustness against environmental noise, and optimize for real-time applications.",
+        "task_type": "Classification",
+        "model_type": "Convolutional Neural Network"
+    },
+    {
+        "paper_id": "4",
+        "filename": "2207.06592v1.pdf",
+        "title": "Few-Shot Speciﬁc Emitter Identiﬁcation via Deep Metric Ensemble Learning",
+        "authors": [
+            "Yu Wang",
+            "Guan Gui",
+            "Yun Lin",
+            "Hsiao-Chun Wu",
+            "Chau Yuen",
+            "Fumiyuki Adachi"
+        ],
+        "year": null,
+        "abstract": "Speciﬁc emitter identiﬁcation (SEI) is a highly potential technology for physical layer authentication. Existing methods struggle with limited training samples, prompting focus on few-shot SEI (FS-SEI) using ADS-B signals. A novel DMEL-based method combines feature embedding with metric learning and ensemble classification, achieving >98% accuracy with >5 samples per category.",
+        "keywords": [
+            "Speciﬁc emitter identiﬁcation (SEI)",
+            "few-shot SEI",
+            "automatic dependent surveillance-broadcast",
+            "metric learning",
+            "ensemble learning"
+        ],
+        "domain": "Physical layer authentication",
+        "research_area": "Specific emitter identification",
+        "problem_statement": "Traditional SEI methods require massive RF samples and fail under limited data. Few-shot learning is needed for practical applications like aircraft identification via ADS-B signals.",
+        "methodology": "Proposes DMEL with feature embedding via complex-valued CVCNN and metric learning (triplet loss, center loss), combined with ensemble classifiers for improved generalization.",
+        "dataset": "Massive ADS-B signal samples for offline training, few-shot samples from new aircraft for online deployment.",
+        "evaluation_metrics": [
+            "Average accuracy >98% with >5 samples per category",
+            "Feature visualization showing discriminability and generalization"
+        ],
+        "performance": "Achieves >98% accuracy on ADS-B signals, outperforms conventional methods in few-shot scenarios.",
+        "contribution": "Introduces offline feature embedding and online classifier paradigm, metric learning for generalized features, and ensemble learning for enhanced performance.",
+        "limitations": "",
+        "future_work": "",
+        "task_type": "Few-shot learning for emitter identification",
+        "model_type": "Deep metric ensemble learning (DMEL)"
+    },
+    {
+        "paper_id": "5",
+        "filename": "2304.14795v1.pdf",
+        "title": "Semi-Supervised RF Fingerprinting with Consistency-Based Regularization",
+        "authors": [
+            "Weidong Wang",
+            "Cheng Luo",
+            "Jiancheng An",
+            "Lu Gan",
+            "Hongshu Liao",
+            "Chau Yuen"
+        ],
+        "year": 2023,
+        "abstract": "As a promising non-password authentication technology, radio frequency (RF) fingerprinting can greatly improve wireless security. Recent work has shown that RF fingerprinting based on deep learning can significantly outperform conventional approaches. However, its superiority relies on large labeled datasets, making it impractical with limited labeled data. This paper proposes a semi-supervised approach using deep learning with data augmentation and consistency-based regularization to address this limitation.",
+        "keywords": [
+            "RF fingerprinting",
+            "deep learning",
+            "deep semi-supervised learning",
+            "data augmentation",
+            "consistency-based regularization",
+            "pseudo-labeling"
+        ],
+        "domain": "eess.SP",
+        "research_area": "Wireless Communication",
+        "problem_statement": "Existing RF fingerprinting methods rely on supervised learning with large labeled datasets, which is impractical due to the high cost and difficulty of labeling real-world IoT signal data. Limited labeled data significantly degrades performance, restricting practical deployment.",
+        "methodology": "The paper proposes a semi-supervised learning framework combining data augmentation, consistency-based regularization, and pseudo-labeling. A composite data augmentation scheme, including stochastic permutation and signal rotation, is designed for radio signals to enhance generalization.",
+        "dataset": "Simulated and real-world datasets (specific names not provided)",
+        "evaluation_metrics": [
+            "Accuracy",
+            "F1-score",
+            "AUC-ROC"
+        ],
+        "performance": "The method achieves performance close to fully supervised learning with minimal labeled data, outperforming existing semi-supervised approaches in both simulated and real-world experiments.",
+        "contribution": "1. Comprehensive analysis of data augmentation techniques for RF fingerprinting. 2. Novel composite data augmentation scheme (stochastic permutation + signal rotation). 3. End-to-end semi-supervised framework combining consistency-based regularization and pseudo-labeling.",
+        "limitations": "Requires careful design of data augmentation strategies to avoid overfitting. Performance may degrade with mislabeled data or complex signal distortions.",
+        "future_work": "Explore more robust data augmentation techniques and integrate advanced self-supervised learning methods for improved generalization.",
+        "task_type": "Classification",
+        "model_type": "Deep Residual Network (ResNet)"
+    }
+]

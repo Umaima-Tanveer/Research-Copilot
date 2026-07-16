@@ -1,0 +1,58 @@
+{
+    "methodological": [
+        {
+            "gap": "Lack of mechanistic explanation for moment-based features",
+            "impact": "high",
+            "papers": [
+                "Paper 1"
+            ]
+        },
+        {
+            "gap": "Limited generalization across hardware/configurations",
+            "impact": "high",
+            "papers": [
+                "Paper 2"
+            ]
+        },
+        {
+            "gap": "Reliance on steady-state signals with limited discriminability",
+            "impact": "high",
+            "papers": [
+                "Paper 3"
+            ]
+        },
+        {
+            "gap": "Hardware-specific transient signals and low SNR vulnerabilities",
+            "impact": "high",
+            "papers": [
+                "Paper 4"
+            ]
+        }
+    ],
+    "theoretical": [
+        {
+            "gap": "Assumptions about short-term channel stability",
+            "impact": "high",
+            "papers": [
+                "Paper 5"
+            ]
+        }
+    ],
+    "empirical": [
+        {
+            "gap": "Insufficient validation in extreme mobility scenarios",
+            "impact": "high",
+            "papers": [
+                "Paper 5"
+            ]
+        },
+        {
+            "gap": "Need for robustness at low SNR",
+            "impact": "high",
+            "papers": [
+                "Paper 3"
+            ]
+        }
+    ],
+    "application": []
+}

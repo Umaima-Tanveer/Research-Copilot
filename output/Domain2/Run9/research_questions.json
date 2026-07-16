@@ -1,0 +1,161 @@
+{
+    "primary_research_questions": [
+        {
+            "id": "RQ1",
+            "question": "How can a multimodal fusion framework combining keystroke dynamics with physiological signals improve emotion recognition accuracy in real-world scenarios?",
+            "derived_from_gap": "Limited integration of multimodal data with keystroke dynamics",
+            "derived_from_contribution": "Multimodal fusion framework combining keystroke dynamics with physiological signals for emotion recognition",
+            "paper_titles": [
+                "Keystroke Dynamics Patterns While Writing Positive and Negative Opinions"
+            ]
+        },
+        {
+            "id": "RQ2",
+            "question": "What mechanisms enable personalized emotion recognition systems to account for demographic and proficiency-based user variability?",
+            "derived_from_gap": "Insufficient user feature integration into behavioral models",
+            "derived_from_contribution": "Personalized emotion recognition framework incorporating demographic and proficiency features",
+            "paper_titles": [
+                "Identify user features impacting keystroke, mouse and touchscreen dynamics"
+            ]
+        },
+        {
+            "id": "RQ3",
+            "question": "How can context-aware stress detection systems adapt to environmental factors while maintaining real-time performance in natural settings?",
+            "derived_from_gap": "Limited real-world generalizability of stress sensing",
+            "derived_from_contribution": "Context-aware stress detection system using ambient sensors in natural environments",
+            "paper_titles": [
+                "Under Pressure: Sensing Stress of Computer Users"
+            ]
+        },
+        {
+            "id": "RQ4",
+            "question": "What experimental design principles are required to elicit and measure a broader range of emotional states through multimodal stimuli?",
+            "derived_from_gap": "Restricted emotional state representation",
+            "derived_from_contribution": "Extended emotional induction protocol using multimodal stimuli for diverse affective states",
+            "paper_titles": [
+                "The Effect of Emotion on Keystroke"
+            ]
+        },
+        {
+            "id": "RQ5",
+            "question": "How can a demographically diverse benchmark dataset enhance the generalizability of emotion recognition models across populations?",
+            "derived_from_gap": "Generalizability across populations",
+            "derived_from_contribution": "Demographically diverse emotion recognition benchmark dataset",
+            "paper_titles": [
+                "Identify user features impacting keystroke, mouse and touchscreen dynamics"
+            ]
+        },
+        {
+            "id": "RQ6",
+            "question": "What technical approaches enable long-term emotional state tracking with minimal drift in model performance over extended usage?",
+            "derived_from_gap": "Lack of long-term emotional state tracking",
+            "derived_from_contribution": "Longitudinal affective state monitoring system with drift compensation",
+            "paper_titles": [
+                "Identify user features impacting keystroke, mouse and touchscreen dynamics"
+            ]
+        },
+        {
+            "id": "RQ7",
+            "question": "How can field deployment frameworks for stress detection balance privacy preservation with real-time actionable insights in educational environments?",
+            "derived_from_gap": "Limited real-world application validation",
+            "derived_from_contribution": "Field deployment framework for stress detection in educational settings",
+            "paper_titles": [
+                "Under Pressure: Sensing Stress of Computer Users"
+            ]
+        }
+    ],
+    "secondary_research_questions": [
+        {
+            "id": "RQ8",
+            "question": "What role does gender play in the correlation between keystroke dynamics and emotional state variability across different task contexts?",
+            "derived_from_gap": "Insufficient user feature integration into behavioral models",
+            "derived_from_contribution": "Personalized emotion recognition framework incorporating demographic and proficiency features",
+            "paper_titles": [
+                "Identify user features impacting keystroke, mouse and touchscreen dynamics"
+            ]
+        },
+        {
+            "id": "RQ9",
+            "question": "How do physiological signal synchronization delays affect the performance of multimodal emotion recognition systems in real-time applications?",
+            "derived_from_gap": "Limited integration of multimodal data with keystroke dynamics",
+            "derived_from_contribution": "Multimodal fusion framework combining keystroke dynamics with physiological signals for emotion recognition",
+            "paper_titles": [
+                "Keystroke Dynamics Patterns While Writing Positive and Negative Opinions"
+            ]
+        },
+        {
+            "id": "RQ10",
+            "question": "What are the trade-offs between model complexity and computational efficiency in context-aware stress detection systems for edge devices?",
+            "derived_from_gap": "Limited real-world generalizability of stress sensing",
+            "derived_from_contribution": "Context-aware stress detection system using ambient sensors in natural environments",
+            "paper_titles": [
+                "Under Pressure: Sensing Stress of Computer Users"
+            ]
+        },
+        {
+            "id": "RQ11",
+            "question": "How do different types of multimodal stimuli (audio-visual vs. physiological feedback) influence the elicitation of distinct emotional states?",
+            "derived_from_gap": "Restricted emotional state representation",
+            "derived_from_contribution": "Extended emotional induction protocol using multimodal stimuli for diverse affective states",
+            "paper_titles": [
+                "The Effect of Emotion on Keystroke"
+            ]
+        },
+        {
+            "id": "RQ12",
+            "question": "What statistical methods best quantify the impact of demographic stratification on emotion recognition model performance across cultural contexts?",
+            "derived_from_gap": "Generalizability across populations",
+            "derived_from_contribution": "Demographically diverse emotion recognition benchmark dataset",
+            "paper_titles": [
+                "Identify user features impacting keystroke, mouse and touchscreen dynamics"
+            ]
+        },
+        {
+            "id": "RQ13",
+            "question": "How do temporal modeling techniques mitigate performance degradation in longitudinal emotional state tracking across varying user behaviors?",
+            "derived_from_gap": "Lack of long-term emotional state tracking",
+            "derived_from_contribution": "Longitudinal affective state monitoring system with drift compensation",
+            "paper_titles": [
+                "Identify user features impacting keystroke, mouse and touchscreen dynamics"
+            ]
+        }
+    ],
+    "novel_research_questions": [
+        {
+            "id": "RQ14",
+            "question": "What novel sensor fusion architectures could enable seamless integration of keystroke dynamics with ambient environmental data for adaptive stress monitoring?",
+            "derived_from_gap": "Limited real-world generalizability of stress sensing",
+            "derived_from_contribution": "Context-aware stress detection system using ambient sensors in natural environments",
+            "paper_titles": [
+                "Under Pressure: Sensing Stress of Computer Users"
+            ]
+        },
+        {
+            "id": "RQ15",
+            "question": "How might federated learning frameworks enhance the scalability of demographically diverse emotion recognition systems while preserving data privacy?",
+            "derived_from_gap": "Generalizability across populations",
+            "derived_from_contribution": "Demographically diverse emotion recognition benchmark dataset",
+            "paper_titles": [
+                "Identify user features impacting keystroke, mouse and touchscreen dynamics"
+            ]
+        },
+        {
+            "id": "RQ16",
+            "question": "What ethical considerations should guide the development of longitudinal emotional state tracking systems for continuous user monitoring?",
+            "derived_from_gap": "Lack of long-term emotional state tracking",
+            "derived_from_contribution": "Longitudinal affective state monitoring system with drift compensation",
+            "paper_titles": [
+                "Identify user features impacting keystroke, mouse and touchscreen dynamics"
+            ]
+        },
+        {
+            "id": "RQ17",
+            "question": "How can edge computing paradigms be optimized to support real-time stress detection in resource-constrained educational environments?",
+            "derived_from_gap": "Limited real-world application validation",
+            "derived_from_contribution": "Field deployment framework for stress detection in educational settings",
+            "paper_titles": [
+                "Under Pressure: Sensing Stress of Computer Users"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,174 @@
+{
+    "nodes": [
+        {
+            "id": "1",
+            "title": "TypeNet: Deep Learning Keystroke Biometrics",
+            "year": null,
+            "dataset": "Largest free-text keystroke databases with >136M keystrokes from 168,000 physical keyboard users and 60,000 touchscreen users.",
+            "methodology": "LSTM-based deep learning models trained with keystroke sequences, evaluated using different loss functions, sample sizes, and device types (physical vs touchscreen keyboards).",
+            "task_type": "Authentication",
+            "contribution": "Introduces TypeNet, a scalable LSTM model for free-text keystroke authentication; achieves state-of-the-art results; provides cross-device and cross-database generalization."
+        },
+        {
+            "id": "2",
+            "title": "Covert lie detection using keyboard dynamics",
+            "year": 2018,
+            "dataset": "60 participants (40 training, 20 test) with fabricated ID profiles and real personal information.",
+            "methodology": "Keystroke dynamics analysis using unexpected questions to reveal deception clues through typing pattern deviations.",
+            "task_type": "Classification",
+            "contribution": "Novel covert lie detection method using keyboard dynamics instead of mouse tracking for online applications."
+        },
+        {
+            "id": "3",
+            "title": "Non-Acted Text and Keystrokes Database and Learning Methods to Recognize Emotions",
+            "year": 2022,
+            "dataset": "Multimodal text-keystrokes dataset with 69 participants, including video-induced stimuli and unguided text reviews.",
+            "methodology": "Text-keystroke data is collected from 69 participants via controlled video stimuli. Features are extracted from text and keystrokes, fused with tree-based selection and SVM for emotion classification.",
+            "task_type": "Emotion Recognition",
+            "contribution": "Introduces a novel CI-based framework and baseline dataset for emotion recognition in short text, combining text and keystroke features."
+        },
+        {
+            "id": "4",
+            "title": "The Influence of Emotion on Keyboard Typing: An Experimental Study Using Auditory Stimuli",
+            "year": 2015,
+            "dataset": "Keystroke data collected from 52 participants under IADS-induced emotional conditions (Valence x Arousal dimensions).",
+            "methodology": "Controlled experiment using International Affective Digitized Sounds (IADS) to induce emotional states, followed by two-way ANOVA analysis of keystroke data.",
+            "task_type": "Emotion recognition via keystroke dynamics",
+            "contribution": "Demonstrates arousal influences keystroke duration/latency, suggesting personalized models could enhance emotion recognition accuracy."
+        },
+        {
+            "id": "5",
+            "title": "DeepMood: Modeling Mobile Phone Typing Dynamics for Mood Detection",
+            "year": null,
+            "dataset": "BiAffect study data from 20 participants (7 bipolar I, 5 bipolar II, 8 controls) with session-level typing metadata and clinical ratings (HDRS/YMRS).",
+            "methodology": "Proposes DeepMood, a late fusion deep architecture combining RNNs for multi-view metadata (keypress timing, accelerometer) with interaction modeling across views.",
+            "task_type": "Sequence prediction",
+            "contribution": "1) Data analysis linking typing patterns to bipolar mood states; 2) Novel two-stage late fusion strategy for multi-view time series; 3) Empirical validation of mobile metadata for mood prediction."
+        }
+    ],
+    "edges": [
+        {
+            "paper1": "1",
+            "paper2": "2",
+            "relation": "compares",
+            "similarity": 0.3,
+            "reason": "Both papers investigate keystroke dynamics but focus on different tasks (authentication vs. lie detection) and employ distinct methodologies (LSTM-based models vs. pattern deviation analysis).",
+            "shared_concepts": [
+                "keystroke dynamics",
+                "keyboard typing patterns",
+                "classification",
+                "authentication"
+            ]
+        },
+        {
+            "paper1": "1",
+            "paper2": "3",
+            "relation": "unrelated",
+            "similarity": 0.2,
+            "reason": "Different tasks (authentication vs. emotion recognition), distinct methodologies (LSTM vs. SVM/tree-based), and separate datasets with no overlapping focus.",
+            "shared_concepts": [
+                "keystroke data",
+                "text analysis"
+            ]
+        },
+        {
+            "paper1": "1",
+            "paper2": "4",
+            "relation": "compares",
+            "similarity": 0.3,
+            "reason": "Both papers use keystroke dynamics but address different tasks (authentication vs. emotion recognition).",
+            "shared_concepts": [
+                "keystroke dynamics",
+                "keystroke data",
+                "authentication",
+                "emotion recognition"
+            ]
+        },
+        {
+            "paper1": "1",
+            "paper2": "5",
+            "relation": "unrelated",
+            "similarity": 0.0,
+            "reason": "Paper1 focuses on keystroke authentication using LSTM models, while Paper2 addresses mood detection via multi-view metadata fusion. They differ in task (authentication vs. sequence prediction), methodology (LSTM vs. RNN-based late fusion), and dataset scope (large-scale keystroke data vs. small-scale clinical data).",
+            "shared_concepts": [
+                "keystroke data",
+                "deep learning",
+                "sequence modeling"
+            ]
+        },
+        {
+            "paper1": "2",
+            "paper2": "3",
+            "relation": "compares",
+            "similarity": 0.45,
+            "reason": "Both papers use keystroke dynamics but apply it to different tasks (lie detection vs. emotion recognition). Paper 1 focuses on deception detection through typing pattern deviations, while Paper 2 combines text and keystroke features for emotion classification. They share the use of keystroke data but differ in methodology and application.",
+            "shared_concepts": [
+                "keystroke dynamics",
+                "classification",
+                "feature extraction"
+            ]
+        },
+        {
+            "paper1": "2",
+            "paper2": "4",
+            "relation": "compares",
+            "similarity": 0.5,
+            "reason": "Both papers use keystroke dynamics but apply it to different tasks (lie detection vs. emotion recognition). Paper 1 focuses on deception detection through typing pattern deviations, while Paper 2 examines emotional state influences on keystroke metrics. They share methodological overlap but differ in research objectives.",
+            "shared_concepts": [
+                "keystroke dynamics",
+                "classification",
+                "emotion recognition",
+                "participant datasets",
+                "typing pattern analysis"
+            ]
+        },
+        {
+            "paper1": "2",
+            "paper2": "5",
+            "relation": "compares",
+            "similarity": 0.3,
+            "reason": "Both papers use typing dynamics but differ in task (classification vs. sequence prediction) and methodology (keystroke analysis vs. multi-view RNN fusion).",
+            "shared_concepts": [
+                "keyboard dynamics",
+                "typing patterns"
+            ]
+        },
+        {
+            "paper1": "3",
+            "paper2": "4",
+            "relation": "compares",
+            "similarity": 0.4,
+            "reason": "Both papers address emotion recognition using keystroke data but employ different methodologies (text-keystroke fusion vs. auditory-induced emotional states) and datasets. Paper 1 focuses on multimodal text-keystroke analysis, while Paper 2 emphasizes arousal-driven keystroke dynamics.",
+            "shared_concepts": [
+                "emotion recognition",
+                "keystroke data",
+                "emotion induction"
+            ]
+        },
+        {
+            "paper1": "3",
+            "paper2": "5",
+            "relation": "compares",
+            "similarity": 0.3,
+            "reason": "Both papers address emotion/mood recognition using keystroke data but differ in methodology (SVM vs. RNNs), dataset composition (general population vs. bipolar patients), and task focus (emotion classification vs. sequence prediction).",
+            "shared_concepts": [
+                "emotion recognition",
+                "keystroke data",
+                "machine learning methods"
+            ]
+        },
+        {
+            "paper1": "4",
+            "paper2": "5",
+            "relation": "compares",
+            "similarity": 0.6,
+            "reason": "Both papers explore emotion/mood detection via typing dynamics but employ distinct methodologies (statistical analysis vs. deep learning) and datasets (IADS-induced emotions vs. clinical bipolar data).",
+            "shared_concepts": [
+                "keystroke dynamics",
+                "emotion recognition",
+                "typing data analysis",
+                "mood detection"
+            ]
+        }
+    ]
+}

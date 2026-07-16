@@ -1,0 +1,60 @@
+{
+    "methodological": [
+        {
+            "gap": "Generalizability of CNN-based frameworks to non-ZigBee wireless standards",
+            "impact": "High",
+            "reason": "Current methods are limited to ZigBee devices, requiring adaptation for diverse protocols",
+            "papers": [
+                "Deep Learning for RF Device Fingerprinting in Cognitive Communication Networks"
+            ]
+        },
+        {
+            "gap": "Robustness against adversarial attacks in RF fingerprinting",
+            "impact": "High",
+            "reason": "Existing approaches lack defenses against spoofing and signal manipulation",
+            "papers": [
+                "Deep Learning for RF Device Fingerprinting in Cognitive Communication Networks",
+                "Few-Shot Specific Emitter Identification via Deep Metric Ensemble Learning"
+            ]
+        },
+        {
+            "gap": "Integration of semi-supervised learning with real-time signal processing",
+            "impact": "High",
+            "reason": "Current semi-supervised methods lack optimization for low-latency applications",
+            "papers": [
+                "Semi-Supervised RF Fingerprinting with Consistency-Based Regularization"
+            ]
+        }
+    ],
+    "theoretical": [
+        {
+            "gap": "Unified framework for cross-protocol RF fingerprinting analysis",
+            "impact": "High",
+            "reason": "Disparate methodologies hinder comparative evaluation across wireless standards",
+            "papers": [
+                "Deep Learning for RF Device Fingerprinting in Cognitive Communication Networks",
+                "Release Note: WiFi RF Datasets for Device Fingerprinting Using Deep Learning"
+            ]
+        }
+    ],
+    "empirical": [
+        {
+            "gap": "Diverse dataset collection for non-WiFi/ non-ZigBee protocols",
+            "impact": "High",
+            "reason": "Current datasets are protocol-specific, limiting generalizability",
+            "papers": [
+                "Release Note: WiFi RF Datasets for Device Fingerprinting Using Deep Learning"
+            ]
+        }
+    ],
+    "application": [
+        {
+            "gap": "Seamless integration with cryptographic authentication protocols",
+            "impact": "High",
+            "reason": "Existing fingerprinting methods lack interoperability with standard security frameworks",
+            "papers": [
+                "Deep Learning for RF Device Fingerprinting in Cognitive Communication Networks"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,83 @@
+[
+    {
+        "paper_id": "1",
+        "filename": "JIOT.2019.2908759.pdf",
+        "title": "Groundwork for Neural Network-Based Specific Emitter Identification Authentication for IoT",
+        "authors": [
+            "Jason M. McGinthy",
+            "Lauren J. Wong",
+            "Alan J. Michaels"
+        ],
+        "publication_year": "2019",
+        "objective": "To present groundwork for neural network-based specific emitter identification (SEI) on resource-constrained IoT devices using raw IQ streams, with protocols to secure IoT networks",
+        "methodology": "Neural networks (NNs) are used for specific emitter identification (SEI) by analyzing raw in-phase and quadrature (IQ) streams. Protocols are proposed to secure IoT networks, with a focus on low-latency, lightweight authentication",
+        "dataset": "None",
+        "performance": "NN-based SEI algorithms demonstrated feasibility on resource-rich and constrained devices with low latency, but require refinement for large-scale systems due to challenges in handling environmental factors and scalability",
+        "limitations": "NN-based SEI requires further refinement for large-scale systems, and current methods may be vulnerable to environmental changes affecting RF fingerprints"
+    },
+    {
+        "paper_id": "2",
+        "filename": "ASelf-supervisedFrameworkforGeneralizedRFFingerprinting.pdf",
+        "title": "A Self-supervised Framework for Generalized RF Fingerprinting and Zero-shot Anomaly Detection in Dynamic IoT Networks",
+        "authors": [
+            "Melaku Msresha Woldeamueal",
+            "Belay Sitotaw Goshu"
+        ],
+        "publication_year": "2026",
+        "objective": "Address limitations of traditional RF fingerprinting in dynamic IoT networks with limited labeled data, evolving device behavior, and environmental challenges.",
+        "methodology": "Self-supervised framework combining domain-informed augmentation (DIA), multi-task contrastive pretraining, and shallow-to-medium CNN fine-tuning with optimized contrastive temperature (τ ≈ 0.1) and learning rate (1×10⁻³).",
+        "dataset": "NOT MENTIONED",
+        "performance": "Achieves ~3× faster convergence, 15–40% improved robustness under impairments/drift, 0.95 few-shot accuracy, and ~0.88 anomaly AUC for zero-shot detection.",
+        "limitations": "Absolute performance remains constrained in extreme impairment scenarios despite semi-supervised learning improvements."
+    },
+    {
+        "paper_id": "3",
+        "filename": "j.phycom.2020.101250.pdf",
+        "title": "NOT MENTIONED",
+        "authors": [
+            "Guangwei Qing",
+            "Huifang Wang",
+            "Tingping Zhang"
+        ],
+        "publication_year": "2021",
+        "objective": "Smart devices face privacy risks from unauthorized access; traditional cryptography-based identification is vulnerable to attacks. Introduces a lightweight CNN-based RFFID method for Zigbee with low power consumption and high accuracy.",
+        "methodology": "Proposes a lightweight CNN model for radio frequency fingerprinting identification (RFFID) to reduce power consumption and cost while maintaining high accuracy.",
+        "dataset": "4 Zigbee devices with 60,000 samples each (1000 sampling points per sample).",
+        "performance": "Achieved 100% accuracy in Zigbee device identification and reduced parameters by 93%.",
+        "limitations": "Relies on hardware-specific RF characteristics, which may limit generalizability."
+    },
+    {
+        "paper_id": "4",
+        "filename": "vetecf.2008.291.pdf",
+        "title": "Radio Transmitter Fingerprinting: A Steady State Frequency Domain Approach",
+        "authors": [
+            "Irwin O. Kennedy",
+            "Patricia Scanlon",
+            "Francis J. Mullany",
+            "Milind M. Buddhikot",
+            "Keith E. Nolan",
+            "Thomas W. Rondeau"
+        ],
+        "publication_year": "",
+        "objective": "Identify radio transmitters via RF fingerprinting for applications like femto base station authentication, addressing challenges in accurate identification and reducing signaling traffic in cellular networks.",
+        "methodology": "Combines frequency domain analysis with k-NN classifiers to exploit steady-state signal features. Uses USRP transmitters to capture and analyze preambles, normalizing time-domain samples and extracting log-spectral-energy features.",
+        "dataset": "Eight identical USRP transmitters tested at 30dB and 0dB SNR. Preambles from UMTS RACH channels with 1MHz bandwidth and 4096 chips at 0.768Mcps.",
+        "performance": "Achieves high accuracy with low-cost receivers; outperforms transient analysis methods by avoiding high sample rate requirements. Accuracy at 30dB SNR (97%), Accuracy at 0dB SNR (66%), k-NN classification performance.",
+        "limitations": "Transient analysis requires high sample rates and sophisticated receivers. Distinguishing identical transmitters may be challenging without steady-state features."
+    },
+    {
+        "paper_id": "5",
+        "filename": "QRS-C.2019.00076.pdf",
+        "title": "Improving Wireless Network Security Based On Radio Fingerprinting",
+        "authors": [
+            "Yun Lin",
+            "Jie Chang"
+        ],
+        "publication_year": "NOT MENTIONED",
+        "objective": "Enhance wireless network security through hardware-based physical-layer security using radio frequency fingerprinting for device identification.",
+        "methodology": "Fractional Fourier Transform (FrFT) for transient signal feature extraction, Robust Principal Component Analysis (RPCA) for dimensionality reduction, and K-Nearest Neighbor (KNN) for classification.",
+        "dataset": "10 Motorola walkie-talkies for signal collection and identification.",
+        "performance": "Achieved 100% recognition rate at 20dB SNR with FrFT order 0.8, showing improved performance with increasing SNR.",
+        "limitations": "Relies on hardware-specific transient signals; potential vulnerabilities in FrFT processing under noisy conditions."
+    }
+]

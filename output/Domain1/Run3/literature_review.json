@@ -1,0 +1,89 @@
+[
+    {
+        "paper_id": "1",
+        "filename": "lee2021.pdf",
+        "title": "Deep-Learning-Aided RF Fingerprinting for NFC Security",
+        "authors": [
+            "Woongsup Lee",
+            "Seon Yeob Baek",
+            "Seong Hwan Kim"
+        ],
+        "publication_year": "2021",
+        "objective": "Address NFC tag security risks (cloning, man-in-the-middle attacks) by enabling practical, rapid tag identification using deep learning for RF fingerprinting.",
+        "methodology": "Hardware testbed with NFC reader and SDR collects RF signals. Three DNNs (FNN, CNN, RNN) analyze one-bit transmission data for RF characteristic extraction.",
+        "dataset": "RF signals from 50 NFC tags (same manufacturer/batch) captured via off-the-shelf NFC reader.",
+        "performance": "Achieved 96.16% accuracy in distinguishing 50 NFC tags using deep-learning-based RF fingerprinting.",
+        "limitations": "Requires specialized hardware (SDR), limited data samples in prior work, and challenges in real-world deployment."
+    },
+    {
+        "paper_id": "2",
+        "filename": "sensors-25-04451-with-cover.pdf",
+        "title": "Cross-Receiver Radio Frequency Fingerprint Identification: A Source-Free Adaptation Approach",
+        "authors": [
+            "Jian Yang",
+            "Shaoxian Zhu",
+            "Zhongyi Wen",
+            "Qiang Li"
+        ],
+        "publication_year": "2025",
+        "objective": "Adapting RFFI models to new receivers without access to source data, addressing privacy and transmission limitations caused by hardware variations.",
+        "methodology": "Proposes CSCNet, a contrastive learning framework with a three-pronged loss function (entropy minimization, pseudo-label self-supervision, contrastive learning) for unlabeled data adaptation.",
+        "dataset": "Real-world datasets (HackRF, Wisig) under realistic noise and channel conditions.",
+        "performance": "Achieves 13% average improvement over existing methods and 47% increase in challenging cross-receiver tasks.",
+        "limitations": "NOT MENTIONED"
+    },
+    {
+        "paper_id": "3",
+        "filename": "remotesensing-17-02659-v2.pdf",
+        "title": "A Self-Supervised Contrastive Framework for Specific Emitter Identification with Limited Labeled Data",
+        "authors": [
+            "Jiaqi Wang",
+            "Lishu Guo",
+            "Pengfei Liu",
+            "Peng Shang",
+            "Xiaochun Lu",
+            "Hang Zhao"
+        ],
+        "publication_year": "2025",
+        "objective": "Address the challenge of limited labeled data in Specific Emitter Identification (SEI) by proposing a self-supervised contrastive learning framework.",
+        "methodology": "A two-stage framework combining unsupervised pretraining with contrastive loss and supervised fine-tuning via virtual adversarial training (VAT) to enhance generalization with limited labels.",
+        "dataset": "Real-world satellite navigation signals collected using a 40-meter antenna, including Beidou Navigation Satellite System (BDS) data with 10 emitter classes.",
+        "performance": "Outperforms existing SEI methods across various settings with limited labeled samples, demonstrating robustness and generalizability.",
+        "limitations": "Overfitting remains a risk during fine-tuning due to the disparity between unlabeled pretraining data and limited labeled samples."
+    },
+    {
+        "paper_id": "4",
+        "filename": "merchant2018.pdf",
+        "title": "NOT MENTIONED",
+        "authors": [
+            "Kevin Merchant",
+            "Shauna Revay",
+            "George Stantchev",
+            "Bryan Nousain"
+        ],
+        "publication_year": "NOT MENTIONED",
+        "objective": "Authenticate radio identities in cognitive radio networks to prevent impersonation of licensed users and mitigate Primary User Emulation (PUE) attacks",
+        "methodology": "A CNN is trained on time-domain complex baseband error signals to detect physical-layer signatures. The method utilizes full transmission data rather than limited signal preambles for classification",
+        "dataset": "7 commercial ZigBee devices operating in the 2.4 GHz band (IEEE 802.15.4 standard)",
+        "performance": "Achieved 92.29% identification accuracy on ZigBee devices across varying SNR conditions",
+        "limitations": "Depends on device-specific hardware variability; performance may degrade with large device populations or spoofed frequency offsets"
+    },
+    {
+        "paper_id": "5",
+        "filename": "2102.09896v1.pdf",
+        "title": "Scribble-Supervised Semantic Segmentation by Uncertainty Reduction on Neural Representation and Self-Supervision on Neural Eigenspace",
+        "authors": [
+            "Zhiyi Pan",
+            "Peng Jiang",
+            "Yunhai Wang",
+            "Changhe Tu",
+            "Anthony G. Cohn"
+        ],
+        "publication_year": "2021",
+        "objective": "Achieve semantic segmentation by scribble annotations directly without extra information and other limitations",
+        "methodology": "Proposes uncertainty reduction via entropy minimization and neural random walks, combined with self-supervision on neural eigenspace for consistency",
+        "dataset": "Common scribble datasets (specific names not explicitly mentioned)",
+        "performance": "Demonstrates superiority over existing methods and comparability to full-label supervised approaches, working well with random scribble shrinkage/dropping",
+        "limitations": "Relies on pseudo-boundaries and may require specific dataset preparations for optimal performance"
+    }
+]

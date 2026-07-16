@@ -1,0 +1,98 @@
+[
+    {
+        "paper_id": "1",
+        "filename": "2101.05570v3.pdf",
+        "title": "TypeNet: Deep Learning Keystroke Biometrics",
+        "authors": [
+            "Alejandro Acien",
+            "Aythami Morales",
+            "John V. Monaco",
+            "Ruben Vera-Rodriguez",
+            "Julian Fierrez"
+        ],
+        "publication_year": "NOT MENTIONED",
+        "objective": "Investigates LSTM networks for keystroke biometric authentication in free-text scenarios, comparing three learning approaches (softmax, contrastive, triplet loss) and evaluating performance across physical/touchscreen keyboards.",
+        "methodology": "LSTM-based deep learning models trained with keystroke sequences, evaluated using different loss functions, sample sizes, and device types (physical vs touchscreen keyboards).",
+        "dataset": "Largest free-text keystroke databases with >136M keystrokes from 168,000 physical keyboard users and 60,000 touchscreen users.",
+        "performance": "TypeNet achieves 2.2% EER for physical keyboards and 9.2% for touchscreen keyboards, with scalable performance up to 100,000 users.",
+        "limitations": "Performance degrades with very large user counts; device-specific behavior may affect accuracy."
+    },
+    {
+        "paper_id": "2",
+        "filename": "s41598-018-20462-6.pdf",
+        "title": "Covert lie detection using keyboard dynamics",
+        "authors": [
+            "Merylin Monaro",
+            "Chiara Galante",
+            "Riccardo Spolaor",
+            "Qian Qian Li",
+            "Luciano Gamberini",
+            "Mauro Conti",
+            "Giuseppe Sartori"
+        ],
+        "publication_year": "2018",
+        "objective": "Detecting fake identities without external verification (documents, biometrics) in security and online contexts.",
+        "methodology": "Keystroke dynamics analysis using unexpected questions to reveal deception clues through typing pattern deviations.",
+        "dataset": "60 participants (40 training, 20 test) with fabricated ID profiles and real personal information.",
+        "performance": "Achieved 95% accuracy in distinguishing liars from truth-tellers using keystroke dynamics.",
+        "limitations": "Requires predefined questions; generalizability to real-world scenarios may be limited."
+    },
+    {
+        "paper_id": "3",
+        "filename": "Non-ActedTextandKeystrokesDatabaseandLearning.pdf",
+        "title": "Non-Acted Text and Keystrokes Database and Learning Methods to Recognize Emotions",
+        "authors": [
+            "Madiha Tahir",
+            "Zahid Halim",
+            "Atta Ur Rahman",
+            "Muhammad Waqas",
+            "Shanshan Tu",
+            "Sheng Chen",
+            "Zhu Han"
+        ],
+        "publication_year": "2022",
+        "objective": "Develop a multimodal text-keystrokes dataset and learning methods for emotion recognition through feature fusion and SVM-based classification.",
+        "methodology": "Collected text-keystroke data from 69 participants using controlled video stimuli. Extracted and fused text and keystroke features using tree-based selection and SVM for emotion classification.",
+        "dataset": "Multimodal text-keystrokes dataset with 69 participants, including video-induced stimuli and unguided text reviews.",
+        "performance": "Achieved 86.95% accuracy in emotion classification via text-keystroke fusion; 100% accuracy for pleasure-displeasure classes using SVM and feature fusion.",
+        "limitations": "Data collected in controlled environments may lack real-world variability; limited to predefined emotion classes."
+    },
+    {
+        "paper_id": "4",
+        "filename": "pone.0129056.pdf",
+        "title": "NOT MENTIONED",
+        "authors": [
+            "Po-Ming Lee",
+            "Wei-Hsuan Tsui",
+            "Tzu-Chien Hsiao"
+        ],
+        "publication_year": "2015",
+        "objective": "Explore emotional influences on keystroke dynamics due to limited prior research on emotion-induced variance in keyboard typing patterns.",
+        "methodology": "Controlled experiment using International Affective Digitized Sounds (IADS) to induce emotional states, followed by two-way ANOVA analysis of keystroke data.",
+        "dataset": "Keystroke data collected from 52 participants under IADS-induced emotional conditions (Valence x Arousal dimensions).",
+        "performance": "Arousal significantly affected duration (p < .05) and latency (p < .01), but not accuracy. Emotional effects were smaller than individual variability.",
+        "limitations": "Small emotional effect size and potential methodological limitations in parameter specificity."
+    },
+    {
+        "paper_id": "5",
+        "filename": "1803.08986v1.pdf",
+        "title": "DeepMood: Modeling Mobile Phone Typing Dynamics for Mood Detection",
+        "authors": [
+            "Bokai Cao",
+            "Lei Zheng",
+            "Chenwei Zhang",
+            "Philip S. Yu",
+            "Andrea Piscitello",
+            "John Zulueta",
+            "Olu Ajilore",
+            "Kelly Ryan",
+            "Alex D. Leow"
+        ],
+        "publication_year": "NOT MENTIONED",
+        "objective": "Detect mood disturbances and severity using mobile phone typing dynamics metadata, offering non-intrusive mental health monitoring in daily life settings.",
+        "methodology": "Proposes DeepMood, a late fusion deep architecture combining RNNs for multi-view metadata (keypress timing, accelerometer) with interaction modeling across views.",
+        "dataset": "BiAffect study data from 20 participants (7 bipolar I, 5 bipolar II, 8 controls) with session-level typing metadata and clinical ratings (HDRS/YMRS).",
+        "performance": "Achieved 90.31% depression score prediction accuracy using session-level typing dynamics (typically <1 minute), demonstrating feasibility of metadata-driven mood inference.",
+        "limitations": "Privacy constraints limit character data collection; reliance on self-reported clinical ratings may introduce bias; requires further validation on diverse populations."
+    }
+]

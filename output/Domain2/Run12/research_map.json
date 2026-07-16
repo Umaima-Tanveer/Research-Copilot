@@ -1,0 +1,152 @@
+{
+    "nodes": [
+        {
+            "id": "18330",
+            "title": "Progressive Conditional Diffusion Model for Multistage Spectral Restoration of Remote Sensing Image",
+            "year": 2025,
+            "dataset": "Synthetic and real hyperspectral-multispectral datasets",
+            "methodology": "Proposes a progressive conditional diffusion model (PCDM) with channel synthesis and image reconstruction modules. Constructs multiple conditional diffusion models, sharing parameters between multispectral images and IRM for spectral up-sampling.",
+            "task_type": "Spectral super-resolution",
+            "contribution": "Introduces PCDM with multistage constraints, global-local channel synthesis, and feature fusion modules for accurate intermediate feature generation."
+        },
+        {
+            "id": "2",
+            "title": "The Influence of Emotion on Keyboard Typing: An Experimental Study Using Auditory Stimuli",
+            "year": 2015,
+            "dataset": "Keystroke data collected from 52 subjects typing a number sequence after exposure to IADS stimuli.",
+            "methodology": "Controlled experiment using International Affective Digitized Sounds (IADS) to induce emotional states. Two-way Valence x Arousal ANOVA analyzed keystroke duration, latency, and accuracy.",
+            "task_type": "Emotion Recognition",
+            "contribution": "Supports that keystroke duration and latency are arousal-driven. Highlights potential for personalized models to enhance emotion recognition accuracy."
+        },
+        {
+            "id": "3",
+            "title": "The Laws of Emotion",
+            "year": 1988,
+            "dataset": null,
+            "methodology": "Formulating empirical laws of emotion based on causal mechanisms and cognitive appraisals of events, validated through correlations and computational models.",
+            "task_type": "Theoretical Framework Development",
+            "contribution": "Proposes a framework of emotion laws (e.g., situational meaning, conservation of momentum) to systematically study emotional responses and regulation."
+        },
+        {
+            "id": "4",
+            "title": "MoodSwipe: A Soft Keyboard that Suggests Messages Based on User-Specified Emotions",
+            "year": null,
+            "dataset": "EmotionPush dataset (162,031 social dialog messages) with manual emotion labels for 8,818 messages, split into training (70%), validation (10%), and testing (20%) sets.",
+            "methodology": "MoodSwipe uses emotion classification models trained on dialog data to suggest text based on user-specified emotions. A color-coded interface allows users to select emotions and view corresponding message suggestions.",
+            "task_type": "Text suggestion with emotion context",
+            "contribution": "1) Novel emotion-labeled data collection via user interaction. 2) Bidirectional emotion sensing for text suggestion. 3) New interaction paradigm allowing users to provide context for suggestions."
+        },
+        {
+            "id": "5",
+            "title": "The Experience of Emotion",
+            "year": null,
+            "dataset": null,
+            "methodology": "Review of existing theories, integration into a framework combining phenomenological content and neurobiological processes, and discussion of philosophical perspectives like biological naturalism.",
+            "task_type": "Conceptual Analysis",
+            "contribution": "Introduces biological naturalism as a framework addressing both content and neurobiological processes in emotion experiences, challenging materialist and behaviorist views."
+        }
+    ],
+    "edges": [
+        {
+            "paper1": "18330",
+            "paper2": "2",
+            "relation": "unrelated",
+            "similarity": 0.0,
+            "reason": "The papers address entirely different research domains: Paper 1 focuses on remote sensing image restoration using diffusion models, while Paper 2 examines emotion recognition through keystroke dynamics. No overlapping methodologies, datasets, or conceptual frameworks are present.",
+            "shared_concepts": []
+        },
+        {
+            "paper1": "18330",
+            "paper2": "3",
+            "relation": "unrelated",
+            "similarity": 0.0,
+            "reason": "The papers address entirely different domains (remote sensing image restoration vs. theoretical emotion frameworks) with no overlapping methodologies, datasets, or conceptual contributions.",
+            "shared_concepts": []
+        },
+        {
+            "paper1": "18330",
+            "paper2": "4",
+            "relation": "unrelated",
+            "similarity": 0.0,
+            "reason": "The papers address entirely different domains (remote sensing image restoration vs. text suggestion with emotion context) with distinct methodologies, datasets, and tasks. No overlapping concepts or technical approaches are present.",
+            "shared_concepts": []
+        },
+        {
+            "paper1": "18330",
+            "paper2": "5",
+            "relation": "unrelated",
+            "similarity": 0.0,
+            "reason": "The papers address entirely distinct domains (remote sensing image restoration vs. conceptual analysis of emotion) with no overlapping methodologies, datasets, or tasks. Paper1 focuses on machine learning for spectral super-resolution, while Paper2 presents a philosophical framework for understanding emotion, lacking technical overlap.",
+            "shared_concepts": []
+        },
+        {
+            "paper1": "2",
+            "paper2": "3",
+            "relation": "compares",
+            "similarity": 0.4,
+            "reason": "Both papers address emotion-related phenomena but employ distinct methodologies (empirical experimentation vs. theoretical framework) and focus on different aspects (behavioral metrics vs. causal mechanisms).",
+            "shared_concepts": [
+                "emotion",
+                "emotion recognition",
+                "emotional responses"
+            ]
+        },
+        {
+            "paper1": "2",
+            "paper2": "4",
+            "relation": "compares",
+            "similarity": 0.3,
+            "reason": "Both papers explore emotion-related interactions but focus on distinct tasks (emotion recognition via keystroke metrics vs. text suggestion with emotion context). They share thematic overlap in emotion modeling but differ in methodology and application.",
+            "shared_concepts": [
+                "emotion",
+                "user interaction",
+                "text input",
+                "emotion recognition"
+            ]
+        },
+        {
+            "paper1": "2",
+            "paper2": "5",
+            "relation": "compares",
+            "similarity": 0.2,
+            "reason": "Both papers address emotion-related topics but differ in approach: Paper 1 focuses on empirical analysis of physiological metrics (keystroke data), while Paper 2 provides a conceptual framework integrating philosophical and neurobiological perspectives. They do not directly overlap in methodology or dataset.",
+            "shared_concepts": [
+                "emotion"
+            ]
+        },
+        {
+            "paper1": "3",
+            "paper2": "4",
+            "relation": "compares",
+            "similarity": 0.2,
+            "reason": "Both papers address emotion-related concepts but differ in task (theoretical framework vs. text suggestion application) and methodology (causal mechanisms/cognitive appraisals vs. emotion classification models).",
+            "shared_concepts": [
+                "emotion",
+                "emotional responses",
+                "emotion classification"
+            ]
+        },
+        {
+            "paper1": "3",
+            "paper2": "5",
+            "relation": "compares",
+            "similarity": 0.3,
+            "reason": "Both papers develop theoretical frameworks for understanding emotion but approach it differently: Paper 1 focuses on empirical laws and causal mechanisms, while Paper 2 integrates phenomenological and neurobiological perspectives with philosophical frameworks.",
+            "shared_concepts": [
+                "emotional experiences",
+                "frameworks"
+            ]
+        },
+        {
+            "paper1": "4",
+            "paper2": "5",
+            "relation": "unrelated",
+            "similarity": 0.2,
+            "reason": "Paper 1 focuses on applied emotion-aware text suggestion with a specific dataset and methodology, while Paper 2 provides a theoretical conceptual analysis of emotion frameworks. They address different aspects of emotion research (practical application vs. philosophical theory) without direct methodological or dataset overlap.",
+            "shared_concepts": [
+                "emotion",
+                "emotion sensing"
+            ]
+        }
+    ]
+}

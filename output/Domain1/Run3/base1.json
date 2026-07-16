@@ -1,0 +1,180 @@
+[
+    {
+        "paper_id": "1",
+        "filename": "lee2021.pdf",
+        "title": "Deep-Learning-Aided RF Fingerprinting for NFC Security",
+        "authors": [
+            "Woongsup Lee",
+            "Seon Yeob Baek",
+            "Seong Hwan Kim"
+        ],
+        "year": 2021,
+        "abstract": "The paper explores RF fingerprinting assisted by deep learning for NFC tag identification, demonstrating rapid identification through hardware testbed implementation and achieving 96.16% accuracy for 50 tags.",
+        "keywords": [
+            "RF fingerprinting",
+            "deep learning",
+            "NFC security",
+            "authentication",
+            "signal analysis"
+        ],
+        "domain": "Communications",
+        "research_area": "Data Science and Artificial Intelligence for Communications",
+        "problem_statement": "NFC tags face security risks like cloning and man-in-the-middle attacks due to limited computational capabilities and lack of cryptographic robustness.",
+        "methodology": "A hardware testbed with NFC reader and SDR collects RF signals. Three DNNs (FNN, CNN, RNN) analyze one-bit transmission data for RF characteristic extraction.",
+        "dataset": "RF signals from 50 NFC tags (same manufacturer/batch) captured via off-the-shelf NFC reader.",
+        "evaluation_metrics": [
+            "Accuracy",
+            "Uniqueness of identification"
+        ],
+        "performance": "Achieved 96.16% accuracy in distinguishing 50 NFC tags using deep-learning-based RF fingerprinting.",
+        "contribution": "Proposes deep learning for RF fingerprinting in NFC, enabling practical, rapid tag identification with high accuracy.",
+        "limitations": "Requires specialized hardware (SDR), limited data samples in prior work, and challenges in real-world deployment.",
+        "future_work": "Improve data collection scalability, optimize DNN models for efficiency, and address hardware constraints.",
+        "task_type": "Classification",
+        "model_type": "Deep Neural Networks (FNN, CNN, RNN)"
+    },
+    {
+        "paper_id": "2",
+        "filename": "sensors-25-04451-with-cover.pdf",
+        "title": "Cross-Receiver Radio Frequency Fingerprint Identification: A Source-Free Adaptation Approach",
+        "authors": [
+            "Jian Yang",
+            "Shaoxian Zhu",
+            "Zhongyi Wen",
+            "Qiang Li"
+        ],
+        "year": 2025,
+        "abstract": "Radio frequency fingerprint identification (RFFI) leverages hardware imperfections for device identification, but model deployment across receivers faces challenges due to data distribution shifts. This paper introduces SCRFFI, a source-free adaptation approach using contrastive learning to adapt pre-trained models to new receivers without source data.",
+        "keywords": [
+            "radio frequency fingerprint identification",
+            "source-free unsupervised domain adaptation",
+            "cross-receiver RFFI"
+        ],
+        "domain": "Wireless Spectrum Sensing and Awareness",
+        "research_area": "RF AI/ML",
+        "problem_statement": "Adapting RFFI models to new receivers without access to source data, addressing privacy and transmission limitations caused by hardware variations.",
+        "methodology": "Proposes CSCNet, a contrastive learning framework with a three-pronged loss function (entropy minimization, pseudo-label self-supervision, contrastive learning) for unlabeled data adaptation.",
+        "dataset": "Real-world datasets (HackRF, Wisig) under realistic noise and channel conditions.",
+        "evaluation_metrics": [
+            "Recognition accuracy",
+            "Robustness"
+        ],
+        "performance": "Achieves 13% average improvement over existing methods and 47% increase in challenging cross-receiver tasks.",
+        "contribution": "Defines SCRFFI, introduces pseudo-labeling, proposes CSCNet with contrastive learning, and validates performance on real-world datasets.",
+        "limitations": null,
+        "future_work": null,
+        "task_type": "Domain Adaptation",
+        "model_type": "Contrastive Learning"
+    },
+    {
+        "paper_id": "3",
+        "filename": "remotesensing-17-02659-v2.pdf",
+        "title": "A Self-Supervised Contrastive Framework for Specific Emitter Identification with Limited Labeled Data",
+        "authors": [
+            "Jiaqi Wang",
+            "Lishu Guo",
+            "Pengfei Liu",
+            "Peng Shang",
+            "Xiaochun Lu",
+            "Hang Zhao"
+        ],
+        "year": 2025,
+        "abstract": "Specific Emitter Identification (SEI) is a specialized technique for identifying different emitters by analyzing Radio Frequency Fingerprints (RFFs). This paper proposes a novel SEI framework based on self-supervised contrastive learning to address the challenge of limited labeled data, achieving outstanding performance in satellite transmitter identification.",
+        "keywords": [
+            "satellite transmitter identification",
+            "deep learning",
+            "self-supervised learning",
+            "contrastive learning",
+            "virtual adversarial training"
+        ],
+        "domain": "Remote Sensing",
+        "research_area": "Signal Processing and Machine Learning",
+        "problem_statement": "Traditional SEI methods rely on large-scale supervised training, but real-world scenarios face challenges due to scarce accurately labeled data, limiting their effectiveness.",
+        "methodology": "A two-stage framework combining unsupervised pretraining with contrastive loss and supervised fine-tuning via virtual adversarial training (VAT) to enhance generalization with limited labels.",
+        "dataset": "Real-world satellite navigation signals collected using a 40-meter antenna, including Beidou Navigation Satellite System (BDS) data with 10 emitter classes.",
+        "evaluation_metrics": [
+            "Accuracy",
+            "F1-score",
+            "AUC-ROC"
+        ],
+        "performance": "Outperforms existing SEI methods across various settings with limited labeled samples, demonstrating robustness and generalizability.",
+        "contribution": "Proposes a novel self-supervised contrastive learning framework, specialized data augmentation strategies, and a hybrid encoder (Transformer + ResNet) for improved RFF extraction.",
+        "limitations": "Overfitting remains a risk during fine-tuning due to the disparity between unlabeled pretraining data and limited labeled samples.",
+        "future_work": "Explore advanced data augmentation techniques and apply the framework to other signal identification tasks with heterogeneous data.",
+        "task_type": "Specific Emitter Identification",
+        "model_type": "Contrastive Learning with Virtual Adversarial Training"
+    },
+    {
+        "paper_id": "4",
+        "filename": "merchant2018.pdf",
+        "title": "",
+        "authors": [
+            "Kevin Merchant",
+            "Shauna Revay",
+            "George Stantchev",
+            "Bryan Nousain"
+        ],
+        "year": null,
+        "abstract": "Deep learning is used for RF device fingerprinting in cognitive communication networks to authenticate radio identities. The method leverages manufacturing variability in transmitters to create unique signatures for device identification using convolutional neural networks (CNNs).",
+        "keywords": [
+            "Communication system security",
+            "neural networks",
+            "ZigBee",
+            "cognitive radio",
+            "pattern recognition",
+            "classification algorithms"
+        ],
+        "domain": "Communication Systems",
+        "research_area": "Wireless Security and Deep Learning",
+        "problem_statement": "Authenticate radio identities in cognitive radio networks to prevent impersonation of licensed users and mitigate Primary User Emulation (PUE) attacks.",
+        "methodology": "A CNN is trained on time-domain complex baseband error signals to detect physical-layer signatures. The method utilizes full transmission data rather than limited signal preambles for classification.",
+        "dataset": "7 commercial ZigBee devices operating in the 2.4 GHz band (IEEE 802.15.4 standard).",
+        "evaluation_metrics": [
+            "Accuracy",
+            "Signal-to-Noise Ratio (SNR) robustness"
+        ],
+        "performance": "Achieved 92.29% identification accuracy on ZigBee devices across varying SNR conditions.",
+        "contribution": "Proposed a CNN-based framework for RF fingerprinting using time-domain error signals, demonstrating robustness against spoofing and scalability in cognitive radio networks.",
+        "limitations": "Depends on device-specific hardware variability; performance may degrade with large device populations or spoofed frequency offsets.",
+        "future_work": "Expand to heterogeneous device populations, integrate with cryptographic authentication, and improve robustness against adversarial signal manipulations.",
+        "task_type": "Classification",
+        "model_type": "Convolutional Neural Network (CNN)"
+    },
+    {
+        "paper_id": "5",
+        "filename": "2102.09896v1.pdf",
+        "title": "Scribble-Supervised Semantic Segmentation by Uncertainty Reduction on Neural Representation and Self-Supervision on Neural Eigenspace",
+        "authors": [
+            "Zhiyi Pan",
+            "Peng Jiang",
+            "Yunhai Wang",
+            "Changhe Tu",
+            "Anthony G. Cohn"
+        ],
+        "year": 2021,
+        "abstract": "Scribble-supervised semantic segmentation has gained much attention recently for its promising performance without high-quality annotations. Due to the lack of supervision, confident and consistent predictions are usually hard to obtain. This work aims to achieve semantic segmentation by scribble annotations directly without extra information and other limitations.",
+        "keywords": [
+            "scribble-supervised segmentation",
+            "uncertainty reduction",
+            "self-supervision",
+            "neural representation",
+            "eigenspace"
+        ],
+        "domain": "Computer Vision",
+        "research_area": "Semantic Segmentation",
+        "problem_statement": "Scribble-supervised semantic segmentation faces challenges due to sparse supervision and inconsistent predictions from varying scribble annotations.",
+        "methodology": "Proposes uncertainty reduction via entropy minimization and neural random walks, combined with self-supervision on neural eigenspace for consistency.",
+        "dataset": "Common scribble datasets (specific names not explicitly mentioned)",
+        "evaluation_metrics": [
+            "Comprehensive experiments",
+            "Ablation studies",
+            "Comparison with full-label supervised methods"
+        ],
+        "performance": "Demonstrates superiority over existing methods and comparability to full-label supervised approaches, working well with random scribble shrinkage/dropping.",
+        "contribution": "Introduces two solutions: uncertainty reduction on neural representation and self-supervision on neural eigenspace for consistent predictions.",
+        "limitations": "Relies on pseudo-boundaries and may require specific dataset preparations for optimal performance.",
+        "future_work": "Explore more robust methods for handling varying scribble annotations and improve generalization.",
+        "task_type": "Semantic Segmentation",
+        "model_type": "Neural networks with entropy minimization and random walk operations"
+    }
+]

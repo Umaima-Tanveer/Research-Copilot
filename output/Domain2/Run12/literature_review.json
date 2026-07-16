@@ -1,0 +1,87 @@
+[
+    {
+        "paper_id": "18330",
+        "filename": "Progressive_Conditional_Diffusion_Model_for_Multistage_Spectral_Restoration_of_Remote_Sensing_Image.pdf",
+        "title": "Progressive Conditional Diffusion Model for Multistage Spectral Restoration of Remote Sensing Image",
+        "authors": [
+            "Jinfeng Gao",
+            "Gangqiang Li",
+            "Ruxian Yao",
+            "Qiang Liu",
+            "Junming Zhang"
+        ],
+        "publication_year": "2025",
+        "objective": "Reconstructing high-quality hyperspectral images (HSIs) by addressing spectral distortion in spectral super-resolution.",
+        "methodology": "Proposes a progressive conditional diffusion model (PCDM) with channel synthesis and image reconstruction modules. Constructs multiple conditional diffusion models sharing parameters between multispectral images and IRM for spectral up-sampling.",
+        "dataset": "Synthetic and real hyperspectral-multispectral datasets",
+        "performance": "PCDM achieves superior results in spectral super-resolution, outperforming existing algorithms.",
+        "limitations": "Intermediate generative processes remain under-regularized, affecting training convergence and spectral fidelity."
+    },
+    {
+        "paper_id": "2",
+        "filename": "file.pdf",
+        "title": "The Influence of Emotion on Keyboard Typing: An Experimental Study Using Auditory Stimuli",
+        "authors": [
+            "Po-Ming Lee",
+            "Wei-Hsuan Tsui",
+            "Tzu-Chien Hsiao"
+        ],
+        "publication_year": "2015",
+        "objective": "Examine the source of variance in keyboard typing patterns caused by emotions using auditory stimuli",
+        "methodology": "Controlled experiment using International Affective Digitized Sounds (IADS) to induce emotional states. Two-way Valence x Arousal ANOVA analyzed keystroke duration, latency, and accuracy",
+        "dataset": "Keystroke data collected from 52 subjects typing a number sequence after exposure to IADS stimuli",
+        "performance": "Arousal significantly influenced duration (p < .05) and latency (p < .01), but not accuracy. Emotional effect size was smaller than individual variability",
+        "limitations": "Small emotional effect size relative to individual variability; limited exploration of complex ML models"
+    },
+    {
+        "paper_id": "3",
+        "filename": "The_laws_of_emotion.pdf",
+        "title": "The Laws of Emotion",
+        "authors": [
+            "Nico H. Frijda"
+        ],
+        "publication_year": "1988",
+        "objective": "NOT MENTIONED",
+        "methodology": "Formulating empirical laws of emotion based on causal mechanisms and cognitive appraisals of events, validated through correlations and computational models.",
+        "dataset": "None",
+        "performance": "NOT MENTIONED",
+        "limitations": "Not all laws are empirically validated; requires further research to establish robustness and universality."
+    },
+    {
+        "paper_id": "4",
+        "filename": "1707.07191v1.pdf",
+        "title": "MoodSwipe: A Soft Keyboard that Suggests Messages Based on User-Specified Emotions",
+        "authors": [
+            "Chieh-Yang Huang",
+            "Tristan Labetoulle",
+            "Ting-Hao (Kenneth) Huang",
+            "Yi-Pei Chen",
+            "Hung-Chen Chen",
+            "Vallari Srivastava",
+            "Lun-Wei Ku"
+        ],
+        "publication_year": "NOT MENTIONED",
+        "objective": "Create a user interface for emotion classification and text suggestion while automatically collecting labeled data.",
+        "methodology": "Emotion classification models trained on dialog data to suggest text based on user-specified emotions. A color-coded interface allows users to select emotions and view corresponding message suggestions.",
+        "dataset": "EmotionPush dataset (162,031 social dialog messages) with manual emotion labels for 8,818 messages, split into training (70%), validation (10%), and testing (20%) sets.",
+        "performance": "CNN3 and LSTM3 models achieved over 0.9 accuracy for Joy, Anger, and Sadness. Text suggestions were generated for 1,366 messages with emotion labels excluding Neutral.",
+        "limitations": "Relies on dialog data for emotion labels; requires additional equipment for physiological signals. Limited to text-based emotion expression."
+    },
+    {
+        "paper_id": "5",
+        "filename": "nihms-23384.pdf",
+        "title": "The Experience of Emotion",
+        "authors": [
+            "Lisa Feldman Barrett",
+            "Batja Mesquita",
+            "Kevin N. Ochsner",
+            "James J. Gross"
+        ],
+        "publication_year": "NOT MENTIONED",
+        "objective": "Outline a scientific agenda for understanding emotional experiences by integrating phenomenological content and neurobiological processes.",
+        "methodology": "Review of existing theories, integration into a framework combining phenomenological content and neurobiological processes, and discussion of philosophical perspectives like biological naturalism.",
+        "dataset": "NOT MENTIONED",
+        "performance": "The framework suggests emotion experiences emerge from evolving affect and conceptual processing, akin to perceiving color from light spectra.",
+        "limitations": "Scientific descriptions cannot fully capture subjective experiences; bridging laws between neurobiological and phenomenological levels remain unresolved."
+    }
+]

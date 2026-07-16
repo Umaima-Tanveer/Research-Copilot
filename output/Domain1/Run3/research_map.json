@@ -1,0 +1,164 @@
+{
+    "nodes": [
+        {
+            "id": "1",
+            "title": "Deep-Learning-Aided RF Fingerprinting for NFC Security",
+            "year": 2021,
+            "dataset": "RF signals from 50 NFC tags (same manufacturer/batch) captured via off-the-shelf NFC reader.",
+            "methodology": "A hardware testbed with NFC reader and SDR collects RF signals. Three DNNs (FNN, CNN, RNN) analyze one-bit transmission data for RF characteristic extraction.",
+            "task_type": "Classification",
+            "contribution": "Proposes deep learning for RF fingerprinting in NFC, enabling practical, rapid tag identification with high accuracy."
+        },
+        {
+            "id": "2",
+            "title": "Cross-Receiver Radio Frequency Fingerprint Identification: A Source-Free Adaptation Approach",
+            "year": 2025,
+            "dataset": "Real-world datasets (HackRF, Wisig) under realistic noise and channel conditions.",
+            "methodology": "Proposes CSCNet, a contrastive learning framework with a three-pronged loss function (entropy minimization, pseudo-label self-supervision, contrastive learning) for unlabeled data adaptation.",
+            "task_type": "Domain Adaptation",
+            "contribution": "Defines SCRFFI, introduces pseudo-labeling, proposes CSCNet with contrastive learning, and validates performance on real-world datasets."
+        },
+        {
+            "id": "3",
+            "title": "A Self-Supervised Contrastive Framework for Specific Emitter Identification with Limited Labeled Data",
+            "year": 2025,
+            "dataset": "Real-world satellite navigation signals collected using a 40-meter antenna, including Beidou Navigation Satellite System (BDS) data with 10 emitter classes.",
+            "methodology": "A two-stage framework combining unsupervised pretraining with contrastive loss and supervised fine-tuning via virtual adversarial training (VAT) to enhance generalization with limited labels.",
+            "task_type": "Specific Emitter Identification",
+            "contribution": "Proposes a novel self-supervised contrastive learning framework, specialized data augmentation strategies, and a hybrid encoder (Transformer + ResNet) for improved RFF extraction."
+        },
+        {
+            "id": "4",
+            "title": "",
+            "year": null,
+            "dataset": "7 commercial ZigBee devices operating in the 2.4 GHz band (IEEE 802.15.4 standard).",
+            "methodology": "A CNN is trained on time-domain complex baseband error signals to detect physical-layer signatures. The method utilizes full transmission data rather than limited signal preambles for classification.",
+            "task_type": "Classification",
+            "contribution": "Proposed a CNN-based framework for RF fingerprinting using time-domain error signals, demonstrating robustness against spoofing and scalability in cognitive radio networks."
+        },
+        {
+            "id": "5",
+            "title": "Scribble-Supervised Semantic Segmentation by Uncertainty Reduction on Neural Representation and Self-Supervision on Neural Eigenspace",
+            "year": 2021,
+            "dataset": "Common scribble datasets (specific names not explicitly mentioned)",
+            "methodology": "Proposes uncertainty reduction via entropy minimization and neural random walks, combined with self-supervision on neural eigenspace for consistency.",
+            "task_type": "Semantic Segmentation",
+            "contribution": "Introduces two solutions: uncertainty reduction on neural representation and self-supervision on neural eigenspace for consistent predictions."
+        }
+    ],
+    "edges": [
+        {
+            "paper1": "1",
+            "paper2": "2",
+            "relation": "compares",
+            "similarity": 0.5,
+            "reason": "Both papers address RF fingerprinting but differ in methodology (classification vs. domain adaptation), dataset (NFC tags vs. real-world SDR datasets), and techniques (DNNs vs. contrastive learning with pseudo-labeling).",
+            "shared_concepts": [
+                "RF fingerprinting",
+                "deep learning",
+                "RF signals"
+            ]
+        },
+        {
+            "paper1": "1",
+            "paper2": "3",
+            "relation": "compares",
+            "similarity": 0.4,
+            "reason": "Both papers address RF fingerprinting but apply it to different domains (NFC tags vs. satellite navigation signals) and employ distinct methodologies (DNNs vs. self-supervised contrastive learning).",
+            "shared_concepts": [
+                "RF fingerprinting",
+                "emitter identification",
+                "specific emitter identification"
+            ]
+        },
+        {
+            "paper1": "1",
+            "paper2": "4",
+            "relation": "uses_same_method",
+            "similarity": 0.6,
+            "reason": "Both papers use CNN for RF fingerprinting in classification tasks, though applied to different technologies (NFC vs ZigBee).",
+            "shared_concepts": [
+                "classification",
+                "RF fingerprinting",
+                "CNN"
+            ]
+        },
+        {
+            "paper1": "1",
+            "paper2": "5",
+            "relation": "unrelated",
+            "similarity": 0.0,
+            "reason": "The papers address entirely different tasks (NFC security vs. semantic segmentation), employ distinct methodologies (RF signal analysis vs. uncertainty reduction/self-supervision), and use unrelated datasets (NFC tags vs. scribble datasets). No overlapping concepts or technical approaches are present.",
+            "shared_concepts": [
+                "deep learning",
+                "neural networks"
+            ]
+        },
+        {
+            "paper1": "2",
+            "paper2": "3",
+            "relation": "compares",
+            "similarity": 0.6,
+            "reason": "Both papers address radio frequency fingerprint identification but differ in methodology (contrastive learning with pseudo-labeling vs. contrastive loss + VAT), datasets (HackRF/Wisig vs. satellite navigation signals), and tasks (domain adaptation vs. specific emitter identification). They share contrastive learning as a core technique but apply it to distinct problems.",
+            "shared_concepts": [
+                "contrastive learning",
+                "radio frequency fingerprint identification"
+            ]
+        },
+        {
+            "paper1": "2",
+            "paper2": "4",
+            "relation": "compares",
+            "similarity": 0.4,
+            "reason": "Both papers address radio frequency fingerprinting but differ in task (domain adaptation vs. classification), methodology (contrastive learning vs. CNN with time-domain signals), and datasets (real-world RF devices vs. ZigBee devices).",
+            "shared_concepts": [
+                "Radio Frequency Fingerprinting",
+                "Machine Learning Methods",
+                "Signal Analysis"
+            ]
+        },
+        {
+            "paper1": "2",
+            "paper2": "5",
+            "relation": "compares",
+            "similarity": 0.3,
+            "reason": "Both papers use entropy minimization in their methodologies but apply it to different tasks (domain adaptation vs. semantic segmentation). They share conceptual overlap in self-supervision techniques but differ in problem domains and dataset types.",
+            "shared_concepts": [
+                "entropy minimization",
+                "self-supervision"
+            ]
+        },
+        {
+            "paper1": "3",
+            "paper2": "4",
+            "relation": "compares",
+            "similarity": 0.3,
+            "reason": "Both papers address signal classification tasks but employ distinct methodologies (contrastive learning vs. CNN-based RF fingerprinting) and different datasets (satellite navigation signals vs. ZigBee devices).",
+            "shared_concepts": [
+                "signal classification",
+                "RF fingerprinting",
+                "machine learning methods"
+            ]
+        },
+        {
+            "paper1": "3",
+            "paper2": "5",
+            "relation": "unrelated",
+            "similarity": 0.1,
+            "reason": "Paper1 focuses on specific emitter identification using contrastive learning and satellite signals, while Paper2 addresses semantic segmentation with uncertainty reduction and neural eigenspace self-supervision. Tasks, methodologies, and datasets are distinct.",
+            "shared_concepts": [
+                "self-supervised learning"
+            ]
+        },
+        {
+            "paper1": "4",
+            "paper2": "5",
+            "relation": "unrelated",
+            "similarity": 0.2,
+            "reason": "Paper1 focuses on RF fingerprinting using CNNs for classification of ZigBee devices, while Paper2 addresses semantic segmentation with scribble-supervised methods. The tasks (classification vs. segmentation), domains (physical-layer analysis vs. image processing), and methodologies (CNN-based error signal analysis vs. uncertainty reduction/self-supervision) are distinct.",
+            "shared_concepts": [
+                "neural networks"
+            ]
+        }
+    ]
+}

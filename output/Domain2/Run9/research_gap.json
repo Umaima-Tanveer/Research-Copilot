@@ -1,0 +1,68 @@
+{
+    "methodological": [
+        {
+            "gap": "Limited integration of multimodal data with keystroke dynamics",
+            "impact": "High",
+            "reason": "Combining keystroke data with physiological or contextual data could significantly improve accuracy",
+            "papers": [
+                "Keystroke Dynamics Patterns While Writing Positive and Negative Opinions"
+            ]
+        },
+        {
+            "gap": "Insufficient user feature integration into behavioral models",
+            "impact": "High",
+            "reason": "Framework lacks clear integration of user features like gender and proficiency into behavioral analysis",
+            "papers": [
+                "Identify user features impacting keystroke, mouse and touchscreen dynamics"
+            ]
+        },
+        {
+            "gap": "Limited real-world generalizability of stress sensing",
+            "impact": "High",
+            "reason": "Lab-based results may not apply to real-world scenarios",
+            "papers": [
+                "Under Pressure: Sensing Stress of Computer Users"
+            ]
+        }
+    ],
+    "theoretical": [
+        {
+            "gap": "Restricted emotional state representation",
+            "impact": "High",
+            "reason": "Facial feedback methods limit exploration of diverse emotional states",
+            "papers": [
+                "The Effect of Emotion on Keystroke"
+            ]
+        },
+        {
+            "gap": "Generalizability across populations",
+            "impact": "High",
+            "reason": "Small sample sizes and limited demographic diversity restrict population applicability",
+            "papers": [
+                "The Effect of Emotion on Keystroke",
+                "Identify user features impacting keystroke, mouse and touchscreen dynamics"
+            ]
+        }
+    ],
+    "empirical": [
+        {
+            "gap": "Lack of long-term emotional state tracking",
+            "impact": "High",
+            "reason": "No studies address continuous monitoring of emotional states over time",
+            "papers": [
+                "Identify user features impacting keystroke, mouse and touchscreen dynamics"
+            ]
+        }
+    ],
+    "application": [
+        {
+            "gap": "Limited real-world application validation",
+            "impact": "High",
+            "reason": "Most studies focus on controlled environments rather than practical deployment scenarios",
+            "papers": [
+                "Under Pressure: Sensing Stress of Computer Users",
+                "Identify user features impacting keystroke, mouse and touchscreen dynamics"
+            ]
+        }
+    ]
+}

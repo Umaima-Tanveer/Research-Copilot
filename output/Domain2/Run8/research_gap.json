@@ -1,0 +1,68 @@
+{
+    "methodological": [
+        {
+            "gap": "Limited exploration of anger and excitement in keystroke dynamics",
+            "impact": "High",
+            "reason": "Current studies focus on other emotional states, leaving anger and excitement underexplored.",
+            "papers": [
+                "Paper 1"
+            ]
+        },
+        {
+            "gap": "Need for multimodal integration to enhance emotion recognition accuracy",
+            "impact": "High",
+            "reason": "Single-modal approaches (e.g., keystroke dynamics) may lack the comprehensive data needed for accurate emotion detection.",
+            "papers": [
+                "Paper 2",
+                "Paper 4"
+            ]
+        },
+        {
+            "gap": "Insufficient data standardization and labeling protocols",
+            "impact": "High",
+            "reason": "Variability in data collection and labeling practices across studies hinders reproducibility and comparison.",
+            "papers": [
+                "Paper 4"
+            ]
+        },
+        {
+            "gap": "Limited emotion-progression feature representation in social behavioral biometrics",
+            "impact": "High",
+            "reason": "Current methods rely on statistical features, lacking dynamic progression analysis for accurate person identification.",
+            "papers": [
+                "Paper 5"
+            ]
+        }
+    ],
+    "theoretical": [],
+    "empirical": [
+        {
+            "gap": "Limited demographic diversity in emotion recognition datasets",
+            "impact": "High",
+            "reason": "Studies often focus on specific demographics (e.g., IT employees), limiting generalizability.",
+            "papers": [
+                "Paper 3",
+                "Paper 5"
+            ]
+        }
+    ],
+    "application": [
+        {
+            "gap": "Real-world validation of keystroke dynamics in stressful environments",
+            "impact": "High",
+            "reason": "Most studies are limited to controlled lab settings, lacking real-world applicability.",
+            "papers": [
+                "Paper 1",
+                "Paper 3"
+            ]
+        },
+        {
+            "gap": "Cultural context validation for emotion recognition systems",
+            "impact": "High",
+            "reason": "Biometric models may not generalize across diverse cultural populations.",
+            "papers": [
+                "Paper 2"
+            ]
+        }
+    ]
+}

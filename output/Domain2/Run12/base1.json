@@ -1,0 +1,164 @@
+[
+    {
+        "paper_id": "18330",
+        "filename": "Progressive_Conditional_Diffusion_Model_for_Multistage_Spectral_Restoration_of_Remote_Sensing_Image.pdf",
+        "title": "Progressive Conditional Diffusion Model for Multistage Spectral Restoration of Remote Sensing Image",
+        "authors": [
+            "Jinfeng Gao",
+            "Gangqiang Li",
+            "Ruxian Yao",
+            "Qiang Liu",
+            "Junming Zhang"
+        ],
+        "year": 2025,
+        "abstract": "Due to the high cost and relatively low image quality of hyperspectral sensors, spectral super-resolution seeks to explore the mapping mechanisms between multispectral and hyperspectral images (HSIs), with the goal of reconstructing high-quality HSIs. Experimental results on both synthetic and real datasets demonstrate that PCDM can effectively reconstruct HSIs, showing robustness and outperforming state-of-the-art methods.",
+        "keywords": [
+            "Hyperspectral image (HSI)",
+            "multispectral image (MSI)",
+            "multistage diffusion",
+            "progressive spectral restoration"
+        ],
+        "domain": "Remote sensing",
+        "research_area": "Spectral restoration",
+        "problem_statement": "Existing spectral super-resolution methods compute loss only at the final stage, neglecting intermediate generative processes, leading to significant spectral distortion in reconstructed images.",
+        "methodology": "Proposes a progressive conditional diffusion model (PCDM) with channel synthesis and image reconstruction modules. Constructs multiple conditional diffusion models, sharing parameters between multispectral images and IRM for spectral up-sampling.",
+        "dataset": "Synthetic and real hyperspectral-multispectral datasets",
+        "evaluation_metrics": [
+            "Robustness",
+            "Comparison with state-of-the-art methods"
+        ],
+        "performance": "PCDM achieves superior results in spectral super-resolution, outperforming existing algorithms.",
+        "contribution": "Introduces PCDM with multistage constraints, global-local channel synthesis, and feature fusion modules for accurate intermediate feature generation.",
+        "limitations": "Intermediate generative processes remain under-regularized, affecting training convergence and spectral fidelity.",
+        "future_work": null,
+        "task_type": "Spectral super-resolution",
+        "model_type": "Diffusion model"
+    },
+    {
+        "paper_id": "2",
+        "filename": "file.pdf",
+        "title": "The Influence of Emotion on Keyboard Typing: An Experimental Study Using Auditory Stimuli",
+        "authors": [
+            "Po-Ming Lee",
+            "Wei-Hsuan Tsui",
+            "Tzu-Chien Hsiao"
+        ],
+        "year": 2015,
+        "abstract": "This study examines the source of variance in keyboard typing patterns caused by emotions using auditory stimuli. Results show arousal significantly affects keystroke duration (p < .05) and latency (p < .01), but not accuracy. The emotional effect size is small compared to individual variability, suggesting personalized models could improve emotion recognition accuracy.",
+        "keywords": [
+            "emotion recognition",
+            "keystroke dynamics",
+            "affective computing"
+        ],
+        "domain": "Affective Computing",
+        "research_area": "Human-Computer Interaction (HCI)",
+        "problem_statement": "Limited investigations into how emotions influence keyboard typing patterns and the variability of keystroke dynamics under different emotional states.",
+        "methodology": "Controlled experiment using International Affective Digitized Sounds (IADS) to induce emotional states. Two-way Valence x Arousal ANOVA analyzed keystroke duration, latency, and accuracy.",
+        "dataset": "Keystroke data collected from 52 subjects typing a number sequence after exposure to IADS stimuli.",
+        "evaluation_metrics": [
+            "p < .05 for keystroke duration",
+            "p < .01 for keystroke latency"
+        ],
+        "performance": "Arousal significantly influenced duration and latency, but accuracy remained unaffected. Emotional effect size was smaller than individual variability.",
+        "contribution": "Supports that keystroke duration and latency are arousal-driven. Highlights potential for personalized models to enhance emotion recognition accuracy.",
+        "limitations": "Small emotional effect size relative to individual variability; limited exploration of complex ML models.",
+        "future_work": "Develop personalized emotion recognition models and explore interactions between keystroke dynamics and physiological signals.",
+        "task_type": "Emotion Recognition",
+        "model_type": "Statistical Analysis (ANOVA)"
+    },
+    {
+        "paper_id": "3",
+        "filename": "The_laws_of_emotion.pdf",
+        "title": "The Laws of Emotion",
+        "authors": [
+            "Nico H. Frijda"
+        ],
+        "year": 1988,
+        "abstract": "Emotions are lawful phenomena describable through laws of emotion, including elicitation and regulation principles. The paper argues emotions follow rules governed by mechanisms accessible to limited intentional control.",
+        "keywords": [
+            "laws of emotion",
+            "emotional mechanisms",
+            "emotion regulation"
+        ],
+        "domain": "Psychology",
+        "research_area": "Emotion Theory",
+        "problem_statement": "Emotion was historically underprivileged in psychology but has become a significant domain with coherent theory and data, warranting systematic analysis.",
+        "methodology": "Formulating empirical laws of emotion based on causal mechanisms and cognitive appraisals of events, validated through correlations and computational models.",
+        "dataset": null,
+        "evaluation_metrics": [],
+        "performance": "",
+        "contribution": "Proposes a framework of emotion laws (e.g., situational meaning, conservation of momentum) to systematically study emotional responses and regulation.",
+        "limitations": "Not all laws are empirically validated; requires further research to establish robustness and universality.",
+        "future_work": "Validate laws through experimental studies, refine computational models, and explore cross-cultural applicability.",
+        "task_type": "Theoretical Framework Development",
+        "model_type": ""
+    },
+    {
+        "paper_id": "4",
+        "filename": "1707.07191v1.pdf",
+        "title": "MoodSwipe: A Soft Keyboard that Suggests Messages Based on User-Specified Emotions",
+        "authors": [
+            "Chieh-Yang Huang",
+            "Tristan Labetoulle",
+            "Ting-Hao (Kenneth) Huang",
+            "Yi-Pei Chen",
+            "Hung-Chen Chen",
+            "Vallari Srivastava",
+            "Lun-Wei Ku"
+        ],
+        "year": null,
+        "abstract": "MoodSwipe is a soft keyboard that suggests text messages based on user-specified emotions using real dialog data. The system aims to create a user interface for emotion classification and text suggestion while automatically collecting labeled data. Experiments demonstrate the superiority of emotion classification models trained on dialog data and the importance of emotion cues for text suggestion.",
+        "keywords": [
+            "emotion classification",
+            "text suggestion",
+            "soft keyboard",
+            "user emotions",
+            "dialog data"
+        ],
+        "domain": "Human-Computer Interaction",
+        "research_area": "Emotion Recognition in Text",
+        "problem_statement": "Users struggle to express emotions effectively via text in mobile communication. Existing tools lack support for emotion-based text suggestion and labeled data collection.",
+        "methodology": "MoodSwipe uses emotion classification models trained on dialog data to suggest text based on user-specified emotions. A color-coded interface allows users to select emotions and view corresponding message suggestions.",
+        "dataset": "EmotionPush dataset (162,031 social dialog messages) with manual emotion labels for 8,818 messages, split into training (70%), validation (10%), and testing (20%) sets.",
+        "evaluation_metrics": [
+            "Accuracy of emotion classification models (CNN, LSTM)",
+            "Performance of text suggestion system using BM25 ranking"
+        ],
+        "performance": "CNN3 and LSTM3 models achieved over 0.9 accuracy for Joy, Anger, and Sadness. Text suggestions were generated for 1,366 messages with emotion labels excluding Neutral.",
+        "contribution": "1) Novel emotion-labeled data collection via user interaction. 2) Bidirectional emotion sensing for text suggestion. 3) New interaction paradigm allowing users to provide context for suggestions.",
+        "limitations": "Relies on dialog data for emotion labels; requires additional equipment for physiological signals. Limited to text-based emotion expression.",
+        "future_work": "Improve models for diverse emotion categories, expand datasets, and integrate multimodal signals for richer emotion expression.",
+        "task_type": "Text suggestion with emotion context",
+        "model_type": "Convolutional Neural Network (CNN), Long Short-Term Memory (LSTM)"
+    },
+    {
+        "paper_id": "5",
+        "filename": "nihms-23384.pdf",
+        "title": "The Experience of Emotion",
+        "authors": [
+            "Lisa Feldman Barrett",
+            "Batja Mesquita",
+            "Kevin N. Ochsner",
+            "James J. Gross"
+        ],
+        "year": null,
+        "abstract": "Experiences of emotion are content-rich events that emerge at the level of psychological description, but must be causally constituted by neurobiological processes. This chapter outlines an emerging scientific agenda for understanding what these experiences feel like and how they arise.",
+        "keywords": [
+            "emotion",
+            "affect",
+            "consciousness"
+        ],
+        "domain": "Psychology",
+        "research_area": "Emotion and Consciousness",
+        "problem_statement": "Traditional theories of emotion focus on physical causes, neglecting the subjective experience of emotion. Understanding how emotional experiences arise requires integrating content and neurobiological processes.",
+        "methodology": "Review of existing theories, integration into a framework combining phenomenological content and neurobiological processes, and discussion of philosophical perspectives like biological naturalism.",
+        "dataset": null,
+        "evaluation_metrics": [],
+        "performance": "The framework suggests emotion experiences emerge from evolving affect and conceptual processing, akin to perceiving color from light spectra.",
+        "contribution": "Introduces biological naturalism as a framework addressing both content and neurobiological processes in emotion experiences, challenging materialist and behaviorist views.",
+        "limitations": "Scientific descriptions cannot fully capture subjective experiences; bridging laws between neurobiological and phenomenological levels remain unresolved.",
+        "future_work": "Further exploration of how neurophysiological events instantiate phenomenological content and refining conceptual frameworks for emotion experience.",
+        "task_type": "Conceptual Analysis",
+        "model_type": null
+    }
+]

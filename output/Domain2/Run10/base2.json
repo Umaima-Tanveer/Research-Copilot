@@ -1,0 +1,497 @@
+[
+    {
+        "paper_id": 1,
+        "filename": "3733103.pdf",
+        "metadata": {
+            "title": "Keystroke Dynamics: Concepts, Techniques, and Applications",
+            "authors": [
+                "Rashik Shadman",
+                "Ahmed Anu Wahab",
+                "Michael Manno",
+                "Matthew Lukaszewski",
+                "Daqing Hou",
+                "Faraz Hussain"
+            ],
+            "year": "2025",
+            "venue": "ACM Comput. Surv.",
+            "doi": "10.1145/3733103",
+            "keywords": [
+                "keystroke dynamics",
+                "behavioral biometrics",
+                "authentication",
+                "identification",
+                "cybersecurity"
+            ]
+        },
+        "abstract": "Keystroke dynamics is a behavioral biometric emerging as an important tool for cybersecurity due to its nonintrusive and cost-effective nature. This survey covers novel datasets, algorithms, applications, and future research opportunities in keystroke-based authentication systems.",
+        "research": {
+            "problem": "Reliable user authentication remains critical for computer system security, with traditional methods facing limitations.",
+            "motivation": "Keystroke dynamics offers a non-intrusive, hardware-free alternative for authentication and cybersecurity applications.",
+            "objective": "To provide a comprehensive review of keystroke dynamics concepts, techniques, and applications, including datasets, algorithms, and future directions.",
+            "research_questions": []
+        },
+        "methodology": {
+            "summary": "The paper reviews recent advancements in keystroke dynamics research, focusing on datasets, algorithms, mobile device applications, and performance metrics.",
+            "algorithms": [
+                "Machine learning techniques",
+                "Deep learning algorithms",
+                "Fuzzy Logic"
+            ],
+            "models": [],
+            "datasets": [
+                "Free-text datasets",
+                "Fixed-text datasets",
+                "Semi-fixed-text datasets",
+                "Benchmark datasets (e.g., [42, 58, 104, 114, 115])"
+            ],
+            "features": [
+                "Latency",
+                "Hold time (HT)",
+                "Press flight time (FT)",
+                "KP2-KP1",
+                "KR2-KP1",
+                "KP2-KR1",
+                "KR2-KR1"
+            ],
+            "preprocessing": [],
+            "training_strategy": "",
+            "evaluation_metrics": [
+                "Equal Error Rate (EER)",
+                "Matching scores"
+            ]
+        },
+        "experiments": {
+            "experimental_setup": "",
+            "baselines": [],
+            "results": "Achieved EER of 6.62% using Killourhy and Maxion dataset, 5.71% using Giot et al. dataset, and 4.03% with dynamic user profiles. Continuous authentication showed average EER of 2%.",
+            "performance": {
+                "accuracy": "",
+                "precision": "",
+                "recall": "",
+                "f1": "",
+                "auc": ""
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Comprehensive coverage of keystroke dynamics across datasets, algorithms, and applications",
+                "Analysis of touch screen and mobile device implementations"
+            ],
+            "advantages": [
+                "Non-intrusive and cost-effective",
+                "No additional hardware required"
+            ],
+            "limitations": [],
+            "future_work": [
+                "Exploration of emerging trends in keystroke dynamics research"
+            ],
+            "applications": [
+                "Security and verification",
+                "User identification",
+                "Digital forensics",
+                "Online assessments"
+            ],
+            "research_gap": "Previous surveys lacked comprehensive coverage of all keystroke dynamics aspects."
+        },
+        "sections": {
+            "introduction": "Discusses user authentication methods, the role of keystroke dynamics in cybersecurity, and the need for non-intrusive authentication solutions.",
+            "related_work": "Compares existing surveys on keystroke dynamics, highlighting gaps in coverage of datasets, algorithms, and mobile device applications.",
+            "methodology": "Describes the systematic review of articles from 2013–present, focusing on datasets, algorithms, and applications.",
+            "results": "Presents findings on keystroke dynamics performance, benchmark datasets, and algorithmic advancements.",
+            "discussion": "Analyzes the contributions, advantages, and limitations of keystroke dynamics research, emphasizing its potential in cybersecurity.",
+            "conclusion": "Highlights future research opportunities and the broader impact of keystroke dynamics across domains."
+        }
+    },
+    {
+        "paper_id": 2,
+        "filename": "113673.pdf",
+        "metadata": {
+            "title": "Identifying Users’ Emotional States through Keystroke Dynamics",
+            "authors": [
+                "Stefano Marrone",
+                "Carlo Sansone"
+            ],
+            "year": "2022",
+            "venue": "3rd International Conference on Deep Learning Theory and Applications (DeLTA 2022)",
+            "doi": "10.5220/0011367300003277",
+            "keywords": [
+                "Cyberbullying",
+                "Keystroke Dynamics",
+                "Emotion Recognition",
+                "Deep Learning"
+            ]
+        },
+        "abstract": "Recognising users’ emotional states is among the most pursued tasks in the ﬁeld of affective computing. Keystroke Dynamics (KD) is used to continuously predict users’ emotional states during message writing sessions. Results show short writing windows (30\") achieve similar accuracy to systems using larger sessions.",
+        "research": {
+            "problem": "Emotion recognition in affective computing requires non-intrusive, cost-effective methods.",
+            "motivation": "Traditional emotion recognition systems rely on expensive hardware, necessitating alternative approaches.",
+            "objective": "Use keystroke dynamics to continuously predict users’ emotional states during writing sessions.",
+            "research_questions": []
+        },
+        "methodology": {
+            "summary": "Time-windowing approach for analyzing writing sessions with deep learning models.",
+            "algorithms": [
+                "Convolutional Neural Network (CNN)"
+            ],
+            "models": [
+                "Proposed CNN architecture"
+            ],
+            "datasets": [
+                "EmoSurv dataset"
+            ],
+            "features": [
+                "Dwell time",
+                "Flight time",
+                "D2D time",
+                "Keystroke frequency"
+            ],
+            "preprocessing": [
+                "Handling userId duplicates",
+                "Data cleaning",
+                "Feature normalization"
+            ],
+            "training_strategy": "Sliding window with majority voting for multi-instance learning",
+            "evaluation_metrics": [
+                "Accuracy",
+                "Precision",
+                "Recall",
+                "F1",
+                "AUC"
+            ]
+        },
+        "experiments": {
+            "experimental_setup": "EmoSurv dataset with 124 subjects, 5 emotion classes (Anger, Happiness, Calmness, Sadness, Neutral).",
+            "baselines": [],
+            "results": "Short writing windows (30\") achieve comparable accuracy to longer sessions.",
+            "performance": {
+                "accuracy": "null",
+                "precision": "null",
+                "recall": "null",
+                "f1": "null",
+                "auc": "null"
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "First use of keystroke dynamics for continuous emotion recognition in short writing sessions"
+            ],
+            "advantages": [
+                "Low-cost, non-intrusive, compatible with existing keyboards"
+            ],
+            "limitations": [
+                "Dependent on keyboard input, limited to text-based interactions"
+            ],
+            "future_work": [
+                "Expanding to multimodal data",
+                "Improving robustness with diverse datasets"
+            ],
+            "applications": [
+                "Cyberbullying detection",
+                "Mental health monitoring",
+                "Adaptive user interfaces"
+            ],
+            "research_gap": "Need for more robust methods in real-world, uncontrolled environments"
+        },
+        "sections": {
+            "introduction": "Emotions influence human behavior and physiological processes. Affective computing aims to develop systems that recognize and respond to emotions.",
+            "related_work": "Traditional methods use physiological sensors or voice/facial analysis, but require intrusive hardware.",
+            "methodology": "Keystroke dynamics features (dwell time, flight time) combined with time-windowing and CNN for emotion classification.",
+            "results": "Short writing windows (30\") achieve similar accuracy to longer sessions (up to a few minutes).",
+            "discussion": "Keystroke dynamics offers a cost-effective, non-intrusive alternative for emotion recognition in social media contexts.",
+            "conclusion": "Keystroke dynamics enables continuous emotion prediction, with potential applications in detecting cyberbullying and mental health monitoring."
+        }
+    },
+    {
+        "paper_id": 3,
+        "filename": "pxc3896099.pdf",
+        "metadata": {
+            "title": "Estimation of the User’s Emotional State by Keystroke Dynamics",
+            "authors": [
+                "Rinky Solanki",
+                "Pragya Shukla"
+            ],
+            "year": "2014",
+            "venue": "International Journal of Computer Applications",
+            "doi": null,
+            "keywords": [
+                "Biometrics",
+                "keystroke dynamics",
+                "emotion recognition",
+                "Human computer interaction"
+            ]
+        },
+        "abstract": "The paper proposes a method to estimate users' emotional states using keystroke dynamics. It investigates emotions like confidence, sadness, happiness, and others through non-intrusive keyboard analysis, aiming to enhance human-computer interaction by adapting systems to users' emotional states.",
+        "research": {
+            "problem": "Traditional computer systems lack adaptation to users' emotional states, limiting intelligent interaction.",
+            "motivation": "Emotion recognition can improve HCI by enabling systems to respond to users' emotional conditions.",
+            "objective": "Develop an inexpensive, non-intrusive method to detect emotional states using keystroke dynamics.",
+            "research_questions": []
+        },
+        "methodology": {
+            "summary": "Keystroke dynamics analysis of fixed/free text with features like dwell time, flight time, and key statistics. Fuzzy logic classifiers are used for emotion recognition.",
+            "algorithms": [
+                "Fuzzy logic"
+            ],
+            "models": [
+                "Basic emotions model",
+                "Valence-arousal model"
+            ],
+            "datasets": [
+                "Fixed text from 'Alice's Adventures in Wonderland'",
+                "User self-reports"
+            ],
+            "features": [
+                "Dwell time",
+                "Flight time",
+                "Key count",
+                "Error rates",
+                "Symbol/letter counts"
+            ],
+            "preprocessing": [
+                "Extract timing/frequency parameters",
+                "Normalize keystroke data"
+            ],
+            "training_strategy": "Labeled data from questionnaires with emotion labels",
+            "evaluation_metrics": []
+        },
+        "experiments": {
+            "experimental_setup": "Fixed text analysis with predefined emotional labels; free text analysis with periodic keystroke monitoring.",
+            "baselines": [],
+            "results": "Training data compared against a database to identify emotional patterns.",
+            "performance": {
+                "accuracy": null,
+                "precision": null,
+                "recall": null,
+                "f1": null,
+                "auc": null
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Non-intrusive emotion detection via keystroke dynamics",
+                "Integration of valence-arousal and basic emotion models"
+            ],
+            "advantages": [
+                "Cost-effective",
+                "Hardware-independent",
+                "Real-time potential"
+            ],
+            "limitations": [
+                "Relies on self-reported emotional labels",
+                "Limited emotion categories"
+            ],
+            "future_work": [
+                "Expand emotion categories",
+                "Improve model robustness"
+            ],
+            "applications": [
+                "Adaptive HCI systems",
+                "Stress detection in work environments"
+            ],
+            "research_gap": "Need for more comprehensive emotion classification and cross-modal validation"
+        },
+        "sections": {
+            "introduction": "Emotion recognition in HCI is critical for adaptive systems. Keystroke dynamics offer a non-intrusive, hardware-friendly approach to detect emotional states.",
+            "related_work": "Previous studies focus on physiological, visual, and audio methods, while keystroke dynamics are underexplored for real-time emotion detection.",
+            "methodology": "Keystroke features (dwell time, flight time) are extracted and classified using fuzzy logic to map to emotional states.",
+            "results": "Training data from labeled user inputs is compared against a database to identify emotional patterns through keystroke analysis.",
+            "discussion": "Keystroke dynamics provide a scalable solution for emotion recognition, though self-reported labels introduce potential bias.",
+            "conclusion": "Keystroke dynamics enable cost-effective, non-intrusive emotion detection, offering practical applications in adaptive computing systems."
+        }
+    },
+    {
+        "paper_id": 4,
+        "filename": "3236_File_04ITED19057ANIMPROVEDMODELFOREMOTIONBYENYINNAHCHIDIEBERECORRECTEDVERSION.pdf",
+        "metadata": {
+            "title": "AN IMPROVED MODEL FOR EMOTION-AWARE COMPUTING DEVICES USING KEYSTROKE DYNAMICS AND SUPPORT VECTOR MACHINE",
+            "authors": [
+                "ENYINNAH, CHIDIEBERE"
+            ],
+            "year": "2019",
+            "venue": "2nd International Conference on Education and Development",
+            "doi": null,
+            "keywords": [
+                "Keystroke Dynamics",
+                "Emotion-aware Computing",
+                "Affective Computing",
+                "Support Vector Machine"
+            ]
+        },
+        "abstract": "The paper addresses the limitations of current emotion-sensing methods by proposing a non-intrusive approach using keystroke dynamics and support vector machine (SVM) to recognize six emotional states. It emphasizes the need for cost-effective and accessible emotion-aware computing solutions.",
+        "research": {
+            "problem": "Current emotion-sensing methods rely on expensive and invasive equipment, limiting real-world applicability.",
+            "motivation": "Develop a cost-effective, non-intrusive emotion recognition system using widely available technology.",
+            "objective": "Determine user emotions through keystroke dynamics analysis and SVM-based modeling.",
+            "research_questions": []
+        },
+        "methodology": {
+            "summary": "Keystroke dynamics analysis combined with SVM to classify emotional states based on typing patterns and self-reported emotional data.",
+            "algorithms": [
+                "Support Vector Machine"
+            ],
+            "models": [
+                "Six emotional states: Anger, Fear, Disgust, Happiness, Sadness, Surprise"
+            ],
+            "datasets": [
+                "Field study data with keystroke recordings and self-reported emotional states"
+            ],
+            "features": [
+                "Keypress duration",
+                "Latency between keystrokes"
+            ],
+            "preprocessing": [
+                "Cross-validation for model evaluation"
+            ],
+            "training_strategy": "SVM-based classification of keystroke features",
+            "evaluation_metrics": [
+                "Cross-validation results for model performance"
+            ]
+        },
+        "experiments": {
+            "experimental_setup": "Field study collecting keystroke data and self-reported emotional states.",
+            "baselines": [],
+            "results": "Best-performing models for six emotional states identified through cross-validation.",
+            "performance": {
+                "accuracy": null,
+                "precision": null,
+                "recall": null,
+                "f1": null,
+                "auc": null
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Non-intrusive emotion recognition using standard keyboards",
+                "SVM-based classification of keystroke dynamics"
+            ],
+            "advantages": [
+                "Leverages existing hardware",
+                "Cost-effective compared to physiological sensors"
+            ],
+            "limitations": [
+                "Cultural and linguistic differences in emotional patterns",
+                "Limited nuance in emotion detection"
+            ],
+            "future_work": [
+                "Refine emotion detection beyond binary states",
+                "Expand datasets for diverse populations"
+            ],
+            "applications": [
+                "Educational systems",
+                "Adaptive user interfaces",
+                "Intelligent computing"
+            ],
+            "research_gap": "Need for more granular emotion detection and cross-cultural validation"
+        },
+        "sections": {
+            "introduction": "Emotion recognition enhances human-computer interaction by enabling adaptive systems. Traditional methods face cost and invasiveness challenges.",
+            "related_work": "Existing approaches use physiological, visual, audio, and input device data, but often require specialized equipment.",
+            "methodology": "Keystroke dynamics analysis combined with SVM to model emotional states from typing patterns.",
+            "results": "Cross-validation identified effective models for six emotional states, with recommendations for future analysis.",
+            "discussion": "Keystroke-based emotion recognition offers practical advantages but requires addressing cultural variability and emotional nuance.",
+            "conclusion": "The study demonstrates the feasibility of non-intrusive emotion sensing using keystroke dynamics and SVM, with implications for accessible affective computing."
+        }
+    },
+    {
+        "paper_id": 5,
+        "filename": "1475-925X-13-81.pdf",
+        "metadata": {
+            "title": "The influence of emotion on keyboard typing: an experimental study using visual stimuli",
+            "authors": [
+                "Po-Ming Lee",
+                "Wei-Hsuan Tsui",
+                "Tzu-Chien Hsiao"
+            ],
+            "year": "2014",
+            "venue": "BioMedical Engineering OnLine",
+            "doi": "10.1186/2194-0401-13-81",
+            "keywords": [
+                "Emotion",
+                "Keyboard typing",
+                "Human subject experiment",
+                "International affective picture system"
+            ]
+        },
+        "abstract": "This study investigates how emotions influence keystroke dynamics through a controlled experiment using visual stimuli. Results show significant effects on keystroke duration, latency, and accuracy, though individual variability remains dominant. Findings suggest emotional states impact typing patterns, with implications for emotion recognition and user authentication systems.",
+        "research": {
+            "problem": "Limited understanding of how emotions affect keystroke dynamics in Human-Computer Interaction (HCI).",
+            "motivation": "Emotion recognition enhances HCI by enabling adaptive systems, but keystroke dynamics research lacks systematic analysis of emotional variance.",
+            "objective": "Examine the variance in keystroke typing patterns caused by emotional states using controlled experiments.",
+            "research_questions": [
+                "Do keystroke features exceed significance levels under different emotional states?",
+                "What is the variance contribution of emotions in keystroke features?"
+            ]
+        },
+        "methodology": {
+            "summary": "A controlled experiment using International Affective Picture System (IAPS) stimuli and two-way Valence × Arousal ANOVA to analyze keystroke data.",
+            "algorithms": [
+                "Machine Learning (ML) algorithms",
+                "correlation-based feature subset selection"
+            ],
+            "models": [
+                "Keystroke duration models",
+                "Keystroke latency models",
+                "Accuracy rate models"
+            ],
+            "datasets": [
+                "Keystroke data from 27 subjects",
+                "IAPS stimulus ratings"
+            ],
+            "features": [
+                "Keystroke duration",
+                "Keystroke latency",
+                "Accuracy rate"
+            ],
+            "preprocessing": [
+                "Separation of correctly/incorrectly typed sequences",
+                "Normalization of keystroke data"
+            ],
+            "training_strategy": "ML algorithms applied to dataset with complex emotional-state relationships.",
+            "evaluation_metrics": [
+                "Classification accuracy rates for emotional states"
+            ]
+        },
+        "experiments": {
+            "experimental_setup": "Subjects typed '24357980' after viewing IAPS stimuli, with SAM ratings for valence and arousal. 60 trials per subject.",
+            "baselines": [],
+            "results": "Emotional effects were significant (p < .001) in keystroke duration, latency, and accuracy, but individual variability dominated.",
+            "performance": {
+                "accuracy": "75% average for emotion classification models",
+                "precision": null,
+                "recall": null,
+                "f1": null,
+                "auc": null
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Demonstrates emotional impact on keystroke dynamics",
+                "Highlights need for personalized emotion recognition models"
+            ],
+            "advantages": [
+                "Non-intrusive data collection",
+                "High reproducibility via standard instruments"
+            ],
+            "limitations": [
+                "Small emotional effect size relative to individual variability"
+            ],
+            "future_work": [
+                "Personalized emotion recognition models",
+                "Longitudinal studies on emotional-state impacts"
+            ],
+            "applications": [
+                "User authentication systems",
+                "Adaptive HCI interfaces"
+            ],
+            "research_gap": "Limited prior investigation into emotional variance sources in keystroke dynamics"
+        },
+        "sections": {
+            "introduction": "Emotion recognition enhances HCI, but keystroke dynamics research lacks systematic analysis of emotional variance.",
+            "related_work": "Previous studies on emotion recognition via facial expressions, speech, and physiological data; keystroke dynamics research is emerging.",
+            "methodology": "Controlled experiment with IAPS stimuli, SAM ratings, and two-way ANOVA to analyze keystroke features.",
+            "results": "Emotional effects were significant in keystroke duration, latency, and accuracy, but individual variability dominated.",
+            "discussion": "Findings support emotional-state impacts on typing patterns, with implications for emotion recognition and authentication systems.",
+            "conclusion": "Emotional states influence keystroke dynamics, suggesting potential for personalized emotion recognition models and explaining authentication system robustness."
+        }
+    }
+]

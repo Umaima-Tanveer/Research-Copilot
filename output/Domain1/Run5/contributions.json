@@ -1,0 +1,39 @@
+{
+    "future_contributions": [
+        {
+            "gap": "Generalizability of CNN-based frameworks to non-ZigBee wireless standards",
+            "proposed_contribution": "Modular CNN architecture with protocol-agnostic feature extraction layers",
+            "technical_approach": "Design a CNN with interchangeable front-end modules for different wireless standards (e.g., WiFi, LoRa, BLE), using adaptive pooling and frequency-invariant filters to capture protocol-specific signatures while maintaining cross-protocol consistency",
+            "expected_impact": "Enables deployment across diverse wireless standards with minimal retraining, addressing the protocol-specific limitation of existing methods",
+            "implementation_feasibility": "Leverages existing CNN architectures (e.g., ResNet) with protocol-specific training data; requires hardware compatibility for multi-standard signal capture"
+        },
+        {
+            "gap": "Robustness against adversarial attacks in RF fingerprinting",
+            "proposed_contribution": "Adversarial-aware CNN with dynamic frequency hopping",
+            "technical_approach": "Integrate a CNN with a frequency-hopping module that dynamically shifts carrier frequencies during inference, combined with adversarial training using gradient masking to counteract spoofing attacks",
+            "expected_impact": "Significantly improves spoofing resistance by disrupting adversarial signal patterns and reducing attack surface",
+            "implementation_feasibility": "Requires hardware support for frequency hopping and software integration with CNN training pipelines; feasible with modern RF transceivers"
+        },
+        {
+            "gap": "Integration of semi-supervised learning with real-time signal processing",
+            "proposed_contribution": "Lightweight semi-supervised CNN with temporal consistency constraints",
+            "technical_approach": "Develop a pruned CNN with stochastic depth regularization and temporal consistency loss, enabling real-time inference using edge computing hardware while maintaining semi-supervised performance",
+            "expected_impact": "Enables low-latency deployment in resource-constrained environments without sacrificing generalization",
+            "implementation_feasibility": "Compatible with FPGA/ASIC accelerators; requires optimization of data augmentation strategies for real-time processing"
+        },
+        {
+            "gap": "Unified framework for cross-protocol RF fingerprinting analysis",
+            "proposed_contribution": "Cross-protocol meta-architecture with standardized feature representation",
+            "technical_approach": "Create a meta-architecture that maps signals from different protocols to a shared latent space using autoencoders, enabling cross-protocol comparison and benchmarking through standardized feature extraction",
+            "expected_impact": "Facilitates comparative analysis and benchmarking across wireless standards, addressing methodological fragmentation",
+            "implementation_feasibility": "Requires collaboration for multi-protocol dataset collection; leverages existing frameworks like PyTorch for modular implementation"
+        },
+        {
+            "gap": "Diverse dataset collection for non-WiFi/non-ZigBee protocols",
+            "proposed_contribution": "Open-source multi-protocol RF dataset with standardized metadata",
+            "technical_approach": "Establish a crowdsourced dataset collection protocol using open-source hardware (e.g., USRP, RTL-SDR) to capture signals from LoRa, BLE, and NB-IoT devices, with standardized metadata for signal characteristics and environmental conditions",
+            "expected_impact": "Provides benchmark datasets for evaluating cross-protocol generalization and fairness in RF fingerprinting",
+            "implementation_feasibility": "Feasible through community-driven data collection; requires metadata standardization and open-access storage solutions"
+        }
+    ]
+}

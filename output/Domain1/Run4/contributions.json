@@ -1,0 +1,46 @@
+{
+    "future_contributions": [
+        {
+            "gap": "Lack of mechanistic explanation for moment-based features",
+            "proposed_contribution": "Physics-informed moment analysis framework",
+            "technical_approach": "Integrate signal decomposition with physical layer models to quantify how intentional/ unintentional modulation affects moment distributions, using differential equations to model signal distortion mechanisms",
+            "expected_impact": "Enable predictive feature engineering by revealing how hardware imperfections translate to moment-based signatures, improving both interpretability and cross-device generalization",
+            "implementation_feasibility": "Leverage existing signal decomposition techniques with added physical modeling layers using Python-based scientific computing tools"
+        },
+        {
+            "gap": "Limited generalization across hardware/configurations",
+            "proposed_contribution": "Hardware-agnostic feature disentanglement network",
+            "technical_approach": "Develop a neural architecture that separates device-specific features from configuration-dependent artifacts using adversarial training with domain-invariant constraints, incorporating hardware metadata as auxiliary inputs",
+            "expected_impact": "Enable cross-vendor/device identification without recalibration, reducing deployment costs while maintaining identification accuracy across heterogeneous environments",
+            "implementation_feasibility": "Build on existing adversarial disentanglement frameworks with added hardware metadata processing modules"
+        },
+        {
+            "gap": "Reliance on steady-state signals with limited discriminability",
+            "proposed_contribution": "Dynamic signal mode selection algorithm",
+            "technical_approach": "Create a hybrid analysis framework that automatically switches between steady-state and transient signal analysis based on signal quality metrics, using reinforcement learning to optimize mode selection for maximum discriminability",
+            "expected_impact": "Enhance identification accuracy in mixed signal environments while maintaining computational efficiency for real-time applications",
+            "implementation_feasibility": "Implement with existing signal processing libraries and reinforcement learning frameworks"
+        },
+        {
+            "gap": "Hardware-specific transient signals and low SNR vulnerabilities",
+            "proposed_contribution": "Noise-aware transient feature extraction",
+            "technical_approach": "Develop a deep learning architecture with noise injection during training to enhance transient feature robustness, combined with adaptive filtering techniques to preserve signal characteristics at low SNR",
+            "expected_impact": "Significantly improve identification reliability in low SNR environments while maintaining hardware independence",
+            "implementation_feasibility": "Implement with existing CNN architectures and signal processing toolkits"
+        },
+        {
+            "gap": "Assumptions about short-term channel stability",
+            "proposed_contribution": "Long-term channel state prediction model",
+            "technical_approach": "Create a time-series forecasting model using LSTM networks to predict channel state evolution, enabling adaptive feature extraction that accounts for both short-term stability and long-term variations",
+            "expected_impact": "Enable robust identification in dynamic environments with changing channel conditions",
+            "implementation_feasibility": "Implement with standard deep learning frameworks and channel state estimation techniques"
+        },
+        {
+            "gap": "Need for robustness at low SNR",
+            "proposed_contribution": "Multi-scale feature fusion architecture",
+            "technical_approach": "Design a neural network that combines features from multiple signal scales (time, frequency, time-frequency) with attention mechanisms to prioritize informative features at low SNR conditions",
+            "expected_impact": "Significantly improve identification accuracy in low SNR environments while maintaining computational efficiency",
+            "implementation_feasibility": "Implement with existing multi-scale analysis techniques and attention-based neural network architectures"
+        }
+    ]
+}

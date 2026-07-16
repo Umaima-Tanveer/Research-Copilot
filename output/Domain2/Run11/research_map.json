@@ -1,0 +1,169 @@
+{
+    "nodes": [
+        {
+            "id": "1",
+            "title": "A Multimodal Approach To Detect User’s Emotion",
+            "year": 2015,
+            "dataset": "User reviews, ISEAR dataset (7666 sentences), and pre-classified test samples with positive/negative product reviews.",
+            "methodology": "The methodology combines keystroke dynamics (session time, latency, held time, pause rate, capitalization rate, typing speed, error frequency), text analysis using JAWS and NLTK for semantic analysis, and heart rate variation detected via webcam-based photoplethysmography (PPG).",
+            "task_type": "Emotion Detection",
+            "contribution": "Proposes a multimodal approach combining keystroke dynamics, text semantics, and heart rate variation for emotion recognition, with NLTK outperforming JAWS in text analysis."
+        },
+        {
+            "id": "2",
+            "title": "",
+            "year": null,
+            "dataset": "300 users (45% female, 55% male) with varying demographics, typing tasks, and emotional state self-reports mapped to keyboard behaviors.",
+            "methodology": "Empirical study with 300 participants, analyzing typing patterns (speed, backspaces, keystroke duration) using WEKA classifiers to correlate behavioral data with emotional states.",
+            "task_type": "Classification",
+            "contribution": "Proposes a framework using keyboard stroke patterns for emotion recognition, demonstrating classifiers' effectiveness in distinguishing emotional states through behavioral data."
+        },
+        {
+            "id": "3",
+            "title": "Does Keystroke Dynamics tell us about Emotions? A Systematic Literature Review and Dataset Construction",
+            "year": null,
+            "dataset": "An interactive web application was developed to construct a new dataset for emotion recognition via keystroke dynamics, addressing the scarcity of existing datasets.",
+            "methodology": "A Systematic Literature Review (SLR) was conducted following Kitchenham and Charters' guidelines, involving planning, conducting, and reporting phases with defined inclusion/exclusion criteria.",
+            "task_type": "Classification",
+            "contribution": "The paper provides a comprehensive SLR of keystroke dynamics in emotion recognition, identifies research gaps, and introduces a new dataset construction framework."
+        },
+        {
+            "id": "4",
+            "title": "Evaluating Effectiveness of Smartphone Typing as an Indicator of User Emotion",
+            "year": 2017,
+            "dataset": "Data collected from 22 participants using TapSense, capturing typing features and self-reported emotion labels via Experience Sampling Method (ESM).",
+            "methodology": "Qualitative and experimental approach combining online surveys, instrumented keyboard development, and in-the-wild field studies with 22 participants over 3 weeks.",
+            "task_type": "Emotion Detection",
+            "contribution": "Design of TapSense system and analysis demonstrating typing speed as the most discriminative feature for emotion detection from smartphone typing."
+        },
+        {
+            "id": "5",
+            "title": "Keystroke/Mouse Usage Based Emotion Detection and User Identiﬁcation",
+            "year": null,
+            "dataset": "Custom survey with 35 participants, collecting keystroke and mouse interaction data under induced emotional states.",
+            "methodology": "Emotional states were induced via multimedia stimuli. Keystroke and mouse data were collected through a custom survey. Classifiers (KNN, RandomCommittee, RandomForest, Bounded K-means Clustering) analyzed the data for emotional state classification.",
+            "task_type": "Emotion Detection",
+            "contribution": "Proposed Bounded K-means Clustering classifier for emotion detection. Analyzed user identification challenges under emotional state impacts. Demonstrated feasibility of emotion detection from keystroke dynamics."
+        }
+    ],
+    "edges": [
+        {
+            "paper1": "1",
+            "paper2": "2",
+            "relation": "compares",
+            "similarity": 0.4,
+            "reason": "Both papers address emotion detection but employ distinct methodologies. Paper 1 uses multimodal data (keystroke dynamics, text analysis, PPG) while Paper 2 focuses on keyboard behavioral patterns with WEKA classifiers. They share the task of emotion recognition but differ in technical approaches.",
+            "shared_concepts": [
+                "emotion detection",
+                "keystroke dynamics",
+                "classification"
+            ]
+        },
+        {
+            "paper1": "1",
+            "paper2": "3",
+            "relation": "compares",
+            "similarity": 0.4,
+            "reason": "Both papers address emotion recognition but employ different approaches: Paper 1 focuses on multimodal integration of keystroke dynamics, text analysis, and biometrics, while Paper 2 centers on systematic review and dataset construction for keystroke dynamics alone.",
+            "shared_concepts": [
+                "emotion detection",
+                "keystroke dynamics"
+            ]
+        },
+        {
+            "paper1": "1",
+            "paper2": "4",
+            "relation": "compares",
+            "similarity": 0.5,
+            "reason": "Both papers address emotion detection using typing data but differ in methodology (multimodal vs. smartphone-specific) and dataset sources.",
+            "shared_concepts": [
+                "emotion detection",
+                "keystroke dynamics"
+            ]
+        },
+        {
+            "paper1": "1",
+            "paper2": "5",
+            "relation": "compares",
+            "similarity": 0.4,
+            "reason": "Both papers focus on emotion detection using keystroke dynamics but differ in methodology (multimodal vs. keystroke/mouse with classifiers), datasets (standardized vs. custom survey), and contributions (NLTK vs. Bounded K-means Clustering).",
+            "shared_concepts": [
+                "emotion detection",
+                "keystroke dynamics"
+            ]
+        },
+        {
+            "paper1": "2",
+            "paper2": "3",
+            "relation": "compares",
+            "similarity": 0.4,
+            "reason": "Both papers address emotion recognition via keystroke dynamics but differ in methodology (empirical study vs. systematic literature review/dataset construction) and contribution focus (framework demonstration vs. gap analysis and dataset creation).",
+            "shared_concepts": [
+                "keystroke dynamics",
+                "emotion recognition",
+                "classification"
+            ]
+        },
+        {
+            "paper1": "1",
+            "paper2": "2",
+            "relation": "compares",
+            "similarity": 0.5,
+            "reason": "Both papers explore emotion detection through typing data but employ different methodologies and datasets.",
+            "shared_concepts": [
+                "emotion detection",
+                "typing data",
+                "keyboard behaviors"
+            ]
+        },
+        {
+            "paper1": "2",
+            "paper2": "5",
+            "relation": "compares",
+            "similarity": 0.6,
+            "reason": "Both papers focus on emotion detection using keystroke dynamics, but differ in methodology (WEKA vs. Bounded K-means), dataset size (300 vs. 35 participants), and specific contributions (framework development vs. classifier innovation).",
+            "shared_concepts": [
+                "emotion detection",
+                "keystroke dynamics",
+                "classifiers",
+                "behavioral data"
+            ]
+        },
+        {
+            "paper1": "3",
+            "paper2": "4",
+            "relation": "compares",
+            "similarity": 0.6,
+            "reason": "Both papers address emotion detection via typing data but employ different methodologies (systematic review vs. experimental approach) and distinct datasets. Paper 1 focuses on dataset construction for keystroke dynamics, while Paper 2 analyzes specific typing features (e.g., speed) with a custom instrumented keyboard.",
+            "shared_concepts": [
+                "emotion detection",
+                "keystroke dynamics",
+                "typing features",
+                "datasets"
+            ]
+        },
+        {
+            "paper1": "3",
+            "paper2": "5",
+            "relation": "compares",
+            "similarity": 0.5,
+            "reason": "Both papers investigate emotion detection using keystroke dynamics, but differ in methodology (SLR vs. classifier-based analysis) and dataset construction (new framework vs. custom survey).",
+            "shared_concepts": [
+                "keystroke dynamics",
+                "emotion detection",
+                "classification"
+            ]
+        },
+        {
+            "paper1": "4",
+            "paper2": "5",
+            "relation": "compares",
+            "similarity": 0.4,
+            "reason": "Both papers address emotion detection using input device data but employ distinct methodologies (qualitative analysis vs. classifier-based approaches) and datasets (TapSense system vs. custom survey with multimedia stimuli).",
+            "shared_concepts": [
+                "emotion detection",
+                "keystroke data"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,176 @@
+[
+    {
+        "paper_id": "1",
+        "filename": "2311.15888v1.pdf",
+        "title": "Work In Progress: Towards Adaptive RF Fingerprint-based Authentication of IIoT devices",
+        "authors": [
+            "Emmanuel Lomba",
+            "Ricardo Severino",
+            "Ana Fernández Vilas"
+        ],
+        "year": null,
+        "abstract": "As IoT technologies mature, they are increasingly finding their way into more sensitive domains, such as Medical and Industrial IoT, in which safety and cyber-security are of great importance. While the number of deployed IoT devices continues to increase exponentially, they still present severe cyber-security vulnerabilities. Effective authentication is paramount to support trustworthy IIoT communications, however, current solutions focus on upper-layer identity verification or key-based cryptography which are often inadequate to the heterogeneous IIoT environment.",
+        "keywords": [
+            "IoT",
+            "Industry 4.0",
+            "Software-Defined Radio",
+            "RF Fingerprinting",
+            "Feature Extraction"
+        ],
+        "domain": "IoT Security",
+        "research_area": "Authentication and Cybersecurity",
+        "problem_statement": "Current IIoT authentication methods relying on upper-layer identity verification or key-based cryptography are inadequate for heterogeneous environments, leading to severe security vulnerabilities and risks like spoofing, Sybil attacks, and D-DoS attacks.",
+        "methodology": "Leveraging AI-driven adaptive Radio Frequency Fingerprinting (RFF) at the PHY layer, combined with Software-Defined Radio (SDR) gateways and Edge/Cloud computing to enhance feature extraction and authentication accuracy.",
+        "dataset": "",
+        "evaluation_metrics": [],
+        "performance": "High accuracy in device authentication over challenging RF environments through adaptive feature extraction and SDR tuning.",
+        "contribution": "Introduce AI techniques for self-tuning RF fingerprinting, enabling flexible and accurate IIoT authentication while addressing scalability and heterogeneity challenges.",
+        "limitations": "Dependence on SDR processing power and SNR, limited by current feature extraction methods and lack of standardized protocols.",
+        "future_work": "Improve framework for open-set device classification, explore additional protocols, and enhance AI/ML strategies for real-time adaptation.",
+        "task_type": "Authentication",
+        "model_type": "AI/ML-based"
+    },
+    {
+        "paper_id": "2",
+        "filename": "2411.06925v1.pdf",
+        "title": "DeepCRF: Deep Learning-Enhanced CSI-Based RF Fingerprinting for Channel-Resilient WiFi Device Identification",
+        "authors": [
+            "Ruiqi Kong",
+            "He (Henry) Chen"
+        ],
+        "year": "2024",
+        "abstract": "This paper presents DeepCRF, a framework using deep learning to extract micro-signals from CSI measurements for robust WiFi device identification across diverse channels. It addresses limitations of prior signal space-based methods in non-line-of-sight scenarios through CNNs, data augmentation, and contrastive learning.",
+        "keywords": [
+            "Radio-frequency fingerprinting",
+            "channel state information",
+            "micro-CSI",
+            "WiFi",
+            "deep learning"
+        ],
+        "domain": "Wireless Communication",
+        "research_area": "RF Fingerprinting",
+        "problem_statement": "Challenges in identifying WiFi devices under varying channel conditions and limitations of existing signal space-based methods in non-line-of-sight scenarios.",
+        "methodology": "DeepCRF employs a CNN with model-inspired data augmentation, supervised contrastive learning, and decision fusion to enhance generalization and noise resilience in CSI-based fingerprinting.",
+        "dataset": "19 COTS WiFi NICs with CSI measurements across diverse channel conditions, including real-world unseen scenarios.",
+        "evaluation_metrics": [
+            "Accuracy",
+            "F1 Score",
+            "AUC-ROC"
+        ],
+        "performance": "Achieves 99.53% average identification accuracy using 4 CSI measurements per procedure across 19 COTS devices in real-world scenarios.",
+        "contribution": "Introduces DeepCRF with three key contributions: micro-CSI extraction via CNN, complex-valued CSI processing, and noise-robust fusion techniques.",
+        "limitations": "Reliance on CSI measurements and potential generalization challenges in highly dynamic environments.",
+        "future_work": "Exploring more robust data augmentation techniques and real-world deployment under diverse channel conditions.",
+        "task_type": "Device Identification",
+        "model_type": "CNN-based"
+    },
+    {
+        "paper_id": "3",
+        "filename": "TIFS2024_RFFI_Federated_Learning_manuscript.pdf",
+        "title": "Federated Radio Frequency Fingerprint Identification Powered by Unsupervised Contrastive Learning",
+        "authors": [
+            "Guanxiong Shen",
+            "Junqing Zhang",
+            "Xuyu Wang",
+            "Shiwen Mao"
+        ],
+        "year": null,
+        "abstract": "Radio frequency fingerprint identification (RFFI) faces data scarcity challenges due to limited training data. This paper proposes a federated RFFI system for IoT networks using unsupervised contrastive learning, achieving 95% identification accuracy with 60 LoRa transmitters and 6 SDR receivers.",
+        "keywords": [
+            "federated learning",
+            "radio frequency fingerprint",
+            "Internet of Things",
+            "LoRa",
+            "deep learning",
+            "unsupervised contrastive learning"
+        ],
+        "domain": "Computer Science",
+        "research_area": "Federated Learning, Wireless Communications",
+        "problem_statement": "RFFI systems suffer from severe training data scarcity, limiting identification accuracy and practical deployment in IoT networks.",
+        "methodology": "Proposes a federated RFFI protocol with three stages: federated pre-training, client fine-tuning, and identification, using unsupervised contrastive learning for feature extraction.",
+        "dataset": "60 commercial-off-the-shelf (COTS) LoRa transmitters and 6 software-defined radio (SDR) receivers.",
+        "evaluation_metrics": [
+            "Identification accuracy",
+            "Robustness to receiver hardware variations",
+            "Robustness to location changes"
+        ],
+        "performance": "Identification accuracy improved from 63% to 95% using federated learning, with robustness to hardware and location variations.",
+        "contribution": "Introduces a federated RFFI protocol with unsupervised contrastive learning, ensuring trainability, scalability, and NN security through three-stage protocol design.",
+        "limitations": "Previous federated RFFI systems lack trainability, scalability, and security due to labeled data dependency and model aggregation challenges.",
+        "future_work": "Enhance security mechanisms, expand to other wireless technologies, and optimize resource allocation in distributed IoT networks.",
+        "task_type": "Device Authentication",
+        "model_type": "Deep Learning (CNN, LSTM, MLP, Transformer)"
+    },
+    {
+        "paper_id": "4",
+        "filename": "sensors-22-04291-v2.pdf",
+        "title": "RF eigenﬁngerprints, an Efﬁcient RF Fingerprinting Method in IoT Context",
+        "authors": [
+            "Louis Morge-Rollet",
+            "Frédéric Le Roy",
+            "Denis Le Jeune",
+            "Charles Canaff",
+            "Roland Gautier"
+        ],
+        "year": 2022,
+        "abstract": "In IoT networks, authentication of nodes is primordial and RF ﬁngerprinting is one of the candidates as a non-cryptographic method. RF ﬁngerprinting is a physical-layer security method consisting of authenticated wireless devices using their components’ impairments. We propose the RF eigenﬁngerprints method, inspired by eigenfaces, using SVD and Ljung–Box test for feature selection and statistical authentication. Simulation, real-world experiments, and FPGA implementation demonstrate its performance.",
+        "keywords": [
+            "RF ﬁngerprinting",
+            "IoT networks security",
+            "eigenfaces",
+            "FPGA implementation"
+        ],
+        "domain": "IoT Security",
+        "research_area": "Physical Layer Security",
+        "problem_statement": "Traditional cryptographic methods face limitations in IoT due to low-power constraints. RF fingerprinting offers non-cryptographic authentication via device impairments but requires efficient feature learning and scalability.",
+        "methodology": "Proposes RF eigenﬁngerprints inspired by eigenfaces, using singular value decomposition (SVD) for feature learning, Ljung–Box test for selection, and statistical models for authentication. Includes simulation, real-world experiments, and FPGA implementation.",
+        "dataset": "Extended Yale Face database B for eigenfaces; novel baseband model for emitter impairments (I/Q offset, imbalance, PA nonlinearity).",
+        "evaluation_metrics": [
+            "Simulation results",
+            "Real-world experiments",
+            "FPGA implementation performance"
+        ],
+        "performance": "Demonstrates good scalability, low computational complexity, and high explainability, making it suitable for IoT deployment.",
+        "contribution": "Adapts eigenfaces to RF fingerprinting, introduces a novel impairment model, provides FPGA implementation, and enables feature interpretability.",
+        "limitations": "Depends on preamble-based signal processing and assumes controlled hardware variability.",
+        "future_work": "Enhance scalability for large IoT networks and integrate with existing cryptographic frameworks.",
+        "task_type": "Authentication",
+        "model_type": "Feature-learning based on eigenfaces"
+    },
+    {
+        "paper_id": "5",
+        "filename": "2511.07770v2.pdf",
+        "title": "SMoRFFI: A Large-Scale Same-Model 2.4 GHz Wi-Fi Dataset and Reproducible Framework for RF Fingerprinting",
+        "authors": [
+            "Zewei Guo",
+            "Zhen Jia",
+            "JinXiao Zhu",
+            "Wenhao Huang",
+            "Yin Chen"
+        ],
+        "year": null,
+        "abstract": "Radio frequency (RF) fingerprinting exploits hardware imperfections for device identification, but distinguishing between same-model devices remains challenging due to their minimal hardware variations. Existing datasets for RF fingerprinting are constrained by small device scales and heterogeneous models, which hinder robust training and fair evaluation of machine learning methods.",
+        "keywords": [
+            "Radio Frequency Fingerprinting",
+            "Physical Layer Identification",
+            "Internet of Things Devices",
+            "Software-Defined Radios"
+        ],
+        "domain": "Wireless communication",
+        "research_area": "Radio fingerprinting techniques based on machine learning algorithms",
+        "problem_statement": "Distinguishing same-model devices is challenging due to minimal hardware variations. Existing datasets are limited in scale, diversity, and lack comprehensive RF features for training and evaluation.",
+        "methodology": "A large-scale dataset of 123 same-model IEEE 802.11g devices with 35.42 million raw I/Q samples and 1.85 million RF features is created. A reproducible framework with data collection, feature extraction, and benchmark evaluation modules is developed.",
+        "dataset": "Two CSV datasets: (1) RFFI-IQ_only-wifi-802.11g-2.4G-123-m5stack (MAC addresses and preamble samples) and (2) RFFI-kf_feature-IQ-wifi-802.11g-2.4G-123-m5stack (multi-dimensional RF features including CFO, phase error, magnitude error, and fractal dimension).",
+        "evaluation_metrics": [
+            "Identification accuracy",
+            "Feature extraction completeness",
+            "Reproducibility of results"
+        ],
+        "performance": "Random Forest-based algorithm achieves 89.06% identification accuracy on the dataset. Features include CFO correction, phase error, magnitude error, and fractal dimension.",
+        "contribution": "Introduces a large-scale, homogeneous dataset for same-model devices and an open-source framework for reproducible RF fingerprinting research.",
+        "limitations": "Focus on same-model devices limits generalizability to heterogeneous scenarios. Requires additional processing for RF feature extraction.",
+        "future_work": "Expanding to heterogeneous device models, improving feature extraction techniques, and exploring deep learning for enhanced identification.",
+        "task_type": "Device identification via RF fingerprinting",
+        "model_type": "Random Forest-based algorithm"
+    }
+]

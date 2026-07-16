@@ -1,0 +1,439 @@
+[
+    {
+        "paper_id": 1,
+        "filename": "lee2021.pdf",
+        "metadata": {
+            "title": "Deep-Learning-Aided RF Fingerprinting for NFC Security",
+            "authors": [
+                "Woongsup Lee",
+                "Seon Yeob Baek",
+                "Seong Hwan Kim"
+            ],
+            "year": "2021",
+            "venue": "IEEE Communications Magazine",
+            "doi": "10.1109/MCOM.001.2000912",
+            "keywords": [
+                "NFC",
+                "RF fingerprinting",
+                "deep learning",
+                "security",
+                "authentication"
+            ]
+        },
+        "abstract": "The paper explores deep learning-assisted RF fingerprinting for enhancing NFC security. It presents a hardware testbed using SDR and NFC reader to extract RF characteristics from one-bit transmissions, achieving 96.16% accuracy in distinguishing 50 NFC tags. Key challenges in deep-learning-based RF fingerprinting for NFC are discussed.",
+        "research": {
+            "problem": "NFC security vulnerabilities due to cloning, man-in-the-middle attacks, and limited cryptographic capabilities.",
+            "motivation": "Enhance NFC security through unique device identification using RF fingerprinting and deep learning.",
+            "objective": "Develop a deep learning-based RF fingerprinting method for accurate and rapid NFC tag identification.",
+            "research_questions": [
+                "Can deep learning improve RF fingerprinting for NFC security?",
+                "What are the technical challenges in implementing this approach?"
+            ]
+        },
+        "methodology": {
+            "summary": "A hardware testbed with SDR and NFC reader captures RF signals from one-bit transmissions. Deep learning models (FNN, CNN, RNN) analyze RF characteristics for tag identification.",
+            "algorithms": [
+                "Fully connected neural network",
+                "Convolutional neural network",
+                "Recurrent neural network"
+            ],
+            "models": [
+                "Fully connected neural network",
+                "Convolutional neural network",
+                "Recurrent neural network"
+            ],
+            "datasets": [
+                "158,620 RF signal samples per tag",
+                "50 NFC tags from same manufacturer/batch"
+            ],
+            "features": [
+                "RF signal envelope",
+                "Pulse shape characteristics",
+                "One-bit transmission data"
+            ],
+            "preprocessing": [
+                "Normalization of signal magnitude",
+                "Feature slicing for pulse analysis"
+            ],
+            "training_strategy": "Training on RF data from same manufacturer/batch to balance dataset size.",
+            "evaluation_metrics": [
+                "Accuracy",
+                "Precision",
+                "Recall",
+                "F1-score",
+                "AUC"
+            ]
+        },
+        "experiments": {
+            "experimental_setup": "SDR (USRP X300) and off-the-shelf NFC reader (ACR 122) with coil antenna for inductive coupling.",
+            "baselines": [
+                "Probabilistic neural network (PNN)",
+                "Traditional RF fingerprinting methods"
+            ],
+            "results": "50 NFC tags uniquely identified with 96.16% accuracy using deep learning models.",
+            "performance": {
+                "accuracy": "96.16%",
+                "precision": null,
+                "recall": null,
+                "f1": null,
+                "auc": null
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Deep learning integration for RF fingerprinting in NFC",
+                "Hardware testbed for rapid tag identification"
+            ],
+            "advantages": [
+                "High accuracy",
+                "Scalability for large tag datasets"
+            ],
+            "limitations": [
+                "Dependence on same manufacturer/batch data",
+                "Limited data size in prior studies"
+            ],
+            "future_work": [
+                "Testing across manufacturers",
+                "Enhancing data collection for diverse tags"
+            ],
+            "applications": [
+                "Secure contactless payments",
+                "Anti-cloning authentication"
+            ],
+            "research_gap": "Lack of deep learning-based RF fingerprinting methods for NFC in literature."
+        },
+        "sections": {
+            "introduction": "Discusses NFC security risks and the need for robust authentication mechanisms.",
+            "related_work": "Reviews RF fingerprinting applications in RFID/WiFi and limitations of traditional methods.",
+            "methodology": "Details hardware setup, signal processing, and deep learning model architectures.",
+            "results": "Presents accuracy metrics and comparison with baseline approaches.",
+            "discussion": "Analyzes technical challenges and implications for NFC security.",
+            "conclusion": "Summarizes the effectiveness of deep learning in enhancing NFC tag identification."
+        }
+    },
+    {
+        "paper_id": 2,
+        "filename": "sensors-25-04451-with-cover.pdf",
+        "metadata": {
+            "title": "Cross-Receiver Radio Frequency Fingerprint Identification: A Source-Free Adaptation Approach",
+            "authors": [
+                "Jian Yang",
+                "Shaoxian Zhu",
+                "Zhongyi Wen",
+                "Qiang Li"
+            ],
+            "year": "2025",
+            "venue": "Sensors",
+            "doi": "10.3390/s25144451",
+            "keywords": [
+                "radio frequency fingerprinting",
+                "source-free unsupervised domain adaptation",
+                "cross-receiver RFFI"
+            ]
+        },
+        "abstract": "The paper addresses the challenge of adapting radio frequency fingerprint identification (RFFI) models to new receivers without access to source data, proposing CSCNet with contrastive learning and a three-pronged loss function to improve cross-receiver recognition accuracy and robustness.",
+        "research": {
+            "problem": "Cross-receiver RFFI performance degradation due to data distribution shifts and hardware variations, with limited access to source data.",
+            "motivation": "Data privacy concerns and transmission limitations prevent access to original training data for model adaptation.",
+            "objective": "Develop a source-free adaptation method for RFFI to mitigate receiver hardware variations and improve recognition accuracy.",
+            "research_questions": [
+                "How to adapt RFFI models without source data?",
+                "Can contrastive learning enhance cross-receiver generalization?"
+            ]
+        },
+        "methodology": {
+            "summary": "Proposes CSCNet with contrastive learning, information entropy minimization, pseudo-label self-supervised loss, and domain-invariant feature extraction.",
+            "algorithms": [
+                "Contrastive learning",
+                "Pseudo-label self-supervised learning"
+            ],
+            "models": [
+                "CSCNet"
+            ],
+            "datasets": [
+                "HackRF",
+                "Wisig"
+            ],
+            "features": [
+                "RF signal characteristics",
+                "Hardware-induced distortions"
+            ],
+            "preprocessing": [],
+            "training_strategy": "Source-free adaptation using pre-trained models and unlabeled target data.",
+            "evaluation_metrics": [
+                "Accuracy",
+                "Precision",
+                "Recall",
+                "F1",
+                "AUC"
+            ]
+        },
+        "experiments": {
+            "experimental_setup": "Real-world datasets under realistic noise and channel conditions.",
+            "baselines": [
+                "Existing cross-receiver RFFI methods"
+            ],
+            "results": "CSCNet achieves at least 13% average accuracy improvement and 47% enhancement in challenging adaptation tasks.",
+            "performance": {
+                "accuracy": "At least 13% improvement",
+                "precision": null,
+                "recall": null,
+                "f1": null,
+                "auc": null
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Defines SCRFFI problem",
+                "Introduces pseudo-labeling framework",
+                "Proposes CSCNet with contrastive learning"
+            ],
+            "advantages": [
+                "Addresses data privacy constraints",
+                "Improves cross-receiver robustness"
+            ],
+            "limitations": [
+                "Relies on contrastive learning assumptions",
+                "Limited to specific hardware distortions"
+            ],
+            "future_work": [
+                "Expanding to multi-source scenarios",
+                "Enhancing generalization across diverse hardware"
+            ],
+            "applications": [
+                "Secure communication",
+                "Device authentication",
+                "Surveillance"
+            ],
+            "research_gap": "Limited exploration of source-free adaptation in dynamic hardware environments"
+        },
+        "sections": {
+            "introduction": "Introduces RFFI as a technology for device identification via hardware imperfections and challenges in cross-receiver adaptation.",
+            "related_work": "Reviews domain adaptation techniques for RFFI, including adversarial training and feature disentanglement.",
+            "methodology": "Details CSCNet architecture, three-pronged loss function, and source-free adaptation framework.",
+            "results": "Demonstrates CSCNet's performance improvements on real-world datasets.",
+            "discussion": "Analyzes theoretical bounds and practical implications of source-free adaptation.",
+            "conclusion": "Summarizes SCRFFI problem, CSCNet's contributions, and future research directions."
+        }
+    },
+    {
+        "paper_id": 3,
+        "filename": "remotesensing-17-02659-v2.pdf",
+        "metadata": {
+            "title": "A Self-Supervised Contrastive Framework for Specific Emitter Identification with Limited Labeled Data",
+            "authors": [
+                "Jiaqi Wang",
+                "Lishu Guo",
+                "Pengfei Liu",
+                "Peng Shang",
+                "Xiaochun Lu",
+                "Hang Zhao"
+            ],
+            "year": "2025",
+            "venue": "Remote Sens.",
+            "doi": "10.3390/rs17152659",
+            "keywords": [
+                "satellite transmitter identification",
+                "deep learning",
+                "self-supervised learning",
+                "contrastive learning",
+                "virtual adversarial training"
+            ]
+        },
+        "abstract": "The paper proposes a self-supervised contrastive framework for Specific Emitter Identification (SEI) with limited labeled data. It combines unsupervised pretraining using contrastive loss and supervised fine-tuning with virtual adversarial training (VAT) to improve generalization. Experiments on real-world satellite navigation signals demonstrate superior SEI performance compared to existing methods.",
+        "research": {
+            "problem": "Scarcity of accurately labeled data limits the effectiveness of supervised SEI methods in real-world scenarios.",
+            "motivation": "Develop a self-supervised framework to reduce reliance on labeled data while maintaining high SEI performance.",
+            "objective": "Design a two-stage framework combining contrastive pretraining and VAT-regularized fine-tuning for SEI with limited labels.",
+            "research_questions": [
+                "How can unlabeled data be leveraged for effective SEI with limited labels?"
+            ]
+        },
+        "methodology": {
+            "summary": "A two-stage framework combining unsupervised contrastive pretraining and supervised fine-tuning with VAT regularization.",
+            "algorithms": [
+                "Contrastive learning",
+                "Virtual Adversarial Training (VAT)"
+            ],
+            "models": [
+                "Self-supervised contrastive framework",
+                "ResNet-Transformer hybrid encoder"
+            ],
+            "datasets": [
+                "Real-world satellite navigation signals (Beidou Navigation Satellite System)"
+            ],
+            "features": [
+                "Radio Frequency Fingerprints (RFFs)"
+            ],
+            "preprocessing": [
+                "Shift",
+                "Noise injection",
+                "Linear scaling"
+            ],
+            "training_strategy": "Unsupervised pretraining with contrastive loss + VAT-regularized supervised fine-tuning",
+            "evaluation_metrics": [
+                "Accuracy",
+                "Precision",
+                "Recall",
+                "F1-score",
+                "AUC"
+            ]
+        },
+        "experiments": {
+            "experimental_setup": "Real-world Beidou Navigation Satellite System (BDS) signals with 10 emitter classes.",
+            "baselines": [
+                "Traditional SEI methods",
+                "Few-shot learning approaches",
+                "Semi-supervised methods"
+            ],
+            "results": "Proposed method outperforms competing methods across various limited-labeled settings.",
+            "performance": {
+                "accuracy": "Not specified",
+                "precision": "Not specified",
+                "recall": "Not specified",
+                "f1": "Not specified",
+                "auc": "Not specified"
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Novel self-supervised contrastive framework for SEI",
+                "Hybrid ResNet-Transformer encoder design"
+            ],
+            "advantages": [
+                "Reduces reliance on labeled data",
+                "Enhances generalization via VAT regularization"
+            ],
+            "limitations": [
+                "Dependent on quality of unlabeled data",
+                "Limited evaluation on diverse datasets"
+            ],
+            "future_work": [
+                "Explore multi-modal data integration",
+                "Investigate domain adaptation techniques"
+            ],
+            "applications": [
+                "Satellite communication security",
+                "Signal source authentication"
+            ],
+            "research_gap": "Need for robust SEI methods under severe label scarcity constraints"
+        },
+        "sections": {
+            "introduction": "Outlines the challenge of limited labeled data in SEI and introduces the proposed self-supervised framework.",
+            "related_work": "Reviews existing SEI methods, including deep learning approaches, few-shot learning, and semi-supervised techniques.",
+            "methodology": "Details the two-stage framework, data augmentation strategies, and hybrid encoder architecture.",
+            "results": "Demonstrates superior SEI performance on real-world satellite signals with limited labels.",
+            "discussion": "Analyzes the effectiveness of contrastive learning and VAT in improving generalization.",
+            "conclusion": "Summarizes the framework's potential for practical SEI applications with minimal labeled data."
+        }
+    },
+    {
+        "paper_id": 4,
+        "filename": "merchant2018.pdf",
+        "metadata": {
+            "title": "Deep Learning for RF Device Fingerprinting in Cognitive Communication Networks",
+            "authors": [
+                "Kevin Merchant",
+                "Shauna Revay",
+                "George Stantchev",
+                "Bryan Nousain"
+            ],
+            "year": "2018",
+            "venue": "IEEE Journal of Selected Topics in Signal Processing",
+            "doi": "10.1109/JSTSP.2018.2796446",
+            "keywords": [
+                "Communication system security",
+                "neural networks",
+                "ZigBee",
+                "cognitive radio",
+                "personal area networks",
+                "radio communication",
+                "pattern recognition",
+                "classification algorithms"
+            ]
+        },
+        "abstract": "The paper proposes using deep learning for RF device fingerprinting in cognitive radio networks, achieving 92.29% identification accuracy on IEEE 802.15.4 devices through time-domain complex baseband error signal analysis.",
+        "research": {
+            "problem": "Authenticating radio devices in cognitive radio networks to prevent impersonation attacks.",
+            "motivation": "Security vulnerabilities in cognitive radio networks require robust device identification mechanisms.",
+            "objective": "Develop a deep learning framework for RF device fingerprinting using time-domain signal analysis.",
+            "research_questions": [
+                "Can CNNs effectively identify devices using time-domain error signals?",
+                "How robust is the method across varying SNR conditions?"
+            ]
+        },
+        "methodology": {
+            "summary": "A convolutional neural network (CNN) is trained on time-domain complex baseband error signals to identify device fingerprints.",
+            "algorithms": [
+                "Convolutional Neural Network (CNN)"
+            ],
+            "models": [
+                "CNN for RF fingerprinting"
+            ],
+            "datasets": [
+                "IEEE 802.15.4 ZigBee devices"
+            ],
+            "features": [
+                "Hardware variability in analog transmitters",
+                "Time-domain error signals"
+            ],
+            "preprocessing": [
+                "Synchronization",
+                "Additive noise injection",
+                "Frequency correction"
+            ],
+            "training_strategy": "End-to-end training on full transmissions without relying on preamble-only data.",
+            "evaluation_metrics": [
+                "Confusion matrix",
+                "Receiver Operating Characteristic (ROC)",
+                "Precision-recall curves"
+            ]
+        },
+        "experiments": {
+            "experimental_setup": "Two experiments: outdoor (noisy channel) and lab (simulated AWGN).",
+            "baselines": [
+                "Hand-crafted feature classifiers",
+                "Preamble-based methods"
+            ],
+            "results": "92.29% identification accuracy on 7 ZigBee devices across SNR ranges.",
+            "performance": {
+                "accuracy": "92.29%",
+                "precision": null,
+                "recall": null,
+                "f1": null,
+                "auc": null
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "First CNN-based RF fingerprinting method using full transmissions",
+                "Frequency correction for robustness"
+            ],
+            "advantages": [
+                "Robustness to SNR variations",
+                "Scalability to large device populations"
+            ],
+            "limitations": [
+                "Dependence on specific hardware characteristics",
+                "Limited to ZigBee-like signals"
+            ],
+            "future_work": [
+                "Extending to other wireless standards",
+                "Enhancing spoofing resistance"
+            ],
+            "applications": [
+                "IoT device authentication",
+                "Cognitive radio network security"
+            ],
+            "research_gap": "Need for methods resistant to spoofing without relying on cryptographic keys"
+        },
+        "sections": {
+            "introduction": "Discusses cognitive radio networks' security challenges and the need for device authentication.",
+            "related_work": "Reviews RF fingerprinting techniques and prior deep learning applications to wireless signals.",
+            "methodology": "Details CNN training on time-domain error signals with synchronization and noise preprocessing.",
+            "results": "Presents 92.29% accuracy on ZigBee devices across varying SNR conditions.",
+            "discussion": "Analyzes robustness of the method and implications for secure communication networks.",
+            "conclusion": "Summarizes the effectiveness of CNN-based fingerprinting for device authentication."
+        }
+    }
+]

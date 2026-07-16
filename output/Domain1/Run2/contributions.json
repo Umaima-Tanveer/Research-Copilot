@@ -1,0 +1,53 @@
+{
+    "future_contributions": [
+        {
+            "gap": "Adaptive PHY layer methods for IIoT authentication",
+            "proposed_contribution": "Dynamic PHY-layer feature selection with environmental context awareness",
+            "technical_approach": "Integrate environmental sensors (temperature, humidity) with RF fingerprinting to enable real-time feature prioritization using reinforcement learning, adapting to SNR fluctuations and interference patterns.",
+            "expected_impact": "Enables robust authentication in heterogeneous IIoT environments with reduced reliance on SDR processing power by focusing on contextually relevant features.",
+            "implementation_feasibility": "Leverages existing SDR hardware with embedded environmental sensors and lightweight RL frameworks like PPO for edge deployment."
+        },
+        {
+            "gap": "Robust methods under varying channel conditions",
+            "proposed_contribution": "Hybrid CSI-RSSI fingerprinting with temporal correlation modeling",
+            "technical_approach": "Combine CSI and RSSI measurements with a temporal convolutional network (TCN) to model channel dynamics, enhancing resilience to NLOS conditions through cross-modal feature alignment.",
+            "expected_impact": "Improves identification accuracy in real-world scenarios by leveraging complementary strengths of CSI (fine-grained) and RSSI (robust to multipath) measurements.",
+            "implementation_feasibility": "Requires dual-band hardware for CSI/RSSI capture and TCN training with augmented temporal datasets."
+        },
+        {
+            "gap": "Federated learning for data scarcity in RFFI",
+            "proposed_contribution": "Privacy-preserving federated learning with semi-supervised contrastive learning",
+            "technical_approach": "Develop a federated framework where clients contribute unlabeled data with pseudo-labels generated via self-supervised pre-training, using contrastive learning for feature alignment across devices.",
+            "expected_impact": "Mitigates data scarcity while preserving privacy through decentralized training, enabling scalable RFFI without centralized data repositories.",
+            "implementation_feasibility": "Builds on existing contrastive learning architectures with federated aggregation layers and differential privacy noise injection."
+        },
+        {
+            "gap": "Handling uncontrolled hardware variability",
+            "proposed_contribution": "Hardware-agnostic RF feature extraction via invariant representation learning",
+            "technical_approach": "Apply domain adaptation techniques to learn invariant features across device hardware variations, using adversarial training to minimize distribution shifts between transmitter/receiver pairs.",
+            "expected_impact": "Enables consistent fingerprinting across diverse hardware configurations, reducing reliance on controlled manufacturing tolerances.",
+            "implementation_feasibility": "Requires access to heterogeneous device datasets and can be implemented with existing GAN-based domain adaptation frameworks."
+        },
+        {
+            "gap": "Security in federated RFFI systems",
+            "proposed_contribution": "Secure aggregation with encrypted model updates for federated RFFI",
+            "technical_approach": "Implement homomorphic encryption for model parameter updates during federated training, combined with secure multi-party computation for gradient aggregation.",
+            "expected_impact": "Prevents model inversion attacks and data leakage while maintaining federated learning benefits for privacy-preserving RFFI.",
+            "implementation_feasibility": "Leverages existing homomorphic encryption libraries with optimized low-precision neural network quantization."
+        },
+        {
+            "gap": "Real-time adaptation in AI/ML strategies",
+            "proposed_contribution": "Edge-AI enabled online learning for adaptive RF fingerprinting",
+            "technical_approach": "Deploy a lightweight online learning framework (e.g., Elastic Averaging SGD) on edge devices to continuously update fingerprinting models with new data while maintaining model consistency across the network.",
+            "expected_impact": "Enables dynamic threat response to emerging device clones or environmental changes without cloud dependency.",
+            "implementation_feasibility": "Utilizes edge AI accelerators with model compression techniques for real-time adaptation."
+        },
+        {
+            "gap": "Comprehensive datasets for same-model device identification",
+            "proposed_contribution": "Adversarial augmentation for same-model device fingerprinting benchmarking",
+            "technical_approach": "Create a synthetic dataset with adversarial perturbations (e.g., phase noise injection) to challenge same-model identification, combined with real-world capture of hardware variations.",
+            "expected_impact": "Accelerates development of robust identification algorithms by explicitly testing edge cases of minimal hardware differences.",
+            "implementation_feasibility": "Builds on existing datasets with signal processing tools for perturbation generation and validation through cross-device testing."
+        }
+    ]
+}

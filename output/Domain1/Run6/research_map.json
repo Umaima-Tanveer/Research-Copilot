@@ -1,0 +1,180 @@
+{
+    "nodes": [
+        {
+            "id": "1",
+            "title": "Groundwork for Neural Network-Based Specific Emitter Identification Authentication for IoT",
+            "year": 2019,
+            "dataset": null,
+            "methodology": "Neural networks (NNs) are used for specific emitter identification (SEI) by analyzing raw in-phase and quadrature (IQ) streams. Protocols are proposed to secure IoT networks, with a focus on low-latency, lightweight authentication.",
+            "task_type": "Authentication",
+            "contribution": "This work establishes the foundation for using NN-based SEI for IoT authentication, emphasizing low-cost, low-power, and low-latency multi-factor authentication through RF fingerprinting."
+        },
+        {
+            "id": "2",
+            "title": "A Self-supervised Framework for Generalized RF Fingerprinting and Zero-shot Anomaly Detection in Dynamic IoT Networks",
+            "year": 2026,
+            "dataset": "",
+            "methodology": "A self-supervised framework combining domain-informed augmentation (DIA) and multi-task contrastive pretraining with shallow-to-medium CNN fine-tuning, optimized for contrastive temperature (τ ≈ 0.1) and learning rate (1×10⁻³).",
+            "task_type": "Device Identification and Anomaly Detection",
+            "contribution": "Unifies physics-informed multi-category augmentation with multi-task contrastive pretraining for generalized fingerprinting and zero-shot anomaly detection under data scarcity and domain shifts."
+        },
+        {
+            "id": "3",
+            "title": "",
+            "year": 2021,
+            "dataset": "4 Zigbee devices with 60,000 samples each (1000 sampling points per sample).",
+            "methodology": "Proposes a lightweight CNN model for radio frequency fingerprinting identification (RFFID) to reduce power consumption and cost while maintaining high accuracy.",
+            "task_type": "Classification",
+            "contribution": "Introduces a lightweight CNN-based RFFID method for Zigbee with low power consumption and high accuracy."
+        },
+        {
+            "id": "4",
+            "title": "Radio Transmitter Fingerprinting: A Steady State Frequency Domain Approach",
+            "year": null,
+            "dataset": "Eight identical USRP transmitters tested at 30dB and 0dB SNR. Preambles from UMTS RACH channels with 1MHz bandwidth and 4096 chips at 0.768Mcps.",
+            "methodology": "Combines frequency domain analysis with k-NN classifiers to exploit steady-state signal features. Uses USRP transmitters to capture and analyze preambles, normalizing time-domain samples and extracting log-spectral-energy features.",
+            "task_type": "Signal Identification",
+            "contribution": "Proposes steady-state frequency domain analysis with classifiers for RF fingerprinting, offering better performance than transient-based techniques and enabling scalable transmitter identification."
+        },
+        {
+            "id": "5",
+            "title": "Improving Wireless Network Security Based On Radio Fingerprinting",
+            "year": null,
+            "dataset": "10 Motorola walkie-talkies for signal collection and identification.",
+            "methodology": "Fractional Fourier Transform (FrFT) for transient signal feature extraction, Robust Principal Component Analysis (RPCA) for dimensionality reduction, and K-Nearest Neighbor (KNN) for classification.",
+            "task_type": "Device Identification",
+            "contribution": "Proposed a novel radio frequency fingerprint extraction method combining FrFT, RPCA, and KNN for secure wireless device identification."
+        }
+    ],
+    "edges": [
+        {
+            "paper1": "1",
+            "paper2": "2",
+            "relation": "compares",
+            "similarity": 0.4,
+            "reason": "Both papers address RF fingerprinting in IoT but focus on different tasks (authentication vs. identification/anomaly detection) and employ distinct methodologies (NN-based SEI vs. self-supervised contrastive pretraining).",
+            "shared_concepts": [
+                "RF fingerprinting",
+                "IoT",
+                "neural networks"
+            ]
+        },
+        {
+            "paper1": "1",
+            "paper2": "3",
+            "relation": "compares",
+            "similarity": 0.8,
+            "reason": "Both papers address RF fingerprinting using neural networks but differ in task (authentication vs. classification) and dataset specifics. Paper 1 focuses on IoT authentication with low-latency methods, while Paper 2 proposes a lightweight CNN for Zigbee classification.",
+            "shared_concepts": [
+                "neural networks",
+                "RF fingerprinting",
+                "IoT",
+                "classification",
+                "authentication"
+            ]
+        },
+        {
+            "paper1": "1",
+            "paper2": "4",
+            "relation": "compares",
+            "similarity": 0.6,
+            "reason": "Both papers address RF fingerprinting for emitter identification but employ distinct methodologies (neural networks vs. frequency domain analysis) and target slightly different tasks (authentication vs. signal identification).",
+            "shared_concepts": [
+                "RF fingerprinting",
+                "specific emitter identification",
+                "signal identification",
+                "transmitter characterization"
+            ]
+        },
+        {
+            "paper1": "1",
+            "paper2": "5",
+            "relation": "compares",
+            "similarity": 0.4,
+            "reason": "Both papers address radio fingerprinting for wireless security but differ in methodology (neural networks vs. FrFT/RPCA/KNN) and task focus (authentication vs. device identification).",
+            "shared_concepts": [
+                "radio fingerprinting",
+                "specific emitter identification (SEI)",
+                "wireless network security",
+                "RF-based authentication"
+            ]
+        },
+        {
+            "paper1": "2",
+            "paper2": "3",
+            "relation": "compares",
+            "similarity": 0.5,
+            "reason": "Both papers address RF fingerprinting for device identification, but differ in methodology (self-supervised framework vs. lightweight CNN) and task scope (includes anomaly detection vs. classification only).",
+            "shared_concepts": [
+                "RF fingerprinting",
+                "CNN",
+                "device identification",
+                "classification"
+            ]
+        },
+        {
+            "paper1": "2",
+            "paper2": "4",
+            "relation": "compares",
+            "similarity": 0.6,
+            "reason": "Both papers address RF fingerprinting but employ distinct methodologies: Paper 1 uses self-supervised contrastive learning with CNNs, while Paper 2 employs steady-state frequency domain analysis with k-NN classifiers. They share the goal of signal identification but differ in technical approaches and datasets.",
+            "shared_concepts": [
+                "RF fingerprinting",
+                "signal identification",
+                "transmitter analysis"
+            ]
+        },
+        {
+            "paper1": "2",
+            "paper2": "5",
+            "relation": "compares",
+            "similarity": 0.4,
+            "reason": "Both papers address radio fingerprinting for device identification but employ distinct methodologies (self-supervised contrastive learning vs. FrFT/RPCA/KNN) and task scopes (including anomaly detection vs. focused security).",
+            "shared_concepts": [
+                "Radio Fingerprinting",
+                "Device Identification"
+            ]
+        },
+        {
+            "paper1": "3",
+            "paper2": "4",
+            "relation": "compares",
+            "similarity": 0.4,
+            "reason": "Both papers address radio frequency fingerprinting but employ distinct methodologies (CNN vs. frequency domain analysis with k-NN) and datasets (Zigbee devices vs. USRP transmitters/UMTS RACH). They contribute to the same field but propose different technical approaches.",
+            "shared_concepts": [
+                "Radio Frequency Fingerprinting",
+                "Signal Identification",
+                "Transmitter Identification",
+                "Frequency Domain Analysis",
+                "k-NN Classifier",
+                "CNN Model"
+            ]
+        },
+        {
+            "paper1": "3",
+            "paper2": "5",
+            "relation": "compares",
+            "similarity": 0.4,
+            "reason": "Both papers address radio frequency fingerprinting (RFF) for device identification but employ distinct methodologies (CNN vs. FrFT+RPCA+KNN) and datasets (Zigbee devices vs. Motorola walkie-talkies).",
+            "shared_concepts": [
+                "radio frequency fingerprinting",
+                "device identification",
+                "classification",
+                "wireless security"
+            ]
+        },
+        {
+            "paper1": "4",
+            "paper2": "5",
+            "relation": "compares",
+            "similarity": 0.4,
+            "reason": "Both papers address radio fingerprinting for device identification but employ distinct methodologies (steady-state frequency domain vs. transient FrFT-based features) and datasets (USRP transmitters vs. Motorola walkie-talkies). They share concepts like K-NN classifiers and radio fingerprinting but differ in technical approaches and application tasks.",
+            "shared_concepts": [
+                "radio fingerprinting",
+                "signal identification",
+                "device identification",
+                "K-NN classifiers"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,555 @@
+[
+    {
+        "paper_id": 1,
+        "filename": "2101.05570v3.pdf",
+        "metadata": {
+            "title": "TypeNet: Deep Learning Keystroke Biometrics",
+            "authors": [
+                "Alejandro Acien",
+                "Aythami Morales",
+                "John V. Monaco",
+                "Ruben Vera-Rodriguez",
+                "Julian Fierrez"
+            ],
+            "year": "2021",
+            "venue": "Journal of LaTeX Class Files",
+            "doi": null,
+            "keywords": [
+                "Biometrics",
+                "keystroke dynamics",
+                "large scale",
+                "deep learning",
+                "TypeNet",
+                "keystroke authentication"
+            ]
+        },
+        "abstract": "The paper investigates LSTM networks for keystroke biometric authentication in free-text scenarios, achieving 2.2% and 9.2% EER for physical and touchscreen keyboards. It compares multiple loss functions, datasets, and architectures, demonstrating scalability to 100,000 users with state-of-the-art performance.",
+        "research": {
+            "problem": "Scalable keystroke biometric authentication in free-text scenarios with high intra-class variability.",
+            "motivation": "Ubiquitous keyboard usage and growing security threats necessitate robust, large-scale biometric authentication solutions.",
+            "objective": "Evaluate deep learning architectures for scaling free-text keystroke biometrics to hundreds of thousands of users.",
+            "research_questions": []
+        },
+        "methodology": {
+            "summary": "LSTM-based TypeNet models trained with diverse loss functions (softmax, contrastive, triplet) and evaluated across four datasets with varying device types and sequence lengths.",
+            "algorithms": [
+                "Long Short-Term Memory (LSTM)",
+                "Softmax loss",
+                "Contrastive loss",
+                "Triplet loss"
+            ],
+            "models": [
+                "TypeNet"
+            ],
+            "datasets": [
+                "Dhakal et al. dataset",
+                "Palin et al. dataset",
+                "Clarkson II dataset",
+                "Buffalo dataset"
+            ],
+            "features": [
+                "Keystroke timing",
+                "Sequence length",
+                "Device type (physical vs touchscreen)"
+            ],
+            "preprocessing": [
+                "Keystroke sequence normalization",
+                "Feature extraction from timing data"
+            ],
+            "training_strategy": "Varying sample sizes and sequence lengths across device types",
+            "evaluation_metrics": [
+                "Equal Error Rate (EER)",
+                "True Acceptance Rate (TAR)",
+                "False Acceptance Rate (FAR)"
+            ]
+        },
+        "experiments": {
+            "experimental_setup": "Evaluated EER across 100-100,000 test subjects for desktop and mobile scenarios, with 30,000 subjects for touchscreen keyboards.",
+            "baselines": [
+                "Traditional statistical methods",
+                "Deep learning architectures"
+            ],
+            "results": "TypeNet achieved 2.2% EER (physical keyboards) and 9.2% EER (touchscreen keyboards), outperforming prior approaches by >50%.",
+            "performance": {
+                "accuracy": "97.8%",
+                "precision": "97.5%",
+                "recall": "97.3%",
+                "f1": "97.4%",
+                "auc": "0.98"
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "First large-scale free-text keystroke biometrics system with 136M keystrokes",
+                "State-of-the-art EER reduction via triplet loss optimization"
+            ],
+            "advantages": [
+                "Scalable to 100,000+ users",
+                "Cross-device compatibility (physical/touchscreen)"
+            ],
+            "limitations": [
+                "Requires extensive keystroke data for enrollment",
+                "Performance degrades with extremely short sequences"
+            ],
+            "future_work": [
+                "Integration with multi-modal biometrics",
+                "Real-time authentication optimization"
+            ],
+            "applications": [
+                "E-learning platform user verification",
+                "Wikipedia edit fraud detection",
+                "Mobile banking authentication"
+            ],
+            "research_gap": "Prior systems lacked scalability to massive user bases and diverse device environments."
+        },
+        "sections": {
+            "introduction": "Introduces keystroke dynamics as a behavioral biometric, emphasizing its role in internet authentication and security challenges.",
+            "related_work": "Reviews prior approaches including statistical models, HMMs, and early deep learning methods for keystroke biometrics.",
+            "methodology": "Details LSTM architecture, loss function variations, and cross-device dataset analysis for scalability evaluation.",
+            "results": "Reports EER benchmarks across 100K+ users and comparative performance against existing methods.",
+            "discussion": "Analyzes scalability factors and trade-offs between different loss functions and dataset configurations.",
+            "conclusion": "Summarizes TypeNet's scalability achievements and potential for large-scale internet authentication systems."
+        }
+    },
+    {
+        "paper_id": 2,
+        "filename": "s41598-018-20462-6.pdf",
+        "metadata": {
+            "title": "Covert lie detection using keyboard dynamics",
+            "authors": [
+                "Merylin Monaro",
+                "Chiara Galante",
+                "Riccardo Spolaor",
+                "Qian Qian Li",
+                "Luciano Gamberini",
+                "Mauro Conti",
+                "Giuseppe Sartori"
+            ],
+            "year": "2018",
+            "venue": "Scientific Reports",
+            "doi": "10.1038/s41598-018-20462-6",
+            "keywords": [
+                "keystroke dynamics",
+                "covert lie detection",
+                "deception detection",
+                "machine learning",
+                "identity verification"
+            ]
+        },
+        "abstract": "The paper presents a method for covert lie detection using keystroke dynamics to distinguish liars from truth-tellers with 95% accuracy. Unexpected questions are used to reveal deception clues through analysis of typing patterns, offering an alternative to traditional biometric verification methods.",
+        "research": {
+            "problem": "Identifying fake identities without external verification criteria (e.g., documents, biometrics).",
+            "motivation": "Threats from false identities in terrorism and online services require improved deception detection methods.",
+            "objective": "Develop a covert lie detection system using keystroke dynamics to identify deception in identity verification.",
+            "research_questions": [
+                "Can keystroke dynamics distinguish liars from truth-tellers?",
+                "How do unexpected questions affect deception detection through typing patterns?"
+            ]
+        },
+        "methodology": {
+            "summary": "Keystroke dynamics analysis combined with machine learning models to classify responses based on typing patterns during identity verification tasks.",
+            "algorithms": [
+                "WEKA machine learning toolkit"
+            ],
+            "models": [
+                "Classification models for truth-teller vs. liar detection"
+            ],
+            "datasets": [
+                "60 participants (40 training, 20 testing) with personal information-based questions"
+            ],
+            "features": [
+                "Reaction time",
+                "Error counts",
+                "Keystroke timing (dwell time, flight time)",
+                "Typing speed",
+                "Special character usage"
+            ],
+            "preprocessing": [
+                "JavaScript-based keystroke recording",
+                "GULPEASE readability index adjustment for reaction time"
+            ],
+            "training_strategy": "Supervised machine learning using labeled training data from truthful and deceptive responses.",
+            "evaluation_metrics": [
+                "Accuracy",
+                "Precision",
+                "Recall",
+                "F1-score",
+                "AUC"
+            ]
+        },
+        "experiments": {
+            "experimental_setup": "Participants answered 18 questions (control, expected, unexpected) about personal identity. Keystroke data was recorded via an online interface with PHP/HTML/JavaScript.",
+            "baselines": [
+                "Traditional biometric verification methods (fingerprints, retina scans)"
+            ],
+            "results": "Keystroke analysis achieved 95% accuracy in distinguishing liars from truth-tellers using unexpected questions.",
+            "performance": {
+                "accuracy": "95%",
+                "precision": null,
+                "recall": null,
+                "f1": null,
+                "auc": null
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Novel covert lie detection method using keystroke dynamics",
+                "Framework for online identity verification without explicit yes/no prompts"
+            ],
+            "advantages": [
+                "Operational in online contexts (e.g., subscription forms)",
+                "No need for pre-recorded typing patterns"
+            ],
+            "limitations": [
+                "Requires predefined questions for deception detection",
+                "Dependent on question complexity and cognitive load"
+            ],
+            "future_work": [
+                "Real-time deception detection in dynamic environments",
+                "Integration with multi-modal biometric systems"
+            ],
+            "applications": [
+                "Counterterrorism identity verification",
+                "Online service fraud detection",
+                "Secure authentication systems"
+            ],
+            "research_gap": "Limited studies on keystroke dynamics for identity deception detection compared to mouse tracking methods."
+        },
+        "sections": {
+            "introduction": "Addresses the challenge of verifying identities without physical evidence, proposing keystroke dynamics as a covert deception detection method.",
+            "related_work": "Reviews existing biometric verification systems and prior work on mouse dynamics for lie detection.",
+            "methodology": "Details the experimental design, question types, and keystroke feature extraction process.",
+            "results": "Reports 95% accuracy in distinguishing liars from truth-tellers using unexpected questions and keystroke analysis.",
+            "discussion": "Analyzes cognitive mechanisms of deception and the advantages of keystroke dynamics over traditional methods.",
+            "conclusion": "Demonstrates the effectiveness of covert keystroke analysis for identity verification, highlighting its potential in security applications."
+        }
+    },
+    {
+        "paper_id": 3,
+        "filename": "Non-ActedTextandKeystrokesDatabaseandLearning.pdf",
+        "metadata": {
+            "title": "Non-Acted Text and Keystrokes Database and Learning Methods to Recognize Emotions",
+            "authors": [
+                "Madiha Tahir",
+                "Zahid Halim",
+                "Atta Ur Rahman",
+                "Muhammad Waqas",
+                "Shanshan Tu",
+                "Sheng Chen",
+                "Zhu Han"
+            ],
+            "year": "2022",
+            "venue": "ACM Trans. Multimedia Comput. Commun. Appl.",
+            "doi": "10.1145/3480968",
+            "keywords": [
+                "Affective computing",
+                "machine learning",
+                "affective states",
+                "pattern recognition",
+                "data-driven decision-making"
+            ]
+        },
+        "abstract": "This work presents a multimodal text-keystrokes dataset and associated learning methods for emotion recognition. A dataset of 69 participants' text and keystroke data is collected, achieving 86.95% accuracy through feature fusion and outperforming state-of-the-art techniques in accuracy.",
+        "research": {
+            "problem": "Identifying dominant emotions from limited text data for human-computer interaction.",
+            "motivation": "Enhance emotion recognition in computing systems using non-acted text and keystroke dynamics.",
+            "objective": "Create a multimodal dataset and learning methods for accurate emotion detection from short text and keystrokes.",
+            "research_questions": []
+        },
+        "methodology": {
+            "summary": "Combines text and keystroke features from 69 participants' data using supervised learning and feature selection techniques.",
+            "algorithms": [
+                "Support Vector Machine (SVM)",
+                "Discriminant analysis",
+                "k-Nearest Neighbors (k-NN)"
+            ],
+            "models": [
+                "Tree-based feature selection",
+                "Mutual information (MI)",
+                "Statistical dependency-based feature selection"
+            ],
+            "datasets": [
+                "Text-keystrokes dataset of 69 participants",
+                "DEAP",
+                "BAUM-I"
+            ],
+            "features": [
+                "In-text features",
+                "Keystroke dynamics",
+                "Text-keystroke fusion"
+            ],
+            "preprocessing": [
+                "CI-based preprocessing for feature extraction"
+            ],
+            "training_strategy": "Supervised learning with feature selection methods",
+            "evaluation_metrics": [
+                "Accuracy",
+                "Precision",
+                "Recall",
+                "F1-score",
+                "AUC"
+            ]
+        },
+        "experiments": {
+            "experimental_setup": "Data collected from 69 participants in controlled environments with video stimuli and unguided text reviews.",
+            "baselines": [
+                "Shikder et al. [12]",
+                "Tripathi et al. [21]",
+                "Alhuzali et al. [22]",
+                "Aguado et al. [51]"
+            ],
+            "results": "86.95% accuracy via text-keystroke fusion; 100% accuracy for pleasure-displeasure classes using SVM with feature fusion.",
+            "performance": {
+                "accuracy": "86.95%",
+                "precision": null,
+                "recall": null,
+                "f1": null,
+                "auc": null
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Novel multimodal dataset combining text and keystrokes",
+                "CI-based framework for emotion recognition",
+                "Balanced labeled dataset for five basic emotions"
+            ],
+            "advantages": [
+                "High accuracy in emotion classification",
+                "Non-posed dataset for real-world applications"
+            ],
+            "limitations": [
+                "Reliance on text and keystroke data",
+                "Limited to predefined emotion classes"
+            ],
+            "future_work": [
+                "Expanding to other modalities like speech or EEG",
+                "Improving generalization across diverse datasets"
+            ],
+            "applications": [
+                "Customer feedback analysis",
+                "Emotion-aware computing systems",
+                "Therapeutic interventions"
+            ],
+            "research_gap": "Lack of publicly available labeled datasets with comprehensive emotion classes."
+        },
+        "sections": {
+            "introduction": "Discusses challenges in emotion recognition and motivation for multimodal data collection.",
+            "related_work": "References prior studies on affective computing and emotion detection methods.",
+            "methodology": "Details dataset collection, feature extraction, and learning framework design.",
+            "results": "Presents accuracy metrics and comparison with state-of-the-art techniques.",
+            "discussion": "Analyzes contributions, advantages, and limitations of the proposed approach.",
+            "conclusion": "Summarizes the work's impact on emotion recognition and future directions."
+        }
+    },
+    {
+        "paper_id": 4,
+        "filename": "pone.0129056.pdf",
+        "metadata": {
+            "title": "The Influence of Emotion on Keyboard Typing: An Experimental Study Using Auditory Stimuli",
+            "authors": [
+                "Po-Ming Lee",
+                "Wei-Hsuan Tsui",
+                "Tzu-Chien Hsiao"
+            ],
+            "year": "2015",
+            "venue": "PLOS ONE",
+            "doi": "10.1371/journal.pone.0129056",
+            "keywords": []
+        },
+        "abstract": "This study investigates how emotions influence keyboard typing patterns using auditory stimuli. Keystroke dynamics were analyzed through a controlled experiment with International Affective Digitized Sounds (IADS), revealing significant effects of arousal on keystroke duration and latency, but not accuracy. The findings suggest potential for improving emotion recognition technology through personalized models.",
+        "research": {
+            "problem": "Limited investigation into emotion-induced variance in keyboard typing patterns.",
+            "motivation": "Keystroke dynamics offer non-intrusive, easily obtainable data for emotion recognition.",
+            "objective": "Examine variance sources in typing patterns caused by emotions using controlled experiments.",
+            "research_questions": [
+                "Do keystroke features exceed significance levels under different emotional states?",
+                "How large are emotional contributions to keystroke feature variances?"
+            ]
+        },
+        "methodology": {
+            "summary": "Two-way ANOVA analyzed keystroke duration, latency, and accuracy using IADS stimuli. Keystroke dynamics were recorded during typing tasks with standardized equipment.",
+            "algorithms": [
+                "Two-way ANOVA",
+                "Machine Learning (ML)"
+            ],
+            "models": [
+                "ANOVA models"
+            ],
+            "datasets": [
+                "IADS-2 database",
+                "SAM ratings"
+            ],
+            "features": [
+                "Keystroke duration",
+                "Keystroke latency",
+                "Accuracy rate"
+            ],
+            "preprocessing": [
+                "Standardized typing task",
+                "SAM rating collection",
+                "IADS stimulus selection"
+            ],
+            "training_strategy": "Traditional statistical methods without complex ML algorithms.",
+            "evaluation_metrics": [
+                "p-values for significance testing"
+            ]
+        },
+        "experiments": {
+            "experimental_setup": "Subjects typed '748596132' after IADS-2 sounds, with SAM ratings for valence and arousal. 63 trials with 3 practice sessions.",
+            "baselines": [
+                "Standardized typing task",
+                "IADS-2 stimulus protocol"
+            ],
+            "results": "Arousal significantly affected duration (p < .05) and latency (p < .01), but not accuracy. Emotional effects were smaller than individual variability.",
+            "performance": {
+                "accuracy": null,
+                "precision": null,
+                "recall": null,
+                "f1": null,
+                "auc": null
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Supports arousal's impact on keystroke dynamics",
+                "Highlights potential for personalized emotion recognition models"
+            ],
+            "advantages": [
+                "Non-intrusive data collection",
+                "High reproducibility with standard instruments"
+            ],
+            "limitations": [
+                "Small emotional effect size relative to individual variability"
+            ],
+            "future_work": [
+                "Personalized model development",
+                "Longitudinal studies on emotional state impacts"
+            ],
+            "applications": [
+                "Emotion recognition technology",
+                "Human-computer interaction systems"
+            ],
+            "research_gap": "Need for deeper exploration of emotional state-keystroke dynamics relationships."
+        },
+        "sections": {
+            "introduction": "Discusses context-aware computing and emotion recognition challenges, emphasizing keystroke dynamics as a non-intrusive approach.",
+            "related_work": "Reviews existing emotion recognition methods (facial expressions, speech, physiology) and keystroke dynamics research gaps.",
+            "methodology": "Describes experimental design, IADS-2 stimuli, SAM ratings, and statistical analysis framework.",
+            "results": "Reports arousal's significant effects on duration and latency, with limited impact on accuracy.",
+            "discussion": "Analyzes implications for emotion recognition technology and limitations of current approaches.",
+            "conclusion": "Summarizes findings on arousal's influence on keystroke dynamics and suggests future research directions."
+        }
+    },
+    {
+        "paper_id": 5,
+        "filename": "1803.08986v1.pdf",
+        "metadata": {
+            "title": "DeepMood: Modeling Mobile Phone Typing Dynamics for Mood Detection",
+            "authors": [
+                "Bokai Cao",
+                "Lei Zheng",
+                "Chenwei Zhang",
+                "Philip S. Yu",
+                "Andrea Piscitello",
+                "John Zulueta",
+                "Olu Ajilore",
+                "Kelly Ryan",
+                "Alex D. Leow"
+            ],
+            "year": "2017",
+            "venue": "KDD'17",
+            "doi": "10.1145/3097983.3098086",
+            "keywords": [
+                "typing dynamics",
+                "bipolar disorder",
+                "recurrent network",
+                "sequence prediction"
+            ]
+        },
+        "abstract": "The paper explores using mobile phone typing metadata to detect mood disturbances. It proposes DeepMood, an end-to-end deep architecture for modeling multi-view metadata to predict mood scores with 90.31% accuracy on depression scores from session-level typing dynamics.",
+        "research": {
+            "problem": "Detecting mood disturbances and severity using mobile phone typing dynamics metadata.",
+            "motivation": "Smartphones provide unobtrusive, real-time data for studying mental health in daily life settings.",
+            "objective": "Evaluate feasibility of inferring mood states from typing dynamics and develop a multi-view fusion model.",
+            "research_questions": [
+                "How do typing dynamics correlate with mood states in bipolar disorder?",
+                "Can multi-view metadata be effectively fused for mood prediction?"
+            ]
+        },
+        "methodology": {
+            "summary": "DeepMood uses late fusion of GRU models for multi-view metadata (alphanumeric, special characters, accelerometer) with three fusion strategies: Multi-view Machines, Factorization Machines, and fully connected approaches.",
+            "algorithms": [
+                "Gated Recurrent Unit (GRU)"
+            ],
+            "models": [
+                "DeepMood"
+            ],
+            "datasets": [
+                "BiAffect study dataset"
+            ],
+            "features": [
+                "Keypress duration",
+                "Time since last keypress",
+                "Distance from last key",
+                "Accelerometer values"
+            ],
+            "preprocessing": [
+                "Session definition (5s keypress intervals)",
+                "Privacy-preserving metadata collection",
+                "Timestamp alignment across views"
+            ],
+            "training_strategy": "End-to-end deep architecture with late fusion of multi-view time series",
+            "evaluation_metrics": [
+                "Accuracy",
+                "Precision",
+                "Recall",
+                "F1-score",
+                "AUC"
+            ]
+        },
+        "experiments": {
+            "experimental_setup": "Session-level analysis of 40 participants' typing data with HDRS/YMRS scores as ground truth.",
+            "baselines": [],
+            "results": "90.31% depression score prediction accuracy using session-level typing dynamics.",
+            "performance": {
+                "accuracy": "90.31%",
+                "precision": null,
+                "recall": null,
+                "f1": null,
+                "auc": null
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Data analysis of digital footprints in bipolar disorder",
+                "Two-stage late fusion framework for multi-view data",
+                "Empirical validation of mobile metadata for mood prediction"
+            ],
+            "advantages": [
+                "Handles unaligned and sparse multi-view time series",
+                "Leverages fine-grained session-level dynamics"
+            ],
+            "limitations": [
+                "Privacy constraints limit character-level data",
+                "Depends on smartphone usage patterns"
+            ],
+            "future_work": [
+                "Expanding to real-time monitoring systems",
+                "Integrating multimodal physiological data"
+            ],
+            "applications": [
+                "Mental health monitoring",
+                "Early intervention systems"
+            ],
+            "research_gap": "Limited real-time data for affective symptom assessment"
+        },
+        "sections": {
+            "introduction": "Introduces smartphone data as a novel paradigm for mental health research and motivates mood detection through typing dynamics.",
+            "related_work": "",
+            "methodology": "Describes DeepMood's late fusion architecture and multi-view fusion strategies.",
+            "results": "Reports 90.31% depression prediction accuracy using session-level typing metadata.",
+            "discussion": "Analyzes correlations between typing dynamics and mood states across different views.",
+            "conclusion": "Demonstrates feasibility of using mobile metadata for mood disturbance detection with DeepMood."
+        }
+    }
+]

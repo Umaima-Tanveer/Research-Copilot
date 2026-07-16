@@ -1,0 +1,86 @@
+[
+    {
+        "paper_id": "1",
+        "filename": "2311.15888v1.pdf",
+        "title": "Work In Progress: Towards Adaptive RF Fingerprint-based Authentication of IIoT devices",
+        "authors": [
+            "Emmanuel Lomba",
+            "Ricardo Severino",
+            "Ana Fernández Vilas"
+        ],
+        "publication_year": "NOT MENTIONED",
+        "objective": "Address security vulnerabilities in IIoT by enabling flexible and accurate authentication through adaptive RF fingerprinting.",
+        "methodology": "AI-driven adaptive Radio Frequency Fingerprinting (RFF) at the PHY layer, combined with Software-Defined Radio (SDR) gateways and Edge/Cloud computing for feature extraction and authentication.",
+        "dataset": "NOT MENTIONED",
+        "performance": "High accuracy in device authentication over challenging RF environments through adaptive feature extraction and SDR tuning.",
+        "limitations": "Dependence on SDR processing power and SNR, limited by current feature extraction methods and lack of standardized protocols."
+    },
+    {
+        "paper_id": "2",
+        "filename": "2411.06925v1.pdf",
+        "title": "DeepCRF: Deep Learning-Enhanced CSI-Based RF Fingerprinting for Channel-Resilient WiFi Device Identification",
+        "authors": [
+            "Ruiqi Kong",
+            "He (Henry) Chen"
+        ],
+        "publication_year": "2024",
+        "objective": "To address limitations of prior signal space-based methods in non-line-of-sight scenarios and improve WiFi device identification under varying channel conditions.",
+        "methodology": "CNN with model-inspired data augmentation, supervised contrastive learning, and decision fusion for enhanced generalization and noise resilience in CSI-based fingerprinting.",
+        "dataset": "19 COTS WiFi NICs with CSI measurements across diverse channel conditions, including real-world unseen scenarios.",
+        "performance": "Achieves 99.53% average identification accuracy using 4 CSI measurements per procedure across 19 COTS devices in real-world scenarios (metrics: Accuracy, F1 Score, AUC-ROC).",
+        "limitations": "Reliance on CSI measurements and potential generalization challenges in highly dynamic environments."
+    },
+    {
+        "paper_id": "3",
+        "filename": "TIFS2024_RFFI_Federated_Learning_manuscript.pdf",
+        "title": "Federated Radio Frequency Fingerprint Identification Powered by Unsupervised Contrastive Learning",
+        "authors": [
+            "Guanxiong Shen",
+            "Junqing Zhang",
+            "Xuyu Wang",
+            "Shiwen Mao"
+        ],
+        "publication_year": "NOT MENTIONED",
+        "objective": "Address data scarcity challenges in RFFI systems by proposing a federated learning framework with unsupervised contrastive learning for IoT networks.",
+        "methodology": "Three-stage federated RFFI protocol: federated pre-training, client fine-tuning, and identification using unsupervised contrastive learning for feature extraction.",
+        "dataset": "60 commercial-off-the-shelf (COTS) LoRa transmitters and 6 software-defined radio (SDR) receivers.",
+        "performance": "Identification accuracy improved from 63% to 95%; robustness to receiver hardware variations and location changes achieved.",
+        "limitations": "Previous federated RFFI systems lack trainability, scalability, and security due to reliance on labeled data and model aggregation challenges."
+    },
+    {
+        "paper_id": "4",
+        "filename": "sensors-22-04291-v2.pdf",
+        "title": "RF eigenﬁngerprints, an Efﬁcient RF Fingerprinting Method in IoT Context",
+        "authors": [
+            "Louis Morge-Rollet",
+            "Frédéric Le Roy",
+            "Denis Le Jeune",
+            "Charles Canaff",
+            "Roland Gautier"
+        ],
+        "publication_year": "2022",
+        "objective": "Address limitations of cryptographic methods in IoT by proposing RF eigenﬁngerprints for non-cryptographic authentication using device impairments.",
+        "methodology": "Adapts eigenfaces approach with singular value decomposition (SVD) and Ljung–Box test for feature selection, combined with statistical models for authentication. Includes simulation, real-world experiments, and FPGA implementation.",
+        "dataset": "Extended Yale Face database B for eigenfaces; novel baseband model for emitter impairments (I/Q offset, imbalance, PA nonlinearity).",
+        "performance": "Demonstrates scalability, low computational complexity, high explainability, and successful validation through simulation, real-world experiments, and FPGA implementation.",
+        "limitations": "Depends on preamble-based signal processing and assumes controlled hardware variability."
+    },
+    {
+        "paper_id": "5",
+        "filename": "2511.07770v2.pdf",
+        "title": "NOT MENTIONED",
+        "authors": [
+            "Zewei Guo",
+            "Zhen Jia",
+            "JinXiao Zhu",
+            "Wenhao Huang",
+            "Yin Chen"
+        ],
+        "publication_year": "NOT MENTIONED",
+        "objective": "To address the challenge of distinguishing same-model devices in RF fingerprinting by creating a large-scale homogeneous dataset and a reproducible framework, overcoming limitations of existing datasets with small scale and heterogeneous models.",
+        "methodology": "Developed a large-scale dataset with 123 same-model IEEE 802.11g devices, 35.42 million raw I/Q samples, and 1.85 million RF features. Created a reproducible framework with data collection, feature extraction, and benchmark evaluation modules.",
+        "dataset": "Two CSV datasets: (1) RFFI-IQ_only-wifi-802.11g-2.4G-123-m5stack (MAC addresses and preamble samples) and (2) RFFI-kf_feature-IQ-wifi-802.11g-2.4G-123-m5stack (multi-dimensional RF features including CFO, phase error, magnitude error, and fractal dimension).",
+        "performance": "Random Forest-based algorithm achieved 89.06% identification accuracy. Features included CFO correction, phase error, magnitude error, and fractal dimension. Evaluation metrics: identification accuracy, feature extraction completeness, and reproducibility of results.",
+        "limitations": "Focus on same-model devices limits generalizability to heterogeneous scenarios. Requires additional processing for RF feature extraction."
+    }
+]

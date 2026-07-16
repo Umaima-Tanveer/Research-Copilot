@@ -1,0 +1,60 @@
+{
+    "methodological": [
+        {
+            "gap": "Lack of standardized datasets for multimodal emotion detection",
+            "impact": "High",
+            "reason": "Papers highlight reliance on specific datasets and calibration issues, limiting generalizability",
+            "papers": [
+                "Paper 1",
+                "Paper 3"
+            ]
+        },
+        {
+            "gap": "Inconsistent methodologies in keystroke dynamics research",
+            "impact": "High",
+            "reason": "Systematic review identifies methodological variability as a barrier to reproducibility",
+            "papers": [
+                "Paper 3"
+            ]
+        },
+        {
+            "gap": "Need for robust non-intrusive physiological measurement techniques",
+            "impact": "High",
+            "reason": "Non-contact heart rate measurement faces accuracy constraints in real-world settings",
+            "papers": [
+                "Paper 1"
+            ]
+        }
+    ],
+    "theoretical": [
+        {
+            "gap": "Limited theoretical frameworks for integrating multimodal data",
+            "impact": "High",
+            "reason": "Current approaches focus on single-modal analysis without cohesive integration strategies",
+            "papers": [
+                "Paper 2",
+                "Paper 3"
+            ]
+        }
+    ],
+    "empirical": [
+        {
+            "gap": "Reliance on self-reported emotion data",
+            "impact": "High",
+            "reason": "Subjectivity in self-reports introduces bias and limits empirical validity",
+            "papers": [
+                "Paper 4"
+            ]
+        }
+    ],
+    "application": [
+        {
+            "gap": "User identification under emotional state influences",
+            "impact": "High",
+            "reason": "Emotional states compromise accuracy in user authentication systems",
+            "papers": [
+                "Paper 5"
+            ]
+        }
+    ]
+}

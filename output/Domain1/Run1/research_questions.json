@@ -1,0 +1,138 @@
+{
+    "primary_research_questions": [
+        {
+            "id": "RQ1",
+            "question": "How can a hybrid simulation-real data augmentation framework improve the generalization of RF fingerprinting models in dynamic environments?",
+            "derived_from_gap": "Limited real-world deployment testing",
+            "derived_from_contribution": "Hybrid simulation-real data augmentation framework for RF fingerprinting",
+            "paper_titles": [
+                "Deep Learning-based RF Fingerprint Authentication with Chaotic Antenna Arrays"
+            ]
+        },
+        {
+            "id": "RQ2",
+            "question": "What are the performance trade-offs between attention mechanisms and traditional CNN architectures in handling dynamic interference scenarios?",
+            "derived_from_gap": "Insufficient exploration of attention mechanisms in CNNs",
+            "derived_from_contribution": "Hardware-agnostic synthetic RF fingerprint generation system",
+            "paper_titles": [
+                "Attention is Needed for RF Fingerprinting"
+            ]
+        },
+        {
+            "id": "RQ3",
+            "question": "How can a standardized benchmarking framework for open-set RF fingerprinting improve cross-hardware evaluation and reproducibility?",
+            "derived_from_gap": "Lack of standardized benchmarking frameworks",
+            "derived_from_contribution": "Open-set RF fingerprinting benchmark suite with standardized metrics",
+            "paper_titles": [
+                "A Comprehensive Survey on Feature Extraction Techniques Using I/Q Imbalance in RFFI"
+            ]
+        },
+        {
+            "id": "RQ4",
+            "question": "What mathematical models can formalize the relationship between I/Q imbalance parameters and device-specific hardware characteristics?",
+            "derived_from_gap": "Underdeveloped theoretical foundations for I/Q imbalance modeling",
+            "derived_from_contribution": "Formal mathematical framework for I/Q imbalance as device fingerprint",
+            "paper_titles": [
+                "A Comprehensive Survey on Feature Extraction Techniques Using I/Q Imbalance in RFFI"
+            ]
+        },
+        {
+            "id": "RQ5",
+            "question": "How can RF fingerprinting methods be adapted to scale efficiently across massive IoT networks with dynamic node additions?",
+            "derived_from_gap": "Scalability to massive IoT networks",
+            "derived_from_contribution": "Open-set RF fingerprinting benchmark suite with standardized metrics",
+            "paper_titles": [
+                "A Comprehensive Survey on Feature Extraction Techniques Using I/Q Imbalance in RFFI"
+            ]
+        },
+        {
+            "id": "RQ6",
+            "question": "What are the critical factors affecting the robustness of RF fingerprinting under multipath fading and co-channel interference?",
+            "derived_from_gap": "Limited testing under multipath/multipath environments",
+            "derived_from_contribution": "Hybrid simulation-real data augmentation framework for RF fingerprinting",
+            "paper_titles": [
+                "Deep Learning-based RF Fingerprint Authentication with Chaotic Antenna Arrays",
+                "Attention is Needed for RF Fingerprinting"
+            ]
+        },
+        {
+            "id": "RQ7",
+            "question": "How can energy-efficient CNN architectures be optimized for low-power IoT devices without sacrificing recognition accuracy?",
+            "derived_from_gap": "Resource constraints in IoT deployment",
+            "derived_from_contribution": "Hardware-agnostic synthetic RF fingerprint generation system",
+            "paper_titles": [
+                "A Comprehensive Survey on Feature Extraction Techniques Using I/Q Imbalance in RFFI"
+            ]
+        }
+    ],
+    "secondary_research_questions": [
+        {
+            "id": "RQ8",
+            "question": "What is the effectiveness of adversarial training in bridging the distribution gap between simulated and real-world RF fingerprint data?",
+            "derived_from_gap": "Limited real-world deployment testing",
+            "derived_from_contribution": "Hybrid simulation-real data augmentation framework for RF fingerprinting",
+            "paper_titles": [
+                "Deep Learning-based RF Fingerprint Authentication with Chaotic Antenna Arrays"
+            ]
+        },
+        {
+            "id": "RQ9",
+            "question": "How do variations in antenna geometry and RF front-end parameters influence the fidelity of synthetic RF fingerprint generation?",
+            "derived_from_gap": "Insufficient cross-hardware dataset diversity",
+            "derived_from_contribution": "Hardware-agnostic synthetic RF fingerprint generation system",
+            "paper_titles": [
+                "Attention is Needed for RF Fingerprinting"
+            ]
+        },
+        {
+            "id": "RQ10",
+            "question": "What are the optimal metrics for evaluating open-set recognition performance in heterogeneous IoT environments?",
+            "derived_from_gap": "Lack of standardized benchmarking frameworks",
+            "derived_from_contribution": "Open-set RF fingerprinting benchmark suite with standardized metrics",
+            "paper_titles": [
+                "A Comprehensive Survey on Feature Extraction Techniques Using I/Q Imbalance in RFFI"
+            ]
+        },
+        {
+            "id": "RQ11",
+            "question": "How can signal processing techniques be leveraged to validate analytical models of I/Q imbalance as a device fingerprint?",
+            "derived_from_gap": "Underdeveloped theoretical foundations for I/Q imbalance modeling",
+            "derived_from_contribution": "Formal mathematical framework for I/Q imbalance as device fingerprint",
+            "paper_titles": [
+                "A Comprehensive Survey on Feature Extraction Techniques Using I/Q Imbalance in RFFI"
+            ]
+        },
+        {
+            "id": "RQ12",
+            "question": "What are the computational bottlenecks in deploying large-scale RF fingerprinting systems for massive IoT networks?",
+            "derived_from_gap": "Scalability to massive IoT networks",
+            "derived_from_contribution": "Open-set RF fingerprinting benchmark suite with standardized metrics",
+            "paper_titles": [
+                "A Comprehensive Survey on Feature Extraction Techniques Using I/Q Imbalance in RFFI"
+            ]
+        }
+    ],
+    "novel_research_questions": [
+        {
+            "id": "RQ13",
+            "question": "How can quantum machine learning paradigms be integrated with RF fingerprinting to enhance security in quantum-resistant IoT networks?",
+            "derived_from_gap": "Scalability to massive IoT networks",
+            "derived_from_contribution": "Open-set RF fingerprinting benchmark suite with standardized metrics",
+            "paper_titles": []
+        },
+        {
+            "id": "RQ14",
+            "question": "What are the implications of self-supervised learning frameworks for I/Q imbalance modeling in RF fingerprinting?",
+            "derived_from_gap": "Underdeveloped theoretical foundations for I/Q imbalance modeling",
+            "derived_from_contribution": "Formal mathematical framework for I/Q imbalance as device fingerprint",
+            "paper_titles": []
+        },
+        {
+            "id": "RQ15",
+            "question": "How can federated learning be applied to RF fingerprinting to enable privacy-preserving cross-device authentication in distributed IoT ecosystems?",
+            "derived_from_gap": "Resource constraints in IoT deployment",
+            "derived_from_contribution": "Hardware-agnostic synthetic RF fingerprint generation system",
+            "paper_titles": []
+        }
+    ]
+}

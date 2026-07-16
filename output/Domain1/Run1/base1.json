@@ -1,0 +1,76 @@
+[
+    {
+        "paper_id": "1",
+        "filename": "2303.07466v1.pdf",
+        "title": "Deep Learning-based RF Fingerprint Authentication with Chaotic Antenna Arrays",
+        "authors": [
+            "Justin McMillen",
+            "Gokhan Mumcu",
+            "Yasin Yilmaz"
+        ],
+        "year": null,
+        "abstract": "Radio frequency (RF) fingerprinting is a tool for authentication using distinct signal distortions. This paper introduces a deep learning-based method for Physically Unclonable Wireless Systems (PUWS) using Chaotic Antenna Arrays (CAAs), tested with 300 simulated CAAs and 3 CNN architectures under varying channel conditions.",
+        "keywords": [
+            "Physically Unclonable Wireless Systems",
+            "RF fingerprinting",
+            "Device authentication",
+            "Deep learning",
+            "Additive manufacturing",
+            "3D printing"
+        ],
+        "domain": "Wireless Communications",
+        "research_area": "Physical Layer Security",
+        "problem_statement": "Increasing IoT device vulnerabilities require secure authentication. Traditional RF fingerprinting methods face limitations with large-scale devices and dynamic channel conditions.",
+        "methodology": "Utilizes deep learning (CNNs) with chaotic antenna arrays (CAAs) for authentication. CAAs introduce randomness in antenna geometry and feed lines to generate unique RF fingerprints.",
+        "dataset": "Simulation data of 300 CAAs, each with 4 antenna elements, under varying channel conditions and Doppler shifts.",
+        "evaluation_metrics": [
+            "Accuracy (%) for CNN-3: 93.3",
+            "Accuracy (%) for VGG-16: 93.5",
+            "Accuracy (%) for ResNet-50: 99.2",
+            "Accuracy (%) for Inception: 99.9",
+            "Accuracy (%) for Xception: 99.9"
+        ],
+        "performance": "ResNet-50 achieved 99.2% accuracy with CAA fingerprints, surpassing traditional RF fingerprinting's 63% accuracy. CAA-enhanced fingerprints show significant improvement under Rayleigh fading.",
+        "contribution": "Introduces PUWS with CAAs for hardware-based authentication, demonstrating deep learning's effectiveness in enhancing RF fingerprinting for secure IoT systems.",
+        "limitations": "Relies on simulation data; real-world environmental factors and hardware constraints may affect performance.",
+        "future_work": "Explore real-world deployment, additional CNN architectures, and integration with existing security frameworks.",
+        "task_type": "Authentication",
+        "model_type": "Convolutional Neural Networks (CNN)"
+    },
+    {
+        "paper_id": "2",
+        "filename": "2502.02782v1.pdf",
+        "title": "A Comprehensive Survey on Feature Extraction Techniques Using I/Q Imbalance in RFFI",
+        "authors": [
+            "Muhammad Aqib Khan",
+            "Muhammad Usman Siddiqui"
+        ],
+        "year": null,
+        "abstract": "The proliferation of IoT devices has intensified the need for secure authentication. Traditional encryption-based solutions impose high computational overhead on resource-limited IoT nodes. RFFI exploits hardware-induced imperfections like I/Q imbalance as unique identifiers, but challenges remain in standardizing feature extraction methods and maintaining accuracy across environments.",
+        "keywords": [
+            "I/Q Imbalance",
+            "Feature Extraction",
+            "Fingerprinting",
+            "RFFI"
+        ],
+        "domain": "Radio Frequency Fingerprinting",
+        "research_area": "Secure Authentication in IoT",
+        "problem_statement": "Challenges in standardizing feature extraction methods, maintaining high accuracy across diverse environments, and efficiently handling large-scale IoT deployments.",
+        "methodology": "Comprehensive review of I/Q imbalance-based RFFI techniques, discussion of other hardware impairments (power amplifier nonlinearity, oscillator imperfections), and analysis of ML/DL approaches for device identification.",
+        "dataset": "LTE mobile devices, USRP platforms, simulated signals with 5 analog transmitters (400 signals, 50% train/test split).",
+        "evaluation_metrics": [
+            "Accuracy (96.01%, >90%)",
+            "Channel dependency",
+            "Feature type (amplitude/phase distortion)",
+            "Computational power",
+            "Memory requirements",
+            "Resource constraints"
+        ],
+        "performance": "Adaptive filters achieve 96.01% accuracy; channel-correlation methods show robustness to environmental variations; signal space representation excels in moderate SNR (15 dB) with low memory usage.",
+        "contribution": "Comprehensive survey of I/Q imbalance-based RFFI techniques, analysis of hardware impairments, and evaluation of ML/DL-driven solutions for device identification.",
+        "limitations": "Standardization challenges, accuracy in dynamic/hostile environments, scalability to massive IoT networks.",
+        "future_work": "Efficient methods for resource-constrained systems, dynamic/multipath environments, and hybrid approaches balancing transient/steady-state features.",
+        "task_type": "Device Identification",
+        "model_type": "Machine Learning and Deep Learning"
+    }
+]

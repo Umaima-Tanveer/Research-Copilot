@@ -1,0 +1,164 @@
+{
+    "nodes": [
+        {
+            "id": "1",
+            "title": "Identifying Emotional States using Keystroke Dynamics",
+            "year": null,
+            "dataset": "Keystroke data from participants performing daily tasks, labeled with self-reported emotional states via experience-sampling questionnaires.",
+            "methodology": "A field study collected keystroke data and self-reported emotional states. Keystroke features (key duration, latency) were extracted and used to train decision-tree classifiers for 15 emotional states.",
+            "task_type": "Emotion Recognition",
+            "contribution": "Proposed keystroke dynamics as a non-intrusive, cost-effective method for emotion detection, demonstrating its viability in real-world HCI applications."
+        },
+        {
+            "id": "2",
+            "title": "Behavioral Biometrics in Assisted Living: A Methodology for Emotion Recognition",
+            "year": 2016,
+            "dataset": null,
+            "methodology": "Combines computational geometry, image processing, graph theory for region detection, and neural networks for classification. Leverages Paul Ekman's facial expression theory and integrates with service-oriented architectures for real-time monitoring.",
+            "task_type": "Emotion Recognition",
+            "contribution": "Proposes a novel methodology for emotion recognition using facial expressions, combining biometric traits with risk-assessment frameworks for smart monitoring in neurodegenerative disease management."
+        },
+        {
+            "id": "3",
+            "title": "Emotion Recognition through Keystroke Dynamics on Touchscreen Keyboards",
+            "year": 2013,
+            "dataset": "Study involving 152 test persons with varying time limits (no time limit, 5 minutes, 3.5 minutes) and demographic data (age, gender, education).",
+            "methodology": "Developed an Android app and keyboard layout to record keystroke dynamics. Hypotheses derived from Yerkes-Dodson-Law and Flow theory. Conducted a study with 152 participants, analyzing data via SPSS to validate correlations between keystroke metrics and emotional states.",
+            "task_type": "Emotion Recognition",
+            "contribution": "First application of keystroke dynamics on touchscreen keyboards for emotion recognition, integrating biometric data (pressure, size) and psychological theories (Yerkes-Dodson-Law, Flow theory)."
+        },
+        {
+            "id": "4",
+            "title": "A Review of Emotion Recognition Methods Based on Keystroke Dynamics and Mouse Movements",
+            "year": 2013,
+            "dataset": "Various studies with participants performing tasks (e.g., online shopping, typing exercises) to collect physiological and behavioral data under different emotional states.",
+            "methodology": "Analyzing keystroke dynamics and mouse movements as biometric features, including data collection, feature extraction, and classifier training for emotion detection.",
+            "task_type": "Emotion Recognition",
+            "contribution": "Comprehensive review of emotion recognition methods using input devices, highlighting multimodal approaches and real-world applications."
+        },
+        {
+            "id": "5",
+            "title": "Human Micro-Expression: A Novel Social Behavioral Biometric for Person Identification",
+            "year": null,
+            "dataset": "Proprietary benchmark dataset with 250 Twitter users' microblog samples.",
+            "methodology": "An emotion detection model extracts emotion probability scores from microblogs. Emotion-progression features are generated using dynamic time warping. Rank-level weighted majority voting fusion improves identification accuracy.",
+            "task_type": "Person identification",
+            "contribution": "Introduces human micro-expression as a novel SBB trait. Develops emotion detection and progression feature extraction techniques for person identification."
+        }
+    ],
+    "edges": [
+        {
+            "paper1": "1",
+            "paper2": "2",
+            "relation": "compares",
+            "similarity": 0.3,
+            "reason": "Both papers address emotion recognition but employ distinct methodologies (keystroke dynamics vs. facial biometrics) and datasets (participant keystroke data vs. unspecified dataset).",
+            "shared_concepts": [
+                "emotion recognition",
+                "biometrics"
+            ]
+        },
+        {
+            "paper1": "1",
+            "paper2": "3",
+            "relation": "compares",
+            "similarity": 0.0,
+            "reason": "Both papers focus on emotion recognition using keystroke dynamics, but differ in application context (desktop vs touchscreen keyboards) and methodological approaches (decision trees vs SPSS analysis with biometric data).",
+            "shared_concepts": [
+                "emotion recognition",
+                "keystroke dynamics"
+            ]
+        },
+        {
+            "paper1": "1",
+            "paper2": "4",
+            "relation": "compares",
+            "similarity": 0.5,
+            "reason": "Both papers focus on emotion recognition using keystroke dynamics, but Paper 2 reviews broader methods including keystroke dynamics and mouse movements, while Paper 1 presents a specific study on keystroke-based emotion detection.",
+            "shared_concepts": [
+                "emotion recognition",
+                "keystroke dynamics",
+                "task performance data",
+                "self-reported emotional states"
+            ]
+        },
+        {
+            "paper1": "1",
+            "paper2": "5",
+            "relation": "unrelated",
+            "similarity": 0.1,
+            "reason": "Paper 1 focuses on emotion recognition via keystroke dynamics, while Paper 2 addresses person identification using microblog-based micro-expressions. The tasks (emotion recognition vs. person identification), methods (keystroke dynamics vs. micro-expression analysis), and datasets (daily tasks vs. Twitter microblogs) are distinct. No direct overlap in methodology or application.",
+            "shared_concepts": [
+                "emotion detection"
+            ]
+        },
+        {
+            "paper1": "2",
+            "paper2": "3",
+            "relation": "compares",
+            "similarity": 0.4,
+            "reason": "Both papers address emotion recognition but employ distinct biometric modalities (facial expressions vs. keystroke dynamics) and theoretical frameworks (Ekman's theory vs. Yerkes-Dodson-Law/Flow theory).",
+            "shared_concepts": [
+                "emotion recognition",
+                "biometrics",
+                "psychological theories"
+            ]
+        },
+        {
+            "paper1": "2",
+            "paper2": "4",
+            "relation": "compares",
+            "similarity": 0.5,
+            "reason": "Both papers address emotion recognition but employ distinct biometric modalities (facial expressions vs. keystroke/mouse dynamics). Paper 1 proposes a novel methodology for assisted living, while Paper 2 reviews existing methods using input devices.",
+            "shared_concepts": [
+                "emotion recognition",
+                "behavioral biometrics"
+            ]
+        },
+        {
+            "paper1": "2",
+            "paper2": "5",
+            "relation": "compares",
+            "similarity": 0.4,
+            "reason": "Both papers focus on behavioral biometrics but address different tasks (emotion recognition vs. person identification). They share concepts like emotion detection and micro-expressions but employ distinct methodologies and datasets.",
+            "shared_concepts": [
+                "behavioral biometrics",
+                "emotion detection",
+                "micro-expressions"
+            ]
+        },
+        {
+            "paper1": "3",
+            "paper2": "4",
+            "relation": "compares",
+            "similarity": 0.8,
+            "reason": "Paper 2 reviews emotion recognition methods using keystroke dynamics (including Paper 1's approach) and compares multimodal techniques, while Paper 1 presents a specific study on touchscreen keyboards. Both share the core concept of using keystroke dynamics for emotion recognition.",
+            "shared_concepts": [
+                "keystroke dynamics",
+                "emotion recognition"
+            ]
+        },
+        {
+            "paper1": "3",
+            "paper2": "5",
+            "relation": "unrelated",
+            "similarity": 0.0,
+            "reason": "Paper 1 focuses on emotion recognition via keystroke dynamics, while Paper 2 addresses person identification using micro-expression analysis from social media. They differ in task (emotion recognition vs. person identification), methodology (keystroke dynamics vs. microblog analysis), and dataset types (participant-based vs. social media samples).",
+            "shared_concepts": [
+                "emotion detection",
+                "biometric data"
+            ]
+        },
+        {
+            "paper1": "4",
+            "paper2": "5",
+            "relation": "unrelated",
+            "similarity": 0.0,
+            "reason": "Paper1 focuses on emotion recognition using keystroke dynamics and mouse movements, while Paper2 addresses person identification via microblog-based micro-expressions. The tasks (emotion recognition vs. person identification), methodologies (biometric feature analysis vs. social behavioral biometrics), and datasets (general physiological data vs. Twitter microblog samples) are distinct and unrelated.",
+            "shared_concepts": [
+                "emotion detection",
+                "biometric features"
+            ]
+        }
+    ]
+}

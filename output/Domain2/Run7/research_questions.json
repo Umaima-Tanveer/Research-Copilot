@@ -1,0 +1,143 @@
+{
+    "primary_research_questions": [
+        {
+            "id": "RQ1",
+            "question": "How can a federated learning framework be designed to maintain authentication accuracy while scaling across heterogeneous devices with varying hardware configurations?",
+            "derived_from_gap": "Scalability in multi-device authentication environments",
+            "derived_from_contribution": "Federated Learning Framework for Cross-Device Keystroke Biometrics",
+            "paper_titles": [
+                "TypeNet: Deep Learning Keystroke Biometrics"
+            ]
+        },
+        {
+            "id": "RQ2",
+            "question": "What mechanisms can dynamically generate emotionally salient questions in real-time to enhance covert lie detection during unscripted conversations?",
+            "derived_from_gap": "Adaptive question generation for real-time lie detection",
+            "derived_from_contribution": "Context-Aware Question Generation with Reinforcement Learning",
+            "paper_titles": [
+                "Covert lie detection using keyboard dynamics"
+            ]
+        },
+        {
+            "id": "RQ3",
+            "question": "How can domain-invariant emotion recognition models be fine-tuned with minimal real-world data to mitigate distribution shift in uncontrolled environments?",
+            "derived_from_gap": "Generalization to real-world emotion variability",
+            "derived_from_contribution": "Domain-Adaptive Emotion Recognition with Multi-Modal Transfer Learning",
+            "paper_titles": [
+                "Non-Acted Text and Keystrokes Database..."
+            ]
+        },
+        {
+            "id": "RQ4",
+            "question": "What hybrid biometric fusion strategies can isolate emotional deviations from individual keystroke dynamics to improve emotion detection accuracy?",
+            "derived_from_gap": "Individual variability in keystroke dynamics",
+            "derived_from_contribution": "Personalized Emotional State Estimation via Hybrid Biometric Fusion",
+            "paper_titles": [
+                "The Influence of Emotion on Keyboard Typing..."
+            ]
+        },
+        {
+            "id": "RQ5",
+            "question": "How can differential privacy mechanisms be integrated into edge-based mood detection systems to enable continuous mental health monitoring without data exposure?",
+            "derived_from_gap": "Privacy-preserving mood detection frameworks",
+            "derived_from_contribution": "Differentially Private Federated Mood Detection with Edge Computing",
+            "paper_titles": [
+                "DeepMood: Modeling Mobile Phone Typing Dynamics..."
+            ]
+        }
+    ],
+    "secondary_research_questions": [
+        {
+            "id": "RQ6",
+            "question": "What impact do device-specific normalization layers have on reducing performance degradation in federated keystroke biometric models?",
+            "derived_from_gap": "Scalability in multi-device authentication environments",
+            "derived_from_contribution": "Federated Learning Framework for Cross-Device Keystroke Biometrics",
+            "paper_titles": [
+                "TypeNet: Deep Learning Keystroke Biometrics"
+            ]
+        },
+        {
+            "id": "RQ7",
+            "question": "How can reinforcement learning reward functions be optimized to prioritize keystroke deviation metrics in context-aware question generation?",
+            "derived_from_gap": "Adaptive question generation for real-time lie detection",
+            "derived_from_contribution": "Context-Aware Question Generation with Reinforcement Learning",
+            "paper_titles": [
+                "Covert lie detection using keyboard dynamics"
+            ]
+        },
+        {
+            "id": "RQ8",
+            "question": "What adversarial domain adaptation techniques are most effective in reducing distribution shift for emotion recognition in real-world settings?",
+            "derived_from_gap": "Generalization to real-world emotion variability",
+            "derived_from_contribution": "Domain-Adaptive Emotion Recognition with Multi-Modal Transfer Learning",
+            "paper_titles": [
+                "Non-Acted Text and Keystrokes Database..."
+            ]
+        },
+        {
+            "id": "RQ9",
+            "question": "How does the inclusion of physiological signals affect the personalization of keystroke baseline models for emotional state estimation?",
+            "derived_from_gap": "Individual variability in keystroke dynamics",
+            "derived_from_contribution": "Personalized Emotional State Estimation via Hybrid Biometric Fusion",
+            "paper_titles": [
+                "The Influence of Emotion on Keyboard Typing..."
+            ]
+        },
+        {
+            "id": "RQ10",
+            "question": "What trade-offs exist between privacy guarantees and model accuracy in federated mood detection systems using edge computing?",
+            "derived_from_gap": "Privacy-preserving mood detection frameworks",
+            "derived_from_contribution": "Differentially Private Federated Mood Detection with Edge Computing",
+            "paper_titles": [
+                "DeepMood: Modeling Mobile Phone Typing Dynamics..."
+            ]
+        }
+    ],
+    "novel_research_questions": [
+        {
+            "id": "RQ11",
+            "question": "How can edge AI hardware be leveraged to implement differentially private mood detection with minimal latency for real-time mental health monitoring?",
+            "derived_from_gap": "Privacy-preserving mood detection frameworks",
+            "derived_from_contribution": "Differentially Private Federated Mood Detection with Edge Computing",
+            "paper_titles": [
+                "DeepMood: Modeling Mobile Phone Typing Dynamics..."
+            ]
+        },
+        {
+            "id": "RQ12",
+            "question": "What ethical considerations arise from deploying context-aware question generation systems for covert lie detection in sensitive environments?",
+            "derived_from_gap": "Adaptive question generation for real-time lie detection",
+            "derived_from_contribution": "Context-Aware Question Generation with Reinforcement Learning",
+            "paper_titles": [
+                "Covert lie detection using keyboard dynamics"
+            ]
+        },
+        {
+            "id": "RQ13",
+            "question": "How might multi-modal transfer learning frameworks enable cross-domain generalization for emotion recognition beyond text and keystroke data?",
+            "derived_from_gap": "Generalization to real-world emotion variability",
+            "derived_from_contribution": "Domain-Adaptive Emotion Recognition with Multi-Modal Transfer Learning",
+            "paper_titles": [
+                "Non-Acted Text and Keystrokes Database..."
+            ]
+        },
+        {
+            "id": "RQ14",
+            "question": "What novel fusion architectures could enhance the synergy between keystroke dynamics and physiological signals for emotional state estimation?",
+            "derived_from_gap": "Individual variability in keystroke dynamics",
+            "derived_from_contribution": "Personalized Emotional State Estimation via Hybrid Biometric Fusion",
+            "paper_titles": [
+                "The Influence of Emotion on Keyboard Typing..."
+            ]
+        },
+        {
+            "id": "RQ15",
+            "question": "How can federated learning protocols be adapted to ensure scalability and privacy in distributed keystroke biometric systems with dynamic device participation?",
+            "derived_from_gap": "Scalability in multi-device authentication environments",
+            "derived_from_contribution": "Federated Learning Framework for Cross-Device Keystroke Biometrics",
+            "paper_titles": [
+                "TypeNet: Deep Learning Keystroke Biometrics"
+            ]
+        }
+    ]
+}

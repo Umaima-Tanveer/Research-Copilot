@@ -1,0 +1,172 @@
+{
+    "primary_research_questions": [
+        {
+            "id": "RQ1",
+            "question": "How can a federated learning framework address the lack of standardized datasets for multimodal emotion detection while preserving data privacy?",
+            "derived_from_gap": "Lack of standardized datasets for multimodal emotion detection",
+            "derived_from_contribution": "Federated learning framework for cross-institutional multimodal emotion dataset creation",
+            "paper_titles": [
+                "Paper 1",
+                "Paper 3"
+            ]
+        },
+        {
+            "id": "RQ2",
+            "question": "What methodological standards are required to ensure reproducibility in keystroke dynamics research across diverse datasets?",
+            "derived_from_gap": "Inconsistent methodologies in keystroke dynamics research",
+            "derived_from_contribution": "Automated protocol validation system for keystroke dynamics experiments",
+            "paper_titles": [
+                "Paper 3"
+            ]
+        },
+        {
+            "id": "RQ3",
+            "question": "How can hybrid sensor fusion models improve the accuracy of non-intrusive physiological emotion inference in real-world environments?",
+            "derived_from_gap": "Need for robust non-intrusive physiological measurement techniques",
+            "derived_from_contribution": "Hybrid sensor fusion model for enhanced non-contact emotion inference",
+            "paper_titles": [
+                "Paper 1"
+            ]
+        },
+        {
+            "id": "RQ4",
+            "question": "What theoretical framework can effectively integrate multimodal data for emotion detection while maintaining contextual coherence?",
+            "derived_from_gap": "Limited theoretical frameworks for integrating multimodal data",
+            "derived_from_contribution": "Graph-based multimodal emotion fusion architecture",
+            "paper_titles": [
+                "Paper 2",
+                "Paper 3"
+            ]
+        },
+        {
+            "id": "RQ5",
+            "question": "How can physiological signals be leveraged to reduce subjectivity in emotion labeling for empirical studies?",
+            "derived_from_gap": "Reliance on self-reported emotion data",
+            "derived_from_contribution": "Physiological signal-driven emotion labeling system",
+            "paper_titles": [
+                "Paper 4"
+            ]
+        },
+        {
+            "id": "RQ6",
+            "question": "What adaptive mechanisms can mitigate emotional state-induced variations in biometric authentication systems?",
+            "derived_from_gap": "User identification under emotional state influences",
+            "derived_from_contribution": "Emotion-aware biometric authentication system",
+            "paper_titles": [
+                "Paper 5"
+            ]
+        }
+    ],
+    "secondary_research_questions": [
+        {
+            "id": "RQ7",
+            "question": "How can differential privacy techniques be optimized for federated learning in multimodal emotion dataset aggregation?",
+            "derived_from_gap": "Lack of standardized datasets for multimodal emotion detection",
+            "derived_from_contribution": "Federated learning framework for cross-institutional multimodal emotion dataset creation",
+            "paper_titles": [
+                "Paper 1"
+            ]
+        },
+        {
+            "id": "RQ8",
+            "question": "What preprocessing pipelines are most effective for reducing variability in keystroke dynamics experiments?",
+            "derived_from_gap": "Inconsistent methodologies in keystroke dynamics research",
+            "derived_from_contribution": "Automated protocol validation system for keystroke dynamics experiments",
+            "paper_titles": [
+                "Paper 3"
+            ]
+        },
+        {
+            "id": "RQ9",
+            "question": "How does sensor placement affect the accuracy of hybrid physiological signal fusion for emotion detection?",
+            "derived_from_gap": "Need for robust non-intrusive physiological measurement techniques",
+            "derived_from_contribution": "Hybrid sensor fusion model for enhanced non-contact emotion inference",
+            "paper_titles": [
+                "Paper 1"
+            ]
+        },
+        {
+            "id": "RQ10",
+            "question": "What strategies can address missing data in heterogeneous graph models for multimodal emotion fusion?",
+            "derived_from_gap": "Limited theoretical frameworks for integrating multimodal data",
+            "derived_from_contribution": "Graph-based multimodal emotion fusion architecture",
+            "paper_titles": [
+                "Paper 2"
+            ]
+        },
+        {
+            "id": "RQ11",
+            "question": "How can active learning algorithms improve the efficiency of semi-supervised emotion labeling from physiological signals?",
+            "derived_from_gap": "Reliance on self-reported emotion data",
+            "derived_from_contribution": "Physiological signal-driven emotion labeling system",
+            "paper_titles": [
+                "Paper 4"
+            ]
+        },
+        {
+            "id": "RQ12",
+            "question": "What thresholding techniques are most effective for dynamic emotion-aware authentication under varying emotional states?",
+            "derived_from_gap": "User identification under emotional state influences",
+            "derived_from_contribution": "Emotion-aware biometric authentication system",
+            "paper_titles": [
+                "Paper 5"
+            ]
+        }
+    ],
+    "novel_research_questions": [
+        {
+            "id": "RQ13",
+            "question": "How can federated learning frameworks enable cross-institutional collaboration while maintaining data sovereignty in emotion detection research?",
+            "derived_from_gap": "Lack of standardized datasets for multimodal emotion detection",
+            "derived_from_contribution": "Federated learning framework for cross-institutional multimodal emotion dataset creation",
+            "paper_titles": [
+                "Paper 1"
+            ]
+        },
+        {
+            "id": "RQ14",
+            "question": "What are the trade-offs between sensor fusion complexity and real-time performance in non-contact emotion inference systems?",
+            "derived_from_gap": "Need for robust non-intrusive physiological measurement techniques",
+            "derived_from_contribution": "Hybrid sensor fusion model for enhanced non-contact emotion inference",
+            "paper_titles": [
+                "Paper 1"
+            ]
+        },
+        {
+            "id": "RQ15",
+            "question": "How can graph-based models be integrated with existing tensor decomposition techniques for scalable multimodal emotion analysis?",
+            "derived_from_gap": "Limited theoretical frameworks for integrating multimodal data",
+            "derived_from_contribution": "Graph-based multimodal emotion fusion architecture",
+            "paper_titles": [
+                "Paper 2"
+            ]
+        },
+        {
+            "id": "RQ16",
+            "question": "What ethical considerations arise from deploying emotion-aware biometric systems in real-world applications?",
+            "derived_from_gap": "User identification under emotional state influences",
+            "derived_from_contribution": "Emotion-aware biometric authentication system",
+            "paper_titles": [
+                "Paper 5"
+            ]
+        },
+        {
+            "id": "RQ17",
+            "question": "How can physiological signal-driven labeling systems be adapted for continuous emotion detection in wearable devices?",
+            "derived_from_gap": "Reliance on self-reported emotion data",
+            "derived_from_contribution": "Physiological signal-driven emotion labeling system",
+            "paper_titles": [
+                "Paper 4"
+            ]
+        },
+        {
+            "id": "RQ18",
+            "question": "What role can user feedback play in refining semi-supervised emotion labeling from physiological signals?",
+            "derived_from_gap": "Reliance on self-reported emotion data",
+            "derived_from_contribution": "Physiological signal-driven emotion labeling system",
+            "paper_titles": [
+                "Paper 4"
+            ]
+        }
+    ]
+}

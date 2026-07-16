@@ -1,0 +1,58 @@
+{
+    "methodological": [
+        {
+            "gap": "Under-regularization of intermediate generative processes in spectral restoration",
+            "impact": "High",
+            "reason": "Neglecting intermediate steps leads to spectral distortion and poor training convergence",
+            "papers": [
+                "Progressive Conditional Diffusion Model for Multistage Spectral Restoration of Remote Sensing Image"
+            ]
+        },
+        {
+            "gap": "Reliance on dialog data for emotion labeling",
+            "impact": "Medium",
+            "reason": "Limits generalizability and excludes physiological signals for richer emotion expression",
+            "papers": [
+                "MoodSwipe: A Soft Keyboard that Suggests Messages Based on User-Specified Emotions"
+            ]
+        }
+    ],
+    "theoretical": [
+        {
+            "gap": "Empirical validation of emotion laws",
+            "impact": "High",
+            "reason": "Lack of experimental studies to establish robustness and universality of proposed laws",
+            "papers": [
+                "The Laws of Emotion"
+            ]
+        },
+        {
+            "gap": "Bridging neurobiological and phenomenological levels of emotion",
+            "impact": "High",
+            "reason": "Unresolved challenge in linking objective measurements to subjective emotional experiences",
+            "papers": [
+                "The Experience of Emotion"
+            ]
+        }
+    ],
+    "empirical": [
+        {
+            "gap": "Limited exploration of complex ML models for emotion recognition",
+            "impact": "Medium",
+            "reason": "Small emotional effect size relative to individual variability requires advanced modeling",
+            "papers": [
+                "The Influence of Emotion on Keyboard Typing: An Experimental Study Using Auditory Stimuli"
+            ]
+        }
+    ],
+    "application": [
+        {
+            "gap": "Integration of multimodal signals for emotion expression",
+            "impact": "Medium",
+            "reason": "Current systems are limited to text-based emotion expression",
+            "papers": [
+                "MoodSwipe: A Soft Keyboard that Suggests Messages Based on User-Specified Emotions"
+            ]
+        }
+    ]
+}

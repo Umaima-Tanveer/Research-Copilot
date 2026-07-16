@@ -1,0 +1,84 @@
+[
+    {
+        "paper_id": "1",
+        "filename": "1978942.1979046.pdf",
+        "title": "Identifying Emotional States using Keystroke Dynamics",
+        "authors": [
+            "Clayton Epp",
+            "Michael Lippold",
+            "Regan L. Mandryk"
+        ],
+        "publication_year": "NOT MENTIONED",
+        "objective": "Recognize emotional states using keystroke dynamics as a non-invasive, cost-effective method for emotionally-aware systems.",
+        "methodology": "Field study collecting keystroke data and self-reported emotional states. Keystroke features (key duration, latency) were extracted and used to train decision-tree classifiers for 15 emotional states.",
+        "dataset": "Keystroke data from participants performing daily tasks, labeled with self-reported emotional states via experience-sampling questionnaires.",
+        "performance": "Top results: 2-level classifiers for confidence (77.4%), hesitance (77.4%), nervousness (87.8%), relaxation (87.8%), sadness (87.8%), and tiredness (87.8%). Anger and excitement achieved 84% accuracy.",
+        "limitations": "Limited exploration of anger and excitement; reliance on self-reported emotional states may introduce bias."
+    },
+    {
+        "paper_id": "2",
+        "filename": "ETASR_634.pdf",
+        "title": "Behavioral Biometrics in Assisted Living: A Methodology for Emotion Recognition",
+        "authors": [
+            "Stefanos Xefteris",
+            "Nikos Doulamis",
+            "Vassiliki Andronikou",
+            "Theodora Varvarigou",
+            "George Cambourakis"
+        ],
+        "publication_year": "2016",
+        "objective": "Develop emotion recognition mechanisms for unobtrusive monitoring of neurodegenerative disease patients in smart healthcare environments.",
+        "methodology": "Combines computational geometry, image processing, graph theory for region detection, neural networks for classification, Paul Ekman's facial expression theory, and service-oriented architectures for real-time monitoring.",
+        "dataset": "NOT MENTIONED",
+        "performance": "Achieved 85% fear recognition, 92% disgust, 97% joy, 67% anger, and 95% sadness accuracy. Integrated into ambient assisted living systems for remote cognitive/physical status estimation of MCI and dementia patients.",
+        "limitations": "Relies on specific biometric traits with dynamic variability; requires calibration for diverse populations and environmental conditions."
+    },
+    {
+        "paper_id": "3",
+        "filename": "44155.pdf",
+        "title": "Emotion Recognition through Keystroke Dynamics on Touchscreen Keyboards",
+        "authors": [
+            "Matthias Trojahn",
+            "Florian Arndt",
+            "Markus Weinmann",
+            "Frank Ortmeier"
+        ],
+        "publication_year": "2013",
+        "objective": "Improve human-computer interaction by automatically recognizing emotions through keystroke dynamics on touchscreen keyboards, addressing limitations of conventional keyboard methods.",
+        "methodology": "Developed an Android app and keyboard layout to record keystroke dynamics. Hypotheses derived from Yerkes-Dodson-Law and Flow theory. Conducted a study with 152 participants, analyzing data via SPSS to validate correlations between keystroke metrics and emotional states.",
+        "dataset": "Study involving 152 test persons with varying time limits (no time limit, 5 minutes, 3.5 minutes) and demographic data (age, gender, education).",
+        "performance": "Most hypotheses were confirmed: typing speed, error rate, and pressure correlate with emotional valence/arousal. Keystroke dynamics effectively explain and recognize emotional states under time pressure.",
+        "limitations": "Study limited to controlled lab environment and specific demographics (IT employees/students). Correlation does not imply causation in emotional responses."
+    },
+    {
+        "paper_id": "4",
+        "filename": "kolakowska13.pdf",
+        "title": "A Review of Emotion Recognition Methods Based on Keystroke Dynamics and Mouse Movements",
+        "authors": [
+            "A. Kołakowska"
+        ],
+        "publication_year": "2013",
+        "objective": "NOT MENTIONED",
+        "methodology": "Analyzing keystroke dynamics and mouse movements as biometric features, including data collection, feature extraction, and classifier training for emotion detection.",
+        "dataset": "Various studies with participants performing tasks (e.g., online shopping, typing exercises) to collect physiological and behavioral data under different emotional states.",
+        "performance": "Effectiveness of keystroke and mouse movement analysis in detecting emotional states, with challenges in data variability and labeling.",
+        "limitations": "Variability in data collection, lack of controlled emotional states, and limited sample sizes in some studies."
+    },
+    {
+        "paper_id": "5",
+        "filename": "Human_Micro-Expression_A_Novel_Social_Behavioral_Biometric_for_Person_Identification.pdf",
+        "title": "Human Micro-Expression: A Novel Social Behavioral Biometric for Person Identification",
+        "authors": [
+            "ZAMAN WAHID",
+            "ASM HOSSAIN BARI",
+            "FAHIM ANZUM",
+            "MARINA L. GAVRILOVA"
+        ],
+        "publication_year": "NOT MENTIONED",
+        "objective": "Introduce a novel Social Behavioral Biometric (SBB), human micro-expression, for person identification using behavioral patterns from social media.",
+        "methodology": "Emotion detection model extracts emotion probability scores from microblogs; emotion-progression features generated via dynamic time warping; rank-level weighted majority voting fusion improves identification accuracy.",
+        "dataset": "Proprietary benchmark dataset with 250 Twitter users' microblog samples.",
+        "performance": "High recognition rates on benchmark data; outperforms existing SBB traits in emotion-progression representation.",
+        "limitations": "Relies on statistical features; performance degrades with insufficient user data. Prior SBB traits limited by count-based feature generation."
+    }
+]

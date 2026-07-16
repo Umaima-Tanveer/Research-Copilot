@@ -1,0 +1,516 @@
+[
+    {
+        "paper_id": 1,
+        "filename": "2303.07466v1.pdf",
+        "metadata": {
+            "title": "Deep Learning-based RF Fingerprint Authentication with Chaotic Antenna Arrays",
+            "authors": [
+                "Justin McMillen",
+                "Gokhan Mumcu",
+                "Yasin Yilmaz"
+            ],
+            "year": "2023",
+            "venue": "",
+            "doi": "10.48550/ARXIV.2303.07466",
+            "keywords": [
+                "Physically Unclonable Wireless Systems",
+                "RF fingerprinting",
+                "Device authentication",
+                "Deep learning",
+                "Additive manufacturing",
+                "3D printing"
+            ]
+        },
+        "abstract": "Radio frequency (RF) fingerprinting is a tool for authentication using distinct signal distortions. This paper introduces a deep learning-based method for Physically Unclonable Wireless Systems (PUWS) with Chaotic Antenna Arrays (CAAs). Experiments test CNN architectures under varying channel conditions, comparing performance to state-of-the-art RF fingerprinting methods.",
+        "research": {
+            "problem": "Adversarial attacks exploiting wireless system vulnerabilities.",
+            "motivation": "Secure authentication beyond software layers using physical layer features.",
+            "objective": "Develop deep learning-based RF fingerprint authentication with PUWS and CAAs.",
+            "research_questions": [
+                "Can CNNs authenticate devices using CAA-generated fingerprints?",
+                "How do CAAs improve authentication performance compared to traditional methods?"
+            ]
+        },
+        "methodology": {
+            "summary": "Utilizes chaotic antenna arrays (CAAs) with mask-free laser-enhanced direct print additive manufacturing (LE-DPAM) and deep neural networks for RF fingerprint authentication.",
+            "algorithms": [
+                "Convolutional Neural Networks (CNNs)",
+                "VGG-16",
+                "ResNet-50",
+                "Inception",
+                "Xception"
+            ],
+            "models": [
+                "CNN-3",
+                "VGG-16",
+                "ResNet-50",
+                "Inception",
+                "Xception"
+            ],
+            "datasets": [
+                "Simulation data of 300 CAAs with 4 antenna elements"
+            ],
+            "features": [
+                "Phase errors",
+                "Spatial variance (θ, φ)",
+                "RF fingerprint signatures"
+            ],
+            "preprocessing": [
+                "Data splitting (80-10-10%)",
+                "Signal-to-noise ratio (SNR) normalization"
+            ],
+            "training_strategy": "End-to-end deep learning with simulated Rayleigh fading channels.",
+            "evaluation_metrics": [
+                "Classification accuracy"
+            ]
+        },
+        "experiments": {
+            "experimental_setup": "Simulated 5 GHz WiFi environment with Rayleigh fading, 1200 antenna elements, and 300 CAAs. Authentication sequences include 1000 samples at 1 MHz sampling rate.",
+            "baselines": [
+                "Traditional ML (SVM, kNN)",
+                "Statistical detectors",
+                "Wavelet transforms"
+            ],
+            "results": "CNNs achieve 93.3-99.9% accuracy. ResNet-50 with CAA fingerprints reaches 99.2% accuracy, surpassing traditional RF fingerprint methods (63%).",
+            "performance": {
+                "accuracy": "99.2%",
+                "precision": null,
+                "recall": null,
+                "f1": null,
+                "auc": null
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Integration of CAAs with deep learning for physical layer authentication",
+                "Enhanced fingerprint variability via spatial phase errors"
+            ],
+            "advantages": [
+                "High authentication accuracy under realistic channel conditions",
+                "Scalable to large device networks"
+            ],
+            "limitations": [
+                "Dependence on simulation data",
+                "Limited real-world validation"
+            ],
+            "future_work": [
+                "Hardware implementation of CAAs",
+                "Evaluation under dynamic channel conditions"
+            ],
+            "applications": [
+                "Secure IoT device authentication",
+                "Anti-spoofing in wireless networks"
+            ],
+            "research_gap": "Traditional RF fingerprints insufficient for large-scale secure authentication."
+        },
+        "sections": {
+            "introduction": "Rapid growth of IoT devices necessitates secure authentication. Traditional encryption is vulnerable to advanced attacks, motivating physical layer solutions like RF fingerprinting.",
+            "related_work": "",
+            "methodology": "CAAs generate spatially variant phase errors via randomized antenna geometry and feed lines. Deep CNNs process RF fingerprints with simulated Rayleigh fading channels.",
+            "results": "ResNet-50 achieves 99.2% accuracy with CAA fingerprints, outperforming traditional methods. CNNs demonstrate robustness to channel variations.",
+            "discussion": "CAAs enhance fingerprint uniqueness via spatial phase errors, enabling deep learning-based authentication. Results highlight the potential of physical layer features for secure systems.",
+            "conclusion": "PUWS with CAAs and deep learning offer superior authentication capacity. Future work includes real-world validation and integration with existing security frameworks."
+        }
+    },
+    {
+        "paper_id": 2,
+        "filename": "2502.02782v1.pdf",
+        "metadata": {
+            "title": "A Comprehensive Survey on Feature Extraction Techniques Using I/Q Imbalance in RFFI",
+            "authors": [
+                "Muhammad Aqib Khan",
+                "Muhammad Usman Siddiqui"
+            ],
+            "year": "2025",
+            "venue": "arXiv",
+            "doi": "arXiv:2502.02782v1",
+            "keywords": [
+                "I/Q Imbalance",
+                "Feature Extraction",
+                "Fingerprinting",
+                "RFFI"
+            ]
+        },
+        "abstract": "The proliferation of IoT devices has intensified the need for secure authentication. Traditional encryption-based solutions impose high computational overhead on resource-limited IoT nodes. Radio frequency fingerprint identification (RFFI) exploits hardware-induced imperfections like I/Q imbalance as unique identifiers. This paper reviews feature extraction techniques for RFFI, discusses other hardware-based RF fingerprinting sources, and examines ML/DL approaches to enhance device identification performance.",
+        "research": {
+            "problem": "Secure authentication in IoT devices with traditional encryption methods being resource-intensive.",
+            "motivation": "Leverage hardware-induced imperfections like I/Q imbalance for unique device identification in RFFI.",
+            "objective": "Provide a comprehensive review of I/Q imbalance-based feature extraction techniques for RFFI and evaluate ML/DL approaches.",
+            "research_questions": []
+        },
+        "methodology": {
+            "summary": "Reviews adaptive filtering, channel correlation, signal space representation, and ML/DL techniques for I/Q imbalance-based RFFI.",
+            "algorithms": [
+                "Adaptive filtering",
+                "Channel correlation",
+                "Signal space representation"
+            ],
+            "models": [
+                "Convolutional Neural Networks (CNNs)",
+                "Deep Learning (DL) architectures"
+            ],
+            "datasets": [
+                "LTE mobile devices",
+                "Universal Software Radio Peripheral (USRP) platforms"
+            ],
+            "features": [
+                "Amplitude/phase distortion"
+            ],
+            "preprocessing": [
+                "Time synchronization",
+                "Frequency offset compensation",
+                "Channel estimation"
+            ],
+            "training_strategy": "Null",
+            "evaluation_metrics": []
+        },
+        "experiments": {
+            "experimental_setup": "Testing on LTE-based systems, USRP platforms, and simulated 5 analog transmitters with I/Q imbalance.",
+            "baselines": [
+                "Bispectrum-based methods",
+                "Hilbert-Huang transform-based methods"
+            ],
+            "results": "Proposed method outperformed baselines in classification accuracy, with 96.01% accuracy on LTE/USRP and superior clustering capabilities at 15 dB SNR.",
+            "performance": {
+                "accuracy": "96.01%",
+                "precision": null,
+                "recall": null,
+                "f1": null,
+                "auc": null
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Comprehensive review of I/Q imbalance-based RFFI feature extraction techniques",
+                "Evaluation of ML/DL-driven solutions for device identification"
+            ],
+            "advantages": [
+                "Robustness to environmental variations",
+                "Low memory requirements for signal space representation"
+            ],
+            "limitations": [
+                "Dependence on precise synchronization for adaptive filters"
+            ],
+            "future_work": [
+                "Standardization of feature extraction frameworks",
+                "Scalable ML/DL solutions for dynamic environments"
+            ],
+            "applications": [
+                "Secure IoT device authentication",
+                "Radio frequency fingerprinting in wireless networks"
+            ],
+            "research_gap": "Standardization challenges and scalability for large-scale IoT deployments."
+        },
+        "sections": {
+            "introduction": "Discusses the need for secure IoT authentication and introduces RFFI as a hardware-based solution leveraging I/Q imbalance.",
+            "related_work": null,
+            "methodology": "Details adaptive filtering, channel correlation, and signal space representation techniques for I/Q imbalance analysis.",
+            "results": "Presents performance metrics for reviewed methods, including 96.01% accuracy on LTE/USRP and superior clustering capabilities.",
+            "discussion": "Analyzes trade-offs between techniques, emphasizing robustness, computational demands, and application suitability.",
+            "conclusion": "Summarizes contributions and highlights future directions for standardization and scalable ML/DL integration."
+        }
+    },
+    {
+        "paper_id": 3,
+        "filename": "2306.13895v1.pdf",
+        "metadata": {
+            "title": "Open-Set RF Fingerprinting via Improved Prototype Learning",
+            "authors": [
+                "Weidong Wang",
+                "Hongshu Liao",
+                "Lu Gan"
+            ],
+            "year": "2023",
+            "venue": "arXiv",
+            "doi": "arXiv:2306.13895v1",
+            "keywords": [
+                "RF fingerprinting",
+                "open-set recognition",
+                "prototype learning",
+                "consistency-based regularization",
+                "online label smoothing"
+            ]
+        },
+        "abstract": "Deep learning has been widely used in radio frequency (RF) fingerprinting. Despite its excellent performance, most existing methods only consider a closed-set assumption, which cannot effectively tackle signals emitted from unknown devices. This paper proposes improved prototype learning with consistency-based regularization and online label smoothing to achieve robust open-set recognition for RF fingerprinting.",
+        "research": {
+            "problem": "Existing RF fingerprinting methods assume a closed-set scenario, failing to handle unknown devices during testing.",
+            "motivation": "Improve open-set recognition performance for RF fingerprinting by addressing limitations of closed-set assumptions.",
+            "objective": "Enhance prototype learning through consistency-based regularization and online label smoothing for robust feature space learning.",
+            "research_questions": []
+        },
+        "methodology": {
+            "summary": "Proposes Improved Prototype Learning (IPL) with consistency-based regularization and online label smoothing to enhance open-set recognition for RF fingerprinting.",
+            "algorithms": [
+                "Consistency-based regularization",
+                "Online label smoothing"
+            ],
+            "models": [
+                "Generalized Convolutional Prototype Learning (GCPL)",
+                "Improved Prototype Learning (IPL)"
+            ],
+            "datasets": [
+                "WIDEFT"
+            ],
+            "features": [
+                "RF signal data with device-specific fingerprints"
+            ],
+            "preprocessing": [],
+            "training_strategy": "Data augmentation, consistency regularization, and online label smoothing during training",
+            "evaluation_metrics": [
+                "Rejection rate of unknowns",
+                "Classification accuracy"
+            ]
+        },
+        "experiments": {
+            "experimental_setup": "Evaluated on WIDEFT dataset with 18 known Apple devices and 18 unknown devices. Training/validation/test split ratio 3:1:1 for known devices.",
+            "baselines": [
+                "OpenMax",
+                "GCPL",
+                "ARPL"
+            ],
+            "results": "IPL achieved 90.28% rejection rate for unknowns while maintaining ~90% classification accuracy.",
+            "performance": {
+                "accuracy": "90%",
+                "precision": "",
+                "recall": "",
+                "f1": "",
+                "auc": ""
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Consistency-based regularization for robust feature learning",
+                "Online label smoothing with semantic enrichment"
+            ],
+            "advantages": [
+                "Improved generalization for open-set scenarios",
+                "Robust feature space learning"
+            ],
+            "limitations": [
+                "Potential overfitting in complex signal data"
+            ],
+            "future_work": [
+                "Application to other wireless communication domains"
+            ],
+            "applications": [
+                "Wireless device authentication",
+                "Security threat detection"
+            ],
+            "research_gap": "Need for open-set recognition solutions in RF fingerprinting"
+        },
+        "sections": {
+            "introduction": "Introduces challenges of closed-set assumptions in RF fingerprinting and proposes open-set recognition solutions.",
+            "related_work": "Reviews existing methods including OpenMax, GAN-based approaches, and reconstruction-based techniques.",
+            "methodology": "Details improvements to prototype learning with consistency regularization and label smoothing.",
+            "results": "Demonstrates superior rejection rates and accuracy compared to baselines on WIDEFT dataset.",
+            "discussion": "Analyzes effectiveness of proposed methods in handling unknown device signals.",
+            "conclusion": "Summarizes improvements in open-set RF fingerprinting through enhanced prototype learning."
+        }
+    },
+    {
+        "paper_id": 4,
+        "filename": "sensors-20-01213.pdf",
+        "metadata": {
+            "title": "An Identity Authentication Method of a MIoT Device Based on Radio Frequency (RF) Fingerprint Technology",
+            "authors": [
+                "Qiao Tian",
+                "Yun Lin",
+                "Xinghao Guo",
+                "Jin Wang",
+                "Osama AlFarraj",
+                "Amr Tolba"
+            ],
+            "year": "2020",
+            "venue": "Sensors",
+            "doi": "10.3390/s20041213",
+            "keywords": [
+                "RF fingerprint",
+                "identity authentication",
+                "mobile Internet of Things",
+                "feature extraction"
+            ]
+        },
+        "abstract": "The paper addresses security challenges in MIoT by proposing an RF fingerprint-based authentication model. Traditional key-based methods are insecure, so the authors combine NCA and SVDD to achieve 90% authentication success rate (ASR) and rogue device detection rate (RSR) at 15 dB SNR.",
+        "research": {
+            "problem": "Traditional key-based wireless communication methods in MIoT face security vulnerabilities.",
+            "motivation": "Enhance MIoT security using RF fingerprint technology for device authentication.",
+            "objective": "Establish an RF fingerprint authentication model to distinguish authentic/rogue devices.",
+            "research_questions": []
+        },
+        "methodology": {
+            "summary": "Combines neighborhood component analysis (NCA) and support vector data description (SVDD) for RF fingerprint-based device authentication.",
+            "algorithms": [
+                "Neighborhood Component Analysis (NCA)",
+                "Support Vector Data Description (SVDD)"
+            ],
+            "models": [
+                "Radio Frequency Fingerprint (RFF) Authentication Model"
+            ],
+            "datasets": [
+                "ZigBee nodes",
+                "Measured signal data"
+            ],
+            "features": [
+                "Time domain parameters",
+                "High-order spectral parameters",
+                "Entropy-based features"
+            ],
+            "preprocessing": [
+                "Signal acquisition",
+                "Feature extraction from communication signals"
+            ],
+            "training_strategy": "NCA for feature selection and SVDD for anomaly detection",
+            "evaluation_metrics": [
+                "Authentication Success Rate (ASR)",
+                "Rogue Device Detection Rate (RSR)"
+            ]
+        },
+        "experiments": {
+            "experimental_setup": "Simulation experiments using measured data and NCA/SVDD methods.",
+            "baselines": [
+                "Traditional key-based authentication",
+                "Existing RF fingerprint methods"
+            ],
+            "results": "Achieved 90% ASR and RSR at 15 dB SNR with ZigBee devices.",
+            "performance": {
+                "accuracy": "90%",
+                "precision": null,
+                "recall": null,
+                "f1": null,
+                "auc": null
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Proposed RF fingerprint authentication model for MIoT",
+                "Combined NCA and SVDD for improved security"
+            ],
+            "advantages": [
+                "Enhanced network security through device-specific RF fingerprints",
+                "Reduced reliance on traditional cryptographic methods"
+            ],
+            "limitations": [
+                "Performance depends on signal-to-noise ratio (SNR)",
+                "Requires extensive dataset for training"
+            ],
+            "future_work": [
+                "Expanding applications to 5G networks",
+                "Improving robustness against adversarial attacks"
+            ],
+            "applications": [
+                "IoT device authentication",
+                "Network security in 4G/5G systems"
+            ],
+            "research_gap": "Need for more robust authentication methods in dynamic MIoT environments"
+        },
+        "sections": {
+            "introduction": "Outlines MIoT security challenges and the need for RF fingerprint-based authentication.",
+            "related_work": "Reviews existing RF fingerprint extraction methods and authentication frameworks.",
+            "methodology": "Details NCA/SVDD integration for RF fingerprint analysis and device verification.",
+            "results": "Presents simulation results showing 90% ASR/RSR at 15 dB SNR.",
+            "discussion": "Analyzes trade-offs between security, computational complexity, and SNR requirements.",
+            "conclusion": "Summarizes the effectiveness of RF fingerprint authentication in securing MIoT networks."
+        }
+    },
+    {
+        "paper_id": 5,
+        "filename": "Attention_is_Needed_for_RF_Fingerprinting.pdf",
+        "metadata": {
+            "title": "Attention is Needed for RF Fingerprinting",
+            "authors": [
+                "HANQING GU",
+                "LISHENG SU",
+                "WEIFENG ZHANG",
+                "CHUAN RAN"
+            ],
+            "year": "2023",
+            "venue": "",
+            "doi": "10.1109/ACCESS.2023.3305533",
+            "keywords": [
+                "RF fingerprinting",
+                "channel attention",
+                "spatial attention",
+                "deep neural networks"
+            ]
+        },
+        "abstract": "The paper addresses challenges in RF fingerprinting using deep convolutional neural networks (CNNs) by proposing a Dual Attention Convolution (DAConv) module. It introduces channel and spatial attention mechanisms to enhance representation learning for robust RF fingerprint extraction, achieving improved recognition accuracy on wireless IoT devices.",
+        "research": {
+            "problem": "Deep CNNs face challenges in learning robust and discriminative RF fingerprints due to dynamic environments and electromagnetic interference.",
+            "motivation": "Traditional feature engineering and CNN architectures lack adaptability to varying conditions, necessitating attention mechanisms for improved performance.",
+            "objective": "Propose DAConv to enhance CNNs' ability to extract reliable RF fingerprints through dual attention mechanisms.",
+            "research_questions": []
+        },
+        "methodology": {
+            "summary": "DAConv integrates channel attention (CAB) and spatial attention (SAB) with convolutional layers to refine feature learning for RF fingerprinting.",
+            "algorithms": [
+                "Dual Attention Convolution (DAConv)"
+            ],
+            "models": [
+                "DAConv-ResNet50"
+            ],
+            "datasets": [
+                "USRP X310"
+            ],
+            "features": [
+                "RF fingerprints",
+                "channel attention",
+                "spatial attention"
+            ],
+            "preprocessing": [
+                "signal denoising",
+                "channel estimation",
+                "data augmentation"
+            ],
+            "training_strategy": "Plug-and-play integration with existing CNNs",
+            "evaluation_metrics": [
+                "accuracy",
+                "precision",
+                "recall",
+                "f1",
+                "auc"
+            ]
+        },
+        "experiments": {
+            "experimental_setup": "Testing on 10 USRP X310 devices with dynamic environments and signal preprocessing techniques.",
+            "baselines": [
+                "Traditional CNNs (AlexNet, ResNet)",
+                "ORACLE",
+                "VGG16"
+            ],
+            "results": "DAConv improved CNN performance by 1.5% on average, achieving 95.6% accuracy on USRP X310.",
+            "performance": {
+                "accuracy": "95.6%",
+                "precision": null,
+                "recall": null,
+                "f1": null,
+                "auc": null
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Dual Attention Convolution (DAConv) module for robust RF fingerprinting"
+            ],
+            "advantages": [
+                "Lightweight design",
+                "Plug-and-play compatibility with CNNs"
+            ],
+            "limitations": [
+                "Dynamic environments degrade performance without advanced preprocessing"
+            ],
+            "future_work": [],
+            "applications": [
+                "Wireless IoT security",
+                "Device authentication"
+            ],
+            "research_gap": "Optimizing neural network structures for robust RF fingerprint extraction in dynamic conditions"
+        },
+        "sections": {
+            "introduction": "Discusses security threats in wireless IoT and the need for RF fingerprinting as a novel identification method.",
+            "related_work": "Reviews traditional feature engineering, deep learning approaches, and attention mechanisms in RF fingerprinting.",
+            "methodology": "Details DAConv architecture, attention branches, and integration with CNNs.",
+            "results": "Demonstrates performance improvements over baselines on USRP X310 datasets.",
+            "discussion": "Analyzes DAConv's effectiveness in enhancing feature learning and robustness against environmental noise.",
+            "conclusion": "Highlights DAConv's potential to advance secure wireless IoT networks through attention-based RF fingerprinting."
+        }
+    }
+]

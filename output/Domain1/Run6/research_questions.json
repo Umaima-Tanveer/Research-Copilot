@@ -1,0 +1,143 @@
+{
+    "primary_research_questions": [
+        {
+            "id": "RQ1",
+            "question": "How can domain-invariant neural network architectures be designed to maintain 95%+ accuracy across 10x environmental variations in SEI systems?",
+            "derived_from_gap": "Scalability and environmental robustness of neural network-based SEI",
+            "derived_from_contribution": "Domain-invariant neural network architecture for SEI with environmental feature encoding",
+            "paper_titles": [
+                "Groundwork for Neural Network-Based Specific Emitter Identification Authentication for IoT"
+            ]
+        },
+        {
+            "id": "RQ2",
+            "question": "What mechanisms can enable self-supervised RF fingerprinting frameworks to achieve 0.92 AUC in cross-domain scenarios with 80% fewer labeled data?",
+            "derived_from_gap": "Self-supervised methods for data scarcity and domain shifts",
+            "derived_from_contribution": "Dynamic domain adaptation framework for RF fingerprinting",
+            "paper_titles": [
+                "A Self-supervised Framework for Generalized RF Fingerprinting and Zero-shot Anomaly Detection in Dynamic IoT Networks"
+            ]
+        },
+        {
+            "id": "RQ3",
+            "question": "How can automated steady-state feature disambiguation systems achieve 99.5% separation accuracy between identical transmitters under 10dB SNR conditions?",
+            "derived_from_gap": "Distinguishing identical transmitters in dynamic environments",
+            "derived_from_contribution": "Automated steady-state feature disambiguation system",
+            "paper_titles": [
+                "Radio Transmitter Fingerprinting: A Steady State Frequency Domain Approach"
+            ]
+        },
+        {
+            "id": "RQ4",
+            "question": "What meta-learning strategies can enable cross-hardware RF fingerprinting with 90%+ accuracy across 20+ hardware platforms using 50% fewer training samples?",
+            "derived_from_gap": "Generalizability across hardware platforms",
+            "derived_from_contribution": "Cross-hardware RF fingerprinting with meta-learning",
+            "paper_titles": [
+                "Zigbee Device Identification Using Lightweight CNN"
+            ]
+        },
+        {
+            "id": "RQ5",
+            "question": "How can federated learning frameworks ensure 0.93 AUC for spectrum anomaly detection while maintaining privacy across 100+ edge devices?",
+            "derived_from_gap": "Federated learning and spectrum awareness systems",
+            "derived_from_contribution": "Privacy-preserving federated RF fingerprinting framework",
+            "paper_titles": [
+                "A Self-supervised Framework for Generalized RF Fingerprinting and Zero-shot Anomaly Detection in Dynamic IoT Networks"
+            ]
+        }
+    ],
+    "secondary_research_questions": [
+        {
+            "id": "RQ6",
+            "question": "What environmental metadata features should be integrated into CNN-LSTM models to minimize hardware-specific biases in SEI systems?",
+            "derived_from_gap": "Scalability and environmental robustness of neural network-based SEI",
+            "derived_from_contribution": "Domain-invariant neural network architecture for SEI with environmental feature encoding",
+            "paper_titles": [
+                "Groundwork for Neural Network-Based Specific Emitter Identification Authentication for IoT"
+            ]
+        },
+        {
+            "id": "RQ7",
+            "question": "How can temporal contrastive learning be optimized for adaptive augmentation policies in dynamic IoT environments?",
+            "derived_from_gap": "Self-supervised methods for data scarcity and domain shifts",
+            "derived_from_contribution": "Dynamic domain adaptation framework for RF fingerprinting",
+            "paper_titles": [
+                "A Self-supervised Framework for Generalized RF Fingerprinting and Zero-shot Anomaly Detection in Dynamic IoT Networks"
+            ]
+        },
+        {
+            "id": "RQ8",
+            "question": "What feature weighting algorithms can enhance the hierarchical attention network's ability to detect subtle steady-state variations?",
+            "derived_from_gap": "Distinguishing identical transmitters in dynamic environments",
+            "derived_from_contribution": "Automated steady-state feature disambiguation system",
+            "paper_titles": [
+                "Radio Transmitter Fingerprinting: A Steady State Frequency Domain Approach"
+            ]
+        },
+        {
+            "id": "RQ9",
+            "question": "How can task-specific adapters be designed to balance model generalization and hardware-specific fine-tuning in cross-platform RF fingerprinting?",
+            "derived_from_gap": "Generalizability across hardware platforms",
+            "derived_from_contribution": "Cross-hardware RF fingerprinting with meta-learning",
+            "paper_titles": [
+                "Zigbee Device Identification Using Lightweight CNN"
+            ]
+        },
+        {
+            "id": "RQ10",
+            "question": "What secure aggregation protocols can preserve feature privacy while enabling federated RF fingerprinting across edge devices?",
+            "derived_from_gap": "Federated learning and spectrum awareness systems",
+            "derived_from_contribution": "Privacy-preserving federated RF fingerprinting framework",
+            "paper_titles": [
+                "A Self-supervised Framework for Generalized RF Fingerprinting and Zero-shot Anomaly Detection in Dynamic IoT Networks"
+            ]
+        }
+    ],
+    "novel_research_questions": [
+        {
+            "id": "RQ11",
+            "question": "How can hybrid CNN-LSTM models be extended to incorporate adversarial training for hardware-agnostic signal preprocessing pipelines?",
+            "derived_from_gap": "Scalability and environmental robustness of neural network-based SEI",
+            "derived_from_contribution": "Domain-invariant neural network architecture for SEI with environmental feature encoding",
+            "paper_titles": [
+                "Groundwork for Neural Network-Based Specific Emitter Identification Authentication for IoT"
+            ]
+        },
+        {
+            "id": "RQ12",
+            "question": "What synthetic domain shift generation tools can be developed to simulate 50+ environmental shifts per hour for self-supervised RF fingerprinting?",
+            "derived_from_gap": "Self-supervised methods for data scarcity and domain shifts",
+            "derived_from_contribution": "Dynamic domain adaptation framework for RF fingerprinting",
+            "paper_titles": [
+                "A Self-supervised Framework for Generalized RF Fingerprinting and Zero-shot Anomaly Detection in Dynamic IoT Networks"
+            ]
+        },
+        {
+            "id": "RQ13",
+            "question": "How can uncertainty-aware sampling strategies be integrated with temporal contrastive learning for few-shot domain adaptation?",
+            "derived_from_gap": "Self-supervised methods for data scarcity and domain shifts",
+            "derived_from_contribution": "Dynamic domain adaptation framework for RF fingerprinting",
+            "paper_titles": [
+                "A Self-supervised Framework for Generalized RF Fingerprinting and Zero-shot Anomaly Detection in Dynamic IoT Networks"
+            ]
+        },
+        {
+            "id": "RQ14",
+            "question": "What temporal correlation metrics can be developed to detect transient anomalies in identical transmitter patterns under varying SNR conditions?",
+            "derived_from_gap": "Distinguishing identical transmitters in dynamic environments",
+            "derived_from_contribution": "Automated steady-state feature disambiguation system",
+            "paper_titles": [
+                "Radio Transmitter Fingerprinting: A Steady State Frequency Domain Approach"
+            ]
+        },
+        {
+            "id": "RQ15",
+            "question": "How can meta-learning frameworks be adapted to learn hardware-agnostic RF fingerprinting features while preserving model generalization capabilities?",
+            "derived_from_gap": "Generalizability across hardware platforms",
+            "derived_from_contribution": "Cross-hardware RF fingerprinting with meta-learning",
+            "paper_titles": [
+                "Zigbee Device Identification Using Lightweight CNN"
+            ]
+        }
+    ]
+}

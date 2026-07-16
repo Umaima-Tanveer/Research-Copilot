@@ -1,0 +1,125 @@
+{
+    "primary_research_questions": [
+        {
+            "id": "RQ1",
+            "question": "How can a specialized keystroke dynamics model be developed to detect anger and excitement using temporal pattern analysis and physiological signal fusion?",
+            "derived_from_gap": "Limited exploration of anger and excitement in keystroke dynamics",
+            "derived_from_contribution": "Development of a specialized keystroke dynamics model for anger and excitement detection using temporal pattern analysis",
+            "paper_titles": [
+                "Paper 1"
+            ]
+        },
+        {
+            "id": "RQ2",
+            "question": "What is the effectiveness of a federated learning framework in enabling cross-modal emotion recognition through keystroke dynamics, facial micro-expressions, and voice prosody?",
+            "derived_from_gap": "Need for multimodal integration to enhance emotion recognition accuracy",
+            "derived_from_contribution": "Federated learning framework for cross-modal emotion recognition combining keystroke dynamics, facial micro-expressions, and voice prosody",
+            "paper_titles": [
+                "Paper 2"
+            ]
+        },
+        {
+            "id": "RQ3",
+            "question": "How can an open-source benchmark dataset be created with standardized protocols for emotion-labeled keystroke dynamics to improve reproducibility and comparison across studies?",
+            "derived_from_gap": "Insufficient data standardization and labeling protocols",
+            "derived_from_contribution": "Creation of an open-source benchmark dataset with standardized protocols for emotion-labeled keystroke dynamics",
+            "paper_titles": [
+                "Paper 4"
+            ]
+        },
+        {
+            "id": "RQ4",
+            "question": "What is the potential of a dynamic time warping-based framework for analyzing emotion progression in social media microblogging data?",
+            "derived_from_gap": "Limited emotion-progression feature representation in social behavioral biometrics",
+            "derived_from_contribution": "Dynamic time warping (DTW)-based framework for emotion progression analysis in social media microblogging",
+            "paper_titles": [
+                "Paper 5"
+            ]
+        },
+        {
+            "id": "RQ5",
+            "question": "How can a cross-cultural emotion recognition dataset be constructed to ensure demographic diversity in age, gender, and socioeconomic status?",
+            "derived_from_gap": "Limited demographic diversity in emotion recognition datasets",
+            "derived_from_contribution": "Cross-cultural emotion recognition dataset with age, gender, and socioeconomic diversity",
+            "paper_titles": [
+                "Paper 3"
+            ]
+        },
+        {
+            "id": "RQ6",
+            "question": "What is the feasibility of deploying a stress-resilient keystroke dynamics model in high-pressure workplace environments for real-time emotion detection?",
+            "derived_from_gap": "Real-world validation of keystroke dynamics in stressful environments",
+            "derived_from_contribution": "Stress-resilient keystroke dynamics model validated in high-pressure workplace scenarios",
+            "paper_titles": [
+                "Paper 1"
+            ]
+        }
+    ],
+    "secondary_research_questions": [
+        {
+            "id": "RQ7",
+            "question": "How do temporal pattern analysis techniques in keystroke dynamics differentiate between anger and excitement in high-arousal emotional states?",
+            "derived_from_gap": "Limited exploration of anger and excitement in keystroke dynamics",
+            "derived_from_contribution": "Development of a specialized keystroke dynamics model for anger and excitement detection using temporal pattern analysis",
+            "paper_titles": [
+                "Paper 1"
+            ]
+        },
+        {
+            "id": "RQ8",
+            "question": "What are the privacy-preserving mechanisms required for federated learning in cross-modal emotion recognition systems?",
+            "derived_from_gap": "Need for multimodal integration to enhance emotion recognition accuracy",
+            "derived_from_contribution": "Federated learning framework for cross-modal emotion recognition combining keystroke dynamics, facial micro-expressions, and voice prosody",
+            "paper_titles": [
+                "Paper 2"
+            ]
+        },
+        {
+            "id": "RQ9",
+            "question": "How can crowdsourcing platforms be optimized for collecting standardized emotion-labeled keystroke data with minimal annotation bias?",
+            "derived_from_gap": "Insufficient data standardization and labeling protocols",
+            "derived_from_contribution": "Creation of an open-source benchmark dataset with standardized protocols for emotion-labeled keystroke dynamics",
+            "paper_titles": [
+                "Paper 4"
+            ]
+        },
+        {
+            "id": "RQ10",
+            "question": "What role do graph neural networks play in modeling user-specific emotion progression patterns in social media interactions?",
+            "derived_from_gap": "Limited emotion-progression feature representation in social behavioral biometrics",
+            "derived_from_contribution": "Dynamic time warping (DTW)-based framework for emotion progression analysis in social media microblogging",
+            "paper_titles": [
+                "Paper 5"
+            ]
+        }
+    ],
+    "novel_research_questions": [
+        {
+            "id": "RQ11",
+            "question": "How can physiological signal fusion with keystroke dynamics improve the detection of high-arousal emotions in mental health monitoring systems?",
+            "derived_from_gap": "Limited exploration of anger and excitement in keystroke dynamics",
+            "derived_from_contribution": "Development of a specialized keystroke dynamics model for anger and excitement detection using temporal pattern analysis",
+            "paper_titles": [
+                "Paper 1"
+            ]
+        },
+        {
+            "id": "RQ12",
+            "question": "What are the ethical implications of deploying cross-modal emotion recognition systems in sensitive applications like remote counseling?",
+            "derived_from_gap": "Need for multimodal integration to enhance emotion recognition accuracy",
+            "derived_from_contribution": "Federated learning framework for cross-modal emotion recognition combining keystroke dynamics, facial micro-expressions, and voice prosody",
+            "paper_titles": [
+                "Paper 2"
+            ]
+        },
+        {
+            "id": "RQ13",
+            "question": "How can reinforcement learning be adapted to enhance the stress resilience of keystroke dynamics models in dynamic workplace environments?",
+            "derived_from_gap": "Real-world validation of keystroke dynamics in stressful environments",
+            "derived_from_contribution": "Stress-resilient keystroke dynamics model validated in high-pressure workplace scenarios",
+            "paper_titles": [
+                "Paper 1"
+            ]
+        }
+    ]
+}

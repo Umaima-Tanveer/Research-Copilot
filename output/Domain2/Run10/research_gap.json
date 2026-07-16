@@ -1,0 +1,74 @@
+{
+    "methodological": [
+        {
+            "gap": "Lack of comprehensive coverage of emerging trends beyond 2022",
+            "impact": "High",
+            "reason": "Prior surveys focused on narrow aspects like mobile devices or specific algorithms, missing broader trends.",
+            "papers": [
+                "Keystroke Dynamics: Concepts, Techniques, and Applications"
+            ]
+        },
+        {
+            "gap": "Reliance on self-reported emotional states",
+            "impact": "High",
+            "reason": "Self-reports may lack contextual awareness of complex emotional nuances.",
+            "papers": [
+                "Estimation of the User’s Emotional State by Keystroke Dynamics"
+            ]
+        },
+        {
+            "gap": "Need for personalized models to account for individual variability",
+            "impact": "High",
+            "reason": "Individual variability dominates emotional effects, requiring tailored approaches.",
+            "papers": [
+                "The influence of emotion on keyboard typing: an experimental study using visual stimuli"
+            ]
+        },
+        {
+            "gap": "Need for multimodal data integration",
+            "impact": "High",
+            "reason": "Combining keystroke dynamics with other biometrics could enhance emotion recognition accuracy.",
+            "papers": [
+                "Estimation of the User’s Emotional State by Keystroke Dynamics"
+            ]
+        }
+    ],
+    "theoretical": [
+        {
+            "gap": "Cultural variability in emotional expressions",
+            "impact": "High",
+            "reason": "Emotional patterns may vary across cultures, affecting generalizability.",
+            "papers": [
+                "AN IMPROVED MODEL FOR EMOTION-AWARE COMPUTING DEVICES USING KEYSTROKE DYNAMICS AND SUPPORT VECTOR MACHINE"
+            ]
+        }
+    ],
+    "empirical": [
+        {
+            "gap": "Limited dataset diversity and real-world validation",
+            "impact": "High",
+            "reason": "Dataset size and diversity may limit generalizability to real-world scenarios.",
+            "papers": [
+                "Identifying Users’ Emotional States through Keystroke Dynamics"
+            ]
+        }
+    ],
+    "application": [
+        {
+            "gap": "Expanded applications beyond authentication",
+            "impact": "High",
+            "reason": "Current focus on authentication lacks exploration of security verification and user behavior analysis.",
+            "papers": [
+                "Keystroke Dynamics: Concepts, Techniques, and Applications"
+            ]
+        },
+        {
+            "gap": "Integration with other biometrics and real-time emotion detection",
+            "impact": "High",
+            "reason": "Combining keystroke dynamics with other biometrics could enable real-time mental health monitoring.",
+            "papers": [
+                "Identifying Users’ Emotional States through Keystroke Dynamics"
+            ]
+        }
+    ]
+}

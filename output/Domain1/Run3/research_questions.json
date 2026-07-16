@@ -1,0 +1,146 @@
+{
+    "primary_research_questions": [
+        {
+            "id": "RQ1",
+            "question": "How can a decentralized data aggregation system using consumer-grade devices improve the scalability of RF fingerprinting without compromising privacy?",
+            "derived_from_gap": "Scalable data collection for RF fingerprinting",
+            "derived_from_contribution": "",
+            "paper_titles": [
+                "Deep-Learning-Aided RF Fingerprinting for NFC Security"
+            ]
+        },
+        {
+            "id": "RQ2",
+            "question": "What mechanisms enable cross-receiver adaptation in RF fingerprinting when source data is unavailable?",
+            "derived_from_gap": "Cross-receiver adaptation without source data",
+            "derived_from_contribution": "",
+            "paper_titles": [
+                "Cross-Receiver Radio Frequency Fingerprint Identification"
+            ]
+        },
+        {
+            "id": "RQ3",
+            "question": "How can spoofing resistance be enhanced in large-scale RF fingerprinting systems with heterogeneous device populations?",
+            "derived_from_gap": "Robustness against spoofing in large device populations",
+            "derived_from_contribution": "",
+            "paper_titles": [
+                "Deep Learning for RF Device Fingerprinting"
+            ]
+        },
+        {
+            "id": "RQ4",
+            "question": "What strategies mitigate overfitting in self-supervised frameworks for specific emitter identification with limited labeled data?",
+            "derived_from_gap": "Handling limited labeled data in SEI",
+            "derived_from_contribution": "",
+            "paper_titles": [
+                "A Self-Supervised Contrastive Framework for Specific Emitter Identification"
+            ]
+        },
+        {
+            "id": "RQ5",
+            "question": "How can adversarial robustness be achieved in RF fingerprinting systems operating in cognitive radio networks?",
+            "derived_from_gap": "Adversarial robustness in RF fingerprinting",
+            "derived_from_contribution": "",
+            "paper_titles": [
+                "Deep Learning for RF Device Fingerprinting"
+            ]
+        },
+        {
+            "id": "RQ6",
+            "question": "What techniques improve generalization of semantic segmentation models under varying scribble annotation quality?",
+            "derived_from_gap": "Generalization across varying scribble annotations",
+            "derived_from_contribution": "",
+            "paper_titles": [
+                "Scribble-Supervised Semantic Segmentation"
+            ]
+        }
+    ],
+    "secondary_research_questions": [
+        {
+            "id": "RQ7",
+            "question": "How does federated learning impact dataset diversity in crowdsourced RF signal aggregation?",
+            "derived_from_gap": "Scalable data collection for RF fingerprinting",
+            "derived_from_contribution": "Crowdsourced RF signal aggregation framework with device-agnostic data collection",
+            "paper_titles": []
+        },
+        {
+            "id": "RQ8",
+            "question": "What synthetic data augmentation techniques are most effective for cross-receiver adaptation in RF fingerprinting?",
+            "derived_from_gap": "Cross-receiver adaptation without source data",
+            "derived_from_contribution": "Privacy-preserving cross-receiver adaptation using meta-learning with synthetic data augmentation",
+            "paper_titles": []
+        },
+        {
+            "id": "RQ9",
+            "question": "How does combining signal analysis with behavioral patterns improve spoofing detection in dense device networks?",
+            "derived_from_gap": "Robustness against spoofing in large device populations",
+            "derived_from_contribution": "Hybrid signal-entropy analysis with device-specific behavioral fingerprinting",
+            "paper_titles": []
+        },
+        {
+            "id": "RQ10",
+            "question": "What role does virtual adversarial training play in fine-tuning self-supervised SEI models with sparse labels?",
+            "derived_from_gap": "Handling limited labeled data in SEI",
+            "derived_from_contribution": "Contrastive self-supervised pretraining with synthetic signal augmentation",
+            "paper_titles": []
+        },
+        {
+            "id": "RQ11",
+            "question": "How do frequency-domain perturbations affect adversarial robustness in RF fingerprinting models?",
+            "derived_from_gap": "Adversarial robustness in RF fingerprinting",
+            "derived_from_contribution": "Adversarial training with frequency-domain perturbation injection",
+            "paper_titles": []
+        },
+        {
+            "id": "RQ12",
+            "question": "What consistency loss functions optimize scribble-supervised segmentation under sparse annotations?",
+            "derived_from_gap": "Generalization across varying scribble annotations",
+            "derived_from_contribution": "Consistency-regularized scribble-supervised segmentation with uncertainty-aware sampling",
+            "paper_titles": []
+        }
+    ],
+    "novel_research_questions": [
+        {
+            "id": "RQ13",
+            "question": "How can incentive mechanisms drive user participation in decentralized RF signal aggregation frameworks?",
+            "derived_from_gap": "Scalable data collection for RF fingerprinting",
+            "derived_from_contribution": "Crowdsourced RF signal aggregation framework with device-agnostic data collection",
+            "paper_titles": []
+        },
+        {
+            "id": "RQ14",
+            "question": "What meta-learning architectures enable rapid cross-receiver adaptation with minimal synthetic data?",
+            "derived_from_gap": "Cross-receiver adaptation without source data",
+            "derived_from_contribution": "Privacy-preserving cross-receiver adaptation using meta-learning with synthetic data augmentation",
+            "paper_titles": []
+        },
+        {
+            "id": "RQ15",
+            "question": "How can entropy-based anomaly detection be integrated with behavioral fingerprinting for spoofing resistance?",
+            "derived_from_gap": "Robustness against spoofing in large device populations",
+            "derived_from_contribution": "Hybrid signal-entropy analysis with device-specific behavioral fingerprinting",
+            "paper_titles": []
+        },
+        {
+            "id": "RQ16",
+            "question": "What synthetic signal generation techniques maximize contrastive learning effectiveness in SEI pretraining?",
+            "derived_from_gap": "Handling limited labeled data in SEI",
+            "derived_from_contribution": "Contrastive self-supervised pretraining with synthetic signal augmentation",
+            "paper_titles": []
+        },
+        {
+            "id": "RQ17",
+            "question": "How can frequency-domain adversarial examples be designed to target RF fingerprinting models?",
+            "derived_from_gap": "Adversarial robustness in RF fingerprinting",
+            "derived_from_contribution": "Adversarial training with frequency-domain perturbation injection",
+            "paper_titles": []
+        },
+        {
+            "id": "RQ18",
+            "question": "What uncertainty-aware sampling strategies improve scribble-supervised segmentation under annotation variability?",
+            "derived_from_gap": "Generalization across varying scribble annotations",
+            "derived_from_contribution": "Consistency-regularized scribble-supervised segmentation with uncertainty-aware sampling",
+            "paper_titles": []
+        }
+    ]
+}

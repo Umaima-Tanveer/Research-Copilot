@@ -1,0 +1,171 @@
+{
+    "nodes": [
+        {
+            "id": "1",
+            "title": "Keystroke Dynamics: Concepts, Techniques, and Applications",
+            "year": 2025,
+            "dataset": "Includes novel keystroke datasets, touch screen/mobile device data, and benchmarking resources. Covers free-text, fixed-text, and semi-fixed-text keystroke data.",
+            "methodology": "A comprehensive survey of recent developments in keystroke dynamics research (2013–present), including datasets, algorithms, and applications. Articles were categorized by contributions to datasets, algorithms, feature engineering, mobile device integration, and applications.",
+            "task_type": "",
+            "contribution": "Provides a holistic review of keystroke dynamics, including datasets, algorithms, feature engineering, mobile device applications, and future research directions. Highlights gaps in prior surveys."
+        },
+        {
+            "id": "2",
+            "title": "Identifying Users’ Emotional States through Keystroke Dynamics",
+            "year": null,
+            "dataset": "EmoSurv dataset with 124 subjects, containing keystroke data and emotion labels (Anger, Happiness, Calmness, Sadness, Neutral State) collected via fixed/free text typing tasks and emotion-inducing videos.",
+            "methodology": "A time-windowing approach analyzes writing sessions in batches, enabling emotion recognition from short typing windows (e.g., 30 seconds) using features derived from dwell time, flight time, and key press patterns.",
+            "task_type": "Emotion Recognition",
+            "contribution": "Introduces time-windowing for KD-based emotion recognition and demonstrates its viability for social media applications with fast typing rhythms."
+        },
+        {
+            "id": "3",
+            "title": "Estimation of the User’s Emotional State by Keystroke Dynamics",
+            "year": null,
+            "dataset": "Fixed text from 'Alice’s Adventures in Wonderland' and free text input with periodic keystroke monitoring.",
+            "methodology": "Analyzes keystroke dynamics (timing and frequency parameters) to infer emotional states via fixed/free text input and user self-reports.",
+            "task_type": "Emotion Recognition",
+            "contribution": "Introduces keystroke dynamics as a non-intrusive, cost-effective method for emotion recognition in real-world applications."
+        },
+        {
+            "id": "4",
+            "title": "AN IMPROVED MODEL FOR EMOTION-AWARE COMPUTING DEVICES USING KEYSTROKE DYNAMICS AND SUPPORT VECTOR MACHINE",
+            "year": null,
+            "dataset": "Participants' keystrokes and self-reported emotional states from a field study.",
+            "methodology": "Keystroke dynamics analysis combined with SVM to create models for six emotional states. Field study collected keystroke data and self-reported emotional states for training.",
+            "task_type": "Emotion recognition",
+            "contribution": "Proposed an emotion-aware model using keystroke dynamics and SVM, providing recommendations for future research and data collection."
+        },
+        {
+            "id": "5",
+            "title": "The influence of emotion on keyboard typing: an experimental study using visual stimuli",
+            "year": 2014,
+            "dataset": "Keystroke data from 27 subjects under different emotional states induced by IAPS stimuli.",
+            "methodology": "Controlled experiment with IAPS-induced emotional states. Two-way Valence (3) × Arousal (3) ANOVAs analyzed keystroke data.",
+            "task_type": "Emotion Recognition",
+            "contribution": "Supports that keystroke duration, latency, and accuracy are influenced by emotions. Suggests personalized models could enhance emotion recognition."
+        }
+    ],
+    "edges": [
+        {
+            "paper1": "1",
+            "paper2": "2",
+            "relation": "improves",
+            "similarity": 0.6,
+            "reason": "Paper 2 applies keystroke dynamics methods (time-windowing, feature engineering) from Paper 1's survey to a specific task (emotion recognition), demonstrating practical application of the surveyed techniques.",
+            "shared_concepts": [
+                "keystroke dynamics",
+                "datasets",
+                "algorithms",
+                "feature engineering"
+            ]
+        },
+        {
+            "paper1": "1",
+            "paper2": "3",
+            "relation": "uses_same_method",
+            "similarity": 0.6,
+            "reason": "Both papers use keystroke dynamics as the core methodology, but paper2 applies it to emotion recognition while paper1 provides a broader survey of the field.",
+            "shared_concepts": [
+                "keystroke dynamics",
+                "emotion recognition",
+                "fixed-text data",
+                "free-text data"
+            ]
+        },
+        {
+            "paper1": "1",
+            "paper2": "4",
+            "relation": "uses_same_method",
+            "similarity": 0.5,
+            "reason": "Both papers focus on keystroke dynamics, with Paper 2 applying it to emotion recognition while Paper 1 provides a comprehensive survey of the field.",
+            "shared_concepts": [
+                "keystroke dynamics"
+            ]
+        },
+        {
+            "paper1": "1",
+            "paper2": "5",
+            "relation": "compares",
+            "similarity": 0.4,
+            "reason": "Paper 1 provides a broad survey of keystroke dynamics, including emotional influences on typing, while Paper 2 focuses on emotion-induced keystroke variations. They share concepts like keystroke dynamics and emotion recognition but differ in scope (survey vs. experimental study).",
+            "shared_concepts": [
+                "keystroke dynamics",
+                "emotion",
+                "keystroke data",
+                "emotion recognition"
+            ]
+        },
+        {
+            "paper1": "2",
+            "paper2": "3",
+            "relation": "compares",
+            "similarity": 0.6,
+            "reason": "Both papers address emotion recognition using keystroke dynamics (KD) but differ in methodology (time-windowing vs. general timing/frequency parameters), datasets (EmoSurv vs. literary text/free text), and specific contributions (time-windowing for social media vs. non-intrusive cost-effective method).",
+            "shared_concepts": [
+                "emotion recognition",
+                "keystroke dynamics",
+                "timing parameters",
+                "user emotional state"
+            ]
+        },
+        {
+            "paper1": "2",
+            "paper2": "4",
+            "relation": "uses_same_method",
+            "similarity": 0.6,
+            "reason": "Both papers use keystroke dynamics (KD) for emotion recognition, but differ in methodology (time-windowing vs. SVM). They share the core method of KD but apply distinct techniques.",
+            "shared_concepts": [
+                "keystroke dynamics",
+                "emotion recognition"
+            ]
+        },
+        {
+            "paper1": "2",
+            "paper2": "5",
+            "relation": "compares",
+            "similarity": 0.6,
+            "reason": "Both papers address emotion recognition via keystroke dynamics but employ distinct methodologies (time-windowing vs. ANOVA-based emotional state analysis) and datasets (EmoSurv vs. IAPS). Paper 1 focuses on temporal feature extraction for social media applications, while Paper 2 investigates emotional state impacts on keystroke metrics.",
+            "shared_concepts": [
+                "emotion recognition",
+                "keystroke dynamics",
+                "emotional states"
+            ]
+        },
+        {
+            "paper1": "3",
+            "paper2": "4",
+            "relation": "improves",
+            "similarity": 0.6,
+            "reason": "Paper 2 builds upon Paper 1's keystroke dynamics approach by integrating SVM for emotion recognition, demonstrating an enhanced methodology for emotion-aware computing.",
+            "shared_concepts": [
+                "keystroke dynamics",
+                "emotion recognition"
+            ]
+        },
+        {
+            "paper1": "3",
+            "paper2": "5",
+            "relation": "compares",
+            "similarity": 0.6,
+            "reason": "Both papers address emotion recognition using keystroke dynamics but employ different methodologies (analyzing existing data vs. controlled experiments) and datasets (literary text vs. IAPS stimuli).",
+            "shared_concepts": [
+                "Emotion Recognition",
+                "Keystroke Dynamics"
+            ]
+        },
+        {
+            "paper1": "4",
+            "paper2": "5",
+            "relation": "compares",
+            "similarity": 0.65,
+            "reason": "Both papers address emotion recognition using keystroke dynamics, but differ in methodology (field study vs. controlled experiment) and focus (model development vs. behavioral analysis).",
+            "shared_concepts": [
+                "keystroke dynamics",
+                "emotion recognition",
+                "emotional states",
+                "keystroke data"
+            ]
+        }
+    ]
+}

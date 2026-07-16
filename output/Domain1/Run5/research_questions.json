@@ -1,0 +1,111 @@
+{
+    "primary_research_questions": [
+        {
+            "id": "RQ1",
+            "question": "How can we design a modular CNN architecture with protocol-agnostic feature extraction layers to enable cross-protocol RF fingerprinting?",
+            "derived_from_gap": "Generalizability of CNN-based frameworks to non-ZigBee wireless standards",
+            "derived_from_contribution": "Modular CNN architecture with protocol-agnostic feature extraction layers",
+            "paper_titles": [
+                "Deep Learning for RF Device Fingerprinting in Cognitive Communication Networks"
+            ]
+        },
+        {
+            "id": "RQ2",
+            "question": "What mechanisms can enhance the robustness of RF fingerprinting models against adversarial signal manipulation and spoofing attacks?",
+            "derived_from_gap": "Robustness against adversarial attacks in RF fingerprinting",
+            "derived_from_contribution": "Adversarial-aware CNN with dynamic frequency hopping",
+            "paper_titles": [
+                "Deep Learning for RF Device Fingerprinting in Cognitive Communication Networks",
+                "Few-Shot Specific Emitter Identification via Deep Metric Ensemble Learning"
+            ]
+        },
+        {
+            "id": "RQ3",
+            "question": "How can semi-supervised learning be integrated with real-time signal processing to achieve low-latency RF fingerprinting in resource-constrained environments?",
+            "derived_from_gap": "Integration of semi-supervised learning with real-time signal processing",
+            "derived_from_contribution": "Lightweight semi-supervised CNN with temporal consistency constraints",
+            "paper_titles": [
+                "Semi-Supervised RF Fingerprinting with Consistency-Based Regularization"
+            ]
+        },
+        {
+            "id": "RQ4",
+            "question": "What cross-protocol meta-architecture can unify RF fingerprinting analysis across diverse wireless standards through standardized feature representation?",
+            "derived_from_gap": "Unified framework for cross-protocol RF fingerprinting analysis",
+            "derived_from_contribution": "Cross-protocol meta-architecture with standardized feature representation",
+            "paper_titles": [
+                "Deep Learning for RF Device Fingerprinting in Cognitive Communication Networks",
+                "Release Note: WiFi RF Datasets for Device Fingerprinting Using Deep Learning"
+            ]
+        },
+        {
+            "id": "RQ5",
+            "question": "How can an open-source multi-protocol RF dataset be constructed to enable benchmarking of cross-protocol generalization and fairness in RF fingerprinting?",
+            "derived_from_gap": "Diverse dataset collection for non-WiFi/non-ZigBee protocols",
+            "derived_from_contribution": "Open-source multi-protocol RF dataset with standardized metadata",
+            "paper_titles": [
+                "Release Note: WiFi RF Datasets for Device Fingerprinting Using Deep Learning"
+            ]
+        }
+    ],
+    "secondary_research_questions": [
+        {
+            "id": "RQ6",
+            "question": "What adaptive pooling strategies can improve protocol-agnostic feature extraction in CNNs for non-ZigBee wireless standards?",
+            "derived_from_gap": "Generalizability of CNN-based frameworks to non-ZigBee wireless standards",
+            "derived_from_contribution": "Modular CNN architecture with protocol-agnostic feature extraction layers",
+            "paper_titles": []
+        },
+        {
+            "id": "RQ7",
+            "question": "How can dynamic frequency hopping be optimized to disrupt adversarial signal patterns in RF fingerprinting systems?",
+            "derived_from_gap": "Robustness against adversarial attacks in RF fingerprinting",
+            "derived_from_contribution": "Adversarial-aware CNN with dynamic frequency hopping",
+            "paper_titles": []
+        },
+        {
+            "id": "RQ8",
+            "question": "What temporal consistency loss functions can enhance semi-supervised CNN performance in real-time RF signal processing?",
+            "derived_from_gap": "Integration of semi-supervised learning with real-time signal processing",
+            "derived_from_contribution": "Lightweight semi-supervised CNN with temporal consistency constraints",
+            "paper_titles": []
+        },
+        {
+            "id": "RQ9",
+            "question": "How can autoencoders be leveraged to create a shared latent space for cross-protocol RF signal comparison?",
+            "derived_from_gap": "Unified framework for cross-protocol RF fingerprinting analysis",
+            "derived_from_contribution": "Cross-protocol meta-architecture with standardized feature representation",
+            "paper_titles": []
+        },
+        {
+            "id": "RQ10",
+            "question": "What metadata standards can ensure reproducibility and comparability of multi-protocol RF datasets?",
+            "derived_from_gap": "Diverse dataset collection for non-WiFi/non-ZigBee protocols",
+            "derived_from_contribution": "Open-source multi-protocol RF dataset with standardized metadata",
+            "paper_titles": []
+        }
+    ],
+    "novel_research_questions": [
+        {
+            "id": "RQ11",
+            "question": "What edge computing optimizations can enable lightweight semi-supervised CNN deployment for real-time RF fingerprinting?",
+            "derived_from_gap": "Integration of semi-supervised learning with real-time signal processing",
+            "derived_from_contribution": "Lightweight semi-supervised CNN with temporal consistency constraints",
+            "paper_titles": []
+        },
+        {
+            "id": "RQ12",
+            "question": "How can adversarial training with gradient masking be implemented to improve spoofing resistance in RF fingerprinting models?",
+            "derived_from_gap": "Robustness against adversarial attacks in RF fingerprinting",
+            "derived_from_contribution": "Adversarial-aware CNN with dynamic frequency hopping",
+            "paper_titles": []
+        },
+        {
+            "id": "RQ13",
+            "question": "What cross-protocol benchmarking metrics can evaluate the fairness and generalization of RF fingerprinting models across wireless standards?",
+            "derived_from_gap": "Unified framework for cross-protocol RF fingerprinting analysis",
+            "derived_from_contribution": "Cross-protocol meta-architecture with standardized feature representation",
+            "paper_titles": []
+        }
+    ]
+}

@@ -1,0 +1,65 @@
+{
+    "methodological": [
+        {
+            "gap": "Scalability and environmental robustness of neural network-based SEI",
+            "impact": "High",
+            "reason": "NN-based SEI requires refinement for large-scale systems due to environmental factors and scalability challenges",
+            "papers": [
+                "Groundwork for Neural Network-Based Specific Emitter Identification Authentication for IoT"
+            ]
+        },
+        {
+            "gap": "Self-supervised methods for data scarcity and domain shifts",
+            "impact": "High",
+            "reason": "Traditional supervised methods degrade under dynamic IoT conditions with limited labeled data and domain shifts",
+            "papers": [
+                "A Self-supervised Framework for Generalized RF Fingerprinting and Zero-shot Anomaly Detection in Dynamic IoT Networks"
+            ]
+        },
+        {
+            "gap": "Robustness against noise and broader device compatibility",
+            "impact": "High",
+            "reason": "Hardware-specific transient signals and FrFT processing vulnerabilities limit noise resilience and device generalization",
+            "papers": [
+                "Improving Wireless Network Security Based On Radio Fingerprinting"
+            ]
+        },
+        {
+            "gap": "Distinguishing identical transmitters in dynamic environments",
+            "impact": "High",
+            "reason": "Steady-state features are needed to differentiate identical transmitters without manual tuning",
+            "papers": [
+                "Radio Transmitter Fingerprinting: A Steady State Frequency Domain Approach"
+            ]
+        }
+    ],
+    "theoretical": [
+        {
+            "gap": "Generalizability across hardware platforms",
+            "impact": "High",
+            "reason": "Hardware-specific RF characteristics limit cross-device applicability of lightweight CNN models",
+            "papers": [
+                "Zigbee Device Identification Using Lightweight CNN"
+            ]
+        }
+    ],
+    "application": [
+        {
+            "gap": "Integration with existing security protocols",
+            "impact": "High",
+            "reason": "NN-based SEI and RF fingerprinting require protocol integration for practical IoT authentication",
+            "papers": [
+                "Groundwork for Neural Network-Based Specific Emitter Identification Authentication for IoT",
+                "Improving Wireless Network Security Based On Radio Fingerprinting"
+            ]
+        },
+        {
+            "gap": "Federated learning and spectrum awareness systems",
+            "impact": "High",
+            "reason": "Scalable, privacy-preserving frameworks are needed for edge device collaboration and network monitoring",
+            "papers": [
+                "A Self-supervised Framework for Generalized RF Fingerprinting and Zero-shot Anomaly Detection in Dynamic IoT Networks"
+            ]
+        }
+    ]
+}

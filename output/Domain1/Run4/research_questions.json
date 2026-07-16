@@ -1,0 +1,143 @@
+{
+    "primary_research_questions": [
+        {
+            "id": "RQ1",
+            "question": "How can a physics-informed moment analysis framework be developed to quantify the impact of hardware imperfections on moment-based signal signatures?",
+            "derived_from_gap": "Lack of mechanistic explanation for moment-based features",
+            "derived_from_contribution": "Physics-informed moment analysis framework",
+            "paper_titles": [
+                "Paper 1"
+            ]
+        },
+        {
+            "id": "RQ2",
+            "question": "What neural architecture can achieve hardware-agnostic feature disentanglement through adversarial training with domain-invariant constraints?",
+            "derived_from_gap": "Limited generalization across hardware/configurations",
+            "derived_from_contribution": "Hardware-agnostic feature disentanglement network",
+            "paper_titles": [
+                "Paper 2"
+            ]
+        },
+        {
+            "id": "RQ3",
+            "question": "How can a hybrid signal analysis framework dynamically switch between steady-state and transient signal processing using reinforcement learning?",
+            "derived_from_gap": "Reliance on steady-state signals with limited discriminability",
+            "derived_from_contribution": "Dynamic signal mode selection algorithm",
+            "paper_titles": [
+                "Paper 3"
+            ]
+        },
+        {
+            "id": "RQ4",
+            "question": "What deep learning architecture can enhance transient feature robustness at low SNR through noise injection and adaptive filtering?",
+            "derived_from_gap": "Hardware-specific transient signals and low SNR vulnerabilities",
+            "derived_from_contribution": "Noise-aware transient feature extraction",
+            "paper_titles": [
+                "Paper 4"
+            ]
+        },
+        {
+            "id": "RQ5",
+            "question": "How can a long-term channel state prediction model using LSTM networks improve adaptive feature extraction in dynamic environments?",
+            "derived_from_gap": "Assumptions about short-term channel stability",
+            "derived_from_contribution": "Long-term channel state prediction model",
+            "paper_titles": [
+                "Paper 5"
+            ]
+        },
+        {
+            "id": "RQ6",
+            "question": "What multi-scale feature fusion architecture can prioritize informative features at low SNR using attention mechanisms?",
+            "derived_from_gap": "Need for robustness at low SNR",
+            "derived_from_contribution": "Multi-scale feature fusion architecture",
+            "paper_titles": [
+                "Paper 3"
+            ]
+        }
+    ],
+    "secondary_research_questions": [
+        {
+            "id": "RQ7",
+            "question": "How can differential equations model the relationship between intentional/unintentional modulation and moment distribution distortions?",
+            "derived_from_gap": "Lack of mechanistic explanation for moment-based features",
+            "derived_from_contribution": "Physics-informed moment analysis framework",
+            "paper_titles": [
+                "Paper 1"
+            ]
+        },
+        {
+            "id": "RQ8",
+            "question": "What metrics can evaluate the effectiveness of adversarial training in separating device-specific features from configuration artifacts?",
+            "derived_from_gap": "Limited generalization across hardware/configurations",
+            "derived_from_contribution": "Hardware-agnostic feature disentanglement network",
+            "paper_titles": [
+                "Paper 2"
+            ]
+        },
+        {
+            "id": "RQ9",
+            "question": "How can reinforcement learning parameters be optimized to maximize discriminability in mixed signal environments?",
+            "derived_from_gap": "Reliance on steady-state signals with limited discriminability",
+            "derived_from_contribution": "Dynamic signal mode selection algorithm",
+            "paper_titles": [
+                "Paper 3"
+            ]
+        },
+        {
+            "id": "RQ10",
+            "question": "What adaptive filtering techniques can preserve signal characteristics while mitigating low SNR noise in transient features?",
+            "derived_from_gap": "Hardware-specific transient signals and low SNR vulnerabilities",
+            "derived_from_contribution": "Noise-aware transient feature extraction",
+            "paper_titles": [
+                "Paper 4"
+            ]
+        },
+        {
+            "id": "RQ11",
+            "question": "How can LSTM networks be integrated with channel state estimation techniques for accurate long-term prediction?",
+            "derived_from_gap": "Assumptions about short-term channel stability",
+            "derived_from_contribution": "Long-term channel state prediction model",
+            "paper_titles": [
+                "Paper 5"
+            ]
+        },
+        {
+            "id": "RQ12",
+            "question": "What attention mechanisms can dynamically prioritize multi-scale features for low SNR signal identification?",
+            "derived_from_gap": "Need for robustness at low SNR",
+            "derived_from_contribution": "Multi-scale feature fusion architecture",
+            "paper_titles": [
+                "Paper 3"
+            ]
+        }
+    ],
+    "novel_research_questions": [
+        {
+            "id": "RQ13",
+            "question": "How can physics-informed models be combined with machine learning to enable predictive feature engineering for cross-device generalization?",
+            "derived_from_gap": "Lack of mechanistic explanation for moment-based features",
+            "derived_from_contribution": "Physics-informed moment analysis framework",
+            "paper_titles": [
+                "Paper 1"
+            ]
+        },
+        {
+            "id": "RQ14",
+            "question": "What hybrid framework can integrate adversarial disentanglement with hardware metadata processing for cross-vendor device identification?",
+            "derived_from_gap": "Limited generalization across hardware/configurations",
+            "derived_from_contribution": "Hardware-agnostic feature disentanglement network",
+            "paper_titles": [
+                "Paper 2"
+            ]
+        },
+        {
+            "id": "RQ15",
+            "question": "How can reinforcement learning be extended to optimize hybrid signal analysis frameworks for real-time adaptive identification?",
+            "derived_from_gap": "Reliance on steady-state signals with limited discriminability",
+            "derived_from_contribution": "Dynamic signal mode selection algorithm",
+            "paper_titles": [
+                "Paper 3"
+            ]
+        }
+    ]
+}

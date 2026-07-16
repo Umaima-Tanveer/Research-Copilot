@@ -1,0 +1,175 @@
+{
+    "nodes": [
+        {
+            "id": "1",
+            "title": "A novel framework for extracting moment-based fingerprint features in specific emitter identification",
+            "year": null,
+            "dataset": "",
+            "methodology": "Analytical investigation of intentional/unintentional modulation effects on moments. Framework involves fine-segmenting signals, calculating moments, and designing features through signal decomposition into sinewaves.",
+            "task_type": "Specific Emitter Identification",
+            "contribution": "Theoretical analysis of IM/UIM mechanisms, first comprehensive framework for designing moment-based fingerprint features, and improved SEI generalization capabilities."
+        },
+        {
+            "id": "2",
+            "title": "ADL-ID: Adversarial Disentanglement Learning for Wireless Device Fingerprinting Temporal Domain Adaptation",
+            "year": null,
+            "dataset": "Real LoRa and WiFi datasets; 2.1TB WiFi 802.11b dataset from 50 Pycom devices over 5 days (indoor/outdoor).",
+            "methodology": "ADL-ID uses adversarial disentanglement to separate device-specific (RFFs) and domain-specific features, leveraging only domain-invariant features for classification.",
+            "task_type": "Domain Adaptation",
+            "contribution": "Proposed ADL-ID framework for temporal domain adaptation; released first large-scale WiFi 802.11b RFFP dataset for research."
+        },
+        {
+            "id": "3",
+            "title": "Radio Transmitter Fingerprinting: A Steady State Frequency Domain Approach",
+            "year": null,
+            "dataset": "Eight identical USRP transmitters with 1MHz bandwidth preambles at 2.4-2.5GHz, using UMTS RACH protocol for signal generation.",
+            "methodology": "Combines frequency domain analysis with k-NN classifiers to extract log-spectral-energy features from steady-state signal preambles, avoiding transient analysis complexities.",
+            "task_type": "Classification",
+            "contribution": "Proposes steady-state frequency domain analysis with k-NN classifiers for RF fingerprinting, enabling scalable and cost-effective transmitter identification."
+        },
+        {
+            "id": "4",
+            "title": "Improving Wireless Network Security Based On Radio Fingerprinting",
+            "year": null,
+            "dataset": "10 Motorola walkie-talkies for signal collection and identification.",
+            "methodology": "Fractional Fourier Transform (FrFT) for transient signal feature extraction, Robust Principal Component Analysis (RPCA) for dimensionality reduction, and K-Nearest Neighbor (KNN) for classification.",
+            "task_type": "Device Identification",
+            "contribution": "Proposed a novel radio frequency fingerprint extraction method combining FrFT, RPCA, and KNN for secure wireless device identification."
+        },
+        {
+            "id": "5",
+            "title": "",
+            "year": null,
+            "dataset": "Public LoRa dataset [9] and self-collected LoRa dataset with 10 devices, tested in static, mobile, LOS, and NLOS environments.",
+            "methodology": "Contrastive learning with data augmentation techniques is employed to mitigate channel impacts. Spectrogram analysis and channel-independent features are leveraged for device identification.",
+            "task_type": "Classification",
+            "contribution": "Proposed a contrastive learning-based RFFI system with channel-robust spectrogram analysis, created a LoRa dataset for mobile scenarios, and validated performance across real-world environments."
+        }
+    ],
+    "edges": [
+        {
+            "paper1": "1",
+            "paper2": "2",
+            "relation": "compares",
+            "similarity": 0.5,
+            "reason": "Both papers address wireless device fingerprinting but focus on different aspects: Paper 1 targets specific emitter identification via moment-based features, while Paper 2 focuses on domain adaptation using adversarial disentanglement. They share conceptual overlap in device fingerprinting but employ distinct methodologies.",
+            "shared_concepts": [
+                "device fingerprinting",
+                "specific emitter identification",
+                "domain adaptation",
+                "adversarial disentanglement",
+                "moment-based features"
+            ]
+        },
+        {
+            "paper1": "1",
+            "paper2": "3",
+            "relation": "compares",
+            "similarity": 0.4,
+            "reason": "Both papers address RF fingerprinting for transmitter identification but employ distinct methodologies. Paper 1 focuses on moment-based features and signal decomposition, while Paper 2 uses steady-state frequency domain analysis with k-NN classifiers. They share the task of classification/SEI but differ in technical approaches.",
+            "shared_concepts": [
+                "specific emitter identification",
+                "radio transmitter fingerprinting",
+                "signal analysis",
+                "feature extraction",
+                "classification",
+                "RF fingerprinting"
+            ]
+        },
+        {
+            "paper1": "1",
+            "paper2": "4",
+            "relation": "compares",
+            "similarity": 0.4,
+            "reason": "Both papers address radio fingerprinting for device/emitter identification but employ distinct methodologies (moment-based features vs. FrFT/RPCA/KNN) and target slightly different tasks (Specific Emitter Identification vs. Device Identification).",
+            "shared_concepts": [
+                "radio fingerprinting",
+                "signal processing",
+                "identification",
+                "wireless security"
+            ]
+        },
+        {
+            "paper1": "1",
+            "paper2": "5",
+            "relation": "compares",
+            "similarity": 0.4,
+            "reason": "Both papers address emitter/device identification but employ distinct methodologies (moment-based features vs. contrastive learning with spectrogram analysis). Paper1 focuses on theoretical analysis of modulation effects, while Paper2 emphasizes channel-robust feature extraction and real-world validation.",
+            "shared_concepts": [
+                "Specific Emitter Identification",
+                "device identification",
+                "signal analysis",
+                "feature extraction"
+            ]
+        },
+        {
+            "paper1": "2",
+            "paper2": "3",
+            "relation": "unrelated",
+            "similarity": 0.2,
+            "reason": "Paper1 focuses on temporal domain adaptation using adversarial disentanglement for device fingerprinting, while Paper2 employs steady-state frequency domain analysis with k-NN for classification. They differ in methodology, task (domain adaptation vs. classification), and datasets (WiFi 802.11b vs. USRP transmitters).",
+            "shared_concepts": [
+                "Radio Transmitter Fingerprinting",
+                "Wireless Device Fingerprinting",
+                "RF fingerprinting"
+            ]
+        },
+        {
+            "paper1": "2",
+            "paper2": "4",
+            "relation": "unrelated",
+            "similarity": 0.2,
+            "reason": "Paper1 focuses on temporal domain adaptation using adversarial disentanglement, while Paper2 addresses device identification with FrFT/RPCA/KNN. They differ in methodology, dataset, task, and contribution, with no direct overlap in techniques or objectives.",
+            "shared_concepts": [
+                "radio fingerprinting",
+                "wireless security"
+            ]
+        },
+        {
+            "paper1": "2",
+            "paper2": "5",
+            "relation": "compares",
+            "similarity": 0.4,
+            "reason": "Both papers address wireless device fingerprinting but employ different methodologies (adversarial disentanglement vs. contrastive learning) and tasks (domain adaptation vs. classification). They share the LoRa dataset and focus on channel-robust device identification.",
+            "shared_concepts": [
+                "Wireless Device Fingerprinting",
+                "LoRa Dataset"
+            ]
+        },
+        {
+            "paper1": "3",
+            "paper2": "4",
+            "relation": "compares",
+            "similarity": 0.4,
+            "reason": "Both papers address radio fingerprinting for device identification but employ distinct methodologies (steady-state frequency domain vs. transient FrFT-based features) and different datasets (USRP transmitters vs. Motorola walkie-talkies).",
+            "shared_concepts": [
+                "radio fingerprinting",
+                "K-NN",
+                "device identification"
+            ]
+        },
+        {
+            "paper1": "3",
+            "paper2": "5",
+            "relation": "compares",
+            "similarity": 0.4,
+            "reason": "Both papers address radio frequency fingerprinting (RFFI) for transmitter identification, but employ distinct methodologies (steady-state frequency domain analysis vs. contrastive learning with spectrogram analysis) and different datasets (USRP transmitters vs. LoRa datasets).",
+            "shared_concepts": [
+                "Radio Frequency Fingerprinting (RFFI)",
+                "Classification",
+                "Dataset"
+            ]
+        },
+        {
+            "paper1": "4",
+            "paper2": "5",
+            "relation": "compares",
+            "similarity": 0.5,
+            "reason": "Both papers address device identification using radio fingerprinting techniques but employ distinct methodologies (FrFT/RPCA/KNN vs. contrastive learning/spectrogram analysis). They share the task of device identification and radio fingerprinting concepts but differ in technical approaches and datasets.",
+            "shared_concepts": [
+                "device identification",
+                "radio fingerprinting"
+            ]
+        }
+    ]
+}

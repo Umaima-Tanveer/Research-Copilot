@@ -1,0 +1,62 @@
+{
+    "methodological": [
+        {
+            "gap": "Adaptive PHY layer methods for IIoT authentication",
+            "impact": "High",
+            "reason": "Current solutions lack flexibility to address heterogeneous environments and dynamic threats.",
+            "papers": [
+                "Work In Progress: Towards Adaptive RF Fingerprint-based Authentication of IIoT devices"
+            ]
+        },
+        {
+            "gap": "Robust methods under varying channel conditions",
+            "impact": "High",
+            "reason": "Existing signal space-based methods fail in non-line-of-sight scenarios, limiting real-world deployment.",
+            "papers": [
+                "DeepCRF: Deep Learning-Enhanced CSI-Based RF Fingerprinting for Channel-Resilient WiFi Device Identification"
+            ]
+        },
+        {
+            "gap": "Federated learning for data scarcity in RFFI",
+            "impact": "High",
+            "reason": "Lack of scalable, privacy-preserving frameworks to address limited training data in IoT networks.",
+            "papers": [
+                "Federated Radio Frequency Fingerprint Identification Powered by Unsupervised Contrastive Learning"
+            ]
+        },
+        {
+            "gap": "Handling uncontrolled hardware variability",
+            "impact": "High",
+            "reason": "Dependence on controlled hardware assumptions limits scalability and adaptability in IoT environments.",
+            "papers": [
+                "RF eigenﬁngerprints, an Efﬁcient RF Fingerprinting Method in IoT Context"
+            ]
+        },
+        {
+            "gap": "Security in federated RFFI systems",
+            "impact": "High",
+            "reason": "Previous systems lack trainability, scalability, and security due to labeled data dependency and model aggregation challenges.",
+            "papers": [
+                "Federated Radio Frequency Fingerprint Identification Powered by Unsupervised Contrastive Learning"
+            ]
+        },
+        {
+            "gap": "Real-time adaptation in AI/ML strategies",
+            "impact": "High",
+            "reason": "Need for dynamic, context-aware models to respond to evolving threats in IIoT ecosystems.",
+            "papers": [
+                "Work In Progress: Towards Adaptive RF Fingerprint-based Authentication of IIoT devices"
+            ]
+        }
+    ],
+    "empirical": [
+        {
+            "gap": "Comprehensive datasets for same-model device identification",
+            "impact": "High",
+            "reason": "Limited homogeneous datasets hinder research on distinguishing devices with minimal hardware variations.",
+            "papers": [
+                "DeepCRF: Deep Learning-Enhanced CSI-Based RF Fingerprinting for Channel-Resilient WiFi Device Identification"
+            ]
+        }
+    ]
+}

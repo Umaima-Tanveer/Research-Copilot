@@ -1,0 +1,129 @@
+{
+    "primary_research_questions": [
+        {
+            "id": "RQ1",
+            "question": "How can transformer-based temporal modeling frameworks enhance the accuracy of keystroke dynamics analysis for real-time emotion recognition?",
+            "derived_from_gap": "Lack of comprehensive coverage of emerging trends beyond 2022",
+            "derived_from_contribution": "Framework for AI-driven keystroke dynamics analysis integrating transformer-based temporal modeling",
+            "paper_titles": [
+                "Keystroke Dynamics: Concepts, Techniques, and Applications"
+            ]
+        },
+        {
+            "id": "RQ2",
+            "question": "What are the optimal methods for integrating galvanic skin response and electrocardiogram signals with keystroke dynamics to reduce reliance on self-reported emotional states?",
+            "derived_from_gap": "Reliance on self-reported emotional states",
+            "derived_from_contribution": "Physiological-keystroke fusion model for emotion recognition",
+            "paper_titles": [
+                "Estimation of the User’s Emotional State by Keystroke Dynamics"
+            ]
+        },
+        {
+            "id": "RQ3",
+            "question": "How can Bayesian hierarchical models with online learning improve personalized keystroke dynamics authentication while minimizing false positives?",
+            "derived_from_gap": "Need for personalized models to account for individual variability",
+            "derived_from_contribution": "Adaptive keystroke dynamics model with continuous user profiling",
+            "paper_titles": [
+                "The influence of emotion on keyboard typing: an experimental study using visual stimuli"
+            ]
+        },
+        {
+            "id": "RQ4",
+            "question": "What are the most effective cross-modal fusion techniques for combining keystroke dynamics with facial micro-expressions for emotion recognition?",
+            "derived_from_gap": "Need for multimodal data integration",
+            "derived_from_contribution": "Cross-modal emotion recognition system combining keystroke dynamics with facial micro-expressions",
+            "paper_titles": [
+                "Identifying Users’ Emotional States through Keystroke Dynamics"
+            ]
+        },
+        {
+            "id": "RQ5",
+            "question": "How can culture-specific embedding layers in transfer learning frameworks improve cross-cultural generalization of emotion recognition models?",
+            "derived_from_gap": "Cultural variability in emotional expressions",
+            "derived_from_contribution": "Culturally adaptive emotion recognition model with transfer learning",
+            "paper_titles": [
+                "AN IMPROVED MODEL FOR EMOTION-AWARE COMPUTING DEVICES USING KEYSTROKE DYNAMICS AND SUPPORT VECTOR MACHINE"
+            ]
+        },
+        {
+            "id": "RQ6",
+            "question": "What are the key factors in designing a cross-cultural keystroke dynamics benchmarking framework to enhance model generalization across diverse populations?",
+            "derived_from_gap": "Limited dataset diversity and real-world validation",
+            "derived_from_contribution": "Cross-cultural keystroke dynamics benchmarking framework",
+            "paper_titles": [
+                "Identifying Users’ Emotional States through Keystroke Dynamics"
+            ]
+        },
+        {
+            "id": "RQ7",
+            "question": "How can real-time mental health monitoring systems using keystroke dynamics be optimized for early detection of mental health deterioration?",
+            "derived_from_gap": "Expanded applications beyond authentication",
+            "derived_from_contribution": "Real-time mental health monitoring system using keystroke dynamics",
+            "paper_titles": [
+                "Keystroke Dynamics: Concepts, Techniques, and Applications"
+            ]
+        },
+        {
+            "id": "RQ8",
+            "question": "What are the technical challenges in implementing federated learning for multi-biometric emotion recognition while preserving data privacy?",
+            "derived_from_gap": "Integration with other biometrics and real-time emotion detection",
+            "derived_from_contribution": "Federated learning system for multi-biometric emotion recognition",
+            "paper_titles": [
+                "Estimation of the User’s Emotional State by Keystroke Dynamics"
+            ]
+        }
+    ],
+    "secondary_research_questions": [
+        {
+            "id": "RQ9",
+            "question": "How do attention mechanisms in transformer models affect the extraction of contextual features from multi-modal keystroke data streams?",
+            "derived_from_gap": "Lack of comprehensive coverage of emerging trends beyond 2022",
+            "derived_from_contribution": "Framework for AI-driven keystroke dynamics analysis integrating transformer-based temporal modeling",
+            "paper_titles": []
+        },
+        {
+            "id": "RQ10",
+            "question": "What are the trade-offs between model accuracy and privacy preservation in federated learning systems for multi-biometric emotion recognition?",
+            "derived_from_gap": "Integration with other biometrics and real-time emotion detection",
+            "derived_from_contribution": "Federated learning system for multi-biometric emotion recognition",
+            "paper_titles": []
+        },
+        {
+            "id": "RQ11",
+            "question": "How can temporal convolutional networks be optimized to capture pattern evolution in personalized keystroke dynamics models?",
+            "derived_from_gap": "Need for personalized models to account for individual variability",
+            "derived_from_contribution": "Adaptive keystroke dynamics model with continuous user profiling",
+            "paper_titles": []
+        },
+        {
+            "id": "RQ12",
+            "question": "What are the most effective strategies for synchronizing keystroke features with facial expression analysis in cross-modal emotion recognition systems?",
+            "derived_from_gap": "Need for multimodal data integration",
+            "derived_from_contribution": "Cross-modal emotion recognition system combining keystroke dynamics with facial micro-expressions",
+            "paper_titles": []
+        },
+        {
+            "id": "RQ13",
+            "question": "How does the inclusion of contextual metadata (e.g., time of day, task type) impact the accuracy of real-time mental health monitoring systems?",
+            "derived_from_gap": "Expanded applications beyond authentication",
+            "derived_from_contribution": "Real-time mental health monitoring system using keystroke dynamics",
+            "paper_titles": []
+        }
+    ],
+    "novel_research_questions": [
+        {
+            "id": "RQ14",
+            "question": "How can spatial-temporal graph convolutional networks be adapted to synchronize keystroke dynamics with facial micro-expressions for robust emotion recognition?",
+            "derived_from_gap": "Need for multimodal data integration",
+            "derived_from_contribution": "Cross-modal emotion recognition system combining keystroke dynamics with facial micro-expressions",
+            "paper_titles": []
+        },
+        {
+            "id": "RQ15",
+            "question": "What are the technical and ethical implications of deploying a federated learning system for multi-biometric emotion recognition in real-world applications?",
+            "derived_from_gap": "Integration with other biometrics and real-time emotion detection",
+            "derived_from_contribution": "Federated learning system for multi-biometric emotion recognition",
+            "paper_titles": []
+        }
+    ]
+}

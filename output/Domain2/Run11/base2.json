@@ -1,0 +1,564 @@
+[
+    {
+        "paper_id": 1,
+        "filename": "1-s2.0-S1877050915032603-main.pdf",
+        "metadata": {
+            "title": "A Multimodal Approach To Detect User’s Emotion",
+            "authors": [
+                "Anil Kumar K M",
+                "Kiran B R",
+                "Shreyas B R",
+                "Sylvester J Victor"
+            ],
+            "year": "2015",
+            "venue": "Procedia Computer Science",
+            "doi": "10.1016/j.procs.2015.10.096",
+            "keywords": [
+                "Perceptual Computing",
+                "Multimodal Approach",
+                "Emotion Recognition",
+                "Heart Rate Variation",
+                "Semantic Analysis",
+                "Keystroke Dynamics"
+            ]
+        },
+        "abstract": "The paper presents a multimodal approach to detect user emotions by analyzing keystroke dynamics, text semantics, and heart rate variations. Experimental results demonstrate the effectiveness of integrating these elements for emotion detection.",
+        "research": {
+            "problem": "Detecting user emotions using multimodal data (keystroke dynamics, text analysis, and heart rate variation).",
+            "motivation": "Enhance systems like perceptual computing by enabling machines to adapt to user emotional states.",
+            "objective": "Propose a multimodal framework for emotion recognition through text, keystroke patterns, and physiological signals.",
+            "research_questions": []
+        },
+        "methodology": {
+            "summary": "Combines keystroke dynamics, text analysis (JAWS/NLTK), and heart rate variation (PPG) for emotion detection.",
+            "algorithms": [
+                "Java API for WordNet Searching (JAWS)",
+                "Natural Language ToolKit (NLTK)"
+            ],
+            "models": [],
+            "datasets": [
+                "ISEAR dataset (7666 sentences)",
+                "Product reviews (positive/negative)",
+                "GAPED and EmoMardrid image databases"
+            ],
+            "features": [
+                "Session time",
+                "Latency",
+                "Held time",
+                "Pause rate",
+                "Capitalization rate",
+                "Typing speed",
+                "Error frequency"
+            ],
+            "preprocessing": [
+                "Tokenization",
+                "Stemming",
+                "Stopword removal",
+                "Face detection (Viola-Jones)",
+                "Skin pixel filtering"
+            ],
+            "training_strategy": "Null",
+            "evaluation_metrics": []
+        },
+        "experiments": {
+            "experimental_setup": "Used webcam for PPG signal extraction, JAWS/NLTK for text analysis, and standardized datasets for emotion classification.",
+            "baselines": [],
+            "results": "NLTK approach outperformed JAWS in emotion intensity detection. Heart rate variation correlated with emotional states.",
+            "performance": {
+                "accuracy": "Null",
+                "precision": "Null",
+                "recall": "Null",
+                "f1": "Null",
+                "auc": "Null"
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "First multimodal integration of keystroke dynamics, text semantics, and heart rate for emotion detection"
+            ],
+            "advantages": [
+                "Robustness through multi-sensor fusion",
+                "Non-intrusive physiological signal analysis"
+            ],
+            "limitations": [
+                "Dependence on specific datasets",
+                "Limited real-time processing capabilities"
+            ],
+            "future_work": [
+                "Expanding emotion categories",
+                "Improving real-time physiological signal analysis"
+            ],
+            "applications": [
+                "Perceptual computing systems",
+                "User experience optimization"
+            ],
+            "research_gap": "Complexity of human emotions requires more nuanced classification frameworks."
+        },
+        "sections": {
+            "introduction": "Emotions influence behavior and require machine adaptation. The paper proposes a multimodal system to detect user emotions through text, keystroke patterns, and physiological signals.",
+            "related_work": "Existing work focuses on text-based emotion detection. This paper introduces a multimodal approach combining keystroke dynamics and physiological signals.",
+            "methodology": "Keystroke dynamics (session time, latency), text analysis (JAWS/NLTK), and heart rate variation (PPG) are integrated for emotion detection.",
+            "results": "NLTK outperformed JAWS in text analysis. Heart rate variation correlated with emotional states across datasets.",
+            "discussion": "Multimodal integration improves detection accuracy. Challenges include physiological signal noise and text ambiguity.",
+            "conclusion": "The proposed system demonstrates effective emotion detection through multimodal analysis, with potential applications in adaptive computing systems."
+        }
+    },
+    {
+        "paper_id": 2,
+        "filename": "Recognising_Emotions_from_Keyboard_Strok.pdf",
+        "metadata": {
+            "title": "Recognising Emotions from Keyboard Stroke Pattern",
+            "authors": [
+                "Preeti Khanna",
+                "M.Sasikumar"
+            ],
+            "year": "2010",
+            "venue": "International Journal of Computer Applications",
+            "doi": null,
+            "keywords": [
+                "emotion categories",
+                "human computer interaction",
+                "classification algorithms",
+                "empirical study"
+            ]
+        },
+        "abstract": "The paper explores recognizing emotional states (neutral, positive, negative) from keyboard stroke patterns using classifiers like Simple Logistics, SMO, and Multilayer Perceptron. It emphasizes the role of emotions in human-computer interaction and validates results through empirical studies with 300 participants.",
+        "research": {
+            "problem": "Recognizing emotional states from keyboard interaction patterns.",
+            "motivation": "Enhance human-computer interaction by understanding user emotions through non-verbal behavioral cues.",
+            "objective": "Analyze keyboard stroke data to classify emotional states and evaluate classifier performance.",
+            "research_questions": [
+                "How do emotional states affect typing patterns?",
+                "Which classifiers best predict emotional categories from keyboard data?"
+            ]
+        },
+        "methodology": {
+            "summary": "Used WEKA classifiers to analyze features extracted from keyboard stroke data, correlating typing patterns with self-reported emotional states.",
+            "algorithms": [
+                "Simple Logistics",
+                "SMO",
+                "Multilayer Perceptron",
+                "Random Tree",
+                "J48",
+                "BF Tree"
+            ],
+            "models": [],
+            "datasets": [
+                "300 participants' typing data (41 used in experiments)"
+            ],
+            "features": [
+                "Typing speed",
+                "Standard deviation of characters per 5s",
+                "Backspace count",
+                "Idle time"
+            ],
+            "preprocessing": [
+                "Captured keystroke timing data",
+                "Mapped emotional states to typing patterns"
+            ],
+            "training_strategy": "Used WEKA for feature analysis and classifier evaluation.",
+            "evaluation_metrics": [
+                "Recognition rates for negative/positive vs neutral states"
+            ]
+        },
+        "experiments": {
+            "experimental_setup": "300 participants (45% female, 55% male) typed predefined paragraphs while reporting emotional states. 41 users provided typed data for analysis.",
+            "baselines": [
+                "Simple Logistics",
+                "SMO",
+                "Multilayer Perceptron",
+                "Random Tree",
+                "J48",
+                "BF Tree"
+            ],
+            "results": "BF Tree achieved 89.02% recognition for negative vs neutral, J48 88.88% for positive vs neutral. Negative states showed clearer typing pattern differences.",
+            "performance": {
+                "accuracy": "89.02%",
+                "precision": null,
+                "recall": null,
+                "f1": null,
+                "auc": null
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Demonstrated keyboard stroke patterns as a viable modality for emotion recognition",
+                "Validated classifier effectiveness for emotional state classification"
+            ],
+            "advantages": [
+                "Non-intrusive data collection",
+                "Cost-effective compared to audio/visual modalities"
+            ],
+            "limitations": [
+                "Self-reported emotional states may introduce bias",
+                "Limited sample size (41 participants)"
+            ],
+            "future_work": [
+                "Integrate Self-Assessment Manikin (SAM) for emotion measurement",
+                "Expand dataset for improved reliability"
+            ],
+            "applications": [
+                "E-learning systems",
+                "Adaptive user interfaces",
+                "Emotion-aware virtual environments"
+            ],
+            "research_gap": "Need for robust methods to handle inconsistent data and cross-modal emotion recognition"
+        },
+        "sections": {
+            "introduction": "Highlights the importance of emotions in decision-making and interaction, proposing keyboard stroke analysis as a novel approach for emotion recognition.",
+            "related_work": "Reviews studies on facial expressions, audio, and gesture-based emotion recognition, noting limited research on keyboard modalities.",
+            "methodology": "Describes data collection from participants typing predefined texts and feature extraction using WEKA classifiers.",
+            "results": "Presents classification accuracy rates for negative/positive vs neutral states across six algorithms.",
+            "discussion": "Analyzes how emotional states influence typing patterns (e.g., reduced speed for negative states, increased speed for positive states).",
+            "conclusion": "Summarizes keyboard stroke patterns as a feasible method for emotion recognition, emphasizing the need for larger datasets and multimodal approaches."
+        }
+    },
+    {
+        "paper_id": 3,
+        "filename": "2020_Does_Keystroke_Dynamics_tell_us_about_Emotions_A_Systematic_Literature_Review_and_Dataset_Construction.pdf",
+        "metadata": {
+            "title": "Does Keystroke Dynamics tell us about Emotions? A Systematic Literature Review and Dataset Construction",
+            "authors": [
+                "Aicha Maalej",
+                "Ilhem Kallel"
+            ],
+            "year": "2020",
+            "venue": "IEEE",
+            "doi": null,
+            "keywords": [
+                "HCI",
+                "keystroke dynamics",
+                "emotion recognition",
+                "data collection",
+                "web application",
+                "Systematic Literature Review (SLR)"
+            ]
+        },
+        "abstract": "The paper investigates how keystroke dynamics can be used for emotion recognition through a systematic literature review. It highlights the effectiveness of keystroke biometrics in identifying emotional states, summarizes data acquisition methods, features, classification techniques, and performance metrics. The authors construct a new dataset via an interactive web application to address the scarcity of emotion recognition datasets in this domain.",
+        "research": {
+            "problem": "Understanding human emotions in Human-Computer Interaction (HCI) to improve system performance and decision-making.",
+            "motivation": "Emotional states significantly impact human behavior and interactions, necessitating robust emotion recognition methods for intelligent systems.",
+            "objective": "Systematically evaluate keystroke dynamics for emotion recognition and construct a new dataset to advance research in this area.",
+            "research_questions": [
+                "What are the trends in online emotion recognition technologies?",
+                "Keystroke dynamics in emotion recognition: applications, strengths, and weaknesses?",
+                "What features are extracted from typing rhythms?",
+                "Which classification techniques are used for emotion recognition?",
+                "What evaluation measures and performance metrics are employed?",
+                "What existing datasets are available for emotion recognition through keystroke dynamics?"
+            ]
+        },
+        "methodology": {
+            "summary": "A systematic literature review (SLR) was conducted following Kitchenham and Charters' guidelines, with defined inclusion/exclusion criteria and search strategies.",
+            "algorithms": [
+                "Support Vector Machine (SVM)",
+                "K-Nearest Neighbor (KNN)",
+                "Logistic Regression",
+                "Random Forest",
+                "Bayes Classifier",
+                "Fuzzy Logic",
+                "Decision Tree"
+            ],
+            "models": [
+                "Categorical model",
+                "Dimensional model",
+                "Cognitive appraisal model"
+            ],
+            "datasets": [
+                "Constructed dataset via interactive web application"
+            ],
+            "features": [
+                "Latency",
+                "Duration",
+                "Typing speed",
+                "Error frequency",
+                "Pressure",
+                "Input rate",
+                "Pause rate"
+            ],
+            "preprocessing": [
+                "Filtering multimodal approaches",
+                "Excluding incomplete studies"
+            ],
+            "training_strategy": "Not explicitly detailed",
+            "evaluation_metrics": [
+                "Accuracy rate",
+                "False Negative Rate (FNR)",
+                "False Positive Rate (FPR)",
+                "Kappa",
+                "F-score",
+                "Correlation analysis"
+            ]
+        },
+        "experiments": {
+            "experimental_setup": "Not explicitly detailed",
+            "baselines": [],
+            "results": "Best accuracy rates achieved: 91.24% for 'fright' emotion using SVM, 84% for arousal, and 83% for valence using KNN.",
+            "performance": {
+                "accuracy": "91.24%",
+                "precision": null,
+                "recall": null,
+                "f1": null,
+                "auc": null
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Systematic review of keystroke dynamics for emotion recognition",
+                "Construction of a new dataset via web application"
+            ],
+            "advantages": [
+                "Non-intrusive",
+                "Low implementation cost",
+                "Real-time adaptability"
+            ],
+            "limitations": [
+                "Data volume requirements",
+                "Instability over time",
+                "External factors affecting typing rhythm"
+            ],
+            "future_work": [
+                "Develop automatic emotion recognition systems based on keystroke dynamics"
+            ],
+            "applications": [
+                "Emotion detection",
+                "User authentication",
+                "Gender estimation"
+            ],
+            "research_gap": "Scarcity of datasets specifically focused on emotion recognition through keystroke dynamics"
+        },
+        "sections": {
+            "introduction": "Emotion is a fundamental aspect of human behavior, and its recognition is critical for intelligent systems. Keystroke dynamics offer a non-intrusive method for emotion detection, motivating this study.",
+            "related_work": "Previous studies focus on physiological states, facial expressions, speech, and text for emotion recognition, but keystroke dynamics remain underexplored.",
+            "methodology": "A systematic literature review was conducted using SCOPUS, with defined search terms and inclusion/exclusion criteria to analyze existing research.",
+            "results": "The review identified trends in emotion recognition technologies, strengths/weaknesses of keystroke dynamics, extracted features, classification methods, and evaluation metrics.",
+            "discussion": "Keystroke dynamics provide cost-effective, real-time emotion recognition but face challenges like data volume and external interference. The constructed dataset addresses existing gaps.",
+            "conclusion": "This work highlights the potential of keystroke dynamics for emotion recognition and proposes a new dataset to advance future research in this area."
+        }
+    },
+    {
+        "paper_id": 4,
+        "filename": "Evaluating_effectiveness_of_smartphone_t.pdf",
+        "metadata": {
+            "title": "Evaluating Effectiveness of Smartphone Typing as an Indicator of User Emotion",
+            "authors": [
+                "Surjya Ghosh",
+                "Niloy Ganguly",
+                "Bivas Mitra",
+                "Pradipta De"
+            ],
+            "year": "2017",
+            "venue": "7th International Conference on Affective Computing and Intelligent Interaction (ACII)",
+            "doi": null,
+            "keywords": [
+                "affective computing",
+                "smartphone typing",
+                "emotion detection",
+                "keystroke dynamics",
+                "machine learning"
+            ]
+        },
+        "abstract": "The paper explores smartphone typing as a modality for detecting multiple affective states (happy, sad, stressed, relaxed). An Android-based system called TapSense is developed to analyze typing features like speed, backspaces, and special characters. Results show 73% average accuracy (AUCROC) using typing features alone, with typing speed being the most discriminative feature.",
+        "research": {
+            "problem": "Detecting user emotions using smartphone typing patterns as a non-intrusive, low-overhead modality.",
+            "motivation": "Keystroke dynamics on desktops are effective for emotion detection; smartphone typing offers similar potential with better in-situ experiment coverage.",
+            "objective": "Evaluate smartphone typing features for multi-state emotion detection and develop a system with high accuracy.",
+            "research_questions": [
+                "Can smartphone typing features effectively detect multiple emotion states?",
+                "Which typing features are most discriminative for emotion classification?"
+            ]
+        },
+        "methodology": {
+            "summary": "TapSense, an Android-based system, collects typing features (speed, backspaces, special characters) and self-reported emotions via Experience Sampling Method (ESM). Data is balanced using SMOTE for classification.",
+            "algorithms": [
+                "Random Forest",
+                "Support Vector Machines (SVM)",
+                "Logistic Regression"
+            ],
+            "models": [
+                "TapSense",
+                "Most Represented Emotion Model (MRE)",
+                "Aggregate Model (AGG)"
+            ],
+            "datasets": [
+                "605,362 typing events across 3,976 sessions",
+                "2705 cleaned sessions after data filtering"
+            ],
+            "features": [
+                "Typing speed",
+                "Backspace count",
+                "Special characters",
+                "Session duration",
+                "Inter-Tap Distance (ITD)"
+            ],
+            "preprocessing": [
+                "Data cleaning to remove No Response and outlier sessions",
+                "SMOTE oversampling for class balance"
+            ],
+            "training_strategy": "Personalized machine learning models trained on typing features and self-reported emotion labels.",
+            "evaluation_metrics": [
+                "AUCROC",
+                "F-score",
+                "Weighted average AUCROC"
+            ]
+        },
+        "experiments": {
+            "experimental_setup": "3-week in-the-wild study with 22 participants using TapSense to collect typing data and self-reports.",
+            "baselines": [
+                "Most Represented Emotion Model (MRE)",
+                "Aggregate Model (AG, assuming similar typing patterns)"
+            ],
+            "results": "TapSense achieved 73% average accuracy (AUCROC) with maximum 94% for individual states. Typing speed was most discriminative.",
+            "performance": {
+                "accuracy": "73%",
+                "precision": null,
+                "recall": null,
+                "f1": null,
+                "auc": "73%"
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Development of TapSense for emotion detection via smartphone typing",
+                "Identification of typing speed as key discriminative feature"
+            ],
+            "advantages": [
+                "Non-intrusive data collection",
+                "In-situ experiment feasibility"
+            ],
+            "limitations": [
+                "Data imbalance challenges",
+                "Reliance on self-reported emotion labels"
+            ],
+            "future_work": [
+                "Exploring contextual factors",
+                "Integration with multimodal data"
+            ],
+            "applications": [
+                "Affective computing",
+                "Mental health monitoring",
+                "Human-computer interaction"
+            ],
+            "research_gap": "Limited studies on non-intrusive, context-agnostic emotion detection using smartphone typing."
+        },
+        "sections": {
+            "introduction": "Focuses on leveraging smartphone typing patterns for emotion detection, building on desktop keystroke dynamics research.",
+            "related_work": "Covers existing touch-based emotion detection methods, including application-specific analysis and sensor-based approaches.",
+            "methodology": "Details TapSense architecture, ESM data collection, and feature extraction processes.",
+            "results": "Presents accuracy metrics, feature importance, and data balancing techniques.",
+            "discussion": "Analyzes the effectiveness of typing features and limitations of self-reported data.",
+            "conclusion": "Summarizes contributions and potential applications in affective computing."
+        }
+    },
+    {
+        "paper_id": 5,
+        "filename": "keystroke_emotion.pdf",
+        "metadata": {
+            "title": "Keystroke/Mouse Usage Based Emotion Detection and User Identification",
+            "authors": [
+                "Rayhan Shikder",
+                "Sydur Rahaman",
+                "Farzia Afroze",
+                "A. B. M. Alim Al Islam"
+            ],
+            "year": "2017",
+            "venue": "NSysS 2017",
+            "doi": null,
+            "keywords": [
+                "Keystroke Dynamics",
+                "Bounded K-means Clustering",
+                "Dominant Emotions",
+                "KNN"
+            ]
+        },
+        "abstract": "The paper proposes a simplified emotion detection method using keystroke and mouse usage data, comparing classifiers like KNN and Bounded K-means Clustering. It also analyzes user identification challenges under emotional state influences.",
+        "research": {
+            "problem": "Traditional emotion detection requires significant infrastructure, necessitating a simpler, cost-effective approach.",
+            "motivation": "To address the limitations of existing emotion detection systems and explore user identification through behavioral data.",
+            "objective": "Develop a lightweight classifier for emotion detection and analyze user identification accuracy under emotional states.",
+            "research_questions": [
+                "Can emotions be detected from keystroke/mouse data?",
+                "How effective is user identification under emotional state influences?"
+            ]
+        },
+        "methodology": {
+            "summary": "Multimedia components induce emotional states, while keystroke/mouse data is collected via a custom survey. Classifiers like KNN and Bounded K-means Clustering analyze the data.",
+            "algorithms": [
+                "KNN",
+                "KStar",
+                "RandomCommittee",
+                "RandomForest",
+                "Bounded K-means Clustering"
+            ],
+            "models": [
+                "Bounded K-means Clustering"
+            ],
+            "datasets": [
+                "Survey data with keystroke/mouse metrics"
+            ],
+            "features": [
+                "Keystroke timing",
+                "Mouse click/scroll patterns",
+                "Text input behavior"
+            ],
+            "preprocessing": [
+                "Data collection via multimedia-induced emotional states"
+            ],
+            "training_strategy": "Comparison of existing classifiers and newly proposed lightweight classifier",
+            "evaluation_metrics": [
+                "Accuracy",
+                "Precision",
+                "Recall",
+                "F1",
+                "AUC"
+            ]
+        },
+        "experiments": {
+            "experimental_setup": "35 participants interacted with a survey system using multimedia clips to induce emotions, with keystroke/mouse data collected.",
+            "baselines": [
+                "KNN",
+                "KStar",
+                "RandomCommittee",
+                "RandomForest"
+            ],
+            "results": "Bounded K-means Clustering achieved best performance for five emotional states. User identification accuracy declined under emotional state influences.",
+            "performance": {
+                "accuracy": "Varied across classifiers",
+                "precision": "Varied across classifiers",
+                "recall": "Varied across classifiers",
+                "f1": "Varied across classifiers",
+                "auc": "Varied across classifiers"
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Survey system for emotion-induced data collection",
+                "Proposed Bounded K-means Clustering classifier",
+                "Analysis of user identification under emotional states"
+            ],
+            "advantages": [
+                "Cost-effective without hardware overheads"
+            ],
+            "limitations": [
+                "Accuracy drops when emotional states blend in user identification"
+            ],
+            "future_work": [
+                "Testing with diverse emotional state combinations"
+            ],
+            "applications": [
+                "Affective computing",
+                "Psychotherapy tools",
+                "User authentication"
+            ],
+            "research_gap": "Limited exploration of blended emotional states' impact on user identification"
+        },
+        "sections": {
+            "introduction": "Introduces emotionally-aware systems and the need for cost-effective emotion detection methods.",
+            "related_work": "Reviews existing emotion detection approaches and user identification techniques.",
+            "methodology": "Details multimedia-based emotion induction and classifier-based data analysis.",
+            "results": "Presents classifier performance and user identification accuracy findings.",
+            "discussion": "Analyzes contributions, limitations, and future research directions.",
+            "conclusion": "Summarizes the effectiveness of keystroke/mouse data for emotion detection and user identification challenges."
+        }
+    }
+]

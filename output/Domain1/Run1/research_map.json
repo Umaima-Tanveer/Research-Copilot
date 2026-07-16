@@ -1,0 +1,172 @@
+{
+    "nodes": [
+        {
+            "id": "1",
+            "title": "Deep Learning-based RF Fingerprint Authentication with Chaotic Antenna Arrays",
+            "year": null,
+            "dataset": "Simulation data of 300 CAAs, each with 4 antenna elements, under varying channel conditions and Doppler shifts.",
+            "methodology": "Utilizes deep learning (CNNs) with chaotic antenna arrays (CAAs) for authentication. CAAs introduce randomness in antenna geometry and feed lines to generate unique RF fingerprints.",
+            "task_type": "Authentication",
+            "contribution": "Introduces PUWS with CAAs for hardware-based authentication, demonstrating deep learning's effectiveness in enhancing RF fingerprinting for secure IoT systems."
+        },
+        {
+            "id": "2",
+            "title": "A Comprehensive Survey on Feature Extraction Techniques Using I/Q Imbalance in RFFI",
+            "year": null,
+            "dataset": "LTE mobile devices, USRP platforms, simulated signals with 5 analog transmitters (400 signals, 50% train/test split).",
+            "methodology": "Comprehensive review of I/Q imbalance-based RFFI techniques, discussion of other hardware impairments (power amplifier nonlinearity, oscillator imperfections), and analysis of ML/DL approaches for device identification.",
+            "task_type": "Device Identification",
+            "contribution": "Comprehensive survey of I/Q imbalance-based RFFI techniques, analysis of hardware impairments, and evaluation of ML/DL-driven solutions for device identification."
+        },
+        {
+            "id": "3",
+            "title": "Communication Signal Recognition 1 Open-Set RF Fingerprinting via Improved Prototype Learning",
+            "year": null,
+            "dataset": "WIDEFT, an open-source RF dataset collected from 138 real-world devices across 79 models, with 18 Apple Inc. 2.4 GHz WiFi devices used for evaluation (10 known classes, 8 unknown classes).",
+            "methodology": "The paper introduces Improved Prototype Learning (IPL) with two key enhancements: consistency-based regularization (enforces feature consistency via data augmentation) and online label smoothing (reduces class overlap in feature space). These methods are integrated into a prototype learning framework for open-set recognition.",
+            "task_type": "Open-Set Recognition",
+            "contribution": "The paper introduces consistency-based regularization and online label smoothing to enhance prototype learning, enabling effective open-set recognition for RF fingerprinting in real-world scenarios."
+        },
+        {
+            "id": "4",
+            "title": "An Identity Authentication Method of a MIoT Device Based on Radio Frequency (RF) Fingerprint Technology",
+            "year": 2020,
+            "dataset": null,
+            "methodology": "Combines support vector data description (SVDD) and neighborhood component analysis (NCA) for RF fingerprint-based device authentication.",
+            "task_type": "Authentication",
+            "contribution": "Establishes an RF fingerprint authentication model for MIoT devices to distinguish authentic and rogue devices effectively."
+        },
+        {
+            "id": "5",
+            "title": "Attention is Needed for RF Fingerprinting",
+            "year": null,
+            "dataset": "Actual collected RF fingerprinting datasets (specific name not provided)",
+            "methodology": "Proposes a Dual Attention Convolution (DAConv) module combining channel attention and spatial attention branches to refine RF fingerprints. Integrates with existing CNN architectures for improved feature learning.",
+            "task_type": "Classification",
+            "contribution": "Introduced DAConv module for attention-based RF fingerprinting. Demonstrated effectiveness in enhancing robustness and discriminability of fingerprints."
+        }
+    ],
+    "edges": [
+        {
+            "paper1": "1",
+            "paper2": "2",
+            "relation": "compares",
+            "similarity": 0.4,
+            "reason": "Both papers address RF fingerprinting but focus on different aspects: Paper 1 proposes a novel hardware-based authentication method using chaotic antenna arrays, while Paper 2 provides a survey of I/Q imbalance-based techniques for device identification. They share concepts like RF fingerprinting and ML/DL approaches but differ in task (authentication vs. identification) and methodology.",
+            "shared_concepts": [
+                "RF fingerprinting",
+                "machine learning",
+                "device identification",
+                "hardware impairments",
+                "deep learning"
+            ]
+        },
+        {
+            "paper1": "1",
+            "paper2": "3",
+            "relation": "compares",
+            "similarity": 0.4,
+            "reason": "Both papers address RF fingerprinting but focus on different tasks (authentication vs. open-set recognition) and employ distinct methodologies (deep learning with chaotic antenna arrays vs. prototype learning with regularization techniques).",
+            "shared_concepts": [
+                "RF fingerprinting",
+                "authentication",
+                "open-set recognition",
+                "deep learning",
+                "prototype learning"
+            ]
+        },
+        {
+            "paper1": "1",
+            "paper2": "4",
+            "relation": "compares",
+            "similarity": 0.6,
+            "reason": "Both papers address RF fingerprint-based authentication for IoT devices but employ different methodologies (deep learning with chaotic antenna arrays vs. SVDD/NCA). They share the task of authentication and the concept of RF fingerprints but differ in technical approaches.",
+            "shared_concepts": [
+                "RF fingerprint authentication",
+                "device authentication"
+            ]
+        },
+        {
+            "paper1": "1",
+            "paper2": "5",
+            "relation": "compares",
+            "similarity": 0.5,
+            "reason": "Both papers address RF fingerprinting but employ different methodologies (chaotic antenna arrays vs. attention mechanisms) and tasks (authentication vs. classification). They share the concept of deep learning for fingerprinting but differ in technical approaches.",
+            "shared_concepts": [
+                "RF fingerprinting",
+                "deep learning"
+            ]
+        },
+        {
+            "paper1": "2",
+            "paper2": "3",
+            "relation": "improves",
+            "similarity": 0.5,
+            "reason": "Paper 2 introduces Improved Prototype Learning (IPL) with consistency-based regularization and online label smoothing, which enhance prototype learning for open-set recognition. This builds on ML/DL approaches discussed in Paper 1's survey of RF fingerprinting techniques.",
+            "shared_concepts": [
+                "RF fingerprinting",
+                "device identification",
+                "ML/DL approaches"
+            ]
+        },
+        {
+            "paper1": "2",
+            "paper2": "4",
+            "relation": "compares",
+            "similarity": 0.5,
+            "reason": "Both papers address device recognition using RF fingerprinting but differ in methodology and task focus. Paper 1 surveys I/Q imbalance-based techniques for device identification, while Paper 2 proposes an authentication method using SVDD/NCA for MIoT devices.",
+            "shared_concepts": [
+                "RF fingerprint",
+                "device identification/authentication",
+                "machine learning",
+                "hardware impairments"
+            ]
+        },
+        {
+            "paper1": "2",
+            "paper2": "5",
+            "relation": "compares",
+            "similarity": 0.5,
+            "reason": "Both papers address RF fingerprinting but use different approaches (survey vs. attention-based method), similar tasks (device identification/classification), and share concepts like ML/DL and RF fingerprinting.",
+            "shared_concepts": [
+                "RF fingerprinting",
+                "ML/DL",
+                "device identification",
+                "classification"
+            ]
+        },
+        {
+            "paper1": "3",
+            "paper2": "4",
+            "relation": "compares",
+            "similarity": 0.5,
+            "reason": "Both papers address RF fingerprinting but focus on different tasks (open-set recognition vs. device authentication) and employ distinct methodologies (prototype learning with regularization vs. SVDD+NCA).",
+            "shared_concepts": [
+                "RF fingerprinting",
+                "device authentication"
+            ]
+        },
+        {
+            "paper1": "3",
+            "paper2": "5",
+            "relation": "compares",
+            "similarity": 0.3,
+            "reason": "Both papers address RF fingerprinting but differ in methodology (prototype learning vs. attention mechanisms) and task (open-set recognition vs. classification).",
+            "shared_concepts": [
+                "RF fingerprinting"
+            ]
+        },
+        {
+            "paper1": "4",
+            "paper2": "5",
+            "relation": "compares",
+            "similarity": 0.4,
+            "reason": "Both papers address RF fingerprinting but differ in methodology (SVDD/NCA vs. DAConv attention mechanisms) and task (authentication vs. classification). They share the concept of RF fingerprinting but approach it with distinct technical solutions.",
+            "shared_concepts": [
+                "RF fingerprinting",
+                "machine learning",
+                "device authentication/classification"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,75 @@
+{
+    "methodological": [
+        {
+            "gap": "Limited real-world deployment testing",
+            "impact": "High",
+            "reason": "Relies on simulation data; lacks validation in dynamic environmental conditions",
+            "papers": [
+                "Deep Learning-based RF Fingerprint Authentication with Chaotic Antenna Arrays"
+            ]
+        },
+        {
+            "gap": "Insufficient exploration of attention mechanisms in CNNs",
+            "impact": "High",
+            "reason": "Existing CNNs lack mechanisms to handle dynamic interference and environmental variability",
+            "papers": [
+                "Attention is Needed for RF Fingerprinting"
+            ]
+        },
+        {
+            "gap": "Over-reliance on specific CNN architectures",
+            "impact": "Medium",
+            "reason": "Limited evaluation of diverse architectures for open-set recognition scenarios",
+            "papers": [
+                "Communication Signal Recognition 1 Open-Set RF Fingerprinting via Improved Prototype Learning"
+            ]
+        }
+    ],
+    "theoretical": [
+        {
+            "gap": "Standardization of feature extraction methods",
+            "impact": "High",
+            "reason": "Inconsistent approaches across environments hinder scalability and reliability",
+            "papers": [
+                "A Comprehensive Survey on Feature Extraction Techniques Using I/Q Imbalance in RFFI"
+            ]
+        },
+        {
+            "gap": "Scalability to massive IoT networks",
+            "impact": "High",
+            "reason": "Current methods struggle with dynamic, large-scale deployments",
+            "papers": [
+                "A Comprehensive Survey on Feature Extraction Techniques Using I/Q Imbalance in RFFI"
+            ]
+        }
+    ],
+    "empirical": [
+        {
+            "gap": "Limited testing under multipath/multipath environments",
+            "impact": "High",
+            "reason": "Performance validation lacks dynamic channel conditions and interference scenarios",
+            "papers": [
+                "Deep Learning-based RF Fingerprint Authentication with Chaotic Antenna Arrays",
+                "Attention is Needed for RF Fingerprinting"
+            ]
+        },
+        {
+            "gap": "SNR-dependent performance validation",
+            "impact": "Medium",
+            "reason": "Lacks evaluation across varying signal-to-noise ratio conditions",
+            "papers": [
+                "An Identity Authentication Method of a MIoT Device Based on Radio Frequency (RF) Fingerprint Technology"
+            ]
+        }
+    ],
+    "application": [
+        {
+            "gap": "Resource constraints in IoT deployment",
+            "impact": "High",
+            "reason": "High computational demands limit suitability for low-power devices",
+            "papers": [
+                "A Comprehensive Survey on Feature Extraction Techniques Using I/Q Imbalance in RFFI"
+            ]
+        }
+    ]
+}

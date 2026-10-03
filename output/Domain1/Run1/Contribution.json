@@ -1,0 +1,32 @@
+{
+    "future_contributions": [
+        {
+            "gap": "Limited real-world data validation",
+            "proposed_contribution": "Hybrid simulation-real data augmentation framework for RF fingerprinting",
+            "technical_approach": "Develop a domain adaptation pipeline combining simulated CAAs with real-world measurements from USRP X310 and ZigBee nodes, using adversarial training to bridge distribution gaps between synthetic and physical environments.",
+            "expected_impact": "Enables robust authentication in heterogeneous environments by reducing reliance on idealized simulations while maintaining computational efficiency",
+            "implementation_feasibility": "Feasible via existing simulation tools (e.g., MATLAB/Simulink) and hardware testbeds with incremental data collection protocols"
+        },
+        {
+            "gap": "Insufficient cross-hardware dataset diversity",
+            "proposed_contribution": "Hardware-agnostic synthetic RF fingerprint generation system",
+            "technical_approach": "Create a parametric model of IoT device hardware (antenna geometry, RF front-ends) to generate synthetic fingerprints across device architectures, validated against real measurements from diverse platforms",
+            "expected_impact": "Enables benchmarking across heterogeneous IoT ecosystems without requiring physical device access",
+            "implementation_feasibility": "Achievable through physics-based RF simulation frameworks with modular hardware parameterization"
+        },
+        {
+            "gap": "Lack of standardized benchmarking frameworks",
+            "proposed_contribution": "Open-set RF fingerprinting benchmark suite with standardized metrics",
+            "technical_approach": "Curate a multi-device dataset with annotated open-set samples, define standardized metrics (F1-score, rejection rate, calibration error), and implement a reproducible evaluation toolkit",
+            "expected_impact": "Facilitates fair comparison of open-set recognition methods across different hardware and environments",
+            "implementation_feasibility": "Practical through collaborative data curation and containerized benchmarking infrastructure"
+        },
+        {
+            "gap": "Underdeveloped theoretical foundations for I/Q imbalance modeling",
+            "proposed_contribution": "Formal mathematical framework for I/Q imbalance as device fingerprint",
+            "technical_approach": "Derive analytical models linking I/Q imbalance parameters to device-specific hardware characteristics, validated through signal processing analysis of real-world measurement datasets",
+            "expected_impact": "Provides theoretical basis for robust feature extraction and improves understanding of imbalance as a fingerprinting mechanism",
+            "implementation_feasibility": "Feasible through signal processing analysis of existing datasets with mathematical modeling techniques"
+        }
+    ]
+}

@@ -1,0 +1,103 @@
+{
+        "paper_id": 1,
+        "filename": "3733103.pdf",
+        "metadata": {
+            "title": "Keystroke Dynamics: Concepts, Techniques, and Applications",
+            "authors": [
+                "Rashik Shadman",
+                "Ahmed Anu Wahab",
+                "Michael Manno",
+                "Matthew Lukaszewski",
+                "Daqing Hou",
+                "Faraz Hussain"
+            ],
+            "year": "2025",
+            "venue": "ACM Comput. Surv.",
+            "doi": "10.1145/3733103",
+            "keywords": [
+                "keystroke dynamics",
+                "behavioral biometrics",
+                "authentication",
+                "identification",
+                "cybersecurity"
+            ]
+        },
+        "abstract": "Keystroke dynamics is a behavioral biometric emerging as an important tool for cybersecurity due to its nonintrusive and cost-effective nature. This survey covers novel datasets, algorithms, applications, and future research opportunities in keystroke-based authentication systems.",
+        "research": {
+            "problem": "Reliable user authentication remains critical for computer system security, with traditional methods facing limitations.",
+            "motivation": "Keystroke dynamics offers a non-intrusive, hardware-free alternative for authentication and cybersecurity applications.",
+            "objective": "To provide a comprehensive review of keystroke dynamics concepts, techniques, and applications, including datasets, algorithms, and future directions.",
+            "research_questions": []
+        },
+        "methodology": {
+            "summary": "The paper reviews recent advancements in keystroke dynamics research, focusing on datasets, algorithms, mobile device applications, and performance metrics.",
+            "algorithms": [
+                "Machine learning techniques",
+                "Deep learning algorithms",
+                "Fuzzy Logic"
+            ],
+            "models": [],
+            "datasets": [
+                "Free-text datasets",
+                "Fixed-text datasets",
+                "Semi-fixed-text datasets",
+                "Benchmark datasets (e.g., [42, 58, 104, 114, 115])"
+            ],
+            "features": [
+                "Latency",
+                "Hold time (HT)",
+                "Press flight time (FT)",
+                "KP2-KP1",
+                "KR2-KP1",
+                "KP2-KR1",
+                "KR2-KR1"
+            ],
+            "preprocessing": [],
+            "training_strategy": "",
+            "evaluation_metrics": [
+                "Equal Error Rate (EER)",
+                "Matching scores"
+            ]
+        },
+        "experiments": {
+            "experimental_setup": "",
+            "baselines": [],
+            "results": "Achieved EER of 6.62% using Killourhy and Maxion dataset, 5.71% using Giot et al. dataset, and 4.03% with dynamic user profiles. Continuous authentication showed average EER of 2%.",
+            "performance": {
+                "accuracy": "",
+                "precision": "",
+                "recall": "",
+                "f1": "",
+                "auc": ""
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Comprehensive coverage of keystroke dynamics across datasets, algorithms, and applications",
+                "Analysis of touch screen and mobile device implementations"
+            ],
+            "advantages": [
+                "Non-intrusive and cost-effective",
+                "No additional hardware required"
+            ],
+            "limitations": [],
+            "future_work": [
+                "Exploration of emerging trends in keystroke dynamics research"
+            ],
+            "applications": [
+                "Security and verification",
+                "User identification",
+                "Digital forensics",
+                "Online assessments"
+            ],
+            "research_gap": "Previous surveys lacked comprehensive coverage of all keystroke dynamics aspects."
+        },
+        "sections": {
+            "introduction": "Discusses user authentication methods, the role of keystroke dynamics in cybersecurity, and the need for non-intrusive authentication solutions.",
+            "related_work": "Compares existing surveys on keystroke dynamics, highlighting gaps in coverage of datasets, algorithms, and mobile device applications.",
+            "methodology": "Describes the systematic review of articles from 2013–present, focusing on datasets, algorithms, and applications.",
+            "results": "Presents findings on keystroke dynamics performance, benchmark datasets, and algorithmic advancements.",
+            "discussion": "Analyzes the contributions, advantages, and limitations of keystroke dynamics research, emphasizing its potential in cybersecurity.",
+            "conclusion": "Highlights future research opportunities and the broader impact of keystroke dynamics across domains."
+        }
+    }

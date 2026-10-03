@@ -1,0 +1,98 @@
+{
+  "paper_id": "Not explicitly reported",
+  "filename": "Non-ActedTextandKeystrokesDatabaseandLearning.pdf",
+  "title": "Non-Acted Text and Keystrokes Database and Learning Methods to Recognize Emotions",
+  "domain": "Emotion Recognition using Keystroke Dynamics",
+  "dataset": {
+    "name": "DEKT-345 × 2",
+    "type_source": "Experimental testbed / Un-posed / Natural",
+    "data_volume": {
+      "total_samples": 690,
+      "text_samples": 345,
+      "keystroke_samples": 345
+    },
+    "participants_devices": {
+      "participants": 69,
+      "session_1_participants": 48,
+      "session_1_participant_composition": {
+        "graduate_and_undergraduate_students": 48,
+        "male_percentage": 75,
+        "female_percentage": 25
+      },
+      "session_2_participants": 21,
+      "session_2_participant_composition": {
+        "undergraduate_students": 21,
+        "male_percentage": 80,
+        "female_percentage": 20
+      }
+    },
+    "classes": {
+      "number": 5,
+      "correspondence": [
+        "Happy",
+        "Sad",
+        "Angry",
+        "Surprise",
+        "Disgusting"
+      ]
+    },
+    "experimental_conditions": {
+      "stimulus": "Videos",
+      "environment": "General-purpose computing laboratory with audio and video facilities",
+      "baseline_condition": "Participants faced a wall for one minute",
+      "writing_task": "Participants wrote reviews in an unguided manner",
+      "maximum_words": 150,
+      "language": "English"
+    },
+    "data_split": {
+      "training": "80%",
+      "testing": "20%",
+      "validation": "20 different combinations of training and validation data were evaluated"
+    }
+  },
+  "proposed_method": {
+    "name": "Hybrid text + keystroke features with Mutual Information (MI Gain) feature selection and Discriminant Analysis",
+    "description": "A hybrid approach combining text and keystroke features, with Mutual Information feature selection followed by a Discriminant Analysis classifier"
+  },
+  "primary_performance": {
+    "metric": "Accuracy",
+    "value": 86.95,
+    "unit": "%",
+    "experimental_condition": "Five-class classification of basic human emotions on the DEKT-345 × 2 dataset",
+    "evaluation_setting": "Hybrid text and keystroke data"
+  },
+  "additional_results": [],
+  "comparison_results": [],
+  "limitations": [
+    {
+      "description": "Not explicitly reported.",
+      "evidence": {
+        "page": 7,
+        "section": "V. CONCLUSION",
+        "quote": "Not explicitly reported."
+      }
+    }
+  ],
+  "reported_contributions": [],
+  "third_evaluation_field": {
+    "field_name": "Timing Feature",
+    "value": "Sum, mean, and standard deviation of time duration of each letter (a to z)",
+    "evidence": {
+      "page": 22,
+      "section": "6 CONCLUSION",
+      "statement": "Obtained results showed that the sum, mean, and standard deviation values of time duration of keys have high scores than others, while the frequency of space key and backspace key (rate of error) have scored higher than remaining frequency-based features, however, they score lesser than sum, mean, and keys' time standard deviation."
+    }
+  },
+  "evidence": {
+    "dataset": {
+      "page": 17,
+      "section": "5 BASELINE AFFECTIVE TEXT-KEYSTROKES EXPERIMENTAL RESULTS",
+      "statement": "Experiments are conducted on DEKT-345 x 2 dataset, which consists of 345 text samples and 345 keystrokes samples of the five basic human emotions (total of 690 samples)."
+    },
+    "primary_performance": {
+      "page": 19,
+      "section": "5.1 Results on DEKT-345 x 2 Dataset for Five Class Problem",
+      "statement": "MI technique and discriminant analysis had 86.95% accuracy on the hybrid data."
+    }
+  }
+}

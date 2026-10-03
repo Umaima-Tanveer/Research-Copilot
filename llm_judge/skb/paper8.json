@@ -1,0 +1,114 @@
+{
+        "paper_id": 4,
+        "filename": "Evaluating_effectiveness_of_smartphone_t.pdf",
+        "metadata": {
+            "title": "Evaluating Effectiveness of Smartphone Typing as an Indicator of User Emotion",
+            "authors": [
+                "Surjya Ghosh",
+                "Niloy Ganguly",
+                "Bivas Mitra",
+                "Pradipta De"
+            ],
+            "year": "2017",
+            "venue": "7th International Conference on Affective Computing and Intelligent Interaction (ACII)",
+            "doi": null,
+            "keywords": [
+                "affective computing",
+                "smartphone typing",
+                "emotion detection",
+                "keystroke dynamics",
+                "machine learning"
+            ]
+        },
+        "abstract": "The paper explores smartphone typing as a modality for detecting multiple affective states (happy, sad, stressed, relaxed). An Android-based system called TapSense is developed to analyze typing features like speed, backspaces, and special characters. Results show 73% average accuracy (AUCROC) using typing features alone, with typing speed being the most discriminative feature.",
+        "research": {
+            "problem": "Detecting user emotions using smartphone typing patterns as a non-intrusive, low-overhead modality.",
+            "motivation": "Keystroke dynamics on desktops are effective for emotion detection; smartphone typing offers similar potential with better in-situ experiment coverage.",
+            "objective": "Evaluate smartphone typing features for multi-state emotion detection and develop a system with high accuracy.",
+            "research_questions": [
+                "Can smartphone typing features effectively detect multiple emotion states?",
+                "Which typing features are most discriminative for emotion classification?"
+            ]
+        },
+        "methodology": {
+            "summary": "TapSense, an Android-based system, collects typing features (speed, backspaces, special characters) and self-reported emotions via Experience Sampling Method (ESM). Data is balanced using SMOTE for classification.",
+            "algorithms": [
+                "Random Forest",
+                "Support Vector Machines (SVM)",
+                "Logistic Regression"
+            ],
+            "models": [
+                "TapSense",
+                "Most Represented Emotion Model (MRE)",
+                "Aggregate Model (AGG)"
+            ],
+            "datasets": [
+                "605,362 typing events across 3,976 sessions",
+                "2705 cleaned sessions after data filtering"
+            ],
+            "features": [
+                "Typing speed",
+                "Backspace count",
+                "Special characters",
+                "Session duration",
+                "Inter-Tap Distance (ITD)"
+            ],
+            "preprocessing": [
+                "Data cleaning to remove No Response and outlier sessions",
+                "SMOTE oversampling for class balance"
+            ],
+            "training_strategy": "Personalized machine learning models trained on typing features and self-reported emotion labels.",
+            "evaluation_metrics": [
+                "AUCROC",
+                "F-score",
+                "Weighted average AUCROC"
+            ]
+        },
+        "experiments": {
+            "experimental_setup": "3-week in-the-wild study with 22 participants using TapSense to collect typing data and self-reports.",
+            "baselines": [
+                "Most Represented Emotion Model (MRE)",
+                "Aggregate Model (AG, assuming similar typing patterns)"
+            ],
+            "results": "TapSense achieved 73% average accuracy (AUCROC) with maximum 94% for individual states. Typing speed was most discriminative.",
+            "performance": {
+                "accuracy": "73%",
+                "precision": null,
+                "recall": null,
+                "f1": null,
+                "auc": "73%"
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Development of TapSense for emotion detection via smartphone typing",
+                "Identification of typing speed as key discriminative feature"
+            ],
+            "advantages": [
+                "Non-intrusive data collection",
+                "In-situ experiment feasibility"
+            ],
+            "limitations": [
+                "Data imbalance challenges",
+                "Reliance on self-reported emotion labels"
+            ],
+            "future_work": [
+                "Exploring contextual factors",
+                "Integration with multimodal data"
+            ],
+            "applications": [
+                "Affective computing",
+                "Mental health monitoring",
+                "Human-computer interaction"
+            ],
+            "research_gap": "Limited studies on non-intrusive, context-agnostic emotion detection using smartphone typing."
+        },
+        "sections": {
+            "introduction": "Focuses on leveraging smartphone typing patterns for emotion detection, building on desktop keystroke dynamics research.",
+            "related_work": "Covers existing touch-based emotion detection methods, including application-specific analysis and sensor-based approaches.",
+            "methodology": "Details TapSense architecture, ESM data collection, and feature extraction processes.",
+            "results": "Presents accuracy metrics, feature importance, and data balancing techniques.",
+            "discussion": "Analyzes the effectiveness of typing features and limitations of self-reported data.",
+            "conclusion": "Summarizes contributions and potential applications in affective computing."
+        }
+    }

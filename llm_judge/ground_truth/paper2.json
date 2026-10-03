@@ -1,0 +1,30 @@
+{
+"paper_id": "merchant2018",
+"filename": "merchant2018.pdf",
+"title": "Deep Learning for RF Device Fingerprinting in Cognitive Communication Networks",
+"year": 2018,
+"domain": "RFFI",
+"dataset": {
+"name": null,
+"type_source": "experimental testbed / commercial off-the-shelf devices",
+"data_volume": "7,000 transmissions total (1,000 valid transmissions per device across 7 devices), split into 17 non-overlapping segments of 1,024 samples per transmission",
+"participants_devices": "7 Digi XBP24CZ7SITB003 ZigBee Pro devices operating in the 2.4 GHz band",
+"classes": 7,
+"experimental_conditions": "Transmissions on IEEE 802.15.4 channel 11 (2.405 GHz center frequency) configured at maximum power level of 18 dBm with 16 MHz sampling rate. Outdoor experiment used Pulse Electronics W1030 omni-directional antennas at approximately 30 meters distance in an urban outdoor environment with an estimated in-band SNR of ~28 dB. Lab experiment used direct hardwired connections through a power splitter with simulated AWGN added in the range -10, 15, 20,..., 40 dB.",
+"data_split": "80% training data, 10% validation data, and 10% testing data"
+},
+"accuracy": {
+"value": "92.29%",
+"metric": "identification accuracy",
+"method_model": "Convolutional Neural Network (CNN) operating on time-domain complex baseband error signal",
+"dataset_or_task": "7-device identification problem",
+"experimental_condition": "Outdoor urban environment at ~28 dB SNR using 7 Digi ZigBee devices",
+"evaluation_setting": "Closed-set identification on test set (10% test data)"
+},
+"limitation": "For both experiments overfitting was observed during the late stages of training.",
+"evidence": {
+"page": 1,
+"section": "Abstract",
+"text": "We develop a framework for training a convolutional neural network using the time-domain complex baseband error signal and demonstrate 92.29% identification accuracy on a set of 7 2.4 GHz commercial ZigBee devices."
+}
+}

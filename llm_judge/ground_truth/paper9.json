@@ -1,0 +1,83 @@
+{
+  "paper_id": "Not explicitly reported",
+  "filename": "The_laws_of_emotion.pdf",
+  "title": "The Laws of Emotion",
+  "domain": "Not explicitly reported.",
+  "dataset": {
+    "name": "Not explicitly reported.",
+    "type_source": "Not explicitly reported.",
+    "data_volume": {
+      "subjects": 30
+    },
+    "participants_devices": {
+      "subjects": 30
+    },
+    "classes": {
+      "number": 32,
+      "correspondence": "32 emotion labels"
+    },
+    "experimental_conditions": {
+      "description": "Descriptions by subjects of affective states corresponding to 32 emotion labels were input into a computer program."
+    },
+    "data_split": {
+      "training": "Not explicitly reported.",
+      "testing": "Not explicitly reported.",
+      "validation": "Not explicitly reported."
+    }
+  },
+  "proposed_method": {
+    "name": "Computer program (Frijda & Swagerman, 1987)",
+    "description": "A computer program was evaluated using descriptions by subjects of affective states corresponding to 32 emotion labels."
+  },
+  "primary_performance": {
+    "metric": "Hit rate for the first choice",
+    "value": 31,
+    "unit": "%",
+    "experimental_condition": "Descriptions by 30 subjects of affective states corresponding to 32 emotion labels",
+    "evaluation_setting": "Computer program evaluation"
+  },
+  "additional_results": [
+    {
+      "metric": "Hit rate for the first five choices",
+      "value": 71,
+      "unit": "%",
+      "condition": "Descriptions by 30 subjects across 32 emotion labels"
+    },
+    {
+      "metric": "Chance percentage for the first choice",
+      "value": 3,
+      "unit": "%",
+      "condition": "32 emotion labels"
+    },
+    {
+      "metric": "Chance percentage for the first five choices",
+      "value": 17,
+      "unit": "%",
+      "condition": "32 emotion labels"
+    }
+  ],
+  "comparison_results": [],
+  "limitations": [],
+  "reported_contributions": [],
+  "third_evaluation_field": {
+    "field_name": "Limitation",
+    "value": "Not explicitly reported.",
+    "evidence": {
+      "page": "Not explicitly reported.",
+      "section": "Not explicitly reported.",
+      "statement": "Not explicitly reported."
+    }
+  },
+  "evidence": {
+    "dataset": {
+      "page": 350,
+      "section": "The Law of Situational Meaning",
+      "statement": "When given the descriptions by 30 subjects of affective states corresponding to 32 emotion labels, the computer achieved a hit rate of 31% for the first choice and of 71% for the first five choices (with chance percentages of 3% and 17%, respectively; Frijda & Swagerman, 1987)."
+    },
+    "primary_performance": {
+      "page": 350,
+      "section": "The Law of Situational Meaning",
+      "statement": "When given the descriptions by 30 subjects of affective states corresponding to 32 emotion labels, the computer achieved a hit rate of 31% for the first choice and of 71% for the first five choices (with chance percentages of 3% and 17%, respectively; Frijda & Swagerman, 1987)."
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "paper_id": "Not explicitly reported",
+  "filename": "TVT.2019.2950670.pdf",
+  "title": "Deep Learning Based RF Fingerprint Identification Using Differential Constellation Trace Figure",
+  "domain": "RFFI",
+  "dataset": {
+    "name": "Not explicitly reported",
+    "type_source": "Experimental testbed / real-world",
+    "data_volume": {
+      "measurements_per_device": 10,
+      "frame_segments_per_measurement": 9,
+      "samples_per_segment": "Approximately 40K",
+      "training_dctfs_per_group": 8262,
+      "validation_dctfs_per_group": 1458,
+      "testing_dctfs_per_group": 14580
+    },
+    "participants_devices": {
+      "transmitter_devices": 54,
+      "transmitter_model": "TI CC2530 system-on-chip ZigBee modules",
+      "receiver_devices": null,
+      "receiver_model": "USRP SDR",
+      "operating_band": null
+    },
+    "classes": {
+      "number": 54,
+      "correspondence": "54 target ZigBee devices"
+    },
+    "experimental_conditions": {
+      "transmission_condition": "Line-of-sight (LOS)",
+      "carrier_frequency": "2505 MHz",
+      "modulation": "OQPSK",
+      "receiver_sampling_rate": "10 Msample/s",
+      "captured_signal_snr": "20–25 dB",
+      "noise": "AWGN added to emulate varying SNR levels",
+      "testing_snr_range": "0–30 dB"
+    },
+    "data_split": {
+      "measurement_groups": 2,
+      "measurements_per_group": 5,
+      "training_validation_measurements_per_group": 2,
+      "testing_measurements_per_group": 3,
+      "training": "85%",
+      "validation": "15%",
+      "testing": "Remaining 3 measurements per group",
+      "partitioning": "Random split for training and validation"
+    }
+  },
+  "proposed_method": {
+    "name": "DCTF-CNN",
+    "description": "Deep learning-based RF fingerprint identification using Differential Constellation Trace Figure (DCTF)"
+  },
+  "primary_performance": {
+    "metric": "Identification accuracy",
+    "value": 99.1,
+    "unit": "%",
+    "experimental_condition": "54 target ZigBee devices under an SNR level of 30 dB",
+    "evaluation_setting": "DCTF-CNN classification"
+  },
+  "additional_results": [
+    {
+      "metric": "Identification accuracy",
+      "value": 93.8,
+      "unit": "%",
+      "evaluation_condition": "54 target ZigBee devices under an SNR level of 15 dB"
+    }
+  ],
+  "comparison_results": [],
+  "limitations": [
+    {
+      "description": "Future work includes studying target movements in DCTF-CNN identification.",
+      "evidence": {
+        "page": 6,
+        "section": "V. CONCLUSION",
+        "quote": "The future work includes study of target movements in DCTF-CNN identification."
+      }
+    }
+  ],
+  "reported_contributions": [],
+  "evidence": {
+    "dataset": {
+      "page": 3,
+      "section": "III. EXPERIMENTAL DESIGN / A. Experiment Setup & B. ZigBee Burst Collection",
+      "statement": "L=54 TI CC2530 system-on-chip ZigBee modules are employed as the target devices to be classified."
+    },
+    "primary_performance": {
+      "page": 1,
+      "section": "Abstract",
+      "statement": "Experimental results have demonstrated that the proposed DCTF-CNN can achieve an identification accuracy as high as 99.1% and 93.8% under SNR levels of 30 dB and 15 dB, respectively, when classifying 54 target ZigBee devices."
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "paper_id": "Not explicitly reported",
+  "filename": "Evaluating_effectiveness_of_smartphone_t.pdf",
+  "title": "Evaluating Effectiveness of Smartphone Typing as an Indicator of User Emotion",
+  "domain": "Emotion Recognition using Keystroke Dynamics",
+  "dataset": {
+    "name": "Not explicitly reported.",
+    "type_source": "3-week in-the-wild study",
+    "data_volume": {
+      "total_typing_events": 529698,
+      "total_typing_sessions": 2705,
+      "total_typing_duration": "135 Hr."
+    },
+    "participants_devices": {
+      "participants": 22,
+      "male": 20,
+      "female": 2,
+      "data_collection_system": "Android-based system (TapSense) using an instrumented QWERTY keyboard"
+    },
+    "classes": {
+      "number": 4,
+      "correspondence": [
+        "Happy",
+        "Sad",
+        "Stressed",
+        "Relaxed"
+      ]
+    },
+    "experimental_conditions": {
+      "data_collection": "Data collected via an Android-based system (TapSense) using an instrumented QWERTY keyboard",
+      "data_processing": "SMOTE was applied to handle class imbalance, adding 9% new records"
+    },
+    "data_split": {
+      "training": "Not explicitly reported.",
+      "testing": "Not explicitly reported.",
+      "validation": "10-fold cross validation"
+    }
+  },
+  "proposed_method": {
+    "name": "Random Forest (RF) personalized model",
+    "description": "A personalized Random Forest classifier was used to identify four different emotion states using smartphone typing features."
+  },
+  "primary_performance": {
+    "metric": "AUCROC (Area under the Receiver Operating Characteristic curve)",
+    "value": 73,
+    "unit": "%",
+    "experimental_condition": "10-fold cross-validation on the over-sampled smartphone typing dataset across 22 users",
+    "evaluation_setting": "Typing features only using a personalized Random Forest classifier"
+  },
+  "additional_results": [
+    {
+      "metric": "AUCROC",
+      "value": 94,
+      "unit": "%",
+      "condition": "Maximum performance across users"
+    },
+    {
+      "metric": "AUCROC",
+      "value": 9,
+      "unit": "%",
+      "condition": "Standard deviation of the average performance"
+    }
+  ],
+  "comparison_results": [],
+  "limitations": [],
+  "reported_contributions": [],
+  "third_evaluation_field": {
+    "field_name": "Timing Feature",
+    "value": [
+      "RMSI (Refined Mean Session ITD)",
+      "MSI (Mean Session ITD)"
+    ],
+    "evidence": {
+      "page": "3, 5",
+      "section": "3.1. Experiment Apparatus (Table 1), 5.4. Feature Analysis",
+      "statement": "We compute Mean Session ITD (MSI), by taking average of all Inter-Tap Distance (ITDs) present in a session. So, we introduce the feature RMSI. TABLE 6: Discriminating features based on Information Gain... RMSI Rank 1, MSI Rank 2"
+    }
+  },
+  "evidence": {
+    "dataset": {
+      "page": "1, 3, 4",
+      "section": "1. Introduction, 3.2. Field Study, 4. Dataset, 4.2. Countering Data Imbalance using SMOTE, 5. Evaluation",
+      "statements": [
+        "We perform a 3-week in-the-wild study, involving 22 participants to collect the dataset (section 4) for experimental evaluation.",
+        "Finally, we collected data from the remaining 22 users (20 male, 2 female).",
+        "TABLE 3: Final dataset details... Total typing events 529698, Total typing sessions 2705",
+        "By applying SMOTE we add 9% new records.",
+        "We tested three different models... using 10-fold cross validation."
+      ]
+    },
+    "primary_performance": {
+      "page": "1, 5",
+      "section": "1. Introduction, 5.1. Classification Performance",
+      "statements": [
+        "...identify four different emotion states (happy, sad, stressed, relaxed) with an average accuracy (AUCROC) of 73% (maximum of 94%) based on typing features only.",
+        "We obtain an average accuracy (AUCROC) of 73% (std. dev 9%) and a maximum of 94% as shown in Figure 8a."
+      ]
+    }
+  }
+}

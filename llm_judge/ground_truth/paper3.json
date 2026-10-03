@@ -1,0 +1,85 @@
+{
+  "paper_id": "Not explicitly reported",
+  "filename": "sensors-22-04291-v2.pdf",
+  "title": "RF eigenfingerprints, an Efficient RF Fingerprinting Method in IoT Context",
+  "domain": "RFFI",
+  "dataset": {
+    "name": "Not explicitly reported",
+    "type_source": "Experimental testbed / Real-world dataset",
+    "data_volume": {
+      "total_preamble_signals": 200,
+      "signals_per_device": 50,
+      "number_of_devices": 4,
+      "training_signals": 140,
+      "testing_signals": 60
+    },
+    "participants_devices": {
+      "transmitter_devices": 4,
+      "transmitter_model": "ADALM-Pluto software-defined radio (SDR)",
+      "transmitter_manufacturer": "Analog Devices",
+      "receiver_devices": 1,
+      "receiver_model": "BB60C I/Q signal recorder"
+    },
+    "classes": {
+      "number": 4,
+      "correspondence": "Each ADALM-Pluto platform corresponds to one class"
+    },
+    "experimental_conditions": {
+      "central_frequency": "2.45 GHz",
+      "sampling_frequency": "5 Msps",
+      "transmitter_receiver_distance": "45 cm",
+      "antenna": "VERT2450",
+      "modulation": "QPSK",
+      "symbol_rate": "1 MBd",
+      "roll_off_factor": 0.5,
+      "signal_bandwidth": "1.5 MHz",
+      "training_snr": "30 dB",
+      "testing_snr_range": "0 dB to 30 dB",
+      "noise": "Additive white Gaussian complex noise"
+    },
+    "data_split": {
+      "training": "70%",
+      "testing": "30%",
+      "training_signals_per_class": 35,
+      "testing_signals_per_class": 15,
+      "total_training_signals": 140,
+      "total_testing_signals": 60
+    }
+  },
+  "proposed_method": {
+    "name": "RF eigenfingerprints using preprocessing process n°2 (Classifier 1)",
+    "description": "RF eigenfingerprints method evaluated using preprocessing process n°2 with Classifier 1"
+  },
+  "primary_performance": {
+    "metric": "Classification accuracy",
+    "value": "Nearly 100%",
+    "unit": "%",
+    "experimental_condition": "Real-world signals from 4 ADALM-Pluto SDR devices",
+    "evaluation_setting": "SNR values from 0 dB to 30 dB"
+  },
+  "additional_results": [],
+  "comparison_results": [],
+  "limitations": [
+    {
+      "description": "Future research should investigate RF fingerprinting pairing protocols to avoid data poisoning attacks during smart-device registration, evaluate the method with a larger number of emitters, and evaluate performance under additive non-Gaussian noise conditions.",
+      "evidence": {
+        "page": 18,
+        "section": "6. Conclusions",
+        "quote": "Future research need to be focused on RF fingerprinting pairing protocols, allowing smart devices to be registered securely on IoT network, avoiding data poisoning attack. Next works could be focused on (1) evaluating the performance of the algorithm for bigger number of emitters, (2) exploring the case of additive non-Gaussian noise, and (3) developing RF fingerprinting pairing protocols for secure registration of smart devices on IoT networks."
+      }
+    }
+  ],
+  "reported_contributions": [],
+  "evidence": {
+    "dataset": {
+      "page": 11,
+      "section": "4.2. Real-World Performance Evaluation",
+      "statement": "For this experiment, we used four ADALM-Pluto software-defined radio (SDR) platforms from Analog Devices as emitter, with central frequency f_0 = 2.45 GHz and sampling frequency F_s = 5 Msps... For each ADALM-Pluto (class), we collect 50 preamble signals... Finally, we split the signals into 70/30, leading to 35 training signals and 15 testing signals for each class."
+    },
+    "primary_performance": {
+      "page": 12,
+      "section": "4.2. Real-World Performance Evaluation",
+      "statement": "We can observe that the most efficient classifier is classifier 1, with a classification accuracy of nearly 100% from 0 dB to 30 dB."
+    }
+  }
+}

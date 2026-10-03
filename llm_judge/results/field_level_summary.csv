@@ -1,0 +1,4 @@
+Target Evaluation Field,Number of Evaluations,Mean Score,Mean Score (%)
+accuracy,10,0.35,35.0
+dataset,10,0.15,15.0
+limitation,10,0.0,0.0

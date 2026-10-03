@@ -1,0 +1,93 @@
+{
+        "paper_id": 1,
+        "filename": "1978942.1979046.pdf",
+        "metadata": {
+            "title": "Identifying Emotional States using Keystroke Dynamics",
+            "authors": [
+                "Clayton Epp",
+                "Michael Lippold",
+                "Regan L. Mandryk"
+            ],
+            "year": "2011",
+            "venue": "CHI 2011",
+            "doi": null,
+            "keywords": [
+                "Affective computing",
+                "keystroke dynamics",
+                "emotion sensing"
+            ]
+        },
+        "abstract": "The ability to recognize emotions is critical for building intelligent computers. Current emotion detection methods are invasive and require costly equipment. This paper proposes using keystroke dynamics to detect emotional states through typing patterns on standard keyboards. A field study collected keystroke data and self-reported emotional states, achieving 77-88% accuracy for six emotional states and 84% for anger and excitement.",
+        "research": {
+            "problem": "Current emotion detection systems are invasive and require specialized equipment.",
+            "motivation": "Emotionally-aware systems can improve user interaction and adapt to contextual emotional states.",
+            "objective": "Detect user emotional states using keystroke dynamics without intrusive hardware.",
+            "research_questions": []
+        },
+        "methodology": {
+            "summary": "Keystroke features (dwell time, flight time) were extracted from field study data using decision-tree classifiers for 15 emotional states.",
+            "algorithms": [
+                "Decision trees"
+            ],
+            "models": [
+                "Emotional state classifiers"
+            ],
+            "datasets": [
+                "Field study keystroke data with self-reported emotional states"
+            ],
+            "features": [
+                "Key duration (dwell time)",
+                "Key latency (flight time)"
+            ],
+            "preprocessing": [
+                "Feature extraction from raw keystroke data"
+            ],
+            "training_strategy": "Classifier training using derived keystroke features",
+            "evaluation_metrics": [
+                "Accuracy percentages"
+            ]
+        },
+        "experiments": {
+            "experimental_setup": "Field study with experience-sampling methodology collecting keystrokes and emotional state self-reports.",
+            "baselines": [],
+            "results": "Classifiers achieved 77.4-87.8% accuracy for confidence, hesitance, nervousness, relaxation, sadness, and tiredness; 84% for anger and excitement.",
+            "performance": {
+                "accuracy": "77.4-87.8%",
+                "precision": null,
+                "recall": null,
+                "f1": null,
+                "auc": null
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Non-intrusive emotion detection using standard keyboards"
+            ],
+            "advantages": [
+                "Leverages existing hardware",
+                "Minimal user disruption"
+            ],
+            "limitations": [
+                "Requires extensive keystroke data",
+                "Limited emotional state coverage"
+            ],
+            "future_work": [
+                "Investigate anger and excitement",
+                "Test across diverse typing abilities and keyboards"
+            ],
+            "applications": [
+                "Adaptive user interfaces",
+                "Emotion-aware systems",
+                "Computer-mediated communication"
+            ],
+            "research_gap": "Need for more studies on emotional state variability and cross-context generalization"
+        },
+        "sections": {
+            "introduction": "Discusses usability challenges in interactive applications due to lack of emotional context awareness and proposes emotion-sensing systems.",
+            "related_work": "Reviews affective computing and keystroke dynamics, highlighting limitations of physiological sensors and intrusive methods.",
+            "methodology": "Describes field study design, keystroke feature extraction, and classifier development for emotional state detection.",
+            "results": "Presents accuracy metrics for 15 emotional states using keystroke dynamics classifiers.",
+            "discussion": "Analyzes implications of non-intrusive emotion sensing for human-computer interaction and system adaptability.",
+            "conclusion": "Emphasizes potential of keystroke dynamics for improving user experience through emotionally-aware systems."
+        }
+    }

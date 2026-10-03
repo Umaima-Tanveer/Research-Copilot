@@ -1,0 +1,102 @@
+{
+  "paper_id": "JSTSP.2018.2796446",
+  "filename": "JSTSP.2018.2796446.pdf",
+  "title": "Deep Learning for RF Device Fingerprinting in Cognitive Communication Networks",
+  "domain": "RFFI",
+  "dataset": {
+    "name": "Not explicitly reported",
+    "type_source": "Commercial off-the-shelf ZigBee devices operating in the 2.4 GHz band",
+    "data_volume": {
+      "transmissions_per_dataset": 7000,
+      "transmissions_per_device": 1000,
+      "number_of_devices": 7,
+      "recorded_data_per_device": "Approximately 28 seconds",
+      "sampling_rate": "16 MHz",
+      "segments_per_transmission": 17,
+      "samples_per_segment": 1024
+    },
+    "participants_devices": {
+      "transmitter_devices": 7,
+      "transmitter_model": "Digi XBP24CZ7SITB003 ZigBee Pro",
+      "receiver_devices": null,
+      "receiver_model": null,
+      "operating_band": "2.4 GHz",
+      "standard": "IEEE 802.15.4",
+      "channel": "Channel 11",
+      "center_frequency": "2.405 GHz"
+    },
+    "classes": {
+      "number": 7,
+      "correspondence": "Each ZigBee device represents one class"
+    },
+    "experimental_conditions": {
+      "experiments": [
+        {
+          "name": "Outdoor experiment",
+          "environment": "Urban outdoor environment",
+          "transmitter_receiver_distance": "Approximately 30 meters",
+          "antenna": "Pulse Electronics W1030 omni-directional antennas",
+          "estimated_in_band_snr": "Approximately 28 dB"
+        },
+        {
+          "name": "Lab experiment",
+          "connection": "Devices hardwired to a power splitter connected directly to the signal and spectrum analyzer",
+          "environment": "Virtually noise-free",
+          "noise": "Simulated additive white Gaussian noise added in MATLAB",
+          "snr_range_db": [
+            -10,
+            15,
+            20,
+            25,
+            30,
+            35,
+            40
+          ]
+        }
+      ]
+    },
+    "data_split": {
+      "training": "80%",
+      "validation": "10%",
+      "testing": "10%",
+      "partitioning": "Random",
+      "transmission_integrity": "All 17 segments of a given transmission belonged to the same set"
+    }
+  },
+  "proposed_method": {
+    "name": "Convolutional Neural Network (CNN)",
+    "description": "CNN trained using the time-domain complex baseband error signal"
+  },
+  "primary_performance": {
+    "metric": "Identification accuracy / overall correct identification rate",
+    "value": 92.29,
+    "unit": "%",
+    "experimental_condition": "7 commercial 2.4 GHz ZigBee devices in the outdoor experiment",
+    "evaluation_setting": "Test set from the outdoor experiment"
+  },
+  "additional_results": [],
+  "comparison_results": [],
+  "limitations": [
+    {
+      "description": "Not explicitly reported.",
+      "evidence": {
+        "page": 7,
+        "section": "V. CONCLUSION",
+        "quote": "Not explicitly reported."
+      }
+    }
+  ],
+  "reported_contributions": [],
+  "evidence": {
+    "dataset": {
+      "page": 3,
+      "section": "III. METHODS - B. Data Collection",
+      "statement": "We demonstrate our technique on a collection of 7 Digi XBP24CZ7SITB003 ZigBee Pro devices operating in the 2.4 GHz band."
+    },
+    "primary_performance": {
+      "page": 1,
+      "section": "Abstract",
+      "statement": "We develop a framework for training a convolutional neural network using the time-domain complex baseband error signal and demonstrate 92.29% identification accuracy on a set of 7 2.4 GHz commercial ZigBee devices."
+    }
+  }
+}

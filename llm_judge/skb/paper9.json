@@ -1,0 +1,95 @@
+{
+        "paper_id": 3,
+        "filename": "The_laws_of_emotion.pdf",
+        "metadata": {
+            "title": "The Laws of Emotion",
+            "authors": [
+                "Nico H. Frijda"
+            ],
+            "year": "1988",
+            "venue": "American Psychologist",
+            "doi": null,
+            "keywords": [
+                "emotion laws",
+                "psychological mechanisms",
+                "emotional regulation",
+                "cognitive appraisal"
+            ]
+        },
+        "abstract": "Emotions are lawful phenomena describable through laws of emotion, including elicitation, persistence, and regulation. The paper argues for systematic study of emotions as governed by mechanisms with limited voluntary control, proposing laws like situational meaning, concern, and hedonic asymmetry to explain emotional dynamics.",
+        "research": {
+            "problem": "Emotion has historically been underexplored in psychology due to perceived idiosyncrasy and lack of scientific rigor.",
+            "motivation": "Recent advances in emotion research suggest systematic laws governing emotional phenomena, warranting structured analysis.",
+            "objective": "Propose a set of laws of emotion to describe elicitation, persistence, and regulation mechanisms.",
+            "research_questions": [
+                "Can emotional phenomena be described through lawful patterns?",
+                "What mechanisms underlie emotional regulation?"
+            ]
+        },
+        "methodology": {
+            "summary": "Empirical analysis of cognitive appraisals and their relationship to emotional responses, supported by computational models and self-report data.",
+            "algorithms": [
+                "Computer program predicting emotions from event appraisals"
+            ],
+            "models": [
+                "Laws of emotion (e.g., situational meaning, concern, conservation of emotional momentum)"
+            ],
+            "datasets": [
+                "Subject reports of emotional states",
+                "Conscious appraisals of events"
+            ],
+            "features": [
+                "Cognitive variables",
+                "Event meaning structures",
+                "Action readiness states"
+            ],
+            "preprocessing": [
+                "Correlation analysis between appraisals and emotional states"
+            ],
+            "training_strategy": "",
+            "evaluation_metrics": []
+        },
+        "experiments": {
+            "experimental_setup": "Computer program mapping event appraisals to emotion labels using self-reported data.",
+            "baselines": [],
+            "results": "31% hit rate for first-choice emotion labels, 71% for first five choices (chance: 3% and 17%).",
+            "performance": {
+                "accuracy": "",
+                "precision": "",
+                "recall": "",
+                "f1": "",
+                "auc": ""
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Framework of emotion laws",
+                "Cognitive mechanisms underlying emotional responses"
+            ],
+            "advantages": [
+                "Coherent explanation of emotional dynamics",
+                "Testable hypotheses for further research"
+            ],
+            "limitations": [
+                "Laws not fully validated",
+                "Limited voluntary control mechanisms"
+            ],
+            "future_work": [
+                "Empirical validation of subsidiary laws",
+                "Integration with neurobiological models"
+            ],
+            "applications": [
+                "Psychological theory development",
+                "Emotion regulation interventions"
+            ],
+            "research_gap": "Slow advancement due to mystification of emotions and perceived lack of scientific rigor."
+        },
+        "sections": {
+            "introduction": "Shift from neglect to systematic study of emotions as lawful phenomena with cognitive and physiological mechanisms.",
+            "related_work": "Cites Arnold (1960) and Lazarus (1966) on cognitive appraisal theories.",
+            "methodology": "Analyzes cognitive appraisals, event meanings, and action readiness through empirical and computational approaches.",
+            "results": "Demonstrates predictive success of emotion laws via computer modeling and self-report correlations.",
+            "discussion": "Argues against mysticism of emotions, emphasizing lawful mechanisms and cognitive control limitations.",
+            "conclusion": "Proposes emotion laws as foundational for understanding and regulating emotional responses."
+        }
+    }

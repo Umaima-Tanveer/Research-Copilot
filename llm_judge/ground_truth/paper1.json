@@ -1,0 +1,42 @@
+{
+"paper_id": "IEEE Access 2023",
+"filename": "Attention_is_Needed_for_RF_Fingerprinting.pdf",
+"title": "Attention is Needed for RF Fingerprinting",
+"year": 2023,
+"domain": "RFFI",
+"dataset": {
+"name": "USRP OFDM",
+"type_source": "real-world collected data",
+"data_volume": "200 transmissions (10 x 100 transmissions per location) yielding 171,454 segmented samples (87,594 in Subset 1 and 83,860 in Subset 2)",
+"participants_devices": "10 USRP X310 SDRs used as transmitters and 1 USRP X310 SDR used as receiver",
+"classes": "10 classes",
+"experimental_conditions": "Sampling rate of 5 M/s; IEEE 802.11a baseband signals generated using gr-IEEE802-11 based on GNURadio; receiver fixed at left-bottom corner, transmitter placed at location A or B to simulate different channel states; Gaussian white noise with random intensity (SNR between 0 and 30 dB) added to training samples",
+"data_split": "6:4 ratio (60% training and 40% test set)"
+},
+"accuracy": {
+"value": "95.6%",
+"metric": "recognition accuracy",
+"method_model": "DAConv-ResNet50",
+"dataset_or_task": "10 USRP X310 SDR devices identification",
+"experimental_condition": "Hybrid training mode with Gaussian white noise added in training stage",
+"evaluation_setting": "Tested on USRP OFDM dataset (40% test set)"
+},
+"limitation": "The CNNs designed in the experiment have a fixed limit on the length of the input signal segments.",
+"evidence": {
+"dataset": {
+"page": "87320-87321",
+"section": "III. METHODOLOGY - D. DATA COLLECTION",
+"text": "10 USRP X310 SDRs are used as transmitters and 1 USRP X310 SDR is used as receiver to sample IQ data... Finally, we collect 100 transmissions from each transmitter. Table 2 gives more details of the collected USRP OFDM dataset"
+},
+"accuracy": {
+"page": "87316",
+"section": "ABSTRACT",
+"text": "DAConv-ResNet50 which combined ResNet50 and our Dual Attention Convolution module can achieve 95.6% recognition accuracy on 10 USRP X310."
+},
+"limitation": {
+"page": "87328",
+"section": "V. CONCLUSION",
+"text": "At present, the CNNs designed in our experiment have a fixed limit on the length of the input signal segments."
+}
+}
+}

@@ -1,0 +1,102 @@
+{
+  "paper_id": "Not explicitly reported",
+  "filename": "1978942.1979046.pdf",
+  "title": "Identifying Emotional States using Keystroke Dynamics",
+  "domain": "Emotion Recognition using Keystroke Dynamics",
+  "dataset": {
+    "name": "Not explicitly reported.",
+    "type_source": "Field study using an experience-sampling methodology (ESM)",
+    "data_volume": {
+      "valid_instances": 1129,
+      "note": "Aggregated across 12 reduced participants"
+    },
+    "participants_devices": {
+      "final_participants": 12,
+      "original_participants": 26,
+      "male": 10,
+      "female": 2,
+      "age_range": "24–34",
+      "desktop_computers": 10,
+      "laptops": 2,
+      "work_computers": 8,
+      "home_computers": 4
+    },
+    "classes": {
+      "number_of_emotional_states": 15,
+      "emotional_states": [
+        "Frustrated",
+        "Focused",
+        "Angry",
+        "Happy",
+        "Overwhelmed",
+        "Confident",
+        "Hesitant",
+        "Stressed",
+        "Relaxed",
+        "Excited",
+        "Distracted",
+        "Bored",
+        "Sad",
+        "Nervous",
+        "Tired"
+      ],
+      "classification_levels": [
+        "3 classes: agree, neutral, disagree",
+        "2 classes: agree, disagree"
+      ],
+      "measurement_scale": "5-point Likert scales"
+    },
+    "experimental_conditions": {
+      "data_collection": "Data collected in situ during daily computer activities via custom software running in the background",
+      "text_conditions": [
+        "Fixed text entered from Alice's Adventures in Wonderland",
+        "Unconstrained free text"
+      ]
+    },
+    "data_split": {
+      "training": "Not explicitly reported.",
+      "testing": "Not explicitly reported.",
+      "validation": "10-fold cross-validation"
+    }
+  },
+  "proposed_method": {
+    "name": "Decision tree (C4.5) with supervised attribute selection and under-sampling",
+    "description": "A C4.5 decision tree was used with correlation-based feature subset selection and under-sampling for emotional-state classification."
+  },
+  "primary_performance": {
+    "metric": "Classification accuracy",
+    "value": 87.8,
+    "unit": "%",
+    "experimental_condition": "Sadness detection using fixed-text keystroke dynamics with 2 class levels (agree vs. disagree) and under-sampling",
+    "evaluation_setting": "10-fold cross-validation"
+  },
+  "additional_results": [],
+  "comparison_results": [],
+  "limitations": [],
+  "reported_contributions": [],
+  "third_evaluation_field": {
+    "field_name": "Timing Feature",
+    "value": [
+      "Key duration (dwell time)",
+      "Key latency (flight time)"
+    ],
+    "scope": "Extracted across single keys, digraphs, and trigraphs",
+    "evidence": {
+      "page": 716,
+      "section": "INTRODUCTION",
+      "statement": "From the raw keystroke data, we extracted a number of features derived mainly from key duration (dwell time) and key latency (flight time)."
+    }
+  },
+  "evidence": {
+    "dataset": {
+      "page": 719,
+      "section": "CLASSIFICATION",
+      "statement": "Due to the large variations in the number of responses per user, we did not create user-specific models, but aggregated the data across participants for 1129 valid instances."
+    },
+    "primary_performance": {
+      "page": 721,
+      "section": "RESULTS (Table 3)",
+      "statement": "Sadness | 87.8 | 6.52 | 0.76 | 0.0026 | 4 | 156 | 20 | X | X | X"
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "paper_id": "Not explicitly reported",
+  "filename": "3733103.pdf",
+  "title": "Keystroke Dynamics: Concepts, Techniques, and Applications",
+  "domain": "Emotion Recognition using Keystroke Dynamics",
+  "dataset": {
+    "name": "Not explicitly reported.",
+    "type_source": "Fixed-text and free-text",
+    "data_volume": {
+      "total_samples": "Not explicitly reported."
+    },
+    "participants_devices": {
+      "participants": "Not explicitly reported.",
+      "devices": "Not explicitly reported."
+    },
+    "classes": {
+      "number": 7,
+      "correspondence": [
+        "Anger",
+        "Guilt",
+        "Disgust",
+        "Joy",
+        "Fear",
+        "Shame",
+        "Sadness"
+      ]
+    },
+    "experimental_conditions": {
+      "details": "Not explicitly reported."
+    },
+    "data_split": {
+      "training": "Not explicitly reported.",
+      "testing": "Not explicitly reported.",
+      "validation": "Not explicitly reported."
+    }
+  },
+  "proposed_method": {
+    "name": "Random Forest (RF) Classifier",
+    "description": "A Random Forest classifier was used for four-emotion classification based on piezoelectric keystroke dynamics using time and pressure dimension features."
+  },
+  "primary_performance": {
+    "metric": "Accuracy",
+    "value": 78.31,
+    "unit": "%",
+    "experimental_condition": "Piezoelectric keystroke dynamics using password entry with time and pressure dimension features, with emotions induced using International Affective Digitized Sounds (IADS) to classify four emotions: happiness, fear, sadness, and disgust",
+    "evaluation_setting": "Four-emotion classification using a Random Forest classifier"
+  },
+  "additional_results": [],
+  "comparison_results": [],
+  "limitations": [],
+  "reported_contributions": [],
+  "third_evaluation_field": {
+    "field_name": "Timing Feature",
+    "value": "Not explicitly reported.",
+    "evidence": {
+      "page": 26,
+      "section": "7.2 Emotion Detection",
+      "statement": "They used time and pressure dimension features."
+    }
+  },
+  "evidence": {
+    "dataset": {
+      "page": 26,
+      "section": "7.2 Emotion Detection",
+      "statement": "Nahin et al. [77] identified the emotions of users by analyzing the textual patterns of the user's keystroke dynamics. They considered seven basic emotional classes, viz. anger, guilt, disgust, joy, fear, shame, and sadness."
+    },
+    "primary_performance": {
+      "page": 26,
+      "section": "7.2 Emotion Detection",
+      "statement": "Qi, Jia, and Gao [83] proposed an emotion recognition system based on piezoelectric keystroke dynamics... They obtained an accuracy of 78.31% using the RF Classifier."
+    }
+  }
+}

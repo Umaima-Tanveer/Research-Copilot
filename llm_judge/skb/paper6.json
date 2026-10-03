@@ -1,0 +1,117 @@
+{
+        "paper_id": 3,
+        "filename": "Non-ActedTextandKeystrokesDatabaseandLearning.pdf",
+        "metadata": {
+            "title": "Non-Acted Text and Keystrokes Database and Learning Methods to Recognize Emotions",
+            "authors": [
+                "Madiha Tahir",
+                "Zahid Halim",
+                "Atta Ur Rahman",
+                "Muhammad Waqas",
+                "Shanshan Tu",
+                "Sheng Chen",
+                "Zhu Han"
+            ],
+            "year": "2022",
+            "venue": "ACM Trans. Multimedia Comput. Commun. Appl.",
+            "doi": "10.1145/3480968",
+            "keywords": [
+                "Affective computing",
+                "machine learning",
+                "affective states",
+                "pattern recognition",
+                "data-driven decision-making"
+            ]
+        },
+        "abstract": "This work presents a multimodal text-keystrokes dataset and associated learning methods for emotion recognition. A dataset of 69 participants' text and keystroke data is collected, achieving 86.95% accuracy through feature fusion and outperforming state-of-the-art techniques in accuracy.",
+        "research": {
+            "problem": "Identifying dominant emotions from limited text data for human-computer interaction.",
+            "motivation": "Enhance emotion recognition in computing systems using non-acted text and keystroke dynamics.",
+            "objective": "Create a multimodal dataset and learning methods for accurate emotion detection from short text and keystrokes.",
+            "research_questions": []
+        },
+        "methodology": {
+            "summary": "Combines text and keystroke features from 69 participants' data using supervised learning and feature selection techniques.",
+            "algorithms": [
+                "Support Vector Machine (SVM)",
+                "Discriminant analysis",
+                "k-Nearest Neighbors (k-NN)"
+            ],
+            "models": [
+                "Tree-based feature selection",
+                "Mutual information (MI)",
+                "Statistical dependency-based feature selection"
+            ],
+            "datasets": [
+                "Text-keystrokes dataset of 69 participants",
+                "DEAP",
+                "BAUM-I"
+            ],
+            "features": [
+                "In-text features",
+                "Keystroke dynamics",
+                "Text-keystroke fusion"
+            ],
+            "preprocessing": [
+                "CI-based preprocessing for feature extraction"
+            ],
+            "training_strategy": "Supervised learning with feature selection methods",
+            "evaluation_metrics": [
+                "Accuracy",
+                "Precision",
+                "Recall",
+                "F1-score",
+                "AUC"
+            ]
+        },
+        "experiments": {
+            "experimental_setup": "Data collected from 69 participants in controlled environments with video stimuli and unguided text reviews.",
+            "baselines": [
+                "Shikder et al. [12]",
+                "Tripathi et al. [21]",
+                "Alhuzali et al. [22]",
+                "Aguado et al. [51]"
+            ],
+            "results": "86.95% accuracy via text-keystroke fusion; 100% accuracy for pleasure-displeasure classes using SVM with feature fusion.",
+            "performance": {
+                "accuracy": "86.95%",
+                "precision": null,
+                "recall": null,
+                "f1": null,
+                "auc": null
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Novel multimodal dataset combining text and keystrokes",
+                "CI-based framework for emotion recognition",
+                "Balanced labeled dataset for five basic emotions"
+            ],
+            "advantages": [
+                "High accuracy in emotion classification",
+                "Non-posed dataset for real-world applications"
+            ],
+            "limitations": [
+                "Reliance on text and keystroke data",
+                "Limited to predefined emotion classes"
+            ],
+            "future_work": [
+                "Expanding to other modalities like speech or EEG",
+                "Improving generalization across diverse datasets"
+            ],
+            "applications": [
+                "Customer feedback analysis",
+                "Emotion-aware computing systems",
+                "Therapeutic interventions"
+            ],
+            "research_gap": "Lack of publicly available labeled datasets with comprehensive emotion classes."
+        },
+        "sections": {
+            "introduction": "Discusses challenges in emotion recognition and motivation for multimodal data collection.",
+            "related_work": "References prior studies on affective computing and emotion detection methods.",
+            "methodology": "Details dataset collection, feature extraction, and learning framework design.",
+            "results": "Presents accuracy metrics and comparison with state-of-the-art techniques.",
+            "discussion": "Analyzes contributions, advantages, and limitations of the proposed approach.",
+            "conclusion": "Summarizes the work's impact on emotion recognition and future directions."
+        }
+    }

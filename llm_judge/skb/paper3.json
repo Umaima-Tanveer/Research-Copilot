@@ -1,0 +1,101 @@
+{
+        "paper_id": 4,
+        "filename": "sensors-22-04291-v2.pdf",
+        "metadata": {
+            "title": "RF eigenﬁngerprints, an Efﬁcient RF Fingerprinting Method in IoT Context",
+            "authors": [
+                "Louis Morge-Rollet",
+                "Frédéric Le Roy",
+                "Denis Le Jeune",
+                "Charles Canaff",
+                "Roland Gautier"
+            ],
+            "year": "2022",
+            "venue": "Sensors",
+            "doi": "10.3390/s22114291",
+            "keywords": [
+                "RF ﬁngerprinting",
+                "IoT networks security",
+                "eigenfaces",
+                "FPGA implementation"
+            ]
+        },
+        "abstract": "The paper proposes RF eigenﬁngerprints, a non-cryptographic authentication method for IoT devices using physical-layer impairments. It combines singular value decomposition (SVD) and statistical modeling for feature learning, with simulation, real-world experiments, and FPGA implementation to demonstrate performance. The method emphasizes scalability, low complexity, and explainability for IoT security applications.",
+        "research": {
+            "problem": "Authentication of IoT nodes requires non-cryptographic methods due to computational limitations of low-power devices.",
+            "motivation": "Traditional cryptography is impractical for IoT devices, necessitating efficient alternatives like RF fingerprinting.",
+            "objective": "Develop RF eigenﬁngerprints using eigenfaces-inspired feature learning for scalable, low-complexity IoT authentication.",
+            "research_questions": [
+                "How to improve scalability and explainability of RF fingerprinting?",
+                "What are the performance trade-offs for IoT deployment?"
+            ]
+        },
+        "methodology": {
+            "summary": "RF eigenﬁngerprints use SVD for feature extraction, Ljung–Box test for feature selection, and statistical models for authentication.",
+            "algorithms": [
+                "Singular Value Decomposition (SVD)",
+                "Ljung–Box hypothesis test"
+            ],
+            "models": [
+                "RF eigenﬁngerprints method"
+            ],
+            "datasets": [],
+            "features": [
+                "RF eigenﬁngerprints (eigenvectors of impairments)"
+            ],
+            "preprocessing": [
+                "Frequency offset correction",
+                "Signal delay estimation",
+                "Complex amplitude normalization"
+            ],
+            "training_strategy": "Statistical model based on feature subspace analysis",
+            "evaluation_metrics": []
+        },
+        "experiments": {
+            "experimental_setup": "Simulation with novel impairment model, real-world experiments, and FPGA implementation on Digilent Zedboard.",
+            "baselines": [],
+            "results": "Demonstrated effectiveness of RF eigenﬁngerprints for authentication with low computational overhead.",
+            "performance": {
+                "accuracy": null,
+                "precision": null,
+                "recall": null,
+                "f1": null,
+                "auc": null
+            }
+        },
+        "analysis": {
+            "contributions": [
+                "Adaptation of eigenfaces to RF fingerprinting",
+                "Novel impairment simulation model",
+                "Lightweight FPGA implementation",
+                "Feature interpretability framework"
+            ],
+            "advantages": [
+                "High scalability for IoT networks",
+                "Low computational complexity",
+                "Strong explainability for security applications"
+            ],
+            "limitations": [
+                "Dependence on signal preprocessing quality",
+                "Potential vulnerability to adversarial data"
+            ],
+            "future_work": [
+                "Enhancing robustness against channel variations",
+                "Expanding to heterogeneous IoT device ecosystems"
+            ],
+            "applications": [
+                "Secure IoT device authentication",
+                "Network access control",
+                "Anomaly detection in wireless communications"
+            ],
+            "research_gap": "Need for efficient, non-cryptographic authentication methods with guaranteed security and scalability in IoT environments."
+        },
+        "sections": {
+            "introduction": "Introduces IoT security challenges and the need for non-cryptographic authentication via RF fingerprinting.",
+            "related_work": "Reviews eigenfaces in face recognition and RF fingerprinting techniques, highlighting limitations of traditional methods.",
+            "methodology": "Details SVD-based feature learning, Ljung–Box test for feature selection, and statistical authentication framework.",
+            "results": "Demonstrates simulation, real-world, and FPGA implementation results validating method performance.",
+            "discussion": "Analyzes scalability, complexity, and security properties of RF eigenﬁngerprints for IoT deployment.",
+            "conclusion": "Summarizes contributions and emphasizes potential for IoT security applications with non-cryptographic authentication."
+        }
+    }
